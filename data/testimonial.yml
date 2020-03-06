@@ -1,0 +1,34 @@
+enable : true
+titleSM : Testimonials
+title : SEE WHAT OUR CUSTOMERS ARE SAYING
+image : images/client.png
+sliderItem :
+  - image : "/images/team/team-1.jpg"
+    content : Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid sed dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco labo ris nisi aliquip excepteur.
+    name : Julia Robertson
+    designation : Happy Clients
+    
+  - image : "/images/team/team-2.jpg"
+    content : Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid sed dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco labo ris nisi aliquip excepteur.
+    name : Julia Robertson
+    designation : Happy Clients
+    
+  - image : "/images/team/team-3.jpg"
+    content : Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid sed dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco labo ris nisi aliquip excepteur.
+    name : Julia Robertson
+    designation : Happy Clients
+    
+  - image : "/images/team/team-1.jpg"
+    content : Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid sed dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco labo ris nisi aliquip excepteur.
+    name : Julia Robertson
+    designation : Happy Clients
+    
+  - image : "/images/team/team-2.jpg"
+    content : Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid sed dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco labo ris nisi aliquip excepteur.
+    name : Julia Robertson
+    designation : Happy Clients
+    
+  - image : "/images/team/team-3.jpg"
+    content : Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid sed dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco labo ris nisi aliquip excepteur.
+    name : Julia Robertson
+    designation : Happy Clients

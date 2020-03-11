@@ -1,10 +1,11 @@
 ---
 title: "Data Visualisation"
 date: 2018-09-29T11:54:02+06:00
+weight: 2
 description : "This is meta description"
 image: images/service/service-3.jpg
 bgImage: images/background/page-title.jpg
-icon: ti-server
+icon: images/service/data-visualisation.png
 brochureURL: '#'
 regularDay: Sun-Tues
 regularTime: 08.00am - 06.00pm

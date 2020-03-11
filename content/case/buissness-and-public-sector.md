@@ -3,7 +3,7 @@ title: "Buissness and public sector"
 date: 2018-09-24T14:48:03+06:00
 description : "This is meta description"
 bgImage: images/background/page-title.jpg
-tag : Ecommerce Advice
+tag : Predictive Analytics
 image : images/project/project-5.jpg
 client : Baximco Ltd.
 category : Market Strategy

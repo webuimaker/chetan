@@ -1,10 +1,11 @@
 ---
 title: "Clinical Trials Design & Analysis"
 date: 2018-09-29T11:51:17+06:00
+weight: 4
 description : "This is meta description"
 image: images/service/service-6.jpg
 bgImage: images/background/page-title.jpg
-icon: ti-thought
+icon: images/service/research_design.png
 brochureURL: '#'
 regularDay: Sun-Tues
 regularTime: 08.00am - 06.00pm

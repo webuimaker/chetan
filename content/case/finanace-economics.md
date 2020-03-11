@@ -3,7 +3,7 @@ title: "Finanace and economics"
 date: 2018-09-24T14:48:03+06:00
 description : "This is meta description"
 bgImage: images/background/page-title.jpg
-tag : Ecommerce Advice
+tag : Data Visualisation
 image : images/project/project-2.jpg
 client : Baximco Ltd.
 category : Market Strategy

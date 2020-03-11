@@ -1,10 +1,11 @@
 ---
 title: "Statistical Analysis & Modelling"
 date: 2018-09-29T11:54:02+06:00
+weight: 3
 description : "This is meta description"
 image: images/service/service-5.jpg
 bgImage: images/background/page-title.jpg
-icon: ti-server
+icon: images/service/statistical-modelling.png
 brochureURL: '#'
 regularDay: Sun-Tues
 regularTime: 08.00am - 06.00pm

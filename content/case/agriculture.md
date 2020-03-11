@@ -3,7 +3,7 @@ title: "Agriculture"
 date: 2018-09-24T14:48:03+06:00
 description : "This is meta description"
 bgImage: images/background/page-title.jpg
-tag : Ecommerce Advice
+tag : Statistics Training
 image : images/project/project-4.jpg
 client : Baximco Ltd.
 category : Market Strategy

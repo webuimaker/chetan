@@ -1,7 +1,9 @@
 {{ define "main" }}
 
 {{ partial "hero-slider.html" . }}
-{{ partial "cta.html" . }}
+
+{{ partial "about-chetan.html" . }}
+
 
 
 {{ "<!-- specialize  -->" | safeHTML }}
@@ -12,14 +14,20 @@
                 <h5 class="section-title-sm">We specialize   </h5>
                 <h2 class="section-title section-title-border">IN</h2>
             </div>
-            {{ range $index, $element:= where .Site.RegularPages "Type" "service" }}
+            {{ $specialize := first 6 ( where .Site.RegularPages "Type" "service") }}
+            {{ range sort $specialize ".Params.weight"  }}
+
                     <div class="col-lg-4 col-sm-6 mb-5">
-                        <div class="card text-center border-0">
+                        <div class="card text-center border-0 mb-5">
                             <div class="card-body p-0">
-                                <i class="square-icon  rounded {{ .Params.Icon }}"></i>
-                                <a href="{{ .Permalink }}" class="card-link"><h4 class="card-title pt-3">{{ .Title }}</h4></a>
+                                <!-- <i class="square-icon  rounded {{ .Params.Icon }}"></i> -->
+                                <i class="square-icon  rounded ">
+                                    <img src="{{ .Params.Icon | absURL}}" class="img-fluid" alt="{{ .Title }}">
+                                </i>
+                                <a href="{{ .Permalink }}" class="card-link">
+                                <h4 class="card-title pt-3">{{ .Title }}</h4></a>
                                 <p class="card-text mx-2 my-3 mb-0">{{ .Summary }}</p>
-                                <!-- <a href="{{ .Permalink }}" class="btn btn-secondary">Read More</a> -->
+                                <a href="{{ .Permalink }}" class="btn btn-secondary">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -45,13 +53,18 @@
             {{ range $index, $element:= where .Site.RegularPages "Type" "case"}}
             {{ "<!-- project item -->" | safeHTML }}
             <div class="col-lg-3 col-md-4 col-sm-6 ">
+                <p class="h4 text-center"> {{ .Title }}</p>
                 <div class="position-relative">
+                    
                     <img class="img-fluid w-100" src="{{ .Params.Image | absURL }}" alt="project-image">
                     <div class="project-info">
-                        <a href="{{ .Permalink }}" class="h4">{{ .Title }}</a>
-                        <p><i class="ti-tag"></i>{{ .Params.Tag }}</p>
-                    </div>
+                        <!-- <a href="{{ .Permalink }}" class="h4">{{ .Title }}</a>
+                        <p><i class="ti-tag"></i>{{ .Params.Tag }}</p> -->
+                    </div> 
+                    
                 </div>
+                {{ $ser := lower  .Params.Tag }}
+                <p class="text-center"><a href="service/{{replace  $ser " " "-"}}"><i class="ti-tag"></i>{{ .Params.Tag }}</a></p>
             </div>
             {{ end }}
         </div>
@@ -79,11 +92,11 @@
                 <h2 class="section-title section-title-border"> Sectors</h2>
             </div>
             {{ range $index, $element:= where .Site.RegularPages "Type" "case" }}
-                    <div class="col-lg-4 col-sm-6 my-5">
+                    <div class="col-lg-3 col-sm-6 my-5">
                         <div class="card text-center ">
                             <div class="card-body p-0">
                                 <i class="round-icon  translateY-33  border-5 {{ .Params.Icon }}"></i>
-                                <a href="{{ .Permalink }}" class="card-link"><h4 class="card-title pt-3">{{ .Title }}</h4></a>
+                                <a href="{{ .Permalink }}" class="card-link"><h4 class="card-title pt-3 bold"><strong>{{ .Title }}</strong></h4></a>
                                 <p class="card-text mx-2 my-3 mb-0">{{ .Summary }}</p>
                                 <!-- <a href="{{ .Permalink }}" class="btn btn-secondary">Read More</a> -->
                             </div>

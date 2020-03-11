@@ -1,0 +1,43 @@
+<head>
+    <meta charset="utf-8">
+    <title>{{ .Site.Title }}</title>
+
+    {{ "<!-- mobile responsive meta -->" | safeHTML }}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+    {{ hugo.Generator }}
+
+    {{ "<!-- Bootstrap -->" | safeHTML }}
+    <link rel="stylesheet" href="{{ "plugins/bootstrap/bootstrap.min.css" | absURL }} ">
+    {{ "<!-- magnific popup -->" | safeHTML }}
+    <link rel="stylesheet" href="{{ "plugins/magnific-popup/magnific-popup.css" | absURL }} ">
+    {{ "<!-- Slick Carousel -->" | safeHTML }}
+    <link rel="stylesheet" href="{{ "plugins/slick/slick.css" | absURL }} ">
+    <link rel="stylesheet" href="{{ "plugins/slick/slick-theme.css" | absURL }} ">
+    {{ "<!-- themify icon -->" | safeHTML }}
+    <link rel="stylesheet" href="{{ "plugins/themify-icons/themify-icons.css" | absURL }} ">
+    {{ "<!-- animate -->" | safeHTML }}
+    <link rel="stylesheet" href="{{ "plugins/animate/animate.css" | absURL }} ">
+    {{ "<!-- Aos -->" | safeHTML }}
+    <link rel="stylesheet" href="{{ "plugins/aos/aos.css" | absURL }} ">
+    {{ "<!-- Main Stylesheet -->" | safeHTML }}
+    {{ $styles := resources.Get "css/style.css" | minify}}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+
+
+    {{ "<!-- FontAwesome -->" | safeHTML }}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/solid.css"
+        integrity="sha384-ioUrHig76ITq4aEJ67dHzTvqjsAP/7IzgwE7lgJcg2r7BRNGYSK0LwSmROzYtgzs" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/brands.css"
+        integrity="sha384-i2PyM6FMpVnxjRPi0KW/xIS7hkeSznkllv+Hx/MtYDaHA5VcF0yL3KVlvzp8bWjQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css"
+        integrity="sha384-sri+NftO+0hcisDKgr287Y/1LVnInHJ1l+XC7+FOabmTTIK0HnE2ID+xxvJ21c5J" crossorigin="anonymous">
+    {{ "<!-- FontAwesome -->" | safeHTML }}
+
+    {{ "<!--Favicon-->" | safeHTML }}
+    <link rel="shortcut icon" href="{{ "images/favicon.png" | absURL }} " type="image/x-icon">
+    <link rel="icon" href="{{ "images/favicon.png" | absURL }} " type="image/x-icon">
+
+</head>

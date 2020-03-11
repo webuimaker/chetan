@@ -1,11 +1,11 @@
 ---
-title: "Data collection & Management"
-date: 2018-09-25T15:51:35+06:00
-weight: 9
+title: "Research design and methodology"
+date: 2018-09-29T11:51:17+06:00
 description : "This is meta description"
-image: images/service/service-4.jpg
+weight: 1
+image: images/service/service-6.jpg
 bgImage: images/background/page-title.jpg
-icon: ti-bar-chart
+icon: images/service/research_design.png
 brochureURL: '#'
 regularDay: Sun-Tues
 regularTime: 08.00am - 06.00pm
@@ -15,7 +15,7 @@ offDay: Friday
 type : service
 ---
 
-### Marketing Oriented To The Targated Customers
+### Research design and methodology
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
@@ -31,3 +31,5 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 ![Chart](../../images/service/service-chart.jpg)
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+---
+

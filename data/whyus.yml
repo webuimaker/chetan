@@ -1,0 +1,27 @@
+enable : enable
+titleSM : Why Choose Us
+title : "We are digital specialists. It's all we do"
+image : images/client.png
+item :
+  - icon : fa fa-chart-bar
+    content : Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid sed dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco labo ris nisi aliquip excepteur.
+    heading : Lorem ipsum dolor sit
+    
+  - icon : fa fa-users
+    content : Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid sed dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco labo ris nisi aliquip excepteur.
+    heading : Constur adipisicing elit
+    
+  - icon : fa fa-signal
+    content : Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid sed dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco labo ris nisi aliquip excepteur.
+    heading : Sed eiusmtempor incid
+  - icon : fa fa-chart-bar
+    content : Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid sed dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco labo ris nisi aliquip excepteur.
+    heading : Lorem ipsum dolor sit
+    
+  - icon : fa fa-users
+    content : Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid sed dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco labo ris nisi aliquip excepteur.
+    heading : Constur adipisicing elit
+    
+  - icon : fa fa-signal
+    content : Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid sed dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco labo ris nisi aliquip excepteur.
+    heading : Sed eiusmtempor incid

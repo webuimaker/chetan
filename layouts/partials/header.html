@@ -22,18 +22,26 @@
                             <a class="nav-link" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
                         </li>
                         {{ range .Site.Menus.nav }}
-                        {{ if .HasChildren }}
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false">
-                                {{ .Name }}
-                            </a>
-                            <div class="dropdown-menu" >
-                                {{ range .Children }}
-                                <a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a>
-                                {{ end }}
-                            </div>
-                        </li>
+                            {{ if .HasChildren }}
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    {{ .Name }}
+                                </a>
+                                <div class="dropdown-menu" >
+                                    <div class="container">
+                                            <ul class="nav row">
+                                                {{ range .Children }}
+                                                <li class="nav-item col-md-4">
+                                                  <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+                                                  <p class="px-2 py-0">{{ .Pre }}</p>
+                                                </li>
+                                                {{end}}
+                                            </ul>
+                                    
+                                    </div>
+                                </div>
+                            </li>
                         {{ else }}
                         <li class="nav-item">
                             <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>

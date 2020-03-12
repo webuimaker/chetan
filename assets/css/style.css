@@ -873,8 +873,8 @@ header{
 }
 
 .navigation .navbar .nav-item .nav-link {
-  padding: 15px 10px;
-  font-family: "Poppins", sans-serif;
+  /* padding: 15px 10px;
+  font-family: "Poppins", sans-serif; */
   font-weight: 600;
   color: #222;
   text-transform: uppercase;
@@ -902,7 +902,7 @@ header{
 }
 
 .navigation .navbar .nav-item:last-child {
-  padding: 28px 0 28px 30px;
+  /* padding: 28px 0 28px 30px; */
 }
 
 @media (max-width: 991px) {
@@ -911,10 +911,10 @@ header{
     margin-bottom: 20px;
   }
 }
-
+/* 
 .navigation .navbar .nav-item:last-child .nav-link {
   color: #fff;
-}
+} */
 
 .navigation .navbar .nav-item .nav-link.pgactive {
   color: #e84444;
@@ -932,7 +932,8 @@ header{
   padding: 40px 30px;
   border: 0;
   border-radius: 0;
-  top: 80%;
+  /* top: 80%; */
+  top: 99%;
   left: -20px;
   display: block;
   visibility: hidden;
@@ -942,6 +943,7 @@ header{
           transform: scaleY(0);
   -webkit-transform-origin: top;
           transform-origin: top;
+          background-color: #fff !important;
 }
 
 @media (max-width: 991px) {
@@ -2677,6 +2679,62 @@ blockquote{
 
 .back-to-top:focus {
   outline: 0;
+}
+
+
+/***Mega Menu***/
+
+/* adds some margin below the link sets  */
+.navbar .dropdown-menu div[class*="col"] {
+  margin-bottom:1rem;
+}
+
+.navbar .dropdown-menu {
+ border:none;
+ background-color:#0060c8!important;
+}
+
+.navbar .dropdown-menu  .nav-item{
+  margin: 0px ;
+  padding: 15px 0px;
+}
+
+/* breakpoint and up - mega dropdown styles */
+@media screen and (min-width: 992px) {
+ 
+ /* remove the padding from the navbar so the dropdown hover state is not broken */
+.navbar {
+ padding-top:0px;
+ padding-bottom:0px;
+}
+
+/* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+.navbar .nav-item {
+ padding:.5rem .5rem;
+ margin:0 .25rem;
+}
+
+/* makes the dropdown full width  */
+.navbar .dropdown {position:static;}
+
+.navbar .dropdown-menu {
+ width:100%;
+ left:0;
+ right:0;
+/*  height of nav-item  */
+ top:45px;
+}
+ 
+ /* shows the dropdown menu on hover */
+.navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+ display:block!important;
+}
+ 
+ .navbar .dropdown-menu {
+   border: 1px solid rgba(0,0,0,.15);
+   background-color: #fff;
+ }
+
 }
 
 /*# sourceMappingURL=maps/style.css.map */

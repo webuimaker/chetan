@@ -54,38 +54,47 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
       parent = "Service"
       name = "Research Planning & Advice"
       URL = "/research-planning-advice"
+      pre = "Menu Sub Text Here"
       [[Languages.en.menu.nav]]
       parent = "Service"
       name = "Data collection & Management"
       URL = "/data-collection-management"
+      pre = "Menu Sub Text Here"
       [[Languages.en.menu.nav]]
       parent = "Service"
       name = "Data Visualisation"
       URL = "/data-visualisation"
+      pre = "Menu Sub Text Here"
       [[Languages.en.menu.nav]]
       parent = "Service"
       name = "Statistical Analysis & Modelling"
       URL = "/statistical-analysis-modelling"
+      pre = "Menu Sub Text Here"
       [[Languages.en.menu.nav]]
       parent = "Service"
       name = "Predictive Analytics"
       URL = "/predictive-analytics"
+      pre = "Menu Sub Text Here"
       [[Languages.en.menu.nav]]
       parent = "Service"
       name = "Survey Design & Analysis"
       URL = "/survey-design-analysis"
+      pre = "Menu Sub Text Here"
       [[Languages.en.menu.nav]]
       parent = "Service"
       name = "Clinical-trials Design & Analysis"
       URL = "/clinical-trials-design-analysis"
+      pre = "Menu Sub Text Here"
       [[Languages.en.menu.nav]]
       parent = "Service"
       name = "Statistical review of proposal"
       URL = "/statistical-review-proposal"
+      pre = "Menu Sub Text Here"
       [[Languages.en.menu.nav]]
       parent = "Service"
       name = "Statistics training"
       URL = "/statistics-training"
+      pre = "Menu Sub Text Here"
     
     [[Languages.en.menu.nav]]
     name = "our work  "

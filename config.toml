@@ -53,47 +53,47 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
       [[Languages.en.menu.nav]]
       parent = "Service"
       name = "Research Planning & Advice"
-      URL = "/research-planning-advice"
+      URL = "/service/research-planning-advice"
       pre = "Menu Sub Text Here"
       [[Languages.en.menu.nav]]
       parent = "Service"
       name = "Data collection & Management"
-      URL = "/data-collection-management"
+      URL = "/service/data-collection-management"
       pre = "Menu Sub Text Here"
       [[Languages.en.menu.nav]]
       parent = "Service"
       name = "Data Visualisation"
-      URL = "/data-visualisation"
+      URL = "/service/data-visualisation"
       pre = "Menu Sub Text Here"
       [[Languages.en.menu.nav]]
       parent = "Service"
       name = "Statistical Analysis & Modelling"
-      URL = "/statistical-analysis-modelling"
+      URL = "/service/statistical-analysis-modelling"
       pre = "Menu Sub Text Here"
       [[Languages.en.menu.nav]]
       parent = "Service"
       name = "Predictive Analytics"
-      URL = "/predictive-analytics"
+      URL = "/service/predictive-analytics"
       pre = "Menu Sub Text Here"
       [[Languages.en.menu.nav]]
       parent = "Service"
       name = "Survey Design & Analysis"
-      URL = "/survey-design-analysis"
+      URL = "/service/survey-design-analysis"
       pre = "Menu Sub Text Here"
       [[Languages.en.menu.nav]]
       parent = "Service"
       name = "Clinical-trials Design & Analysis"
-      URL = "/clinical-trials-design-analysis"
+      URL = "/service/clinical-trials-design-analysis"
       pre = "Menu Sub Text Here"
       [[Languages.en.menu.nav]]
       parent = "Service"
       name = "Statistical review of proposal"
-      URL = "/statistical-review-proposal"
+      URL = "/service/statistical-review-proposal"
       pre = "Menu Sub Text Here"
       [[Languages.en.menu.nav]]
       parent = "Service"
       name = "Statistics training"
-      URL = "/statistics-training"
+      URL = "/service/statistics-training"
       pre = "Menu Sub Text Here"
     
     [[Languages.en.menu.nav]]

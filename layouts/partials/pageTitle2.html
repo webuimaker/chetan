@@ -1,0 +1,30 @@
+
+<section>
+    <div class="hero-slider-2 position-relative banner-inner">
+        {{ "<!-- slider item -->" | safeHTML }}        
+        <div class="hero-slider-item py-50" >
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-8">
+                        <div class="hero-content pt-5">
+                            
+                            <h1 class="font-weight-bold mb-3" data-duration-in=".5" data-animation-in="fadeInLeft"
+                                data-delay-in=".5">{{ .Title }}</h1>
+                            <p class="text-dark mb-50" data-duration-in=".5" data-animation-in="fadeInLeft"
+                                data-delay-in=".9">{{ .Params.description | safeHTML }}
+                            </p>
+                           
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="{{.Params.image | safeHTML}}" alt="{{ .Title }}" class="img-fluid">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+      
+    </div>
+</section>
+{{ "<!-- /hero slider -->" | safeHTML }}

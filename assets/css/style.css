@@ -2737,4 +2737,15 @@ blockquote{
 
 }
 
+.banner-inner{
+  border-bottom: 1px solid #d6d6d6;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e3e3e3+0,80817c+100 */
+background: #e3e3e3; /* Old browsers */
+background: -moz-linear-gradient(left,  #e3e3e3 0%, #80817c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #e3e3e3 0%,#80817c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #e3e3e3 0%,#80817c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e3e3', endColorstr='#80817c',GradientType=1 ); /* IE6-9 */
+min-height: 479px;
+}
+
 /*# sourceMappingURL=maps/style.css.map */

@@ -1,0 +1,37 @@
+philosophy :
+  enable : true
+  titleSM : Know About
+  title : Our Knowledge
+  content : I am freelance statistician based in Bristol (UK) offering statistical consulting services online in all aspect of statistical data analysis <br> <br>I am Research Associate (Statistician) at the University of Bristol and I have previously worked for Centre for the Prevention of Stroke and Dementia, University of Oxford as a Medical Statistician. I hold masters in Medical Statistics from the University of Leicester where I also hold specialization in Genetic Epidemiology. I am also John Henry Brookes Scholar of Oxford Brookes University.
+  image : images/about/philosophy.jpg
+  btn :
+    enable : false
+    btnText : Explore More
+    btnURL : "#"
+
+ceo :
+  enable : true
+  bgImage : /images/chetan-big-white.jpg
+  title : I aim to provide reliable and accessible freelance statistical consultancy service at affordable rates
+  content : Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor didunt laboris nisi ut aliquip ex commodo consequat. duis aute irure dolor in reprehenderit voluptate velit esse cillum dolore fugiat nulla pariatur.Excepteur sint ocaecat cupidatat non proident sunt culpa qui officia deserunt mollit anim id est laborum.
+  
+
+funfacts : 
+  enable : true
+  bgImage : images/background/cta.jpg
+  counter : 
+    - title : Projects Done
+      icon : ti-server
+      count : 230
+      
+    - title : Satisfied Clients
+      icon : ti-face-smile
+      count : 789
+      
+    - title : Cup Of Coffee
+      icon : ti-thumb-up
+      count : 580
+      
+    - title : Awards Win
+      icon : ti-cup
+      count : 130

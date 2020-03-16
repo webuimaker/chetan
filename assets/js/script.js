@@ -90,8 +90,10 @@
         speed: 300,
         slidesToShow: 3,
         slidesToScroll: 1,
-        arrows: false,
-        autoplay: true,
+        arrows: true,
+        autoplay: true,        
+        prevArrow: '<button type=\'button\' class=\'prevArrow\'><i class=\'ti-arrow-left\'></i></button>',
+        nextArrow: '<button type=\'button\' class=\'nextArrow\'><i class=\'ti-arrow-right\'></i></button>',
         responsive: [{
                 breakpoint: 1024,
                 settings: {

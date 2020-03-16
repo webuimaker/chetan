@@ -49,12 +49,14 @@
                         {{ end }}
                         {{ end }}
 
-                        {{ if .Site.Params.quoteBtn.enable }}
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-primary btn-sm" href="{{ .Site.Params.quoteBtn.btnURL | absURL }}">{{ with .Site.Params.quoteBtn.btnText }} {{ . }} {{ end }}</a>
-                        </li>
-                        {{ end }}
+                        
                     </ul>
+
+                    {{ if .Site.Params.quoteBtn.enable }}
+                        
+                            <a class="nav-link btn btn-primary btn-sm2 btn-contact" href="{{ .Site.Params.quoteBtn.btnURL | absURL }}">{{ with .Site.Params.quoteBtn.btnText }} {{ . }} {{ end }}</a>
+                        
+                        {{ end }}
                  
                 </div>
             </nav>

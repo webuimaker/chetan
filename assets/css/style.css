@@ -2786,5 +2786,50 @@ min-height: 440px;
     bottom: 0px;
     display: block;
 }
+.btn-contact{
+  margin-right: -50px;
+}
+.btn-sm2{padding:10px 18px!important}
+
+
+
+.service  .prevArrow,
+.service  .nextArrow {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  top: calc(50% - 70px);
+  border: 0;
+  font-size: 20px;
+  background: transparent;
+  color: #e84444;
+  z-index: 9;
+  background: rgba(255, 255, 255, 0.8);
+  transition: .3s ease;
+}
+
+.service  .prevArrow:focus,
+.service  .nextArrow:focus {
+  outline: 0;
+}
+
+.service  .prevArrow:hover,
+.service  .nextArrow:hover {
+  background: rgba(232, 68, 68, 0.25);
+}
+
+.service  .prevArrow {
+  left: -40px;
+}
+
+.service .nextArrow {
+  right: -40px;
+}
+
+.service .slick-disabled {
+  color: #e5e5e5;
+}
 
 /*# sourceMappingURL=maps/style.css.map */

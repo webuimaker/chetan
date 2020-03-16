@@ -1,0 +1,27 @@
+
+{{ "<!-- philosophy -->" | safeHTML }}
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 order-2 order-lg-2">
+               
+               <h5 class="section-title-sm">{{ .Site.Data.helpfulServices.titleSM }} </h5> 
+               <h2 class="section-title section-title-border-half">{{ .Site.Data.helpfulServices.title }}</h2> 
+               <ul class="d-inline-block pl-0 float-sm-left mr-sm-5">
+           
+                {{  range  .Site.Data.helpfulServices.item }}
+                <li class="font-secondary mb-10 ">
+                    <i class="text-primary mr-2 ti-arrow-circle-right"></i> <strong>{{.heading | safeHTML}}</strong>
+                    <p>{{.content | safeHTML }}</p>
+                </li>
+                {{end}}
+            </ul>
+            </div>
+            {{ "<!-- philosophy image -->" | safeHTML }}
+            <div class="col-lg-5 align-self-center order-1 order-lg-1 mb-md-50">
+                <img class="img-fluid w-100" src="{{ .Site.Data.helpfulServices.image | absURL }}" alt="philosophy-image">
+            </div>
+        </div>
+    </div>
+</section>
+{{ "<!-- /philosophy -->" | safeHTML }}

@@ -1,0 +1,17 @@
+enable : enable
+titleSM : The best, 
+title : "most helpful services"
+desc: 
+image : images/client.png
+item :
+  - content : When you take our help with your statistics, we provide you with managed yet customizable solutions. You can take our statistical consulting services according to your requirements without any obligations.
+    heading :	Managed Customizable Statistical Solutions 
+    
+  - content : At ISCON Statistical Services, we understand the value of timely project delivery. We ensure that you get your project delivered before the deadline. 
+    heading : On-Time Project Delivery 
+    
+  - content : Hiring a statistician is often an expensive affair. However, we aim to provide you with affordable data analysis and statistical services that meet your budget and requirements. 
+    heading : Affordable Statistical Consulting Services
+
+  - content : The confidentiality and security of your data are of paramount importance to us. All our expert statisticians treat every project with complete confidentiality to ensure the security of your data.
+    heading : Complete Confidentiality

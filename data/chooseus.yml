@@ -1,0 +1,20 @@
+enable : enable
+titleSM : Choose us
+title : "Four reason to choose us"
+desc: ""
+image : "images/client.png"
+item :
+  - icon : "fa fa-user-graduate	"
+    content : Qualified, RSS(UK) registered <br> UK based statisticians
+    heading :   Qualified
+    
+  - icon : fa fa-chart-bar
+    content : Standardised, systematic <br> approach in data-analysis         
+    heading :  Standardised
+    
+  - icon : fa fa-life-ring
+    content : Unlimited follow-up <br> 24/7 support 
+    heading : support
+  - icon : fa fa-check-double
+    content : Emphasis on correct interpretation <br>reporting as per guidelines of high impact journals   
+    heading : Emphasis

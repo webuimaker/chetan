@@ -1,46 +1,57 @@
 {{ define "main" }}
 
-{{ partial "hero-slider.html" . }}
-
-{{ partial "about-chetan.html" . }}
-
-
-
-{{ "<!-- specialize  -->" | safeHTML }}
-<section class="section">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-12 text-center">
-                <h5 class="section-title-sm">We specialize   </h5>
-                <h2 class="section-title section-title-border">IN</h2>
-            </div>
-            {{ $specialize := first 6 ( where .Site.RegularPages "Type" "service") }}
-            {{ range sort $specialize ".Params.weight"  }}
-
-                    <div class="col-lg-4 col-sm-6 mb-5">
-                        <div class="card text-center border-0 mb-5">
-                            <div class="card-body p-0">
-                                <!-- <i class="square-icon  rounded {{ .Params.Icon }}"></i> -->
-                                <i class="square-icon  rounded ">
-                                    <img src="{{ .Params.Icon | absURL}}" class="img-fluid" alt="{{ .Title }}">
-                                </i>
-                                <a href="{{ .Permalink }}" class="card-link">
-                                <h4 class="card-title pt-3">{{ .Title }}</h4></a>
-                                <p class="card-text mx-2 my-3 mb-0">{{ .Summary }}</p>
-                                <a href="{{ .Permalink }}" class="btn btn-secondary">Read More</a>
+<section>
+    <div class="position-relative hero-section bg4">
+        {{ "<!-- slider item -->" | safeHTML }}       
+        <div class="py-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="text-uppercase mb-1 ">We are ISCON Statistics,</h4>
+                        <h1 class="font-weight-bold mb-3">UK based, specialist statistical consulting service.</h1>
+                        <p>Realise true potential of your data through comprehensive statistical analysis 
+                            from qualified and experienced, UK based statisticians
+                            </p>
+                            <ul class="d-inline-block pl-0 mb-2">                            
+                                <li class="font-secondary mb-10 ">                                   
+                                     <i class="text-primary mr-2 ti-arrow-circle-right"></i>Lorem ipsum dolor sit amet</li>
+                                
+                                <li class="font-secondary mb-10">
+                                    <i class="text-primary mr-2 ti-arrow-circle-right"></i>consectetur adipisicing elit</li>
+                                
+                                <li class="font-secondary mb-10 ">
+                                    <i class="text-primary mr-2 ti-arrow-circle-right"></i>sed eiusmod tempor incididunt laboris</li>
+                                <li class="font-secondary mb-10 ">
+                                        <i class="text-primary mr-2 ti-arrow-circle-right"></i>nisi ut aliquip ex ea commodo consequat</li>
+                                
+                            </ul>
+                            <div>
+                                <a class="btn btn-outline text-uppercase" href="#">View our work</a>
+                                <a class="btn btn-secondary" href="#">Book free consutation</a>
                             </div>
+                            
+                    </div>
+                    <div class="col-md-6">
+                        <div class="hero-img-slider post-slider">
+                            <img src="/images/about/about-1.jpg" alt="hgero">
+                            <img src="/images/about/about-2.jpg" alt="hgero">
+                            <img src="/images/about/about-3.jpg" alt="hgero">
                         </div>
                     </div>
-                {{ end }}
+                </div>
+            </div>
         </div>
     </div>
 </section>
-{{ "<!-- /specialize -->" | safeHTML }}
 
 
+{{ partial "explore.html" . }}
+{{ partial "chooseus.html" . }}
+{{ partial "service-home.html" . }}
+{{ partial "helpful-services.html" . }}
 
 {{ "<!-- work -->" | safeHTML }}
-<section class="section bg-gray">
+<section class="section bg1">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -52,19 +63,18 @@
         <div class="row work-slider">
             {{ range $index, $element:= where .Site.RegularPages "Type" "case"}}
             {{ "<!-- project item -->" | safeHTML }}
-            <div class="col-lg-3 col-md-4 col-sm-6 ">
-                <p class="h4 text-center"> {{ .Title }}</p>
+            <div class="col-lg-3 col-md-4 col-sm-6 case">
                 <div class="position-relative">
                     
                     <img class="img-fluid w-100" src="{{ .Params.Image | absURL }}" alt="project-image">
                     <div class="project-info">
-                        <!-- <a href="{{ .Permalink }}" class="h4">{{ .Title }}</a>
-                        <p><i class="ti-tag"></i>{{ .Params.Tag }}</p> -->
+                        <a href="{{ .Permalink }}" class="h4">{{ .Title }}</a>
+                        {{ $ser := lower  .Params.Tag }}
+                        <a href="service/{{replace  $ser " " "-"}}"><i class="ti-tag"></i>{{ .Params.Tag }}</a>
                     </div> 
                     
                 </div>
-                {{ $ser := lower  .Params.Tag }}
-                <p class="text-center"><a href="service/{{replace  $ser " " "-"}}"><i class="ti-tag"></i>{{ .Params.Tag }}</a></p>
+               
             </div>
             {{ end }}
         </div>
@@ -72,44 +82,14 @@
 </section>
 {{ "<!-- /work -->" | safeHTML }}
 
-{{ partial "attributes-service.html" . }}
-
-
-{{ partial  "why-choose-us.html" . }}
-
-{{ partial "promoVideo.html" . }}
-
-
-
-{{ partial "testimonial.html" . }}
-
-
+{{ partial "clientsLogoSlider.html" . }}
 {{ partial "cta.html" . }}
+{{ partial "testimonial.html" . }}
+{{ partial "mission.html" . }}
 
 
-{{ "<!-- specialize  -->" | safeHTML }}
-<section class="section">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-12 text-center mb-3">
-                <h5 class="section-title-sm">Choose your</h5>
-                <h2 class="section-title section-title-border"> Sectors</h2>
-            </div>
-            {{ range $index, $element:= where .Site.RegularPages "Type" "case" }}
-                    <div class="col-lg-3 col-sm-6 my-5">
-                        <div class="card text-center ">
-                            <div class="card-body p-0">
-                                <i class="round-icon  translateY-33  border-5 {{ .Params.Icon }}"></i>
-                                <a href="{{ .Permalink }}" class="card-link"><h4 class="card-title pt-3 bold"><strong>{{ .Title }}</strong></h4></a>
-                                <p class="card-text mx-2 my-3 mb-0">{{ .Summary }}</p>
-                                <!-- <a href="{{ .Permalink }}" class="btn btn-secondary">Read More</a> -->
-                            </div>
-                        </div>
-                    </div>
-                {{ end }}
-        </div>
-    </div>
-</section>
-{{ "<!-- /specialize -->" | safeHTML }}
+
+
+
 
 {{ end }}

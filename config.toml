@@ -97,20 +97,20 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
       pre = "Menu Sub Text Here"
     
     [[Languages.en.menu.nav]]
-    name = "our work  "
-    URL = "/our-work  "
+    name = "Case Studies"
+    URL = "/case-studies"
     weight = 4
     
     [[Languages.en.menu.nav]]
-    name = "Tutorials "
-    URL = "/tutorials "
+    name = "Learn Statistics"
+    URL = "/learn-statistics"
     weight = 6
 
 
       # Quote Button
       [Languages.en.params.quoteBtn]
       enable = true
-      btnText = "Lets Talk"
+      btnText = "Send us message"
       btnURL = "#"
 
       # about

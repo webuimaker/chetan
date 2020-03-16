@@ -10,8 +10,9 @@ body {
 
 p, .paragraph {
   font-weight: 400;
-  color: #171616;
-  line-height: 25px;
+  color: #000000;
+  line-height: 28px;
+  letter-spacing: 0.010em;
   /* font-family: "Open Sans", sans-serif; */
   font-family: "Nunito Sans",Roboto,sans-serif ;
 }

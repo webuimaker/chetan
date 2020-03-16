@@ -1,5 +1,5 @@
 /* 1.1 typography */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito+Sans:wght@400;600;700&display=swap');
+<link href= "https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 body {
   /* font-family: "Poppins", sans-serif; */
   font-weight: 400;

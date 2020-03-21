@@ -824,6 +824,7 @@ header{
 
 .navigation .navbar-brand img {
   position: relative;
+  max-width: 50%;
   /* top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); */

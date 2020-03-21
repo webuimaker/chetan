@@ -12,6 +12,11 @@
                             <h5 class="section-title-sm">{{ .Site.Data.hero.titleSM }} </h5> 
                         {{end }}
                         {{ .Site.Data.hero.desc | safeHTML }}
+                        {{range .Site.Data.hero.btn}}
+                            <a class="btn  btn-sm2 text-uppercase {{.btnKlass}}" href="{{.btnURL}}">{{.btnText}}</a>
+                        {{end}}
+                               
+                        
                     </div>
                     <div class="col-md-6">
                         <div class="hero-img-slider post-slider">
@@ -69,10 +74,5 @@
 {{ partial "testimonial.html" . }}
 {{ partial "mission.html" . }}
 {{ partial "cta.html" . }}
-
-
-
-
-
 
 {{ end }}

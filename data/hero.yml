@@ -10,6 +10,14 @@ desc: "<p class='font-weight-bold mt-3'>We help researchers, businesses, organis
                             through sophisticated statistical analysis
                             
                             </p>"
+
+btn :
+  - btnText : View our work
+    btnURL : "#"
+    btnKlass : "btn-outline"
+  - btnText : Book free consutation
+    btnURL : "#"
+    btnKlass : "btn-secondary"
 images :
   - "/images/hero-images/1.png"
   - "/images/hero-images/2.png"

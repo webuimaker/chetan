@@ -6,7 +6,7 @@
         <div class="py-50">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 mb-5 align-self-end">
+                    <div class="col-md-7 mb-5 align-self-end">
                         <h4 class="text-uppercase mb-1 mt-5">{{ .Site.Data.hero.title }}</h4>
                         {{ if  .Site.Data.hero.titleSM  }}
                             <h5 class="section-title-sm">{{ .Site.Data.hero.titleSM }} </h5> 
@@ -18,10 +18,10 @@
                                
                         
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                         <div class="hero-img-slider post-slider">
                             {{range .Site.Data.hero.images }}
-                                <img src="{{.}}" alt="Hero Image"> 
+                                <img src="{{.}}" alt="Hero Image" class="img-fluid"> 
                             {{end}}
 
                         </div>

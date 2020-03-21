@@ -537,6 +537,12 @@ button {
 }
 
 
+.round-icon.w-150{
+  
+  max-width: 150px;
+}
+
+
 /* 18. squre icon */
 .square-icon {
   height: 65px;
@@ -749,7 +755,7 @@ code{
 
 /* 2. Navigation */
 header{
-  border-bottom: 1px solid #b9b9b9;
+  /* border-bottom: 1px solid #b9b9b9; */
 }
 .top-header {
   background: #303032;
@@ -829,7 +835,7 @@ header{
 
 .navigation .navbar-brand img {
   position: relative;
-  max-width: 50%;
+  max-width: 70%;
   /* top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); */

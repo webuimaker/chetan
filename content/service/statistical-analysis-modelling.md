@@ -5,7 +5,7 @@ weight: 3
 description : "This is meta description"
 image: images/service/service-5.jpg
 bgImage: images/background/page-title.jpg
-icon: images/service/statistical-modelling.png
+icon: /images/services/statistical_analysis.svg
 brochureURL: '#'
 regularDay: Sun-Tues
 regularTime: 08.00am - 06.00pm

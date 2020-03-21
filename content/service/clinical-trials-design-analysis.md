@@ -5,7 +5,7 @@ weight: 4
 description : "This is meta description"
 image: images/service/service-6.jpg
 bgImage: images/background/page-title.jpg
-icon: images/service/research_design.png
+icon: /images/services/clinical_trials.svg
 brochureURL: '#'
 regularDay: Sun-Tues
 regularTime: 08.00am - 06.00pm

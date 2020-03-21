@@ -14,14 +14,14 @@
             </div>
         </div>
         <div class="row service">
-            {{ $specialize := first 6 ( where .Site.RegularPages "Type" "service") }}
+            {{ $specialize :=  where .Site.RegularPages "Type" "service" }}
             {{ range sort $specialize ".Params.weight"  }}
 
                     <div class="col-lg-4 col-md-4 col-sm-6 mb-5 d-flex">
                         <div class="card text-center  mb-5 flex-fill">
                             <div class="card-body p-0">
                                 <!-- <i class="square-icon  rounded {{ .Params.Icon }}"></i> -->
-                                <i class="square-icon  rounded mt-4">
+                                <i class="square-icon  rounded mt-4 bg3">
                                     <img src="{{ .Params.Icon | absURL}}" class="img-fluid" alt="{{ .Title }}">
                                 </i>
                                 <a href="{{ .Permalink }}" class="card-link">

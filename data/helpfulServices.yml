@@ -2,7 +2,7 @@ enable : enable
 titleSM :  
 title : "How ISCON is different"
 desc: 
-image : images/client.png
+image : /images/core_values.png
 item :
   - content : We provide you high-quality and responsive services for your scientific research.
     heading :	High-quality and Responsive

@@ -5,7 +5,7 @@ weight: 2
 description : "This is meta description"
 image: images/service/service-3.jpg
 bgImage: images/background/page-title.jpg
-icon: images/service/data-visualisation.png
+icon: /images/services/data_visualisation.svg
 brochureURL: '#'
 regularDay: Sun-Tues
 regularTime: 08.00am - 06.00pm

@@ -5,7 +5,7 @@ weight: 8
 description : "This is meta description"
 image: images/service/service-6.jpg
 bgImage: images/background/page-title.jpg
-icon: ti-thought
+icon: /images/services/survey_design.svg
 brochureURL: '#'
 regularDay: Sun-Tues
 regularTime: 08.00am - 06.00pm

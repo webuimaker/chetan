@@ -1,11 +1,11 @@
 ---
-title: "Research Planning & Advice"
+title: "Research Planning & Advice "
 date: 2018-09-25T15:51:35+06:00
 weight: 10
 description : "This is meta description"
 image: images/service/service-1.jpg
 bgImage: images/background/page-title.jpg
-icon: images/services/research_design.png
+icon: /images/services/research_planning.svg
 brochureURL: '#'
 regularDay: Sun-Tues
 regularTime: 08.00am - 06.00pm

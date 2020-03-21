@@ -5,7 +5,7 @@ weight: 6
 description : "This is meta description"
 image: images/service/service-6.jpg
 bgImage: images/background/page-title.jpg
-icon: images/service/training.png
+icon: /images/services/training.svg
 brochureURL: '#'
 regularDay: Sun-Tues
 regularTime: 08.00am - 06.00pm

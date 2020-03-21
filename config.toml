@@ -206,8 +206,9 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
 
       # footer
       [Languages.en.params.footer]
-      logo = "images/logo-white.png"
-      content = "Lorem ipsum dolor amet consectetur adipisicing elit sed eiusm tempor incididunt labore dolore magna aliqua enim."
+      logo = "/images/logo=n.png"
+      content = "Address: 62 Maple close, Bristol, BS34 6HH"
+      email = "help@isocon-statistics.com"
 
       # service links
       services = "Services"

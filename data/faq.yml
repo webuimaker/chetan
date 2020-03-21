@@ -1,0 +1,54 @@
+enable : true
+titleSM : Our Goal
+title : Frequently asked questions
+description : Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor didunt laboris nisi ut aliquip ex ea commodo consequat.
+image : images/chart.png
+accordion :
+  - ID : ISCONstatistics  
+    title : What services does ISCON statistics offer?
+    description : ISCON Statistics provide a wide range of statistical consulting and analysis services which include but not limited to the selection of research design, data analysis and results interpretation. We can also assist you in designing, conducting and analyzing survey research. Our expert assistance is available for an extensive range of areas including grant proposal development, clinical trial design, scientific research design, strategies for data collection, determination of sample size and power, statistical modeling, results interpretation, preparation of manuscripts, data entry and management to some extent. We are specialists in epidemiology studies, clinical trials, statistical genetics, nonparametric methodology, genetic epidemiology, regression and time series analysis, Bayesian methods and graphical methodologies. Moreover, we offer support to non-profit organizations for NSF, private foundation and NIH grants.
+    
+  - ID : appointment
+    title : How can I book appointment with ISCON Statistics?
+    description : You can contact us via email or phone call to book your appointment for consultation. 
+    
+  - ID : consultationmeeting
+    title : What information should I bring along at an initial consultation meeting?
+    description : When you visit us for the initial meeting, it is recommended that you bring along all the information related to your research and can help us in better understanding the goals and purpose of your research study. This information can include research hypotheses, relevant literature review papers, proposal drafts or manuscripts and anything you think is important for us to know about. If you have done data collection already, we request you to give us your data set copy in electronic form along with all the relevant study information. 
+  - ID : much
+    title : How much statistics should I know?
+    description : It is expected that you at least have basic knowledge of statistical concepts and methodologies. However, our expert consultant helps you to explore the available options. 
+  - ID : costServices
+    title : How much is the cost of your services?
+    description : The cost of our service depends on a variety of factors which include your data format, complexity, data cleanliness, project deliverables and required analysis. We work with you to understand your requirements and breakdown the cost to meet your individual needs.
+  - ID : consultationSession
+    title : What happens at the initial consultation session?
+    description : In the initial consultation session, the consultant introduces him/herself and asks you a few general questions about your research, data, objectives and requirements. Through this, we try to understand your needs and work with you to answer your concerns. 
+  - ID : initialConsultation
+    title : What is the cost of the initial consultation?
+    description : At ISCON Statistics, we provide a free initial consultation at our office or through video-calling. However, if you request us to come over to you, then you have to cover our trip expenses.
+  - ID : contactStatisticians
+    title : At what research stage should I contact statisticians?
+    description : The best time to contact statistician is before designing your research study. We can help you in designing your research study and determine the most effective and powerful statistical methodologies. However, you can contact us at any stage of your research.
+
+    
+  - ID : statisticalSoftware
+    title : Which statistical software does ISCON Statistics use?
+    description : Our experts have hands-on experience of using a variety of latest statistical software and tools, including R, WinBUGS, SPSS, SAS, and Stata.
+    
+  - ID : coursesTutoring
+    title : Do you offer statistical courses tutoring?
+    description : Yes
+
+  - ID : dataPrivacy
+    title : What is your approach towards data privacy, security and confidentiality?
+    description : At ISCON Statistics, we follow strict data security measures and respect your privacy and confidentiality. We never share your information and data with anyone without your permission. 
+
+
+  - ID : provide
+    title : What format should I use to provide you data?
+    description : You can send us data in any format. However, CSV files, Excel files or SQL-based data files are recommended. 
+
+  - ID : available
+    title : Are your services available for students?
+    description : Yes, we happily provide statistical support to the postgraduate students who do not have statistical expertise. We either provide them statistical advice or guidance to help them perform their statistical analysis or perform the statistical analysis of their research.

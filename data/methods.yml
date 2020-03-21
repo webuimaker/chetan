@@ -1,0 +1,82 @@
+enable : enable
+titleSM :  ""
+title : "Statistical approaches and methodologies"
+desc: "Our statisticians have expertise in wide array of statistical approaches and methodologies. <br>This enables to help you with extensive range of problem inferences and statistical modelling"
+
+sliderItem:
+  - subHeading : 
+    heading : Sample size estimation
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  incididunt ut labore et dolore magna aliqua.
+    rightImage : images/methods/sample_size_calculation.jpg
+    dataText : Estimation
+  - subHeading :
+    heading : Power calculation
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    bgImage : 
+    rightImage : images/methods/power_calculation.png
+    dataText : Calculation
+  - subHeading : 
+    heading : Linear model
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    rightImage : images/methods/linear_model.png
+    dataText : Linear
+  - subHeading : 
+    heading : Quantile regression
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    rightImage : images/methods/quantile_regression.jpg
+    dataText : Quantile
+  - subHeading : 
+    heading : Logistic regression
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    rightImage : images/methods/logistic_regession.png
+    dataText : Logistic    
+  - subHeading : 
+    heading : Poisson regression
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    rightImage : images/methods/Poisson_regression.png
+    dataText : Poisson  
+  - subHeading : 
+    heading : Gamma regression
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    rightImage : images/methods/gamma_regression.png
+    dataText : Gamma 
+  - subHeading : 
+    heading : Linear Mixed model
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    rightImage : images/methods/linear_mixed_model.jpg
+    dataText : Mixed Model
+  - subHeading : 
+    heading : Generalised Least square model
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    rightImage : images/methods/generalised_least_square.jpg
+    dataText : Generalised
+  - subHeading : 
+    heading : Cox proportional hazard model
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    rightImage : images/methods/cox_hazard_model.png
+    dataText : Cox
+  - subHeading : 
+    heading : Parametric survival model
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    rightImage : images/methods/cox_hazard_model.png
+    dataText : Parametric
+  - subHeading : 
+    heading : ARIMA time series model
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    rightImage : images/methods/arima_model.jpg
+    dataText : ARIMA
+  - subHeading : 
+    heading : Cluster analysis
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    rightImage : images/methods/cluster_analysis.jpg
+    dataText : Cluster
+  - subHeading : 
+    heading : Factor analysis
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    rightImage : images/methods/factor_analysis.jpg
+    dataText : Factor
+  - subHeading : 
+    heading : Principal component analysis
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    rightImage : images/methods/principal_component_analysis.jpg
+    dataText : Principal

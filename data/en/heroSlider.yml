@@ -11,3 +11,102 @@ sliderItem:
       enable : true
       btnText:  Book your first consultation
       btnURL : '#'
+  - subHeading : See our
+    heading : Latest Projects
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    bgImage : images/banner/bg-white.jpg
+    rightImage : images/banner/rstudio-desktop-screen.png
+    dataIcon : ti-comments
+    dataText : Consultation
+    btn : 
+      enable : true
+      btnText:  Book your first consultation
+      btnURL : '#'
+  - subHeading : See our
+    heading : Latest Projects
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    bgImage : images/banner/bg-white.jpg
+    rightImage : images/banner/rstudio-desktop-screen.png
+    dataIcon : ti-comments
+    dataText : Consultation
+    btn : 
+      enable : true
+      btnText:  Book your first consultation
+      btnURL : '#'
+  - subHeading : See our
+    heading : Latest Projects
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    bgImage : images/banner/bg-white.jpg
+    rightImage : images/banner/rstudio-desktop-screen.png
+    dataIcon : ti-comments
+    dataText : Consultation
+    btn : 
+      enable : true
+      btnText:  Book your first consultation
+      btnURL : '#'
+  - subHeading : See our
+    heading : Latest Projects
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    bgImage : images/banner/bg-white.jpg
+    rightImage : images/banner/rstudio-desktop-screen.png
+    dataIcon : ti-comments
+    dataText : Consultation
+    btn : 
+      enable : true
+      btnText:  Book your first consultation
+      btnURL : '#'
+  - subHeading : See our
+    heading : Latest Projects
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    bgImage : images/banner/bg-white.jpg
+    rightImage : images/banner/rstudio-desktop-screen.png
+    dataIcon : ti-comments
+    dataText : Consultation
+    btn : 
+      enable : true
+      btnText:  Book your first consultation
+      btnURL : '#'
+  - subHeading : See our
+    heading : Latest Projects
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    bgImage : images/banner/bg-white.jpg
+    rightImage : images/banner/rstudio-desktop-screen.png
+    dataIcon : ti-comments
+    dataText : Consultation
+    btn : 
+      enable : true
+      btnText:  Book your first consultation
+      btnURL : '#'
+  - subHeading : See our
+    heading : Latest Projects
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    bgImage : images/banner/bg-white.jpg
+    rightImage : images/banner/rstudio-desktop-screen.png
+    dataIcon : ti-comments
+    dataText : Consultation
+    btn : 
+      enable : true
+      btnText:  Book your first consultation
+      btnURL : '#'
+  - subHeading : See our
+    heading : Latest Projects
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    bgImage : images/banner/bg-white.jpg
+    rightImage : images/banner/rstudio-desktop-screen.png
+    dataIcon : ti-comments
+    dataText : Consultation
+    btn : 
+      enable : true
+      btnText:  Book your first consultation
+      btnURL : '#'
+  - subHeading : See our
+    heading : Latest Projects
+    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
+    bgImage : images/banner/bg-white.jpg
+    rightImage : images/banner/rstudio-desktop-screen.png
+    dataIcon : ti-comments
+    dataText : Consultation
+    btn : 
+      enable : true
+      btnText:  Book your first consultation
+      btnURL : '#'

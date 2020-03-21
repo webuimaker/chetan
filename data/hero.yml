@@ -1,0 +1,16 @@
+enable : enable
+titleSM : 
+title : "We are ISCON Statistics"
+desc: "<p class='font-weight-bold mt-3'>We help researchers, businesses, organisations to harness  
+                            true value of their data by solving their critical research and business 
+                            problems through comprehensive statistical modelling and visualisation
+                            </p>
+                        <p class='mt-3'>Learn how we have helped clients from diverse sectors 
+                            to gain deeper insight and drawing precise conclusions from their data
+                            through sophisticated statistical analysis
+                            
+                            </p>"
+images :
+  - "/images/hero-images/1.png"
+  - "/images/hero-images/2.png"
+  - "/images/hero-images/3.png"

@@ -154,13 +154,16 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
       [Languages.en.params.cta]
       enable = true
       bgImage = "images/background/cta.jpg"
-      title = "See our <br>latest projects"
-      btnText = "Book your first consultation"
+      title = "Are You Ready to Unlock the Hidden Potential and Value of Your Data?"
+      titleSM = "<em>Connect with ISCON and see what we can do for you.</em>"
+      btnText = "Let’s get in touch"
       btnURL = "#"
 
       # clients Logo Slider
       [Languages.en.params.logoSlider]
       enable = true
+      title = "Learn how we have helped our clients to drive accurate and meaningful data insights"
+      titleSM = "Hear from real ISCON clients"
         [[Languages.en.params.logoSlider.sliderItem]]
         image = "images/client-logo/client-logo-1.png"
         URL = "#"

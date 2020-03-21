@@ -24,9 +24,9 @@
         nextArrow: '<button type=\'button\' class=\'nextArrow\'><i class=\'ti-arrow-right\'></i></button>',
         dots: true,
         customPaging: function (slider, i) {
-            var icon = $(slider.$slides[i]).data('icon');
+            //var icon = $(slider.$slides[i]).data('icon');
             var text = $(slider.$slides[i]).data('text');
-            return '<a><i class="' + icon + '"></i><span>' + text + '</span></a>';
+            return '<a><span>' + text + '</span></a>';
         },
         responsive: [{
             breakpoint: 576,
@@ -37,6 +37,31 @@
     });
     $('.hero-slider').slickAnimation();
 
+
+
+    
+    // $('.hero-slider').slick({
+    //     autoplay: true,
+    //     infinite: true,
+    //     autoplaySpeed: 10000,
+    //     arrows: true,
+    //     prevArrow: '<button type=\'button\' class=\'prevArrow\'><i class=\'ti-arrow-left\'></i></button>',
+    //     nextArrow: '<button type=\'button\' class=\'nextArrow\'><i class=\'ti-arrow-right\'></i></button>',
+    //     dots: true,
+    //     customPaging: function (slider, i) {
+    //         var icon = $(slider.$slides[i]).data('icon');
+    //         var text = $(slider.$slides[i]).data('text');
+    //         return '<a><i class="' + icon + '"></i><span>' + text + '</span></a>';
+    //     },
+    //     responsive: [{
+    //         breakpoint: 576,
+    //         settings: {
+    //             arrows: false
+    //         }
+    //     }]
+    // });
+    // $('.hero-slider').slickAnimation();
+
     // hero slider without pagination
     $('.hero-slider-2').slick({
         autoplay: true,
@@ -45,6 +70,9 @@
         dots: false
     });
     $('.hero-slider-2').slickAnimation();
+
+
+
 
     // slick slider
     $('.work-slider').slick({

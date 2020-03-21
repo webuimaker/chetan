@@ -1,0 +1,8 @@
+enable : enable
+titleSM : Our Works
+title : "Case Studies "
+desc: "At ISCON Statistics, we have served clients in diverse areas to achieve their research goals. Explore our case studies to know more!"
+images :
+  - "/images/hero-images/1.png"
+  - "/images/hero-images/2.png"
+  - "/images/hero-images/3.png"

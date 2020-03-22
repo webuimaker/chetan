@@ -221,7 +221,7 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
       subscribeContent = "Lorem ipsum dolor sit amet, consect etur adipisicing. elit sed do eiusmod."
 
       # copyright
-      copyright = "Bizpro</span> &copy; 2017 All Right Reserved"
+      copyright = "ISCON-Statistical</span> Services © 2020 All Right Reserved"
 
         # social icon
         [[Languages.en.params.footer.socialIcon]]
@@ -284,20 +284,17 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
 
         # bottom links
         [[Languages.en.params.footer.links]]
-          name = "Legal"
-          URL = "#"
-            
-        [[Languages.en.params.footer.links]]
           name = "Sitemap"
           URL = "#"
             
         [[Languages.en.params.footer.links]]
-          name = "Privacy Policy"
+          name = "Terms of Use"
           URL = "#"
             
         [[Languages.en.params.footer.links]]
-          name = "Terms & Conditions"
+          name = "Privacy & Cookies Policy"
           URL = "#"
+            
 
       # share blog post
       [[Languages.en.params.sharePost]]

@@ -12,12 +12,12 @@
         <div class="hero-slider  methods position-relative">
         {{ "<!-- work slider -->" | safeHTML }}
         {{ range.Site.Data.methods.sliderItem }}
-        <div class="hero-slider-item py-160" data-icon="{{ .dataIcon }}"
+        <div class="hero-slider-item py-160 " data-icon="{{ .dataIcon }}"
             data-text="{{ .dataText }}">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="hero-content mt-4">
+                        <div class="hero-content mt-0">
                             {{ if .subHeading }}<h5 class="text-uppercase mb-1" data-duration-in=".5" data-animation-in="fadeInLeft"
                                 data-delay-in=".1">{{ .subHeading | safeHTML}}</h5> {{ end }}
 

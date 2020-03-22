@@ -7,7 +7,7 @@ sliderItem:
 
   - subHeading : 
     heading : Sample Size and Power Calculation
-    description : Sample size determination is the act of choosing the number of observations or replicates to include in a statistical sample. The sample size is an important feature of any empirical study in which the goal is to make inferences about a population from a sample. In practice, the sample size used in a study is usually determined based on the cost, time, or convenience of collecting the data, and the need for it to offer sufficient statistical power. In complicated studies there may be several different sample sizes: for example, in a stratified survey there would be different sizes for each stratum. In a census, data is sought for an entire population, hence the intended sample size is equal to the population. In experimental design, where a study may be divided into different treatment groups, there may be different sample sizes for each group.
+    description : "Sample size determination is the act of choosing the number of observations or replicates to include in a statistical sample. The sample size is an important feature of any empirical study in which the goal is to make inferences about a population from a sample. In practice, the sample size used in a study is usually determined based on the cost, time, or convenience of collecting the data, and the need for it to offer sufficient statistical power. In complicated studies there may be several different sample sizes: for example, in a stratified survey there would be different sizes for each stratum. In a census, data is sought for an entire population, hence the intended sample size is equal to the population. In experimental design, where a study may be divided into different treatment groups, there may be different sample sizes for each group."
     rightImage : images/methods/quantile_regression_non_linear.svg
     dataText : Sample size and power
     
@@ -28,9 +28,8 @@ sliderItem:
     heading : Quantile Regression
     description : Standard linear regression techniques summarize the average relationship between a set of regressors and the outcome variable based on the conditional mean function E(y|x). This provides only a partial view of the relationship, as we might be interested in describing the relationship at different points in the conditional distribution of y. Quantile regression provides that capability
     rightImage : images/methods/quantile_regression_non_linear.svg
-    dataText : Quantile regression
-    
- - subHeading : 
+    dataText : Quantile regression 
+  - subHeading : 
     heading : Polynomial Regression
     description : If your data points clearly will not fit a linear regression (a straight line through all data points), it might be ideal for polynomial regression.Polynomial regression, like linear regression, uses the relationship between the variables x and y to find the best way to draw a line through the data points.
     rightImage : images/methods/quantile_regression_non_linear.svg
@@ -58,21 +57,20 @@ sliderItem:
     heading : Generalised Least Square Model
     description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
     rightImage : images/methods/linear_mixed_multilevel_model.svg
-    dataText : Generalised least square model
-    
- - subHeading : 
+    dataText : "Generalised least square model"   
+  - subHeading : 
     heading : Generalised Linear Model (GLM)
     description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
     rightImage : images/methods/linear_mixed_multilevel_model.svg
     dataText : Generalised linear Model
       
-- subHeading : 
+  - subHeading : 
     heading : Evidence Synthesis - Meta analysis
     description : Lore ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
     rightImage : images/methods/linear_mixed_multilevel_model.svg
     dataText : Evidence synthesis
     
-- subHeading : 
+  - subHeading : 
     heading : Missing Data Imputation
     description : Lore ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
     rightImage : images/methods/linear_mixed_multilevel_model.svg
@@ -116,13 +114,13 @@ sliderItem:
     dataText : Principal component analysis
     
 
- - subHeading : 
+  - subHeading : 
     heading : Vector Auto-regression (VAR)
     description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
     rightImage : images/methods/linear_mixed_multilevel_model.svg
     dataText : Vector auto-regression
        
-- subHeading : 
+  - subHeading : 
     heading : Quality Control
     description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
     rightImage : images/methods/linear_mixed_multilevel_model.svg

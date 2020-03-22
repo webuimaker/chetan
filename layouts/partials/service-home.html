@@ -23,16 +23,16 @@
 
                     <div class="col-lg-4 col-md-4 col-sm-6 mb-1 d-flex">
                         <div class="card text-center  mb-5 flex-fill">
-                            <div class="card-body p-0">
+                            <div class="card-body">
                                 <!-- <i class="square-icon  rounded {{ .Params.Icon }}"></i> -->
-                                <i class="square-icon  rounded mt-4 bg3">
+                                <i class="square-icon  rounded  btn-primary">
                                     <img src="{{ .Params.Icon | absURL}}" class="img-fluid" alt="{{ .Title }}">
                                 </i>
                                 <a href="{{ .Permalink }}" class="card-link">
                                 <h4 class="card-title pt-3">{{ .Title }}</h4>
                                 </a>
                                 <p class="card-text mx-2 my-3 mb-0">{{ .Summary }}</p>
-                                <a href="{{ .Permalink }}" class="btn btn-secondary translateY-25">Read More</a>
+                                <a href="{{ .Permalink }}" class="btn btn-secondary btn-sm2">Read More</a>
                             </div>
                         </div>
                     </div>

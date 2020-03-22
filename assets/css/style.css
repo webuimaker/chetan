@@ -1727,6 +1727,13 @@ img.arrow-bottom {
   position: relative;
 }
 
+.service .card {border-radius: .50rem;}
+.square-icon.btn-primary{
+  width: 80px;
+  height: 80px;
+  border: 0px;
+}
+
 .service-menu li.active a {
   background: #303032;
   color: #fff !important;

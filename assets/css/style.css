@@ -1317,6 +1317,10 @@ header{
   border-radius: 35px;
 }
 
+#accordion .card-header {
+  border: 1px solid #000 !important;
+}
+
 /* 7. promo video section start */
 .promo-video {
   background-position: center center;

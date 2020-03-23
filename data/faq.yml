@@ -1,7 +1,7 @@
 enable : true
 titleSM : Our Goal
 title : Frequently asked questions
-description : Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor didunt laboris nisi ut aliquip ex ea commodo consequat.
+description : 
 image : images/chart.png
 accordion :
   - ID : ISCONstatistics  

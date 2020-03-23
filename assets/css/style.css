@@ -1761,6 +1761,13 @@ img.arrow-bottom {
           transform: translateY(-50%) rotate(-45deg);
 }
 
+.service-detail h1{
+  font-size: 2.5rem;
+}
+.service-detail .post-content h4{
+  margin-bottom: 10px;
+}
+
 @media (max-width: 991px) {
   .service-menu li.active::before {
     display: none;

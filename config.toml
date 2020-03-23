@@ -211,7 +211,7 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
       # footer
       [Languages.en.params.footer]
       logo = "/images/logo-footer.png"
-      content = "Address: 62 Maple close, Bristol, BS34 6HH"
+      content = "62 Maple close, Bristol, BS34 6HH"
       email = "help@isocon-statistics.com"
 
       # service links
@@ -225,7 +225,7 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
       subscribeContent = "Lorem ipsum dolor sit amet, consect etur adipisicing. elit sed do eiusmod."
 
       # copyright
-      copyright = "ISCON-Statistical</span> Services © 2020 All Right Reserved"
+      copyright = "ISCON Statistical Services ©2020 All Right Reserved"
 
         # social icon
         [[Languages.en.params.footer.socialIcon]]

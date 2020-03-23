@@ -1,7 +1,7 @@
 ---
 title: "Survey Design & Analysis"
 date: 2018-09-29T11:51:17+06:00
-weight: 8
+weight: 5
 description : "This is meta description"
 image: images/service/service-6.jpg
 bgImage: images/background/page-title.jpg

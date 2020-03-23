@@ -1,7 +1,7 @@
 ---
 title: "Dissertation statistical consulting"
 date: 2018-09-29T11:51:17+06:00
-weight: 5
+weight: 4
 description : "This is meta description"
 image: images/service/service-2.jpg
 bgImage: images/background/page-title.jpg

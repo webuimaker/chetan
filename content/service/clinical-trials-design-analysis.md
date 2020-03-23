@@ -1,7 +1,7 @@
 ---
 title: "Clinical Trials Design & Analysis"
 date: 2018-09-29T11:51:17+06:00
-weight: 4
+weight: 6
 description : "This is meta description"
 image: images/service/service-6.jpg
 bgImage: images/background/page-title.jpg

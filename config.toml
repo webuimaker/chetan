@@ -53,7 +53,7 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
       [[Languages.en.menu.nav]]
       parent = "Service"
       name = "Research Planning & Advice"
-      URL = "/service/research-planning-advice"
+      URL = "/service/research-planning-advice/"
       pre = "Menu Sub Text Here"
       weight = "21"
       [[Languages.en.menu.nav]]

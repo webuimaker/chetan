@@ -713,6 +713,9 @@ button {
   padding-bottom: 200px;
 }
 
+.pt-100{padding-top: 100px;}
+.pt-160{padding-top: 160px;}
+
 @media (max-width: 1199px) {
   .pb-xl-200-lg-100 {
     padding-bottom: 100px;
@@ -1062,7 +1065,7 @@ header{
 
 /* 3. hero area */
 .hero-slider.slick-slider {
-  margin-bottom: 80px;
+  margin-bottom: 0px;
 }
 
 .hero-slider [data-animation-in] {
@@ -1125,8 +1128,9 @@ header{
 }
 
 .hero-slider .slick-dots {
-  bottom: -81px;
+  bottom: 0px;
   padding-left: 0;
+  top:0px;
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -1247,7 +1251,7 @@ header{
 }
 
 .hero-slider .slick-dots li.slick-active {
-  background: #303032;
+  background: #ee7171;
 }
 
 .hero-slider .slick-dots li.slick-active a {

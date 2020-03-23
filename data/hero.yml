@@ -19,6 +19,7 @@ btn :
     btnURL : "#"
     btnKlass : "btn-secondary"
 images :
-  - "/images/hero-images/1.png"
-  - "/images/hero-images/2.png"
-  - "/images/hero-images/3.png"
+  - "/images/methods/linear_mixed_multilevel_model.svg"
+  - "/images/methods/quantile_regression_non_linear.svg"
+  - "/images/methods/kaplan_Meier_estimator_survival_analysis.svg"
+  - "/images/methods/general_linear_model_ordinary_least_square.svg"

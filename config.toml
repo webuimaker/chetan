@@ -1,7 +1,10 @@
 baseURL = "/"
+
 theme = "biztrox-hugo"
 summaryLength = "10"
 DefaultContentLanguage = "en"
+enableRobotsTXT = true
+enableGitInfo = true
 disableLanguages = [""] # desable language from here
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
@@ -10,7 +13,7 @@ logo = "images/logo.png"
 mail = "chetan.prajapati@live.com"
 mobile = "+44 7392 339 862"
 # Meta data
-description = "ISCON Statistical Services"
+description = "Experienced and professional statistician offers reliable statistical consulting services online to researchers, businesses and PhD students. Hire RSS(UK) accredited freelance statistician for in-depth data analysis and statistical modelling in R, SPSS, STATA. Ask for statistics help in dissertation, medical statistics"
 author = "ISCON Statistical Services"
 # google map
 gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
@@ -33,7 +36,7 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
   languageName = "En"
   languageCode = "en-us"
   weight = 1
-  title = "ISCON Statistical Services"
+  title = "Hire Accredited Statistician Online | Freelance Statistical Consulting"
   home = "Home"
 
   # navigation

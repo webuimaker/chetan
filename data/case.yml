@@ -1,8 +1,56 @@
 enable : enable
 titleSM : Our Works
 title : "Case Studies "
-desc: "At ISCON Statistics, we have served clients in diverse areas to achieve their research goals. Explore our case studies to know more!"
+content : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua.
 images :
   - "/images/hero-images/1.png"
   - "/images/hero-images/2.png"
   - "/images/hero-images/3.png"
+filterList : 
+  - filterTitle : Research Planning & Advice
+    dataFilter : Research-Planning-Advice
+    caseType : service
+
+  - filterTitle : Data Visualisation
+    dataFilter : data-visualisation
+    caseType : service
+
+  - filterTitle : Statistical Analysis & Modelling
+    dataFilter : statistical-analysis-modelling
+    caseType : service
+
+  - filterTitle : Dissertation statistical consulting
+    dataFilter : dissertation-statistical-consulting
+    caseType : service
+
+  - filterTitle : Survey Design & Analysis
+    dataFilter : survey-design-analysis
+    caseType : service
+
+  - filterTitle :  Clinical-trials Design & Analysis
+    dataFilter : clinical-trials-design-analysis
+    caseType : service
+
+  - filterTitle :  Epidemiology & Genetics
+    dataFilter : epidemiology-genetics
+    caseType : service    
+
+  - filterTitle :  Statistics Training
+    dataFilter : statistics-training
+    caseType : service 
+
+  - filterTitle :  Health and Medical
+    dataFilter : health-medical
+    caseType : sector 
+
+  - filterTitle :  Buissness and public sector
+    dataFilter : buissness-public-sector
+    caseType : sector
+
+  - filterTitle :  Finanace and economics
+    dataFilter : finanace-economics
+    caseType : sector
+
+  - filterTitle :  Agriculture
+    dataFilter : agriculture
+    caseType : sector

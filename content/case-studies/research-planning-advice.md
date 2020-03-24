@@ -1,17 +1,17 @@
 ---
-title: "Buissness and public sector"
+title: "Research Planning & Advice"
 date: 2018-09-24T14:48:03+06:00
 description : "This is meta description"
 bgImage: images/background/page-title.jpg
-tag : Predictive Analytics
-image : images/project/project-5.jpg
+tag : Statistics Training
+image : images/project/project-4.jpg
 client : Baximco Ltd.
 category : Market Strategy
 expertise : Mobile App
 liveDemoURL : '#'
 caseStudy : '#'
 type : case
-filterCategories: buissness-public
+filterCategories: Research-Planning-Advice
 ---
 
 ### Marketing Oriented To The Targated Customers

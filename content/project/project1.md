@@ -8,8 +8,8 @@ image : images/project/project-8.jpg
 client : Baximco Ltd.
 category : Market Strategy
 expertise : Mobile App
-liveDemoURL : '#'
-caseStudy : '#'
+liveDemoURL : 'livedemourl.com'
+caseStudy : 'vivekurl.com'
 type : project
 filterCategories: Marketing-Online
 ---

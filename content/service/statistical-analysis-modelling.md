@@ -3,7 +3,7 @@ title: "Statistical Analysis & Modelling"
 date: 2018-09-29T11:54:02+06:00
 weight: 3
 description : "This is meta description"
-image: images/service/service-5.jpg
+image: images/service/statistical_analysis_modelling.png
 bgImage: images/background/page-title.jpg
 icon: /images/services/statistical_analysis.svg
 brochureURL: '#'

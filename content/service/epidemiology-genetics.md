@@ -3,7 +3,7 @@ title: "Epidemiology & Genetics"
 date: 2018-09-29T11:51:17+06:00
 weight: 7
 description : "This is meta description"
-image: images/service/service-2.jpg
+image: images/service/epidemiology_genetics.png
 bgImage: images/background/page-title.jpg
 icon: /images/services/epidemiology_genetics.svg
 brochureURL: '#'

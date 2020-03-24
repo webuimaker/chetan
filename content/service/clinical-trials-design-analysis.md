@@ -3,7 +3,7 @@ title: "Clinical Trials Design & Analysis"
 date: 2018-09-29T11:51:17+06:00
 weight: 6
 description : "This is meta description"
-image: images/service/service-6.jpg
+image: images/service/clinical_trials_design_analysis.png
 bgImage: images/background/page-title.jpg
 icon: /images/services/clinical_trials.svg
 brochureURL: '#'

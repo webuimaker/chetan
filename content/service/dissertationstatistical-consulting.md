@@ -3,7 +3,7 @@ title: "Dissertation statistical consulting"
 date: 2018-09-29T11:51:17+06:00
 weight: 4
 description : "This is meta description"
-image: images/service/service-2.jpg
+image: images/service/dissertation_statistical_consulting.png
 bgImage: images/background/page-title.jpg
 icon: /images/services/disseration_statistics.svg
 brochureURL: '#'

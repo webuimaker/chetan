@@ -16,12 +16,12 @@ mobile = "+44 7392 339 862"
 description = "Experienced and professional statistician offers reliable statistical consulting services online to researchers, businesses and PhD students. Hire RSS(UK) accredited freelance statistician for in-depth data analysis and statistical modelling in R, SPSS, STATA. Ask for statistics help in dissertation, medical statistics"
 author = "ISCON Statistical Services"
 # google map
-gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
-mapLatitude = "51.5223477"
-mapLongitude = "-0.1622023"
-mapMarker = "images/marker.png"
+#gmapAPI = ""
+#mapLatitude = ""
+#mapLongitude = ""
+#mapMarker = "images/marker.png"
 # Google Analitycs
-googleAnalitycsID = "Your ID"
+#googleAnalitycsID = "Your ID"
 
 # mailchimp subsciption
 mailchimpFormAction = "https://themefisher.us9.list-manage.com/subscribe/post?u=f95ece2732a6e9925f2e70a61&amp;id=b1e227529e" # replace this url with yours

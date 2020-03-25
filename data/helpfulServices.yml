@@ -1,25 +1,25 @@
 enable : enable
-titleSM :  
+titleSM :
 title : "How ISCON is different"
-desc: 
+desc:
 image : /images/core_values.png
 item :
-  - content : We provide you high-quality and responsive services for your scientific research.
-    heading :	High-quality and Responsive
-    
-  - content : Our team of specialists offer help across variety of problems, industries and situations.  
-    heading : Subject-Matter and Industry Experts 
-    
-  - content : We unlock your data potential through our innovative statistical methodologies.
-    heading : Innovative approach
+  - content : We deliver what we promise- on-time, within budget. We care about your needs and requirements in same way as you would as an owner.
+    heading :	Accountability and Ownership
 
-  - content : We work as your reliable research partner to give you reliable data results and insights.
-    heading : Accurate and Reliable
+  - content : Our curiosity fuels our passion for creativity, which pushes us to go beyond limits and develop innovative statistical analysis methodologies
+    heading : Curiosity and Creativity
 
+  - content : To build your trust and our credibility, we under-promise but over-deliver. Through our robust and ethical statistical practices, we aim to win your trust.
+    heading : Credibility and Trust
 
+  - content : We believe in upgrading our knowledge and learning to align ourselves with the evolving scientific and statistical trends and methodologies.
+    heading : Knowledge - Continuous Learning
 
 
-    
+
+
+
 
 
 

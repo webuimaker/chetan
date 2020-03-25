@@ -1,44 +1,25 @@
 <head>
+<meta charset="utf-8">
+{{ if .IsHome -}} <title>{{ .Site.Title }}</title>{{- else -}} <title>{{ .Title }} | ISCON Statistics </title>{{- end }}
+ <meta name="referrer" content="origin-when-crossorigin">
+{{ "<!-- mobile responsive meta -->" | safeHTML }}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
+<meta name="title" content="{{ if .IsHome -}}{{ .Site.Title }}
+{{- else -}}{{ .Title }} | ISCON Statistics {{- end }}" />
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320"/>
+{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 
-    <meta charset="utf-8">
-
-    {{ if .IsHome -}} <title>{{ .Site.Title }}</title>{{- else -}} <title>{{ .Title }} | ISCON Statistics </title>{{- end }}
-
-    <meta name="referrer" content="origin-when-crossorigin">
-
-    {{ "<!-- mobile responsive meta -->" | safeHTML }}
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
-    <meta name="title" content="{{ if .IsHome -}}{{ .Site.Title }}
-{{- else -}}
-  {{ .Title }} | ISCON Statistics {{- end }}" />
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320"/>
-
-    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-    {{ hugo.Generator }}
-
-    {{ "<!-- Bootstrap -->" | safeHTML }}
-    <link rel="stylesheet" href="{{ "plugins/bootstrap/bootstrap.min.css" | absURL }} ">
-    {{ "<!-- magnific popup -->" | safeHTML }}
-    <link rel="stylesheet" href="{{ "plugins/magnific-popup/magnific-popup.css" | absURL }} ">
-    {{ "<!-- Slick Carousel -->" | safeHTML }}
-    <link rel="stylesheet" href="{{ "plugins/slick/slick.css" | absURL }} ">
-    <link rel="stylesheet" href="{{ "plugins/slick/slick-theme.css" | absURL }} ">
-    {{ "<!-- themify icon -->" | safeHTML }}
-    <link rel="stylesheet" href="{{ "plugins/themify-icons/themify-icons.css" | absURL }} ">
-    {{ "<!-- animate -->" | safeHTML }}
-    <link rel="stylesheet" href="{{ "plugins/animate/animate.css" | absURL }} ">
-    {{ "<!-- Aos -->" | safeHTML }}
-    <link rel="stylesheet" href="{{ "plugins/aos/aos.css" | absURL }} ">
-    {{ "<!-- Main Stylesheet -->" | safeHTML }}
-    {{ $styles := resources.Get "/css/style.css" | minify}}
-    <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
-
-    {{ "<!--Favicon-->" | safeHTML }}
-    <link rel="shortcut icon" href="{{ "images/favicon.png" | absURL }} " type="image/x-icon">
-    <link rel="icon" href="{{ "images/favicon.png" | absURL }} " type="image/x-icon">
-
+{{ "<!-- Bootstrap -->" | safeHTML }}<link rel="stylesheet" href="{{ "plugins/bootstrap/bootstrap.min.css" | absURL }} ">
+{{ "<!-- magnific popup -->" | safeHTML }}<link rel="stylesheet" href="{{ "plugins/magnific-popup/magnific-popup.css" | absURL }} ">
+{{ "<!-- Slick Carousel -->" | safeHTML }} <link rel="stylesheet" href="{{ "plugins/slick/slick.css" | absURL }} "><link rel="stylesheet" href="{{ "plugins/slick/slick-theme.css" | absURL }} ">
+{{ "<!-- themify icon -->" | safeHTML }}<link rel="stylesheet" href="{{ "plugins/themify-icons/themify-icons.css" | absURL }} ">
+{{ "<!-- animate -->" | safeHTML }}<link rel="stylesheet" href="{{ "plugins/animate/animate.css" | absURL }} ">
+{{ "<!-- Aos -->" | safeHTML }}<link rel="stylesheet" href="{{ "plugins/aos/aos.css" | absURL }} ">
+{{ "<!-- Main Stylesheet -->" | safeHTML }}{{ $styles := resources.Get "/css/style.css" | minify}}
+<link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+{{ "<!--Favicon-->" | safeHTML }}
+<link rel="shortcut icon" href="{{ "images/favicon.png" | absURL }} " type="image/x-icon">
+<link rel="icon" href="{{ "images/favicon.png" | absURL }} " type="image/x-icon">
 </head>

@@ -5,16 +5,16 @@ desc: ""
 image : "images/client.png"
 item :
   - icon : "/images/why_choose_us/qualified_statisticians.svg"
-    content : RSS(UK) accredited, experienced statisticians
-    heading :   
-    
+    content : RSS (UK) registered & experienced statisticians
+    heading :
+
   - icon : "/images/why_choose_us/systematic_approach.svg"
-    content : Systematic & structured approach in statistical modelling         
-    heading :  
-    
+    content : Structured and systematic statistical modelling
+    heading :
+
   - icon : "/images/why_choose_us/ontime_delivery.svg"
-    content : on-time, on-budget, goal-focused delivery of the projects
-    heading : 
+    content : Goal-oriented, timely project delivery within budget
+    heading :
   - icon : "/images/why_choose_us/communication.svg"
-    content : Clear interpretation and explaination of statistical findings
-    heading : 
+    content : Clear and easily comprehensible statistical findings
+    heading :

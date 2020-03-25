@@ -10,6 +10,9 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320"/>
 {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+{{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
 
 {{ "<!-- Bootstrap -->" | safeHTML }}<link rel="stylesheet" href="{{ "plugins/bootstrap/bootstrap.min.css" | absURL }} ">
 {{ "<!-- magnific popup -->" | safeHTML }}<link rel="stylesheet" href="{{ "plugins/magnific-popup/magnific-popup.css" | absURL }} ">

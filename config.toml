@@ -1,45 +1,37 @@
 baseURL = "/"
-
 theme = "biztrox-hugo"
 summaryLength = "10"
 DefaultContentLanguage = "en"
 enableRobotsTXT = true
 enableGitInfo = true
-disableLanguages = [""] # desable language from here
+disableLanguages = [""]
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
-logo = "images/logo.png"
+
+author = "ISCON Statistical Services"
 mail = "chetan.prajapati@live.com"
 mobile = "+44 7392 339 862"
-# Meta data
+copyright = "© Copyright 2020 ISCON Statistical Services. All Rights Reserved."
 description = "Experienced and professional statistician offers reliable statistical consulting services online to researchers, businesses and PhD students. Hire RSS(UK) accredited freelance statistician for in-depth data analysis and statistical modelling in R, SPSS, STATA. Ask for statistics help in dissertation, medical statistics"
-author = "ISCON Statistical Services"
-# google map
-#gmapAPI = ""
-#mapLatitude = ""
-#mapLongitude = ""
-#mapMarker = "images/marker.png"
-# Google Analitycs
-#googleAnalitycsID = "Your ID"
-
-# mailchimp subsciption
-mailchimpFormAction = "https://themefisher.us9.list-manage.com/subscribe/post?u=f95ece2732a6e9925f2e70a61&amp;id=b1e227529e" # replace this url with yours
-mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code with yours
-
-
+logo = "images/logo.png"
+gmapAPI = ""
+mapLatitude = ""
+mapLongitude = ""
+mapMarker = "images/marker.png"
+googleAnalitycsID = ""
+mailchimpFormAction = ""
+mailchimpFormName = ""
 
 [Language]
 
-  # English
   [Languages.en]
   languageName = "En"
   languageCode = "en-us"
   weight = 1
-  title = "Hire Accredited Statistician Online | Freelance Statistical Consulting"
+  title = "ISCON Statistical Consulting | Hire freelance Statistician Online "
   home = "Home"
 
-  # navigation
   [Languages.en.menu]
 
     [[Languages.en.menu.nav]]
@@ -122,7 +114,7 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
 
       # about
       [Languages.en.params.about]
-      enable = true
+      enable = false
       bgImage = "images/background/about-bg.jpg"
       title = "Who We Are?"
       description = "Excepteur sint occaecat cupidatat non proident sunt culpa qui officia deserunt mollit anim id est laborum."
@@ -151,7 +143,7 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
 
       # promo video
       [Languages.en.params.promoVideo]
-      enable = true
+      enable = false
       heading = "Introduction <br> Video"
       bgImage = "images/background/promo-video.jpg"
       videoURL = "https://www.youtube.com/watch?v=6ZfuNTqbHE8"
@@ -215,7 +207,7 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
       [Languages.en.params.footer]
       logo = "/images/logo-footer.png"
       content = "62 Maple close, Bristol, BS34 6HH"
-      email = "help@isocon-statistics.com"
+      email = "admin@isocon-statistics.com"
 
       # service links
       services = "Services"
@@ -228,7 +220,7 @@ mailchimpFormName = "b_f95ece2732a6e9925f2e70a61_b1e227529e" # replace this code
       subscribeContent = "Lorem ipsum dolor sit amet, consect etur adipisicing. elit sed do eiusmod."
 
       # copyright
-      copyright = "ISCON Statistical Services ©2020 All Right Reserved"
+      copyright = "© Copyright 2020 ISCON Statistical Services. All Rights Reserved."
 
         # social icon
         [[Languages.en.params.footer.socialIcon]]

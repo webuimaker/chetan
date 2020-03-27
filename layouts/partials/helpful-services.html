@@ -4,14 +4,14 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-7 order-2 order-lg-2">
-               
-               <h5 class="section-title-sm">{{ .Site.Data.helpfulServices.titleSM }} </h5> 
-               <h2 class="section-title section-title-border-half">{{ .Site.Data.helpfulServices.title }}</h2> 
+
+               <h5 class="section-title-sm">{{ .Site.Data.helpfulServices.titleSM }} </h5>
+               <h2 class="section-title section-title-border-half">{{ .Site.Data.helpfulServices.title }}</h2>
                <ul class="d-inline-block pl-0 float-sm-left mr-sm-5">
-           
+
                 {{  range  .Site.Data.helpfulServices.item }}
                 <li class="font-secondary mb-10 ">
-                    <i class="text-primary mr-2 ti-arrow-circle-right"></i> <strong>{{.heading | safeHTML}}</strong>
+                     <h5>{{.heading | safeHTML}}</h5>
                     <p>{{.content | safeHTML }}</p>
                 </li>
                 {{end}}

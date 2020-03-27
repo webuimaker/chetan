@@ -40,58 +40,58 @@ mailchimpFormName = ""
     weight = 2
 
     [[Languages.en.menu.nav]]
-    name = "Service"
-    URL = "/service"
+    name = "Services"
+    URL = "/statistical-consulting-services"
     hasChildren = true
     weight = 3
 
 
       [[Languages.en.menu.nav]]
-      parent = "Service"
+      parent = "Services"
       name = "Research Planning & Advice"
-      URL = "/service/research-planning-advice/"
+      URL = "/statistical-consulting-services/research-planning-advice/"
       pre = "Get expert statistical advice for your reseach"
       weight = "21"
       [[Languages.en.menu.nav]]
-      parent = "Service"
+      parent = "Services"
       name = "Data Visualisation"
-      URL = "/service/data-visualisation"
+      URL = "/statistical-consulting-services/data-visualisation"
       pre = "Your data tells a story, Let's us help you to create it"
       weight = "22"
       [[Languages.en.menu.nav]]
-      parent = "Service"
+      parent = "Services"
       name = "Statistical Analysis & Modelling"
-      URL = "/service/statistical-analysis-modelling"
+      URL = "/statistical-consulting-services/statistical-analysis-modelling"
       pre = "Get in-depth analysis and report from expert statistician"
       weight = "23"
       [[Languages.en.menu.nav]]
-      parent = "Service"
+      parent = "Services"
       name = "Dissertation statistical consulting"
-      URL = "/service/dissertationstatistical-consulting"
+      URL = "/statistical-consulting-services/dissertationstatistical-consulting"
       pre = "Let us help you to make your disseration a success with expert statistics help"
       weight = "24"
       [[Languages.en.menu.nav]]
-      parent = "Service"
+      parent = "Services"
       name = "Survey Design & Analysis"
-      URL = "/service/survey-design-analysis"
+      URL = "/statistical-consulting-services/survey-design-analysis"
       pre = "Let us help you design and analyse your survey"
       weight = "25"
       [[Languages.en.menu.nav]]
-      parent = "Service"
+      parent = "Services"
       name = "Clinical-trials Design & Analysis"
-      URL = "/service/clinical-trials-design-analysis"
+      URL = "/statistical-consulting-services/clinical-trials-design-analysis"
       pre = "Let us help you to design, conduct and analyse your trial data"
       weight = "27"
       [[Languages.en.menu.nav]]
-      parent = "Service"
+      parent = "Services"
       name = "Epidemiology & Genetics"
-      URL = "/service/epidemiology-genetics"
+      URL = "/statistical-consulting-services/epidemiology-genetics"
       pre = "Get help from expert genetic epidemiologist"
       weight = "28"
       [[Languages.en.menu.nav]]
-      parent = "Service"
+      parent = "Services"
       name = "Statistics Training"
-      URL = "/service/statistics-training"
+      URL = "/statistical-consulting-services/statistics-training"
       pre = "Let us help you to empower your collagues with interctive statistics training"
       weight = "29"
 

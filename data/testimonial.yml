@@ -1,33 +1,33 @@
 enable : true
 titleSM : Testimonials
-title : SEE WHAT OUR CUSTOMERS ARE SAYING
+title : What our clients have to say
 image : images/client.png
 sliderItem :
   - image : "/images/team/team-1.jpg"
-    content : Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid sed dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco labo ris nisi aliquip excepteur.
-    name : Julia Robertson
-    designation : Happy Clients
-    
+    content : Chetan is very friendly and very knowledgeable. I needed a quick consult for a statistical modeling question and he understood right away and helped me to understand the process. He explained abstract concepts in ways I could easily understand. Thanks!!
+    name : Galya hellwarth
+    designation : PhD researcher
+
   - image : "/images/team/team-2.jpg"
     content : Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid sed dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco labo ris nisi aliquip excepteur.
     name : Julia Robertson
     designation : Happy Clients
-    
+
   - image : "/images/team/team-3.jpg"
     content : Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid sed dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco labo ris nisi aliquip excepteur.
     name : Julia Robertson
     designation : Happy Clients
-    
+
   - image : "/images/team/team-1.jpg"
     content : Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid sed dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco labo ris nisi aliquip excepteur.
     name : Julia Robertson
     designation : Happy Clients
-    
+
   - image : "/images/team/team-2.jpg"
     content : Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid sed dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco labo ris nisi aliquip excepteur.
     name : Julia Robertson
     designation : Happy Clients
-    
+
   - image : "/images/team/team-3.jpg"
     content : Lorem ipsum dolor sit amet constur adipisicing elit sed eiusmtempor incid sed dolore magna aliqu enim minim veniam quis nostrud exercittion ullamco labo ris nisi aliquip excepteur.
     name : Julia Robertson

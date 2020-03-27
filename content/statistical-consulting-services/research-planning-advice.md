@@ -1,7 +1,7 @@
 ---
 title: "Research Planning and methodology"
-date: 2018-09-25T15:51:35+06:00
-summaryText: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+date: 2020-03-06
+summaryText: "The studies with poor planning i.e. vague research questions, unclear hypothesis, inadequate sample size, inappropriate choice of variables, improper randomisation, poor follow up are deemed to produce inaccurate and meaningless results. Statistician at ISCON Statistics can be your best companion help every steps of your research project – starting from research idea to development of study protocol to successful completion and reporting in high-impact journals"
 weight: 1
 description : "This is meta description SEO with"
 image: images/service/research_planning _methodology.png

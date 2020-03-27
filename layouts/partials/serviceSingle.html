@@ -2,12 +2,9 @@
 <section class="section service-detail">
     <div class="container">
         <div class="row">
-          
+
             {{ "<!-- service single content -->" | safeHTML }}
             <div class="col-lg-12">
-                <h1 class="font-weight-bold mb-4">{{ .Title }}</h1>
-                <hr style="background: #e84444; height: 1px;">
-                <img class="img-fluid w-100 mb-60 rounded-top" src="{{ .Params.Image | absURL }}" alt="service">
                 <div class="post-content">
                     {{ .Content }}
                 </div>

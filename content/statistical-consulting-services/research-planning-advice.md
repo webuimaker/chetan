@@ -1,11 +1,11 @@
 ---
-title: "Research Planning and methodology"
+title: "Research Planning and Methodology"
 date: 2020-03-06
 summaryText: "The studies with poor planning i.e. vague research questions, unclear hypothesis, inadequate sample size, inappropriate choice of variables, improper randomisation, poor follow up are deemed to produce inaccurate and meaningless results. Statistician at ISCON Statistics can be your best companion help every steps of your research project – starting from research idea to development of study protocol to successful completion and reporting in high-impact journals"
 weight: 1
 description : "This is meta description SEO with"
+bgImage: images/service/research_planning _methodology.png
 image: images/service/research_planning _methodology.png
-bgImage: images/background/page-title.jpg
 icon: /images/services/research_planning.svg
 brochureURL: '#'
 regularDay: Sun-Tues

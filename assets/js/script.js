@@ -1,18 +1,6 @@
 (function ($) {
     'use strict';
 
-    // Preloader js    
-    $(window).on('load', function () {
-        $('.preloader').fadeOut(700);
-    });
-
-    //  Search Form Open
-    $('#searchOpen').on('click', function () {
-        $('.search-form').addClass('open');
-    });
-    $('#searchClose').on('click', function () {
-        $('.search-form').removeClass('open');
-    });
 
     //Hero Slider
     $('.hero-slider').slick({
@@ -39,7 +27,7 @@
 
 
 
-    
+
     // $('.hero-slider').slick({
     //     autoplay: true,
     //     infinite: true,
@@ -110,7 +98,7 @@
     });
 
 
-    
+
     // slick slider
     $('.service').slick({
         dots: true,
@@ -119,7 +107,7 @@
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: true,
-        autoplay: true,        
+        autoplay: true,
         prevArrow: '<button type=\'button\' class=\'prevArrow\'><i class=\'ti-arrow-left\'></i></button>',
         nextArrow: '<button type=\'button\' class=\'nextArrow\'><i class=\'ti-arrow-right\'></i></button>',
         responsive: [{
@@ -187,7 +175,7 @@
 
 
 
-    
+
 
     // testimonialNew
     $('.testimonial-slider').slick({
@@ -266,33 +254,6 @@
                 }
             }
         ]
-    });
-
-    //   magnific popup video
-    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-zoom-in',
-        removalDelay: 160,
-        preloader: false,
-        fixedContentPos: true
-    });
-
-    // Magnific Popup Image
-    $('.popup-image').magnificPopup({
-        type: 'image',
-        removalDelay: 160, //delay removal by X to allow out-animation
-        callbacks: {
-            beforeOpen: function () {
-                // just a hack that adds mfp-anim class to markup
-                this.st.image.markup = this.st.image.markup.replace('mfp-figure', 'mfp-figure mfp-with-anim');
-                this.st.mainClass = this.st.el.attr('data-effect');
-            }
-        },
-        closeOnContentClick: true,
-        midClick: true,
-        fixedContentPos: true,
-        fixedBgPos: true
     });
 
     // filter
@@ -397,24 +358,24 @@
     AOS.init();
 
 
-      // breakpoint and up  
+      // breakpoint and up
    $(window).resize(function(){
-    if ($(window).width() >= 980){	
+    if ($(window).width() >= 980){
 
       // when you hover a toggle show its dropdown menu
       $(".navbar .dropdown-toggle").hover(function () {
          $(this).parent().toggleClass("show");
-         $(this).parent().find(".dropdown-menu").toggleClass("show"); 
+         $(this).parent().find(".dropdown-menu").toggleClass("show");
        });
 
         // hide the menu when the mouse leaves the dropdown
       $( ".navbar .dropdown-menu" ).mouseleave(function() {
-        $(this).removeClass("show");  
+        $(this).removeClass("show");
       });
-  
+
         // do something here
-    }	
-});  
+    }
+});
 
 })(jQuery);
 

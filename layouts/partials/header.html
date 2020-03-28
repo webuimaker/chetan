@@ -4,17 +4,17 @@
     {{ "<!-- nav bar -->" | safeHTML }}
     <div class="navigation">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="{{ .Site.Params.BaseURL | absURL }}">
-                    
-                    <img src="{{ .Site.Params.logo | absURL }}" alt="logo" class="img-fluid">
+
+                    <img src="{{ .Site.Params.logo | absURL }}" alt="Hire statistician online from ISCON Statistical consulting" class="img-fluid">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
                     aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navigation">
+                <nav class="collapse navbar-collapse" id="navigation">
                     <ul class="navbar-nav ml-auto">
 
                         <li class="nav-item">
@@ -37,7 +37,7 @@
                                                 </li>
                                                 {{end}}
                                             </ul>
-                                    
+
                                     </div>
                                 </div>
                             </li>
@@ -48,17 +48,17 @@
                         {{ end }}
                         {{ end }}
 
-                        
+
                     </ul>
 
                     {{ if .Site.Params.quoteBtn.enable }}
-                        
+
                             <a class="nav-link btn btn-primary btn-sm2 btn-contact" href="{{ .Site.Params.quoteBtn.btnURL | absURL }}">{{ with .Site.Params.quoteBtn.btnText }} {{ . }} {{ end }}</a>
-                        
+
                         {{ end }}
-                 
-                </div>
-            </nav>
+
+                </nav>
+            </div>
         </div>
     </div>
 </header>

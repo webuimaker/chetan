@@ -1,5 +1,5 @@
 {{ $data := index .Site.Data }} {{ if $data.faq.enable }} {{ "<!-- mission -->" | safeHTML }}
-<section class="mission section py-50 pt-2">
+<div class="mission section py-50 pt-2">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -30,4 +30,4 @@
 			</div>{{ "<!-- chart -->" | safeHTML }}
 		</div>
 	</div>
-</section>{{ "<!-- /mission -->" | safeHTML }} {{ end }}
+</div>{{ "<!-- /mission -->" | safeHTML }} {{ end }}

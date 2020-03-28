@@ -79,16 +79,16 @@ h6, .h6 {
 }
 
 .btn-primary {
-  background: #e84444;
+  background: #cf0300;
   color: #fff;
 }
 
 .btn-primary:active {
-  background: #e84444 !important;
+  background: #cf0300 !important;
 }
 
 .btn-primary:hover {
-  background: #ee7171;
+  background:#cf0300;
 }
 
 .btn-secondary {
@@ -1259,7 +1259,7 @@ header{
 }
 
 .hero-slider .slick-dots li.slick-active {
-  background: #ee7171;
+  background: #cf0300;
 }
 
 .hero-slider .slick-dots li.slick-active a {

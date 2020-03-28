@@ -1,20 +1,18 @@
 enable : enable
 titleSM : Choose us
 title : "Four reason to choose us"
-desc: ""
-image : "images/client.png"
 item :
   - icon : "/images/why_choose_us/qualified_statisticians.svg"
     content : RSS (UK) registered & experienced statisticians
-    heading :
+
 
   - icon : "/images/why_choose_us/systematic_approach.svg"
     content : Structured and systematic statistical modelling
-    heading :
+
 
   - icon : "/images/why_choose_us/ontime_delivery.svg"
     content : Goal-oriented, timely project delivery within budget
-    heading :
+
   - icon : "/images/why_choose_us/communication.svg"
     content : Clear and easily comprehensible statistical findings
-    heading :
+

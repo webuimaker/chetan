@@ -8,6 +8,7 @@
 				<ul class="d-inline-block pl-0 float-sm-left mr-sm-5">
 					<li style="list-style: none">{{ range .Site.Data.helpfulServices.item }}</li>
 					<li class="font-secondary mb-10">
+					  <h3>{{.heading | safeHTML}}</h3>
 
 						<p>{{.content | safeHTML }}</p>
 					</li>

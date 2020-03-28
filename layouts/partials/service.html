@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-12 text-center">
-                <h5 class="section-title-sm">Best Service</h5>
+                <div class="section-title-sm">Best Service</div>
                 <h2 class="section-title section-title-border">Service We Provide</h2>
             </div>
         </div>
@@ -13,14 +13,14 @@
             <div class="row mb-5">
                 <div class="col-md-6"><img class="card-img-top rounded-0" src="{{ .Params.image | absURL }}" alt="service-image"></div>
                  <div class="col-md-6  mb-5" id="{{replace  $ser " " "-"}}">
-                <h4 class="card-title pt-3">{{ .Title }}</h4>                
+                <div class="card-title pt-3">{{ .Title }}</div>
                 <p class="card-text mb-0">{{ .Params.SummaryText }}</p>
                 <p class="mt-2"><a href="{{.URL}}" class="btn btn-primary btn-sm2"> Read  More</a></p>
-               
+
                 </div>
             </div>
             {{ end }}
-        
+
     </div>
 </section>
 {{ "<!-- /servie -->" | safeHTML }}

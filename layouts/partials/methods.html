@@ -21,10 +21,10 @@
                             {{ if .subHeading }}<h5 class="text-uppercase mb-1" data-duration-in=".5" data-animation-in="fadeInLeft"
                                 data-delay-in=".1">{{ .subHeading | safeHTML}}</h5> {{ end }}
 
-                                {{if  .heading }}<h4 class="font-weight-bold mb-3" data-duration-in=".5" data-animation-in="fadeInLeft"
+                                {{if  .heading }}<h4 class="font-weight-bold mb-3" data-duration-in=".5" data-animation-in="fadeInLeft" font-family= "Nunito Sans",Roboto,sans-serif
                                 data-delay-in=".5">{{ .heading  | safeHTML }}</h4> {{end}}
 
-                                {{ if .description  }}<p class="text-dark mb-50" data-duration-in=".5" data-animation-in="fadeInLeft"
+                                {{ if .description  }}<p class="text-dark mb-50" data-duration-in=".5" data-animation-in="fadeInLeft" font-family= "Nunito Sans",Roboto,sans-serif
                                 data-delay-in=".9">{{ .description | safeHTML }}
                             </p> {{end}}
                             {{ if .btn.enable }}

@@ -624,7 +624,8 @@ button {
 }
 
 .text-dark {
-  color: #222;
+  font-family: "Nunito Sans",Roboto,sans-serif;
+  color: #000;
 }
 
 .text-underline {
@@ -636,7 +637,7 @@ button {
 }
 
 .font-primary {
-  font-family: "Poppins", sans-serif;
+  font-family: "Nunito Sans",Roboto,sans-serif;
 }
 
 .font-secondary {
@@ -1205,6 +1206,7 @@ header{
 }
 
 .hero-slider .slick-dots li a {
+  font-family: "Nunito Sans",Roboto,sans-serif;
   display: block;
   position: relative;
   text-align: center;
@@ -1213,6 +1215,7 @@ header{
 }
 
 .hero-slider .slick-dots li a i {
+  font-family: "Nunito Sans",Roboto,sans-serif;
   display: inline-block;
   font-size: 30px;
   line-height: 80px;
@@ -1222,6 +1225,7 @@ header{
 
 @media (max-width: 991px) {
   .hero-slider .slick-dots li a i {
+    font-family: "Nunito Sans",Roboto,sans-serif;
     font-size: 20px;
     margin-right: 5px;
   }
@@ -1229,11 +1233,13 @@ header{
 
 @media (max-width: 767px) {
   .hero-slider .slick-dots li a i {
+    font-family: "Nunito Sans",Roboto,sans-serif;
     margin: 0;
   }
 }
 
 .hero-slider .slick-dots li a span {
+  font-family: "Nunito Sans",Roboto,sans-serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 80px;
@@ -1241,6 +1247,7 @@ header{
 
 @media (max-width: 991px) {
   .hero-slider .slick-dots li a span {
+    font-family: "Nunito Sans",Roboto,sans-serif;
     font-size: 15px;
   }
 }

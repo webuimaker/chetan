@@ -1,7 +1,5 @@
 enable : enable
-titleSM :
 title : "Why We're Different"
-desc:
 image : /images/core_values.png
 item :
   - content : We deliver what we promise- on-time, within budget. We care about your needs and requirements in same way as you would as an owner.

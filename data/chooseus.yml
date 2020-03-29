@@ -1,5 +1,4 @@
 enable : enable
-titleSM : Choose us
 title : "Four reason to choose us"
 item :
   - icon : "/images/why_choose_us/qualified_statisticians.svg"

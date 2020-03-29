@@ -1,11 +1,7 @@
 enable : enable
-titleSM :
-title :
-desc: "<p class='font-weight-bold mt-3'>We help researchers,businesses and organisations in resolving critical research and business problems through advanced statistical analysis, modelling, and visualisation, which enable them to harness the real value of their research and data.
-                            </p>
-                        <p class='mt-3'>Explore how we helped our valued clients to obtain in-depth insights and draw accurate conclusions through precise, sophisticated, and logical statistical data analysis.
-
-                            </p>"
+title : Uncover data Discover stories Make an impact
+titleSM: We help researchers, businesses and organisations in resolving critical research and business problems through advanced statistical analysis, modelling and visualisation
+desc: "<p class='mt-3'> Explore how we helped our valued clients to obtain in-depth insights through precise, sophisticated data analysis </p>"
 
 btn :
   - btnText : View our work

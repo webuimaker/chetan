@@ -5,7 +5,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-7 mb-5 align-self-end">
-						<div class="text-uppercase mb-1 mt-5">{{ .Site.Data.hero.title }}</div>{{ if .Site.Data.hero.titleSM }}
+						<div class="section-title">{{ .Site.Data.hero.title }}</div>{{ if .Site.Data.hero.titleSM }}
 						<div class="section-title-sm">{{ .Site.Data.hero.titleSM }}</div>{{end }} {{ .Site.Data.hero.desc | safeHTML }} {{range .Site.Data.hero.btn}} <a class="btn btn-sm2 text-uppercase {{.btnKlass}}" href="{{.btnURL}}">{{.btnText}}</a> {{end}}
 					</div>
 					<div class="col-md-5">

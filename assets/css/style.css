@@ -625,7 +625,7 @@ button {
 
 .text-dark {
   font-family: "Nunito Sans",Roboto,sans-serif;
-  color: #000;
+  color: #000 !important;
 }
 
 .text-underline {
@@ -2800,6 +2800,7 @@ min-height: 440px;
 
 .hero-section h1{
   font-size: 1.7em;
+  font-family: "Nunito Sans",Roboto,sans-serif !important;
 }
 .hero-img-slider img, .hero-img-slider{border-radius: 8px;}
 

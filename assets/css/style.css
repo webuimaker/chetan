@@ -857,10 +857,10 @@ header{
 }
 
 .navigation .navbar .nav-item .nav-link {
-  /* padding: 15px 10px;
-  font-family: "Poppins", sans-serif; */
+
+  font-family: "Nunito Sans",Roboto,sans-serif;
   font-weight: 600;
-  color: #222;
+  color: #000;
   text-transform: uppercase;
   transition: .2s ease;
   font-size: 14px;
@@ -869,7 +869,7 @@ header{
 @media (max-width: 1199px) {
   .navigation .navbar .nav-item .nav-link {
     font-size: 12px;
-    padding: 15px 6px;
+    padding: 5px 9px;
   }
 }
 

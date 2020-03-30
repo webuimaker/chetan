@@ -4,7 +4,7 @@ date: 2018-09-29T11:51:17+06:00
 weight: 5
 description : "This is meta description"
 image: images/service/survey_design_analysis.png
-bgImage: images/background/page-title.jpg
+bgImage: images/background/page-title.png
 icon: /images/services/survey_design.svg
 brochureURL: '#'
 regularDay: Sun-Tues

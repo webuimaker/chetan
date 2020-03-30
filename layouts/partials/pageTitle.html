@@ -1,10 +1,10 @@
 {{ "<!-- page title -->" | safeHTML }}
 <article>
-<div class="page-title overlay" style="background-image: url('{{ .Params.bgImage | absURL }}');">
+<div class="page-title" style="background-image: url('{{ .Params.bgImage | absURL }}');">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 text-center">
-               <header><h1 class="text-white font-weight-bold">{{ .Title }}</h1></header>
+            <div class="col-lg-12 text-left">
+               <header><h1 class="font-weight-bold">{{ .Title }}</h1></header>
                <nav> <ol class="breadcrumb">
                     <li>
                         <a href="{{ .Site.BaseURL }}">{{ .Site.Params.home }}</a>

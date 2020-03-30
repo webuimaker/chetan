@@ -1,17 +1,17 @@
 enable : enable
-title : "Why We're Different"
+title : "What sets us apart?"
 image : /images/core_values.png
 item :
   - content : We deliver what we promise- on-time, within budget. We care about your needs and requirements in same way as you would as an owner.
     heading :	Accountability and Ownership
 
-  - content : Our curiosity fuels our passion for creativity, which pushes us to go beyond limits and develop innovative statistical analysis methodologies
+  - content : Our curiosity fuels our passion for creativity, which pushes us to go beyond limits and use innovative statistical approach and data visualisation tools.
     heading : Curiosity and Creativity
 
   - content : To build your trust and our credibility, we under-promise but over-deliver. Through our professional and ethical statistical practices, we aim to win your trust.
     heading : Credibility and Trust
 
-  - content : We believe in upgrading our knowledge through continuous learning to align ourselves with the evolving scientific and statistical trends and methodologies.
+  - content : We believe in upgrading our knowledge through continuous learning to align ourselves with the evolving statistical research and methodologies.
     heading : Continuous Learning
 
 

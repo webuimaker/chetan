@@ -3,7 +3,7 @@ title: "Research Planning and Methodology"
 date: 2020-03-06
 weight: 1
 description : "This is meta description SEO with"
-summaryText: "The studies with poor planning i.e. vague research questions, unclear hypothesis, inadequate sample size, inappropriate choice of variables, improper randomisation, poor follow up are deemed to produce inaccurate and meaningless results. Statistician at ISCON Statistics can be your best companion help every steps of your research project – starting from research idea to development of study protocol to successful completion and reporting in high-impact journals"
+summaryText: "The validity of study findings not only depends on its results but also on its design and conduct.  Consult ISCON statistician early to help you to optimize your study design and streamline the statistical analysis plan"
 
 bgImage: images/background/page-title.png
 image: images/service/research_planning _methodology.png
@@ -13,7 +13,15 @@ type : service
 
 > Designing of research study should be given more attention than on data collection and analysis. It is difficult to re-do the poorly designed study but you can always re-analyse data with different method. Therefore, it cannot be stressed enough that best time to contact ISCON statistician is before designing your research study.
 
-The studies with poor planning i.e. vague research questions, unclear hypothesis, inadequate sample size, inappropriate choice of variables, improper randomisation, poor follow up are deemed to produce inaccurate and meaningless results. Statistician at ISCON Statistics can be your best companion help every steps of your research project – starting from research idea to development of study protocol to successful completion and reporting in high-impact journals.
+The studies with poor planning i.e. vague research questions, unclear hypothesis, inadequate sample size, inappropriate choice of variables, improper randomisation, poor follow up are deemed to produce inaccurate and meaningless results. Statistician at ISCON Statistics can be your best companion help every steps of your research project – starting from research idea to development of study protocol to successful completion and reporting in high-impact journals. Our statistician can help you with-
+
+1. Formulating research questions and research hypothesis and develop statistical analysis plan
+2. Defining and clarifying the study outcomes- primary outcome, secondary outcome, data collection methods and frequency of the measurements
+3. Advice you  about study design whether it’s appropriate to answer research questions or hypothesis 
+4. Discuss with you the impact of bias, randomisation, allocation and blinding on results
+5. Discuss with you the required sample size (so study has optimum statistical power) in different conditions/hypothesis
+6. Help you to develop study protocol, statistical analysis plan, any secondary or interim analysis.
+
 
 ## Help translating your research idea into a statistically answerable question
 

@@ -16,7 +16,7 @@ offDay: Friday
 type : service
 ---
 
-**_Designing of research study should be given more attention than on data collection and analysis. It is difficult to re-do the poorly designed study but you can always re-analyse data with different method. Therefore, it cannot be stressed enough that best time to contact ISCON statistician is before designing your research study._**
+> Designing of research study should be given more attention than on data collection and analysis. It is difficult to re-do the poorly designed study but you can always re-analyse data with different method. Therefore, it cannot be stressed enough that best time to contact ISCON statistician is before designing your research study.
 
 The studies with poor planning i.e. vague research questions, unclear hypothesis, inadequate sample size, inappropriate choice of variables, improper randomisation, poor follow up are deemed to produce inaccurate and meaningless results. Statistician at ISCON Statistics can be your best companion help every steps of your research project – starting from research idea to development of study protocol to successful completion and reporting in high-impact journals.
 

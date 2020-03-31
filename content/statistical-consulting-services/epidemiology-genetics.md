@@ -1,35 +1,26 @@
 ---
 title: "Epidemiology & Genetics"
-date: 2018-09-29T11:51:17+06:00
+date: 2020-03-22
 weight: 7
 description : "This is meta description"
+summaryText: We are at the forefront of modern epidemiologic methodology as well as practice. Driven by your research objectives, our statisticians bring scientific integrity, rigor to protocol design, research reporting, and data analytics. Their expertise elevates understanding and knowledge of the safety and efficacy of drugs, biologics, devices, and healthcare delivery. 
 image: images/service/epidemiology_genetics.png
 bgImage: images/background/page-title.png
 icon: /images/services/epidemiology_genetics.svg
-brochureURL: '#'
-regularDay: Sun-Tues
-regularTime: 08.00am - 06.00pm
-halfDay: Thursday
-halfTime: 08.00am - 01.00pm
-offDay: Friday
 type : service
 ---
 
-### Marketing Oriented To The Targated Customers
+With our epidemiology and genetic research services, we help you understand patient populations. Our clients trust our results, and this is where ISCON Statistics excels.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Epidemiology helps with quantifying, segmenting, and projecting patient populations in the pharmaceutical industry. At ISCON Statistics, our team of statisticians will help you determine these populations through means, such as:
 
+1. A meta-analysis of disease statistics
+2. Global secondary research of reliable epidemiological literature
+3. Analyzing and deciphering patient registries and databases
+4. Assessing and analyzing disease trends, like changes in demographics, causational factors/diseases, and diagnostic criteria
 
->Excepteur sint occaecat cupidatat non proident sunt culpa officia deserunt mollit anim id est laborum.Sed ut perspiciatis unde omnis.
+We are at the forefront of modern epidemiologic methodology as well as practice. Driven by your research objectives, our statisticians bring scientific integrity, rigor to protocol design, research reporting, and data analytics. Their expertise elevates understanding and knowledge of the safety and efficacy of drugs, biologics, devices, and healthcare delivery. 
 
-1. Business Services
-2. Audit & Assurance
-3. IT Control Solutions
+We also offer affordable, cutting-edge genomic data management and analysis. ISCON Statistics has a strong and reliable history of excellence and a remarkable future in innovative genetics research. 
 
-#### Marketing Improvement Strategy
-
-![Chart](../../images/service/service-chart.jpg)
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
----
-
+Leveraging the latest technology and resources, experts at ISCON Statistics have the capability and experience to undertake a wide array of research projects. These projects include large-scale and high throughput genome-wide association research studies on tens of thousands of samples as well as small-scale pilot candidate gene projects.

@@ -48,8 +48,8 @@ mailchimpFormName = ""
 
       [[Languages.en.menu.nav]]
       parent = "Services"
-      name = "Research Planning & Advice"
-      URL = "/statistical-consulting-services/research-planning-advice/"
+      name = "Research Planning & Methodology"
+      URL = "/statistical-consulting-services/research-planning-methodology/"
       pre = "Get expert statistical advice for your reseach"
       weight = "21"
       [[Languages.en.menu.nav]]
@@ -67,7 +67,7 @@ mailchimpFormName = ""
       [[Languages.en.menu.nav]]
       parent = "Services"
       name = "Dissertation statistical consulting"
-      URL = "/statistical-consulting-services/dissertationstatistical-consulting"
+      URL = "/statistical-consulting-services/dissertation-statistical-consulting"
       pre = "Let us help you to make your disseration a success with expert statistics help"
       weight = "24"
       [[Languages.en.menu.nav]]

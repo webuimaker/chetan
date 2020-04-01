@@ -112,43 +112,6 @@ mailchimpFormName = ""
       btnText = "Get in touch"
       btnURL = "#"
 
-      # about
-      [Languages.en.params.about]
-      enable = false
-      bgImage = "images/background/about-bg.jpg"
-      title = "Who We Are?"
-      description = "Excepteur sint occaecat cupidatat non proident sunt culpa qui officia deserunt mollit anim id est laborum."
-      [Languages.en.params.about.btn]
-      enable = true
-      btnText = "Explore More"
-      btnURL = "#"
-
-        [[Languages.en.params.about.listLeft]]
-        listItem = "Business Services"
-
-        [[Languages.en.params.about.listLeft]]
-        listItem = "Audit & Assurance"
-
-        [[Languages.en.params.about.listLeft]]
-        listItem = "IT Control Solutions"
-
-        [[Languages.en.params.about.listRight]]
-        listItem = "Business Services"
-
-        [[Languages.en.params.about.listRight]]
-        listItem = "Audit & Assurance"
-
-        [[Languages.en.params.about.listRight]]
-        listItem = "IT Control Solutions"
-
-      # promo video
-      [Languages.en.params.promoVideo]
-      enable = false
-      heading = "Introduction <br> Video"
-      bgImage = "images/background/promo-video.jpg"
-      videoURL = "https://www.youtube.com/watch?v=6ZfuNTqbHE8"
-      title = "Lorem ipsum dolor <br> sit amet con."
-
       # cta
       [Languages.en.params.cta]
       enable = true

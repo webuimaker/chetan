@@ -158,49 +158,41 @@ mailchimpFormName = ""
       btnText = "Let’s get in touch"
       btnURL = "#"
 
-      # clients Logo Slider
+      # statistical software
       [Languages.en.params.logoSlider]
       enable = true
-      title = "Learn how we have helped our clients to drive accurate and meaningful data insights"
-      titleSM = "Hear from real ISCON clients"
+      title = "Proficient in wide array of statistical software and tools"
+      titleSM = ""
         [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/client-logo/client-logo-1.png"
+        image = "images/statistical-software/R-statistical-software.png"
         URL = "#"
 
         [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/client-logo/client-logo-2.png"
+        image = "images/statistical-software/STATA-statistical-software.png"
         URL = "#"
 
         [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/client-logo/client-logo-3.png"
+        image = "images/statistical-software/IBM-SPSS-statistical-software.png"
         URL = "#"
 
         [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/client-logo/client-logo-4.png"
+        image = "images/statistical-software/WinBugs-MCMC-software.png"
         URL = "#"
 
         [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/client-logo/client-logo-5.png"
+        image = "images/statistical-software/StatXact-exact-tests.png"
         URL = "#"
 
         [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/client-logo/client-logo-1.png"
+        image = "images/statistical-software/MLWin-Multi-level-model.png"
         URL = "#"
 
         [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/client-logo/client-logo-2.png"
+        image = "images/statistical-software/GGPLOT2-R.png"
         URL = "#"
 
         [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/client-logo/client-logo-3.png"
-        URL = "#"
-
-        [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/client-logo/client-logo-4.png"
-        URL = "#"
-
-        [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/client-logo/client-logo-5.png"
+        image = "images/statistical-software/plotly.png"
         URL = "#"
 
       # footer

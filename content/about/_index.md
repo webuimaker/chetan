@@ -5,9 +5,13 @@ bgImage: /images/background/page-title.jpg
 headbanner:
   heading: "Know more about us"
   description : ""
-  image: "/images/chetan-big.png"
+  image: 
   position: center
   textOrder: "1"
+topContent:
+ - title: Dr Chetan Prajapati
+   info: BDS, PGDip (Public Health), GradCert(Statistics) MSc (Statistics)
+   desc: "<p>Chetan Prajapati is a seasoned statistician based in Bristol, UK. He did his Masters in Medical Statistics and specialisation in Genetic Epidemiology from the renowned University of Leicester. </p>"
 ---
 
 ## What Drive Us
@@ -16,7 +20,7 @@ The cornerstone of our progress in scientific frontiers is systematic research. 
 
 Statistics act as a powerful tool for describing, summarising, and deriving inferences from the data. But at the same time, in the wrong hands, it can be misused for publishing misleading research with deceptive headlines and inaccurate methodologies, wrong evaluations, and poor-quality reporting. Based on these unreliable and faulty research findings, many businesses, organisations, and government agencies make decisions that lead to detrimental effects on society and damages people's trust in scientific research.  
 
-“We need to focus on less yet better scientific research, which should be performed for the right reasons.”
+> “We need to focus on less yet better scientific research, which should be performed for the right reasons.”
 
 
 These are the words of Doug Altman, a recognised statistician of Oxford University. They were published in 1994 in the Editorial of ‘The Scandal of Poor Medical Research.' This publication later made to the top of the most important papers’ list of 'The British Medical Journal' from the last 20 years.

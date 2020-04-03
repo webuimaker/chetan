@@ -1631,6 +1631,42 @@ header{
   right: 25px;
 }
 
+.about h2{
+  font-size: 30px;
+}
+.about ol, .about ul
+{
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+.about ol li, .about ul li{
+  position: relative;
+}
+
+.about ol li::before {
+  position: absolute;
+  font-family: "themify";
+  content: "\e65d";
+  color: #e84444;
+  height: 15px;
+  width: 15px;
+  left: -20px;
+  top: 0;
+}
+.about ul li::before {
+  position: absolute;
+  font-family: "themify";
+  content: "\e65d";
+  color: #e84444;
+  height: 15px;
+  width: 15px;
+  left: -20px;
+  top: 0;
+}
+.about-cv aside{
+  background: #e84444;
+}
+
 /* 13.8 ceo section start */
 .ceo-image {
   background-position: center center;

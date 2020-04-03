@@ -1661,6 +1661,23 @@ header{
 .about-cv aside{
   background: #e84444;
 }
+.about-cv aside .imgprofile{
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-radius: 50%;
+  display: block;
+}
+.about-cv .list-inline .list-inline-item:before{
+  display: none;
+}
+.about-cv .list-inline .social-icon-outline {
+  border: 1px solid #e84444;
+}
+
+.about-cv .list-inline .social-icon-outline i{
+  color: #e84444;
+}
 
 /* 13.8 ceo section start */
 .ceo-image {

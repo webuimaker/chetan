@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ partial "pageTitle2.html" . }}
+{{ partial "pageTitle.html" . }}
 <!-- 
 {{ partial "philosophy.html" . }}
 
@@ -16,13 +16,13 @@
 
         </div>
 
-        <div class="col-lg-12">
-            <h1 class="display-4 font-3">Meet the Founder and Lead Statistician, ISCON Statistics</h1>
+        <div class="col-lg-12 mb-4">
+            <h2 class="font-3 text-center">{{.Params.cvContent.sectionHeading}}</h2>
         </div>
         <div class="row about-cv">
             <div class="col-lg-4 d-flex">
                 <aside class="p-3 text-white">
-                    <img src="/images/chetan-big-white.jpg" class="rounded-circle img-fluid" alt="Chetan">
+                    <img src="/images/chetan-big-white.jpg" class="imgprofile" alt="Chetan">
                    <h4 class="mt-4 text-center text-white">Education</h4> 
                    <ul class="p-0">
                        <li>
@@ -39,16 +39,44 @@
                        </li>
                    </ul>
                     <p></p>
-                    
-                                           
-                    
-
-                </aside>
-                
+                </aside>                
             </div>
             
-            <div class="col-lg-8 d-flex">
-                <h1>Meet the Founder and Lead Statistician, ISCON Statistics</h1>
+            <div class="col-lg-8">
+                <h3>{{.Params.cvContent.Heading }}</h3>
+                <p><em>{{.Params.cvContent.study }}</em></p>
+                <ul class="list-inline mt-3">
+                    {{ range .Params.cvContent.social }}
+                    <li class="list-inline-item">
+                        <a class="social-icon-outline" href="{{ .URL | absURL }}">
+                            <i class="{{ .icon }}"></i>
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+
+                <hr>
+
+               <p class="mb-4">{{.Params.cvContent.heighlights}}</p> 
+
+                {{ range .Params.cvContent.lists }}
+                    <p class="mb-1"><strong>{{.title }}</strong></p>
+                    <p>{{.desc}}</p>
+                    {{if .images}}
+                        <div class="row d-flex align-text-bottom">
+                            {{range .images}}
+                                <div class="col text-center ">
+                                    <img src="{{.image | absURL}}" alt="{{.title}}"><br>
+                                    <em>{{.title}}</em>
+                                </div>
+                            {{end}}
+                        </div>
+                        
+
+                    {{end}}
+
+                {{end}}
+                
             </div>
 
         </div>

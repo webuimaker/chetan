@@ -1,0 +1,20 @@
+<!-- hero -->
+	<div class="position-relative hero-section bg6">
+		{{ "<!-- slider item -->" | safeHTML }}
+		<div class="py-50">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 mb-5 align-self-end">
+						<div class="section-title">{{ .Site.Data.hero.title }}</div>{{ if .Site.Data.hero.titleSM }}
+						<div class="section-title-sm">{{ .Site.Data.hero.titleSM }}</div>{{end }} {{ .Site.Data.hero.desc | safeHTML }} {{range .Site.Data.hero.btn}} <a class="btn btn-sm2 text-uppercase {{.btnKlass}}" href="{{.btnURL}}">{{.btnText}}</a> {{end}}
+					</div>
+					<div class="col-md-5">
+						<div class="hero-img-slider post-slider">
+							{{range .Site.Data.hero.images }} <img alt="Statistical consulting UK statistical modelling " class="img-fluid" src="{{.}}"> {{end}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- hero  ends-->

@@ -1,7 +1,7 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 {{ if $data.heroSlider.enable }}
 {{ "<!-- hero slider -->" | safeHTML }}
-<section>
+<div>
     <div class="hero-slider-2 position-relative">
         {{ "<!-- slider item -->" | safeHTML }}
         {{ range $data.heroSlider.sliderItem }}
@@ -12,10 +12,10 @@
 
                     <div class="{{if .rightImage }}col-lg-6 {{else}}col-lg-12{{end}}">
                         <div class="hero-content pt-5">
-                            <h4 class="text-uppercase mb-1" data-duration-in=".5" data-animation-in="fadeInLeft"
-                                data-delay-in=".1">{{ .subHeading }}</h4>
-                            <h1 class="font-weight-bold mb-3" data-duration-in=".5" data-animation-in="fadeInLeft"
-                                data-delay-in=".5">{{ .heading }}</h1>
+                            <div class="text-uppercase mb-1" data-duration-in=".5" data-animation-in="fadeInLeft"
+                                data-delay-in=".1">{{ .subHeading }}</div>
+                            <div class="font-weight-bold mb-3" data-duration-in=".5" data-animation-in="fadeInLeft"
+                                data-delay-in=".5">{{ .heading }}</div>
                             <p class="text-dark mb-50" data-duration-in=".5" data-animation-in="fadeInLeft"
                                 data-delay-in=".9">{{ .description | safeHTML }}
                             </p>
@@ -34,6 +34,6 @@
         </div>
         {{ end }}
     </div>
-</section>
+</div>
 {{ "<!-- /hero slider -->" | safeHTML }}
 {{ end }}

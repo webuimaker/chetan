@@ -1,20 +1,8 @@
-{{ if .Site.Params.logoSlider.enable }}
-{{ "<!-- client logo slider -->" | safeHTML}}
-<section class="bg-gray py-5">
-    <div class="container">
-        <!-- <div class="row justify-content-between">
-            <div class="col-lg-12 align-self-center text-center">
-                {{ with .Site.Params.cta.titleSM | safeHTML }} <p class="section-title-sm ">{{ . }}</p> {{ end }}
-               {{ with .Site.Params.cta.title | safeHTML }} <h4 class="section-title section-title-border-gray">{{ . }}</h4> {{ end }}
-            </div>
-        </div> -->
-        <div class="client-logo-slider align-self-center">
-            {{ range .Site.Params.logoSlider.sliderItem }}
-            <a href="{{ .URL | absURL }}" class="text-center d-block outline-0 py-3 px-2"><img class="d-unset" src="{{ .image | absURL }}"
-                    alt="client-logo"></a>
-            {{ end }}
-        </div>
-    </div>
-</section>
-{{ "<!-- /client logo slider -->" | safeHTML}}
-{{ end }}
+{{ if .Site.Params.logoSlider.enable }} {{ "<!-- client logo slider -->" | safeHTML}}
+<div class="bg-gray py-5">
+	<div class="container">
+		<div class="client-logo-slider align-self-center">
+			{{ range .Site.Params.logoSlider.sliderItem }} <a class="text-center d-block outline-0 py-3 px-2" href="{{.URL|absURL}}"><img alt="client-logo" class="d-unset" src="{{.image|absURL}}"></a> {{ end }}
+		</div>
+	</div>
+</div>{{ "<!-- /client logo slider -->" | safeHTML}} {{ end }}

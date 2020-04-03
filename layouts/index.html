@@ -1,78 +1,13 @@
 {{ define "main" }}
-
-<section>
-    <div class="position-relative hero-section bg6">
-        {{ "<!-- slider item -->" | safeHTML }}       
-        <div class="py-50">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7 mb-5 align-self-end">
-                        <h4 class="text-uppercase mb-1 mt-5">{{ .Site.Data.hero.title }}</h4>
-                        {{ if  .Site.Data.hero.titleSM  }}
-                            <h5 class="section-title-sm">{{ .Site.Data.hero.titleSM }} </h5> 
-                        {{end }}
-                        {{ .Site.Data.hero.desc | safeHTML }}
-                        {{range .Site.Data.hero.btn}}
-                            <a class="btn  btn-sm2 text-uppercase {{.btnKlass}}" href="{{.btnURL}}">{{.btnText}}</a>
-                        {{end}}
-                               
-                        
-                    </div>
-                    <div class="col-md-5">
-                        <div class="hero-img-slider post-slider">
-                            {{range .Site.Data.hero.images }}
-                                <img src="{{.}}" alt="Hero Image" class="img-fluid"> 
-                            {{end}}
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-{{ partial "explore.html" . }}
+{{ partial "homepageHero.html" . }}
+{{ partial "aboutUs.html" . }}
 {{ partial "chooseus.html" . }}
 {{ partial "service-home.html" . }}
-{{ partial "helpful-services.html" . }}
-
-{{ "<!-- work -->" | safeHTML }}
-<section class="section bg1 py-50">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h5 class="section-title-sm">{{ .Site.Data.case.titleSM }}</h5>
-                <h2 class="section-title section-title-border-gray">{{ .Site.Data.case.title }}</h2>
-                {{if .Site.Data.case.desc }} <p class="mb-3">{{ .Site.Data.case.desc }}</p> {{end}}
-            </div>
-        </div>
-        {{ "<!-- work slider -->" | safeHTML }}
-        <div class="row work-slider mt-4">
-            {{ range $index, $element:= where .Site.RegularPages "Type" "case"}}
-            {{ "<!-- project item -->" | safeHTML }}
-            <div class="col-lg-3 col-md-4 col-sm-6 case">
-                <div class="position-relative">
-                    
-                    <img class="img-fluid w-100" src="{{ .Params.Image | absURL }}" alt="project-image">
-                    <div class="project-info">
-                        <a href="{{ .Permalink }}" class="h4">{{ .Title }}</a>
-                        {{ $ser := lower  .Params.Tag }}
-                        <a href="service/{{replace  $ser " " "-"}}"><i class="ti-tag"></i>{{ .Params.Tag }}</a>
-                    </div> 
-                </div>
-            </div>
-            {{ end }}
-        </div>
-    </div>
-</section>
-{{ "<!-- /work -->" | safeHTML }}
-{{ partial "cta.html" . }}
-{{ partial "clientsLogoSlider.html" . }}
+{{ partial "OurValues.html" . }}
+{{ partial "CaseStudiesHomepage.html" . }}
 {{ partial "methods.html" . }}
 {{ partial "testimonial.html" . }}
+{{ partial "clientsLogoSlider.html" . }}
 {{ partial "mission.html" . }}
 {{ partial "cta.html" . }}
-
 {{ end }}

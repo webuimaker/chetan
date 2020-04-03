@@ -600,7 +600,7 @@ button {
 }
 
 .text-dark {
-  color: #222;
+  color: #000!important;
 }
 
 .text-underline {

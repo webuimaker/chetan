@@ -12,8 +12,8 @@ p, .paragraph {
   font-family: "Nunito Sans",Roboto,sans-serif ;
   font-weight: 400;
   color: #000000;
-  line-height: 28px;
-  letter-spacing: 0.010em;
+  line-height: 29px;
+  letter-spacing: 0.03em;
 
 
 }
@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, .h1 {
-  font-size: 60px;
+  font-size:  37px;
 }
 
 @media (max-width: 400px) {
@@ -36,23 +36,23 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 36px;
+  font-size: 25px;
 }
 
 h3, .h3 {
-  font-size: 30px;
+  font-size: 19px;
 }
 
 h4, .h4 {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 h5, .h5 {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 h6, .h6 {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /* 1.3 Button style */
@@ -79,16 +79,16 @@ h6, .h6 {
 }
 
 .btn-primary {
-  background: #e84444;
+  background: #cf0300;
   color: #fff;
 }
 
 .btn-primary:active {
-  background: #e84444 !important;
+  background: #cf0300 !important;
 }
 
 .btn-primary:hover {
-  background: #ee7171;
+  background:#cf0300;
 }
 
 .btn-secondary {
@@ -144,23 +144,10 @@ body {
 }
 
 ::selection {
-  background: #ee7171;
-  color: #fff;
+  background: #f5e325;
+  color: #000;
 }
 
-/* preloader */
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #fff;
-  z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 ol,
 ul {
@@ -225,7 +212,7 @@ button {
 }
 
 .section {
-  padding: 100px 0;
+  padding: 28px 0;
 }
 
 @media (max-width: 575px) {
@@ -429,22 +416,23 @@ button {
 
 /* 1.2.1 page title */
 .page-title {
-  background-position: center center;
+  background-position: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 160px 0 100px;
+  text-align: left;
 }
 
 /* breadcrumb */
 .breadcrumb {
   background-color: transparent !important;
-  justify-content: center;
+  justify-content: left;
 }
 
 .breadcrumb li,
 .breadcrumb a {
-  color: #fff;
-  font-family: "Poppins", sans-serif;
+  color: #000;
+  font-family: "Nunito Sans",Roboto,sans-serif;
   font-weight: 600;
   font-size: 12px;
   margin: 0 10px;
@@ -624,7 +612,8 @@ button {
 }
 
 .text-dark {
-  color: #222;
+  font-family: "Nunito Sans",Roboto,sans-serif;
+  color: #000 !important;
 }
 
 .text-underline {
@@ -636,7 +625,7 @@ button {
 }
 
 .font-primary {
-  font-family: "Poppins", sans-serif;
+  font-family: "Nunito Sans",Roboto,sans-serif;
 }
 
 .font-secondary {
@@ -856,10 +845,10 @@ header{
 }
 
 .navigation .navbar .nav-item .nav-link {
-  /* padding: 15px 10px;
-  font-family: "Poppins", sans-serif; */
+
+  font-family: "Nunito Sans",Roboto,sans-serif;
   font-weight: 600;
-  color: #222;
+  color: #000;
   text-transform: uppercase;
   transition: .2s ease;
   font-size: 14px;
@@ -868,7 +857,7 @@ header{
 @media (max-width: 1199px) {
   .navigation .navbar .nav-item .nav-link {
     font-size: 12px;
-    padding: 15px 6px;
+    padding: 5px 9px;
   }
 }
 
@@ -1205,6 +1194,7 @@ header{
 }
 
 .hero-slider .slick-dots li a {
+  font-family: "Nunito Sans",Roboto,sans-serif;
   display: block;
   position: relative;
   text-align: center;
@@ -1213,6 +1203,7 @@ header{
 }
 
 .hero-slider .slick-dots li a i {
+  font-family: "Nunito Sans",Roboto,sans-serif;
   display: inline-block;
   font-size: 30px;
   line-height: 80px;
@@ -1222,6 +1213,7 @@ header{
 
 @media (max-width: 991px) {
   .hero-slider .slick-dots li a i {
+    font-family: "Nunito Sans",Roboto,sans-serif;
     font-size: 20px;
     margin-right: 5px;
   }
@@ -1229,11 +1221,13 @@ header{
 
 @media (max-width: 767px) {
   .hero-slider .slick-dots li a i {
+    font-family: "Nunito Sans",Roboto,sans-serif;
     margin: 0;
   }
 }
 
 .hero-slider .slick-dots li a span {
+  font-family: "Nunito Sans",Roboto,sans-serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 80px;
@@ -1241,6 +1235,7 @@ header{
 
 @media (max-width: 991px) {
   .hero-slider .slick-dots li a span {
+    font-family: "Nunito Sans",Roboto,sans-serif;
     font-size: 15px;
   }
 }
@@ -1252,7 +1247,7 @@ header{
 }
 
 .hero-slider .slick-dots li.slick-active {
-  background: #ee7171;
+  background: #cf0300;
 }
 
 .hero-slider .slick-dots li.slick-active a {
@@ -1264,7 +1259,7 @@ header{
 }
 
 .hero-content h4 {
-  letter-spacing: 2px;
+  letter-spacing: 0.5px;
 }
 
 /* 5. progrgess bar start */
@@ -2245,7 +2240,7 @@ ul.tag-list li a:hover {
 }
 
 blockquote{
-  background: #d1d1d1;
+  background: #f9dd89;
   padding: 20px;
   border-radius: 5px;
   font-weight: 600;
@@ -2808,7 +2803,7 @@ min-height: 440px;
 }
 
 .bg1{
-  background: #fcfcfc !important;
+  background: #fff !important;
 }
 
 .bg2{
@@ -2816,7 +2811,7 @@ min-height: 440px;
 }
 
 .bg3{
-  background: #656565  !important;
+  background: #000  !important;
 }
 
 .bg4{
@@ -2828,7 +2823,8 @@ min-height: 440px;
 }
 
 .hero-section h1{
-  font-size: 2.7em;
+  font-size: 1.7em;
+  font-family: "Nunito Sans",Roboto,sans-serif !important;
 }
 .hero-img-slider img, .hero-img-slider{border-radius: 8px;}
 

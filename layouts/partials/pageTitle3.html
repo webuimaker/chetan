@@ -1,0 +1,18 @@
+{{ "<!-- page title -->" | safeHTML }}
+<article>
+<div class="page-title py-100" style="background-image: url('{{ .Params.bgImage | absURL }}'); background-color:{{ .Params.bgColor }} ;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+               <header><h1 class="font-weight-bold text-white">{{ .Params.header }}</h1></header>
+               <!-- <nav> <ol class="breadcrumb">
+                    <li>
+                        <a href="{{ .Site.BaseURL }}">{{ .Site.Params.home }}</a>
+                    </li>
+                    <li>{{ .Title }}</li>
+                </ol></nav> -->
+            </div>
+        </div>
+    </div>
+</div>
+{{ "<!-- /page title -->" | safeHTML }}

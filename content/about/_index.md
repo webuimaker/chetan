@@ -1,24 +1,37 @@
 ---
-title: "About Us"
-date: 2020-03-25
-bgImage: /images/background/page-title.png
-headbanner:
-  heading: "Know more about us"
-  description : ""
-  image: 
-  position: center
-  textOrder: "1"
+title: "Meet the Founder and Lead Statistician, ISCON Statistics"
+date: 2018-09-29T14:43:10+06:00
+description : "This is meta description"
+header: Know more about us
+section1:
+  heading: What drive us
+  text: "The cornerstone of our progress in scientific frontiers is systematic research. Through it, we are able to advance our knowledge and expertise like never before. The advancements in computing technologies and a tremendous increase in the amount of data have placed a huge responsibility on statistical sciences to be transparent and accurate. Now, it has a crucial role in the development of 'good scientific practices' for the larger benefit of society. <br> <br> Statistics act as a powerful tool for describing, summarising, and deriving inferences from the data. But at the same time, in the wrong hands, it can be misused for publishing misleading research with deceptive headlines and inaccurate methodologies, wrong evaluations, and poor-quality reporting. Based on these unreliable and faulty research findings, many businesses, organisations, and government agencies make decisions that lead to detrimental effects on society and damages people's trust in scientific research."
+section2:
+  heading: 
+  text: "<strong>We need to focus on less yet better scientific research, which should be performed for the right reasons.</strong> <br> These are the words of Doug Altman, a recognised statistician of Oxford University, published in 1994 in the Editorial of ‘The Scandal of Poor Medical Research.'"
+section3:
+  heading: 
+  text: "Chetan Prajapati founded ISCON Statistics. He laid its foundation on two core principles of ethical statistical practice: <br> <ol><li> <strong>Quality in statistical methodology application</strong></li><li><strong>Quality in research reporting </strong></li></ol> <br>At ISCON Statistics, we ardently follow both these principles to deliver precise and quality results. Our expertise in statistical and scientific methodology enables us to perform comprehensive, in-depth, and accurate statistical analysis of the provided data. In turn, this helps you achieve high-quality and reproducible research results, enabling you to make logical and informed decisions."
+designation: BDS, PGDip (Public Health), GradCert(Statistics)  MSc (Statistics)
+image : /images/chetan-big.png
+bgImage: 
+bgcolor: '#cf0300'
+facebookURL : '#'
+twitterURL : '#'
+linkedinURL : '#'
+CvURL : '#'
+education:
+ - year: 2018   
+   edu: MSC Statistics, University of Leicester UK
+ - year: 
+   edu: 2014  Grad Cert Statistics, University of Sheffield UK
+ - year: 2012  
+   edu: PG Dip in Public Health, Oxford Brookes University
+ - year: 2008  
+   edu: Bachelor of Dental Surgery, Gujarat university India
+
 cvContent:
-  sectionHeading: Meet the Founder and Lead Statistician, ISCON Statistics
-  heading: Dr Chetan Prajapati
-  study: BDS, PGDip (Public Health), GradCert(Statistics) MSc (Statistics)
-  social:
-   - icon: "ti-facebook"
-     url: "#"
-   - icon: "ti-twitter-alt"
-     url: "#"
-   - icon: "ti-linkedin"
-     url: "#"
+  name: Dr Chetan Prajapati
   heighlights: Chetan Prajapati is a seasoned statistician based in Bristol, UK. He did his Masters in Medical Statistics and specialisation in Genetic Epidemiology from the renowned University of Leicester.
   lists:
    - title: His Experience 
@@ -38,22 +51,12 @@ cvContent:
         image: /images/international-statistical-institute.jpg 
    - title: His Aspirations
      desc: As a passionate statistician, Chetan aspires to explore innovative statistical methodologies for different types of data to provide more precise and reproducible results. Recently, he implemented multi-variate models of time series to find a relationship between two or more than two time series models. 
-
 ---
 
-## What Drive Us
+#### Work History  & Feedback
 
-The cornerstone of our progress in scientific frontiers is systematic research. Through it, we are able to advance our knowledge and expertise like never before. The advancements in computing technologies and a tremendous increase in the amount of data have placed a huge responsibility on statistical sciences to be transparent and accurate. Now, it has a crucial role in the development of 'good scientific practices' for the larger benefit of society.  
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis.
 
-Statistics act as a powerful tool for describing, summarising, and deriving inferences from the data. But at the same time, in the wrong hands, it can be misused for publishing misleading research with deceptive headlines and inaccurate methodologies, wrong evaluations, and poor-quality reporting. Based on these unreliable and faulty research findings, many businesses, organisations, and government agencies make decisions that lead to detrimental effects on society and damages people's trust in scientific research.  
+#### Profile Analytics
 
-> “We need to focus on less yet better scientific research, which should be performed for the right reasons.”
-
-
-These are the words of Doug Altman, a recognised statistician of Oxford University. They were published in 1994 in the Editorial of ‘The Scandal of Poor Medical Research.' This publication later made to the top of the most important papers’ list of 'The British Medical Journal' from the last 20 years.
-Dr Chetan Prajapati founded ISCON Statistics. He laid its foundation on two core principles of ethical statistical practice:
-
-- Quality in statistical methodology application
-- Quality in research reporting 
-
-At ISCON Statistics, we ardently follow both these principles to deliver precise and quality results. Our expertise in statistical and scientific methodology enables us to perform comprehensive, in-depth, and accurate statistical analysis of the provided data. In turn, this helps you achieve high-quality and reproducible research results, enabling you to make logical and informed decisions.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.

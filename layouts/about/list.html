@@ -1,93 +1,140 @@
 {{ define "main" }}
 
-{{ partial "pageTitle.html" . }}
-<!-- 
-{{ partial "philosophy.html" . }}
+{{ partial "pageTitle3.html" . }}
 
-{{ partial "ceo.html" . }} -->
-
-<section class="section about">
+{{ "<!-- team single -->" | safeHTML }}
+<section class="section bg4">
     <div class="container">
-        
         <div class="row">
-            <div class="col-lg-12">
-                {{.Content}}
+            <div class="col-12 text-center">                
+                <h2 class="section-title section-title-border mb-4">{{ .Params.section1.heading }}</h2>
+                <p>
+                    {{.Params.section1.text | safeHTML }}
+                </p>
             </div>
-
-        </div>
-
-        <div class="col-lg-12 mb-4">
-            <h2 class="font-3 text-center">{{.Params.cvContent.sectionHeading}}</h2>
-        </div>
-        <div class="row about-cv">
-            <div class="col-lg-4 d-flex">
-                <aside class="p-3 text-white">
-                    <img src="/images/chetan-big-white.jpg" class="imgprofile" alt="Chetan">
-                   <h4 class="mt-4 text-center text-white">Education</h4> 
-                   <ul class="p-0">
-                       <li>
-                        2018   MSC Statistics, University of Leicester UK
-                       </li>
-                       <li>
-                        2014  Grad Cert Statistics, University of Sheffield UK
-                       </li>
-                       <li>
-                        2012  PG Dip in Public Health, Oxford Brookes University 
-                       </li>
-                       <li>
-                        2008  Bachelor of Dental Surgery, Gujarat University India
-                       </li>
-                   </ul>
-                    <p></p>
-                </aside>                
-            </div>
-            
-            <div class="col-lg-8">
-                <h3>{{.Params.cvContent.Heading }}</h3>
-                <p><em>{{.Params.cvContent.study }}</em></p>
-                <ul class="list-inline mt-3">
-                    {{ range .Params.cvContent.social }}
-                    <li class="list-inline-item">
-                        <a class="social-icon-outline" href="{{ .URL | absURL }}">
-                            <i class="{{ .icon }}"></i>
-                        </a>
-                    </li>
-                    {{ end }}
-                </ul>
-
-                <hr>
-
-               <p class="mb-4">{{.Params.cvContent.heighlights}}</p> 
-
-                {{ range .Params.cvContent.lists }}
-                    <p class="mb-1"><strong>{{.title }}</strong></p>
-                    <p>{{.desc}}</p>
-                    {{if .images}}
-                        <div class="row d-flex align-text-bottom">
-                            {{range .images}}
-                                <div class="col text-center ">
-                                    <img src="{{.image | absURL}}" alt="{{.title}}"><br>
-                                    <em>{{.title}}</em>
-                                </div>
-                            {{end}}
-                        </div>
-                        
-
-                    {{end}}
-
-                {{end}}
-                
-            </div>
-
         </div>
     </div>
 </section>
+{{ "<!-- team single -->" | safeHTML }}
+
+{{ "<!-- team single -->" | safeHTML }}
+<section class="section bg-secondary">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">   
+                {{if .Params.section2.heading }}             
+                    <h2 class="section-title section-title-border mb-4 text-white">{{ .Params.section2.heading }}</h2>
+                {{end}}
+                <p class="text-white">
+                    {{.Params.section2.text | safeHTML }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{{ "<!-- team single -->" | safeHTML }}
+{{ "<!-- team single -->" | safeHTML }}
+<section class="section bg4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">                
+                {{if .Params.section2.heading }}             
+                    <h2 class="section-title section-title-border mb-4 text-white">{{ .Params.section3.heading }}</h2>
+                {{end}}
+                <p>
+                    {{.Params.section3.text | safeHTML }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{{ "<!-- team single -->" | safeHTML }}
 
 
+{{ "<!-- team single -->" | safeHTML }}
+<section class="section">
+    <div class="container">
+        <div class="row">
+            {{ "<!-- sidebar -->" | safeHTML }}
+            <aside class="col-lg-4">
+                {{ "<!-- team member info -->" | safeHTML }}
+                <div class="bg-gray rounded mb-50">
+                    <img class="img-fluid w-100 rounded-top" src="{{ .Params.Image | absURL }}" alt="team member">
+                    <div class="py-2 px-4 pb-3">
+                        <div class="py-2 border-bottom">
+                            <h2 class="d-inline-block  m-0">{{.Params.cvContent.name}}</h2>                           
+                        </div>
+                        <div class="py-2 border-bottom">
+                            <h5 class="text-primary mb-0">{{ .Params.Designation }}</h5>
+                        </div>
+                        <div class="py-3 border-bottom">
+                            <ul class="list-inline">
+                                <li class="list-inline-item mr-2">
+                                    <a class="social-icon-lg bg-facebook" href="{{ .Params.facebookURL | absURL }}">
+                                        <i class="ti-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mx-2">
+                                    <a class="social-icon-lg bg-twitter" href="{{ .Params.twitterURL | absURL }}">
+                                        <i class="ti-twitter-alt"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mx-2">
+                                    <a class="social-icon-lg bg-linkedin" href="{{ .Params.linkedinURL | absURL }}">
+                                        <i class="ti-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="py-2 border-bottom">
+                            <p class="font-weight-bold text-dark m-0">
+                                Education</p>
+                        </div>
+                        {{ range .Params.education }}
+                            <div class="py-2">
+                                <span class="font-weight-bold text-dark ">{{ .year }}</span>
+                                <span class="font-primary">{{ .edu }}</span>
+                            </div>
+                        {{end}}
+                    </div>
+                </div>
+                {{ "<!-- Brochure -->" | safeHTML }}
+                <div class="rounded border py-3 px-4 mb-50">
+                    <i class="d-inline-block mr-1 text-dark ti-files" style="font-size: 20px;"></i>
+                    <h4 class="mb-1 d-inline-block">Professional CV</h4>
+                    <a class="font-secondary text-color d-block ml-4" href="{{ .Params.CvURL | absURL }}">Download pdf</a>
+                </div>
+            </aside>
+            {{ "<!-- /sidebar -->" | safeHTML }}
 
-{{ partial "testimonial.html" . }}
+            {{ "<!-- team member details -->" | safeHTML }}
+            <div class="col-lg-8">
+                <div>
+                    <h2>{{ .Title }}</h2>                                      
 
+               <p class="mb-4">{{.Params.cvContent.heighlights}}</p> 
+               {{ range .Params.cvContent.lists }}
+                   <p class="mb-1"><strong>{{.title }}</strong></p>
+                   <p>{{.desc}}</p>
+                   {{if .images}}
+                       <div class="row d-flex align-text-bottom">
+                           {{range .images}}
+                               <div class="col text-center ">
+                                   <img src="{{.image | absURL}}" alt="{{.title}}"><br>
+                                   <em>{{.title}}</em>
+                               </div>
+                           {{end}}
+                       </div>
+                       
 
-{{ partial "cta.html" . }}
+                   {{end}}
+
+               {{end}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ "<!-- /team single -->" | safeHTML }}
 
 {{ end }}

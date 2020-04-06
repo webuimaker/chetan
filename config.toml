@@ -4,7 +4,7 @@ summaryLength = "10"
 DefaultContentLanguage = "en"
 enableRobotsTXT = true
 enableGitInfo = true
-disableLanguages = [""]
+disableLanguages = ["Fr"]
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
@@ -37,19 +37,19 @@ mailchimpFormName = ""
     [[Languages.en.menu.nav]]
     name = "About"
     URL = "/about"
-    weight = 2
+    weight = 5
 
     [[Languages.en.menu.nav]]
     name = "Services"
     URL = "/statistical-consulting-services"
     hasChildren = true
-    weight = 3
+    weight = 2
 
 
       [[Languages.en.menu.nav]]
       parent = "Services"
-      name = "Research Planning & Methodology"
-      URL = "/statistical-consulting-services/research-planning-methodology/"
+      name = "Research Design & Methodology"
+      URL = "/statistical-consulting-services/research-design-methodology/"
       pre = "Get expert statistical advice for your reseach"
       weight = "21"
       [[Languages.en.menu.nav]]
@@ -98,12 +98,12 @@ mailchimpFormName = ""
     [[Languages.en.menu.nav]]
     name = "Case Studies"
     URL = "/case-studies"
-    weight = 4
+    weight = 3
 
     [[Languages.en.menu.nav]]
     name = "Learning Centre"
     URL = "/learn-statistics"
-    weight = 6
+    weight = 4
 
 
       # Quote Button

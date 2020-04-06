@@ -1,21 +1,22 @@
 ---
-title: "Meet the Founder and Lead Statistician, ISCON Statistics"
+title: "Meet the Founder of ISCON Statistics"
 date: 2018-09-29T14:43:10+06:00
 description : "This is meta description"
 header: Know more about us
 section1:
   heading: What drive us
-  text: "The cornerstone of our progress in scientific frontiers is systematic research. Through it, we are able to advance our knowledge and expertise like never before. The advancements in computing technologies and a tremendous increase in the amount of data have placed a huge responsibility on statistical sciences to be transparent and accurate. Now, it has a crucial role in the development of 'good scientific practices' for the larger benefit of society. <br> <br> Statistics act as a powerful tool for describing, summarising, and deriving inferences from the data. But at the same time, in the wrong hands, it can be misused for publishing misleading research with deceptive headlines and inaccurate methodologies, wrong evaluations, and poor-quality reporting. Based on these unreliable and faulty research findings, many businesses, organisations, and government agencies make decisions that lead to detrimental effects on society and damages people's trust in scientific research."
+  text: "The cornerstone of our progress in scientific frontiers is systematic research. Through it, we are able to advance our knowledge and expertise like never before. The advancements in computing and a exponential increase in the amount of data have placed a huge responsibility on statistical sciences to be transparent and accurate. Now, statisticians has a crucial role to play in the development of 'good scientific practices' for the larger benefit of society. <br> <br> Statistics is a powerful tool for describing, summarising, and deriving inferences from the data. But at the same time, it has been used inappropriately for publishing research with inaccurate methodologies, poor-quality reporting and misleading conclusions. Many businesses and organisations  make decisions based on these unreliable research findings,which is detrimental to our society and ultimately damages people's trust in the scientific research. Prof Doug Altman, eminent statistician from the University of Oxford rightly said in the Editorial of ‘The Scandal of Poor Medical Research (1994) that-"
 section2:
   heading: 
-  text: "<strong>We need to focus on less yet better scientific research, which should be performed for the right reasons.</strong> <br> These are the words of Doug Altman, a recognised statistician of Oxford University, published in 1994 in the Editorial of ‘The Scandal of Poor Medical Research.'"
+  text: <h3>"We need to focus on less yet better scientific research, which should be performed for the right reasons"</h3>
 section3:
   heading: 
-  text: "Chetan Prajapati founded ISCON Statistics. He laid its foundation on two core principles of ethical statistical practice: <br> <ol><li> <strong>Quality in statistical methodology application</strong></li><li><strong>Quality in research reporting </strong></li></ol> "
+  text: "In this spirit, Dr Chetan Prajapati laid the foundation of ISCON-Statistics based on two core principles of ethical statistical practice: <br> <h3>Correct application of statistical methods</h3>
+<h3>Transparent & accurate reporting of statistical results</h3>"
 section4:
   heading: 
   text: "At ISCON Statistics, we ardently follow both these principles to deliver precise and quality results. Our expertise in statistical and scientific methodology enables us to perform comprehensive, in-depth, and accurate statistical analysis of the provided data. In turn, this helps you achieve high-quality and reproducible research results, enabling you to make logical and informed decisions."
-designation: BDS, PGDip (Public Health), GradCert(Statistics)  MSc (Statistics)
+designation: BDS PGDip (Public Health) GradCert(Statistics) MSc (Statistics)
 image : /images/chetan-big.png
 bgImage: 
 bgcolor: '#cf0300'
@@ -25,13 +26,13 @@ linkedinURL : '#'
 CvURL : '#'
 education:
  - year: 2018   
-   edu: MSC Statistics, University of Leicester UK
+   edu: MSC Statistics with specialisation in Genetic Epidemiology, University of Leicester UK
  - year: 
    edu: 2014  Grad Cert Statistics, University of Sheffield UK
  - year: 2012  
-   edu: PG Dip in Public Health, Oxford Brookes University
+   edu: PG Dip in Public Health, Oxford Brookes University UK
  - year: 2008  
-   edu: Bachelor of Dental Surgery, Gujarat university India
+   edu: Bachelor of Dental Surgery, Gujarat University India
 
 cvContent:
   name: Dr Chetan Prajapati

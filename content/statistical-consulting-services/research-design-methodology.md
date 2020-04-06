@@ -1,5 +1,5 @@
 ---
-title: "Research Planning and Methodology"
+title: "Research Design and Methodology"
 date: 2020-03-06
 weight: 1
 description : "This is meta description SEO with"

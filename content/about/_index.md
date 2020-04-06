@@ -5,13 +5,13 @@ description : "This is meta description"
 header: Know more about us
 section1:
   heading: What drive us
-  text: "The cornerstone of our progress in scientific frontiers is systematic research. Through it, we are able to advance our knowledge and expertise like never before. The advancements in computing technologies and a tremendous increase in the amount of data have placed a huge responsibility on statistical sciences to be transparent and accurate. Now, it has a crucial role in the development of 'good scientific practices' for the larger benefit of society. <br> <br> Statistics is a powerful tool for describing, summarising, and deriving inferences from the data. But at the same time, it has been used inapproprietly for publishing research with inaccurate methodologies, poor-quality reporting and misleading conclusions. Many businesses and organsations  make decisions based on these unreliable research findings,which is detrimental to our society and ultimately damages people's trust in the scientific research. Prof Doug Altman, eminent statistician at the University of Oxford rightly said in the Editorial of ‘The Scandal of Poor Medical Research (1994) that-"
+  text: "The cornerstone of our progress in scientific frontiers is systematic research. Through it, we are able to advance our knowledge and expertise like never before. The advancements in computing and a exponential increase in the amount of data have placed a huge responsibility on statistical sciences to be transparent and accurate. Now, statisticians has a crucial role to play in the development of 'good scientific practices' for the larger benefit of society. <br> <br> Statistics is a powerful tool for describing, summarising, and deriving inferences from the data. But at the same time, it has been used inappropriately for publishing research with inaccurate methodologies, poor-quality reporting and misleading conclusions. Many businesses and organisations  make decisions based on these unreliable research findings,which is detrimental to our society and ultimately damages people's trust in the scientific research. Prof Doug Altman, eminent statistician from the University of Oxford rightly said in the Editorial of ‘The Scandal of Poor Medical Research (1994) that-"
 section2:
   heading: 
   text: <h3>"We need to focus on less yet better scientific research, which should be performed for the right reasons"</h3>
 section3:
   heading: 
-  text: "With this keep in mind, Dr Chetan Prajapati laid the foundation of ISCON-Statistics based on two core principles of ethical statistical practice: <br> <h3>Correct application of statistical methods</h3>
+  text: "In this spirit, Dr Chetan Prajapati laid the foundation of ISCON-Statistics based on two core principles of ethical statistical practice: <br> <h3>Correct application of statistical methods</h3>
 <h3>Transparent & accurate reporting of statistical results</h3>"
 section4:
   heading: 
@@ -26,7 +26,7 @@ linkedinURL : '#'
 CvURL : '#'
 education:
  - year: 2018   
-   edu: MSC Statistics with specilisation in Genetic Epidemiology, University of Leicester UK
+   edu: MSC Statistics with specialisation in Genetic Epidemiology, University of Leicester UK
  - year: 
    edu: 2014  Grad Cert Statistics, University of Sheffield UK
  - year: 2012  

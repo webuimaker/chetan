@@ -15,16 +15,14 @@
                         <li class="list-inline-item control active" data-filter="all">All</li>
                         {{ range .Site.Data.case.filterList   }}
                             {{if eq .caseType "service" }}
-
-                            <li class="list-inline-item control" data-filter="{{ .dataFilter }}">{{ .filterTitle }}</li> 
+                                <li class="list-inline-item control" data-filter="{{ .dataFilter }}">{{ .filterTitle }}</li> 
                             {{end}}
                         {{ end }}
                     <p class="text-left"><strong>Or filter by sector</strong></p>
                         {{ "<!-- filter item list -->" | safeHTML }}
                         {{ range .Site.Data.case.filterList   }}
                             {{if eq .caseType "sector" }}
-
-                            <li class="list-inline-item control" data-filter="{{ .dataFilter }}">{{ .filterTitle }}</li> 
+                                <li class="list-inline-item control" data-filter="{{ .dataFilter }}">{{ .filterTitle }}</li> 
                             {{end}}
                         {{ end }}
                     </ul>

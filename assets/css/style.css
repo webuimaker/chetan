@@ -2904,4 +2904,22 @@ min-height: 440px;
   color: #e5e5e5;
 }
 
+.image-about{
+  min-height: 140px;
+  margin-bottom: 20px;
+}
+.image-about em{
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0px;
+  right: 0px;
+}
+.bg4 .section-title-border::after {
+  box-shadow: 0 0 0 5px #f0f0f0;
+}
+.section.bg-secondary ol li {
+  color: #fff;
+}
 /*# sourceMappingURL=maps/style.css.map */

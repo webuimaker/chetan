@@ -22,10 +22,8 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                {{if .Params.section2.heading }}
-                    <h2 class="section-title section-title-border mb-4">{{ .Params.section2.heading }}</h2>
-                {{end}}
-                <p class="">
+
+                <p>
                     {{.Params.section2.text | safeHTML }}
                 </p>
             </div>
@@ -39,9 +37,6 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                {{if .Params.section3.heading }}
-                    <h2 class="section-title section-title-border mb-4 text-white">{{ .Params.section3.heading }}</h2>
-                {{end}}
                 <p class="text-white">
                     {{.Params.section3.text | safeHTML }}
                 </p>
@@ -57,9 +52,6 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                {{if .Params.section4.heading }}
-                    <h2 class="section-title section-title-border mb-4 text-white">{{ .Params.section4.heading }}</h2>
-                {{end}}
                 <p>
                     {{.Params.section4.text | safeHTML }}
                 </p>

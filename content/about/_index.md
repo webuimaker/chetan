@@ -20,7 +20,7 @@ section4:
 designation: BDS PGDip (Public Health) GradCert(Statistics) MSc (Statistics)
 image : /images/chetan-big.png
 bgImage: 
-bgcolor: '#cf0300'
+bgcolor: '#444444'
 facebookURL : '#'
 twitterURL : '#'
 linkedinURL : '#'

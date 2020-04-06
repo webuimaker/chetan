@@ -10,8 +10,8 @@ category : Market Strategy
 expertise : Mobile App
 liveDemoURL : '#'
 caseStudy : '#'
-type : case
-filterCategories: agriculture
+filterCategories: agriculture, Research-Planning-Advice
+
 ---
 
 ### Marketing Oriented To The Targated Customers

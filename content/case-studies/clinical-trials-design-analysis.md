@@ -10,7 +10,6 @@ category : Market Strategy
 expertise : Mobile App
 liveDemoURL : '#'
 caseStudy : '#'
-type : case
 filterCategories: clinical-trials-design-analysis
 ---
 

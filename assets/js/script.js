@@ -257,6 +257,21 @@
     });
 
 
+    
+    // filter
+    $(document).ready(function () {
+        var containerEl = document.querySelector('.filtr-container');
+        var filterizd;
+        if (containerEl) {
+            filterizd = $('.filtr-container').filterizr({});
+        }
+        //Active changer
+        $('.fltr-controls').on('click', function () {
+            $('.fltr-controls').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+
 
     // easeInOutExpo Declaration
     jQuery.extend(jQuery.easing, {
@@ -349,6 +364,8 @@
         // do something here
     }
 });
+
+
 
 })(jQuery);
 

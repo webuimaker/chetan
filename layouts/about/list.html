@@ -75,7 +75,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-2">
-                <h2>{{ .Title }}</h2>    
+                <h2 class="section-title section-title-border mb-4">{{ .Title }}</h2>    
             </div>
             {{ "<!-- sidebar -->" | safeHTML }}
             <aside class="col-lg-4">
@@ -113,7 +113,7 @@
                                 Education</p>
                         </div>
                         {{ range .Params.education }}
-                            <div class="py-2">
+                            <div class="py-1 font-sm">
                                 <span class="font-weight-bold text-dark ">{{ .year }}</span>
                                 <span class="font-primary">{{ .edu }}</span>
                             </div>
@@ -159,4 +159,8 @@
 </section>
 {{ "<!-- /team single -->" | safeHTML }}
 
+
+{{ partial "testimonial.html" . }}
+
 {{ end }}
+

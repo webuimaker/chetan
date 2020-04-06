@@ -1,5 +1,5 @@
 ---
-title: "Meet the Founder and Lead Statistician, ISCON Statistics"
+title: "Meet the Founder of ISCON Statistics"
 date: 2018-09-29T14:43:10+06:00
 description : "This is meta description"
 header: Know more about us
@@ -11,7 +11,7 @@ section2:
   text: "<strong>We need to focus on less yet better scientific research, which should be performed for the right reasons.</strong> <br> These are the words of Doug Altman, a recognised statistician of Oxford University, published in 1994 in the Editorial of ‘The Scandal of Poor Medical Research.'"
 section3:
   heading: 
-  text: "Chetan Prajapati founded ISCON Statistics. He laid its foundation on two core principles of ethical statistical practice: <br> <ol><li> <strong>Quality in statistical methodology application</strong></li><li><strong>Quality in research reporting </strong></li></ol> "
+  text: "Chetan Prajapati laid the foundation of ISCON-Statistics based on two core principles of ethical statistical practice: <br> <ol><li> <strong>Quality in statistical methodology application</strong></li><li><strong>Quality in research reporting </strong></li></ol> "
 section4:
   heading: 
   text: "At ISCON Statistics, we ardently follow both these principles to deliver precise and quality results. Our expertise in statistical and scientific methodology enables us to perform comprehensive, in-depth, and accurate statistical analysis of the provided data. In turn, this helps you achieve high-quality and reproducible research results, enabling you to make logical and informed decisions."

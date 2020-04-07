@@ -126,8 +126,6 @@
             <div class="col-lg-8">
                 <div>
 
-
-               <p class="mb-4">{{.Params.cvContent.heighlights}}</p>
                {{ range .Params.cvContent.lists }}
                    <p class="mb-1"><strong>{{.title  | safeHTML }}</strong></p>
                    <p>{{.desc  | safeHTML}}</p>

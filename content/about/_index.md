@@ -34,16 +34,12 @@ education:
 
 cvContent:
   name: Dr Chetan Prajapati
-  heighlights: Chetan Prajapati is a seasoned statistician based in Bristol, UK. He did his Masters in Medical Statistics and specialisation in Genetic Epidemiology from the renowned University of Leicester.
   lists:
-   - title: His Experience 
-     desc: Due to his keen interest in statistical sciences and scientific research, he started working as a medical statistician at the Centre for the Prevention of Stroke and Dementia at the University of Oxford, where he worked under the assistance of senior statisticians and researchers on various aspects of scientific researches and analysis. He also worked as an advanced practitioner at the Oxford University Hospital NHS Trust. He made valuable contributions to several hospital-based research studies done at Southmead hospital.  Later on, he started working as a research associate (statistician) at the University of Bristol along with freelance statistical services.
-   - title: Why He founded ISCON Statistics
-     desc: After observing the dire need of transparent, reliable, and accurate statistical analysis services, Chetan Prajapati started ISCON Statistics. He developed it with a vision to provide high-quality, ethical, and accurate statistical services to businesses, organisations and individuals, alike.  
-   - title: His Strengths
-     desc: With his years of experience in statistical analysis and research, Chetan Prajapati enjoys strong command over a variety of statistical and scientific research methodologies. He is proficient in the use of the latest statistical software including STATA, MLWin, SPSS, StatXact and Winbugs.  <br> <br> His in-depth knowledge and expertise enable him to present accurate research analysis in a simple and comprehensible way through interactive presentations. He also has experience in researching diverse clinical environments. He is equally proficient in performing qualitative and quantitative research analysis. <br><br> During his career, he gained hands-on experience in the application of three significant statistical inferences in real-world settings, including Bayesian, Frequentist and Likelihood methodologies. 
+   - title: 
+     desc: Dr Chetan Prajapati is professional statistician and epidemiologist, founder of ISCON Statistics. He holds master of statistics (with specialisation in Genetic Epidemiology) from the renowned <strong> University of Leicester</strong>. He is also John Brookes Scholar of the <strong>Oxford Brookes University</strong>. During his time with <strong>Bristol Medical School, University of Bristol</strong>, he designed and analysed multiple hospital-based research studies including design, conduct and analyses of randomised control trial. Prior to University of Bristol, he worked as Medical Statistician at <strong>the Centre for the Prevention of Stroke and Dementia at the University of Oxford</strong>, where he worked with Prof Rothwell on all statistical aspects of Oxford Vascular (OXVASC) study, includes the management and analyses of clinical trials data. He is also was visiting researcher at <strong>Karolinska Institute, Department of Clinical Epidemiology, Sweden</strong> where he leading the analysis of clinical and litigation data to understanding link between adverse pregnancy outcomes and litigation cost. During his career, he gained hands-on experience in the application of all three methods statistical inferences – Bayesian, frequentist and likelihood in real-world settings. He founded <strong>ISCON Statistics</strong> with vision to provide responsive, ethical, and accessible statistical services to businesses, organisations and individuals.<br><br>As a passionate statistician, Dr Chetan aspires to explore innovative statistical methodologies for different types of data to provide more precise and reproducible results. As a mix of both, theoretical and applied Statistician, Dr Chetan thrive to explore and apply novel statistical methods to data of various types. Recently, he implemented multi-variate Vector Auto-regression (VAR) economic models in clinical data in to find a relationship between two time series. His research interest are clinical trials design, survival analysis, mixed models, monte-carlo simulation and analysis of data-set with statistical complexities (i.e. with missing data, sparse or unbalanced).<br><br> With his years of experience in statistical analysis and research, Chetan Prajapati enjoys strong command over a variety of statistical tools and software. He is proficient in <strong>R statistical software</strong> and also has experience in using other software – <strong>STATA, SPSS, WinBugs, StatXact, MLWin</strong>. His in-depth knowledge of statistical methods also enables him to explain and present research analysis in a simple and comprehensible way.
+
    - title: His Accreditations	
-     desc: Chetan is an esteemed registered member of the Royal Statistical Society (RSS) of the UK and a John Henry Brookes Scholar at Oxford Brookes University.  
+     desc: Dr Chetan is registered and professional member of <strong>Royal Statistical Society</strong>, leading body of professional statistician in UK (Registration number 125676). He is also active member of <strong>Statistics Without Borders (SWB)</strong> and <strong>International Statistical Institute (ISI)</strong>.
      images:
       - title: Royal Statistical Society
         image: /images/royal-statistical-society.jpg
@@ -51,14 +47,4 @@ cvContent:
         image: /images/statistics-without-borders.jpg
       - title: International Statistical Institute
         image: /images/international-statistical-institute.jpg 
-   - title: His Aspirations
-     desc: As a passionate statistician, Chetan aspires to explore innovative statistical methodologies for different types of data to provide more precise and reproducible results. Recently, he implemented multi-variate models of time series to find a relationship between two or more than two time series models. 
 ---
-
-#### Work History  & Feedback
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis.
-
-#### Profile Analytics
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.

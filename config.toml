@@ -109,7 +109,7 @@ mailchimpFormName = ""
       # Quote Button
       [Languages.en.params.quoteBtn]
       enable = true
-      btnText = "Get in touch"
+      btnText = "Talk to Statistician"
       btnURL = "#"
 
       # cta

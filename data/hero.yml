@@ -7,7 +7,7 @@ btn :
   - btnText : View our work
     btnURL : "#"
     btnKlass : "btn-outline"
-  - btnText : Book free consutation
+  - btnText : book a meeting now
     btnURL : "#"
     btnKlass : "btn-secondary"
 images :

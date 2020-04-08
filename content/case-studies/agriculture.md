@@ -1,5 +1,5 @@
 ---
-title: "Agriculture"
+title: "Risk factor for Asthma"
 date: 2018-09-24T14:48:03+06:00
 description : "This is meta description"
 header: "Case Study: What are the risk factors for developing asthma? Which of those factors have high predictive ability? UK based case-control study"
@@ -13,9 +13,9 @@ category: statistical analysis and modelling
 projectInitiation: 08/07/2019
 Completion:  12/07/2019
 quote: "Quality statistical work yet at affordable cost. Explained the difficult statistical concept clearly, quick turnaround time"
-tag : Statistics Training
+tag : statistical analysis and modelling
 image : images/case1-1.jpg
-client : Baximco Ltd.
+client : NHS Consultant
 expertise : Mobile App
 liveDemoURL : '#'
 caseStudy : '#'

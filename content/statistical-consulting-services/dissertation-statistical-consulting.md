@@ -9,6 +9,10 @@ image: images/service/dissertation_statistical_consulting.png
 bgImage: images/background/page-title.png
 icon: /images/services/disseration_statistics.svg
 type : service
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
 ---
 
 ## Why You Need Professional Dissertation Statistical Consulting Services

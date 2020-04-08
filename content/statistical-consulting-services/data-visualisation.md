@@ -10,6 +10,10 @@ image: images/service/data_visualisation.png
 bgImage: images/background/page-title.png
 icon: /images/services/data_visualisation.svg
 type : service
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
 ---
 
 

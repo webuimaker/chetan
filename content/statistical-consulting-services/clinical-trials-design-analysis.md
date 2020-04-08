@@ -8,6 +8,10 @@ image: images/service/clinical_trials_design_analysis.png
 bgImage: images/background/page-title.png
 icon: /images/services/clinical_trials.svg
 type : service
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
 ---
 ISCON Statistics provides you with a wide range of high quality and reliable clinical research services. Our team of statisticians and data scientists offers development, consulting, and analysis services to organizations in pharmaceuticals, nutraceuticals, biotechnology, medical devices, and food and beverage industry.
 

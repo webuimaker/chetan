@@ -10,6 +10,10 @@ image: images/service/statistical_analysis_modelling.png
 bgImage: images/background/page-title.png
 icon: /images/services/statistical_analysis.svg
 type : service
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
 ---
 
 ## What is statistics?

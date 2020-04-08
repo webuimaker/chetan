@@ -6,6 +6,11 @@ enableRobotsTXT = true
 enableGitInfo = true
 disableLanguages = ["Fr"]
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+copyright = "© Copyright 2020 ISCON Statistical Services. All Rights Reserved."
+
+[author]
+    name = "ISCON Statistics"
+    email = "chetan.prajapati@live.com"
 
 [params]
 

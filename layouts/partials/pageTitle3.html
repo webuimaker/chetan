@@ -1,10 +1,11 @@
 {{ "<!-- page title -->" | safeHTML }}
 <article>
-<div class="page-title py-100" style="background-image: url('{{ .Params.bgImage | absURL }}'); background-color:{{ .Params.bgColor }} ;">
+<div class="page-title py-100" style="{{if .Params.bgImage }} background-image: url('{{ .Params.bgImage | absURL }}'); {{end}} background-color:{{ .Params.bgColor }} ;">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                <header><h1 class="font-weight-bold text-white">{{ .Params.header }}</h1></header>
+               {{if .Params.subHeader }}<p class="text-white">{{.Params.subHeader}}</p> {{end}}
                <!-- <nav> <ol class="breadcrumb">
                     <li>
                         <a href="{{ .Site.BaseURL }}">{{ .Site.Params.home }}</a>

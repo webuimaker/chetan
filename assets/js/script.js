@@ -257,7 +257,7 @@
     });
 
 
-    
+
     // filter
     $(document).ready(function () {
         var containerEl = document.querySelector('.filtr-container');
@@ -301,54 +301,6 @@
             scrollTop: 0
         }, 1500, 'easeInOutExpo');
     });
-
-    // -----------------------------
-    //  Count Up
-    // -----------------------------
-    function counter() {
-        var oTop;
-        if ($('.count').length !== 0) {
-            oTop = $('.count').offset().top - window.innerHeight;
-        }
-        if ($(window).scrollTop() > oTop) {
-            $('.count').each(function () {
-                var $this = $(this),
-                    countTo = $this.attr('data-count');
-                $({
-                    countNum: $this.text()
-                }).animate({
-                    countNum: countTo
-                }, {
-                    duration: 1000,
-                    easing: 'swing',
-                    step: function () {
-                        $this.text(Math.floor(this.countNum));
-                    },
-                    complete: function () {
-                        $this.text(this.countNum);
-                    }
-                });
-            });
-        }
-    }
-    // -----------------------------
-    //  On Scroll
-    // -----------------------------
-    $(window).on('scroll', function () {
-        counter();
-    });
-
-    // syotimer
-    $('#simple-timer').syotimer({
-        year: 2019,
-        month: 1,
-        day: 31,
-        hour: 0,
-        minute: 0
-    });
-
-    // AOS
-    AOS.init();
 
 
       // breakpoint and up

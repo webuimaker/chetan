@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://xenodochial-johnson-2c8705.netlify.com/"
 theme = "biztrox-hugo"
 summaryLength = "10"
 DefaultContentLanguage = "en"

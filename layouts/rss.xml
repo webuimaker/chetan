@@ -14,7 +14,7 @@
     {{ end }}
     <image>
       <url>{{ "images/logo.png" | absURL }}</url>
-      <title>ISCON Statistical Consulting</title>
+      <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
       <link>{{ .Permalink }}</link>
     </image>
     {{ range .Pages }}

@@ -27,6 +27,12 @@ mapMarker = "images/marker.png"
 googleAnalitycsID = ""
 mailchimpFormAction = ""
 mailchimpFormName = ""
+highlightjsVersion = "9.18.1"
+    highlightjsCDN = "//cdn.bootcss.com"
+    highlightjsLang = ["r"]
+    highlightjsTheme = "Ir Black"
+    MathJaxCDN = "//cdn.bootcss.com"
+    MathJaxVersion = "2.7.5"
 
 [Language]
 

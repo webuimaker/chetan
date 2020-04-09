@@ -2,12 +2,15 @@
 title: "Dissertation statistical consulting"
 date: 2018-09-29T11:51:17+06:00
 weight: 4
-summaryText: Whether you need bivariate, univariate, cluster, factor or multivariate statistical analysis, we have you covered for all type of dissertation statistical analysis needs. Using the latest statistical tools and techniques such as SPSS, Matlab, STATA, R, SAS and others, we give you accurate and reliable results.
 
 description : "This is meta description"
+
+summaryText: Whether you need bivariate, univariate, cluster, factor or multivariate statistical analysis, we have you covered for all type of dissertation statistical analysis needs. Using the latest statistical tools and techniques such as SPSS, Matlab, STATA, R, SAS and others, we give you accurate and reliable results.
+
 image: images/service/dissertation_statistical_consulting.png
 bgImage: images/background/page-title.png
 icon: /images/services/disseration_statistics.svg
+
 type : service
 sitemap:
   changefreq: monthly

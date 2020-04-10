@@ -7,7 +7,6 @@ enableGitInfo = true
 disableLanguages = ["Fr"]
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 copyright = "© Copyright 2020 ISCON Statistical Services. All Rights Reserved."
-
 [author]
     name = "Chetan Prajapati (Statistician)"
     email = "chetan.prajapati@live.com"
@@ -27,12 +26,8 @@ mapMarker = "images/marker.png"
 googleAnalitycsID = ""
 mailchimpFormAction = ""
 mailchimpFormName = ""
-highlightjsVersion = "9.18.1"
-    highlightjsCDN = "//cdn.bootcss.com"
-    highlightjsLang = ["r"]
-    highlightjsTheme = "Ir Black"
-    MathJaxCDN = "//cdn.bootcss.com"
-    MathJaxVersion = "2.7.5"
+MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
+MathJaxVersion = "2.7.5"
 
 [Language]
 
@@ -78,7 +73,7 @@ highlightjsVersion = "9.18.1"
       [[Languages.en.menu.nav]]
       parent = "Services"
       name = "Dissertation statistical consulting"
-      URL = "/statistical-consulting-services/dissertation-statistical-consulting"
+      URL = "/statistical-consulting-services/statistics-help-thesis"
       pre = "Let us help you to make your disseration a success with expert statistics help"
       weight = "24"
       [[Languages.en.menu.nav]]

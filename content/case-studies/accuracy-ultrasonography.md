@@ -5,6 +5,7 @@ subHeader: "Statistical approach: Intra class corelation"
 
 date: 2020-04-02
 title: "Reliability in ultrasonography"
+slug: "ultra-roc"
 description : "This is meta description"
 
 client: NHS Consultant

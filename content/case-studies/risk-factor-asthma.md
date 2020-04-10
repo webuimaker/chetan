@@ -5,6 +5,7 @@ subHeader: "Statistical approach: Poisson regression model and multiple imputati
 
 date: 2020-04-10
 title: "Risk factor for Asthma"
+slug: "asthma-poisson"
 description : "This is meta description"
 
 client: NHS Consultant

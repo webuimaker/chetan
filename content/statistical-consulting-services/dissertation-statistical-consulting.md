@@ -1,5 +1,6 @@
 ---
 title: "Dissertation statistical consulting"
+slug: "statistics-help-thesis"
 date: 2018-09-29T11:51:17+06:00
 weight: 4
 

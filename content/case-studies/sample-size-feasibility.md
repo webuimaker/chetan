@@ -5,6 +5,7 @@ subHeader: "Statistical approach: monte carol simulation power analysis"
 
 date: 2020-04-02
 title: "sample size for feasibility study"
+slug: "sample-size-now"
 description : "This is meta description"
 
 client: NHS Consultant

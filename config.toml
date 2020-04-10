@@ -33,16 +33,7 @@ highlightjsVersion = "9.18.1"
     highlightjsTheme = "Ir Black"
     MathJaxCDN = "//cdn.bootcss.com"
     MathJaxVersion = "2.7.5"
-[server]
 
-  [[server.headers]]
-    for = "/**.html"
-    [server.headers.values]
-      Content-Security-Policy = "script-src localhost:1313"
-      Referrer-Policy = "strict-origin-when-cross-origin"
-      X-Content-Type-Options = "nosniff"
-      X-Frame-Options = "DENY"
-      X-XSS-Protection = "1; mode=block"
 [Language]
 
   [Languages.en]

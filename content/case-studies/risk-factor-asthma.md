@@ -3,7 +3,7 @@ header: "Case Study: What are the risk factors for developing asthma? Which of t
 
 subHeader: "Statistical approach: Poisson regression model and multiple imputation of missing data"
 
-date: 2020-04-02
+date: 31-12-2019
 title: "Risk factor for Asthma"
 description : "This is meta description"
 

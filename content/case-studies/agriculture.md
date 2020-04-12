@@ -1,15 +1,14 @@
 ---
-title: "Agriculture"
+title: "What are the risk factors for developing asthma? Which of those factors have high predictive ability? UK based case-control study"
 date: 2018-09-24T14:48:03+06:00
 description : "This is meta description"
-header: "Case Study: What are the risk factors for developing asthma? Which of those factors have high predictive ability? UK based case-control study"
-subHeader: "Statistical approach: Poisson regression model and multiple imputation of missing data"
+subHeader: " Poisson regression model and multiple imputation of missing data"
 bgcolor: '#444444'
 bgImage: 
 client: NHS Consultant
 country: United Kingdom
-sector: Health and Medical
-category: statistical analysis and modelling
+sector: Health & Medical
+category: statistical analysis <br> and modelling
 projectInitiation: 08/07/2019
 Completion:  12/07/2019
 quote: "Quality statistical work yet at affordable cost. Explained the difficult statistical concept clearly, quick turnaround time"
@@ -30,6 +29,8 @@ NHS specialist consultant performed population-based case-control study in UK ba
 - Sample data has high proportion of missing observations. Missing observation pose significant challenge to validity and reliability of statistical findings
 - The statistical findings should be interpretable to lay-audience
 - The assumption of statistical model needs to be met in order to provide unbiased, valid conclusion
+
+
 
 ![image](/images/case-1-map.jpg)
 

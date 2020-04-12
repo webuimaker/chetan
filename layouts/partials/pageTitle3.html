@@ -3,9 +3,13 @@
 <div class="page-title py-100" style="{{if .Params.bgImage }} background-image: url('{{ .Params.bgImage | absURL }}'); {{end}} background-color:{{ .Params.bgColor }} ;">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 text-center">
-               <header><h1 class="font-weight-bold text-white">{{ .Params.header }}</h1></header>
-               {{if .Params.subHeader }}<p class="text-white">{{.Params.subHeader}}</p> {{end}}
+            <div class="col-lg-12 {{if eq  .Section "case-studies" }} casesection {{end}}">
+                {{if eq  .Section "case-studies" }}
+               <header><h1 class="font-weight-bold text-white casetitle"><span class="float-left">Case Study:</span> <span class="float-left right">{{ .Title }}</span> </h1></header>
+               {{else}}
+               <header class="text-center"><h1 class="font-weight-bold text-white">{{ .Params.header }}</h1></header>
+               {{end}}
+               {{if .Params.subHeader }}<div class="clearfix"></div><p class="text-white mt-3 casetitle"><span class="float-left">Statistical approach:</span> <span class="float-left right">{{.Params.subHeader}}</span></p> {{end}}
                <!-- <nav> <ol class="breadcrumb">
                     <li>
                         <a href="{{ .Site.BaseURL }}">{{ .Site.Params.home }}</a>

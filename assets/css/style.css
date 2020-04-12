@@ -2881,6 +2881,11 @@ min-height: 440px;
 }
 .btn-sm2{padding:7px 14px!important}
 
+.casetitle .right{
+  width: 80%;
+  margin-left: 1%;
+}
+
 
 
 .service  .prevArrow,
@@ -2939,5 +2944,24 @@ min-height: 440px;
 }
 .section.bg-secondary ol li {
   color: #fff;
+}
+
+.background-banner {
+  background-repeat:  no-repeat;
+  background-size: cover;
+  background-position: right center;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+}
+.case-right{
+  font-size: .85em;
+}
+.quote-sm{
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  margin-bottom: 0px;
+  font-size: 16px;
 }
 /*# sourceMappingURL=maps/style.css.map */

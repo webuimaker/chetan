@@ -8,6 +8,10 @@ image: images/service/epidemiology_genetics.png
 bgImage: images/background/page-title.png
 icon: /images/services/epidemiology_genetics.svg
 type : service
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
 ---
 
 With our epidemiology and genetic research services, we help you understand patient populations. Our clients trust our results, and this is where ISCON Statistics excels.

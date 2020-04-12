@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://xenodochial-johnson-2c8705.netlify.com/"
 theme = "biztrox-hugo"
 summaryLength = "10"
 DefaultContentLanguage = "en"
@@ -6,6 +6,10 @@ enableRobotsTXT = true
 enableGitInfo = true
 disableLanguages = ["Fr"]
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+copyright = "© Copyright 2020 ISCON Statistical Services. All Rights Reserved."
+[author]
+    name = "Chetan Prajapati (Statistician)"
+    email = "chetan.prajapati@live.com"
 
 [params]
 
@@ -22,6 +26,8 @@ mapMarker = "images/marker.png"
 googleAnalitycsID = ""
 mailchimpFormAction = ""
 mailchimpFormName = ""
+MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
+MathJaxVersion = "2.7.5"
 
 [Language]
 
@@ -29,7 +35,7 @@ mailchimpFormName = ""
   languageName = "En"
   languageCode = "en-us"
   weight = 1
-  title = "ISCON Statistical Consulting | Hire freelance Statistician Online "
+  title = "ISCON Statistical Consulting Services | Experienced & Accredited UK based Statistician"
   home = "Home"
 
   [Languages.en.menu]
@@ -67,7 +73,7 @@ mailchimpFormName = ""
       [[Languages.en.menu.nav]]
       parent = "Services"
       name = "Dissertation statistical consulting"
-      URL = "/statistical-consulting-services/dissertation-statistical-consulting"
+      URL = "/statistical-consulting-services/statistics-help-thesis"
       pre = "Let us help you to make your disseration a success with expert statistics help"
       weight = "24"
       [[Languages.en.menu.nav]]

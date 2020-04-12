@@ -9,6 +9,10 @@ bgImage: images/background/page-title.png
 image: images/service/research_planning _methodology.png
 icon: /images/services/research_planning.svg
 type : service
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
 ---
 
 > Designing of research study should be given more attention than on data collection and analysis. It is difficult to re-do the poorly designed study but you can always re-analyse data with different method. Therefore, it cannot be stressed enough that best time to contact ISCON statistician is before designing your research study.

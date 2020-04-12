@@ -9,6 +9,10 @@ image: images/service/survey_design_analysis.png
 bgImage: images/background/page-title.png
 icon: /images/services/survey_design.svg
 type : service
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
 ---
 
 Survey design and analysis is a science. Let ISCON Statistical’s statisticians design the questionnaire to get you the crucial data that you need to make critical decisions.

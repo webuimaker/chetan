@@ -8,6 +8,10 @@ image: images/service/statistics_training.png
 bgImage: images/background/page-title.png
 icon: /images/services/training.svg
 type : service
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
 ---
 
 **Get advice, training, and help from specialists and experts with in-depth knowledge and expertise of statistical analysis**

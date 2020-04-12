@@ -2074,6 +2074,9 @@ img.arrow-bottom {
   color: #e84444;
 }
 
+.project-content  figure{
+  margin-top: 15px;
+}
 
 /* project single page end */
 /* 21.4.3 pagination */

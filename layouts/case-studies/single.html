@@ -11,6 +11,7 @@
                 <div class="p-2 rounded border mb-50 background-banner" style="background-image: url({{ .Params.Image | absURL }});">
                     <!-- <img class="img-fluid w-100" src="" alt="project image"> -->
                 </div>               
+
             </div>
 
             <aside class="col-lg-3 order-lg-2 order-2 case-right">
@@ -25,15 +26,15 @@
                         <li class="py-2 border-bottom clearfix">
                             <span class="d-inline-block font-weight-bold" style="width: 100px;">Sector:</span><span class="float-right">{{ .Params.sector | safeHTML }}</span></li>
                         <li class="py-2 border-bottom clearfix">
-                            <span class="d-inline-block font-weight-bold float-left" style="width: 100px;">Category:</span><span class="float-right">{{ .Params.category | safeHTML }}</span></li>
+                            <span class="d-inline-block font-weight-bold float-left" style="width: 100px;">Category:</span><span class="float-right">{{ .Params.service | safeHTML }}</span></li>
                         <li class="py-2 border-bottom clearfix">
-                            <span class="d-inline-block font-weight-bold" style="width: 100px;">Project initiation:</span><span class="float-right">{{ .Params.projectInitiation | safeHTML }}</span></li>
+                            <span class="d-inline-block font-weight-bold" style="width: 100px;">Project initiation:</span><span class="float-right">{{ .Params.startdate | safeHTML }}</span></li>
                         <li class="py-2 border-bottom clearfix">
-                                <span class="d-inline-block font-weight-bold" style="width: 100px;">Completion:</span><span class="float-right">{{ .Params.completion | safeHTML }}</span></li>
+                                <span class="d-inline-block font-weight-bold" style="width: 100px;">Completion:</span><span class="float-right">{{ .Params.enddate | safeHTML }}</span></li>
 
                     </ul>
                     <i class="testimonial-icon ti-quote-left quote-sm"></i>
-                    <em class="d-inline-block">{{.Params.quote}}</em>
+                    <em class="d-inline-block">{{.Params.review}}</em>
                 </div>
                 {{ "<!-- case study -->" | safeHTML }}
             </aside>
@@ -49,6 +50,6 @@
     </div>
 </section>
 {{ "<!-- /project single -->" | safeHTML }}
-    
+
 
 {{ end }}

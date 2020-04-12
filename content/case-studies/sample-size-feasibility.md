@@ -1,38 +1,41 @@
 ---
-title: "What are the risk factors for developing asthma? Which of those factors have high predictive ability? UK based case-control study"
-date: 2018-09-24T14:48:03+06:00
+header: "Case Study: How many sample we need for feasibility study"
+
+subHeader: "Statistical approach: monte carol simulation power analysis"
+
+date: 2020-04-02
+title: "sample size for feasibility study"
+slug: "sample-size-now"
 description : "This is meta description"
-subHeader: " Poisson regression model and multiple imputation of missing data"
-bgcolor: '#444444'
-bgImage: 
+
 client: NHS Consultant
 country: United Kingdom
-sector: Health & Medical
-category: statistical analysis <br> and modelling
-projectInitiation: 08/07/2019
-Completion:  12/07/2019
-quote: "Quality statistical work yet at affordable cost. Explained the difficult statistical concept clearly, quick turnaround time"
-tag : Statistics Training
-image : images/case1-1.jpg
-client : Baximco Ltd.
-expertise : Mobile App
-liveDemoURL : '#'
-caseStudy : '#'
-filterCategories: agriculture, Research-Planning-Advice
+sector: Agriculture
+service: Research Planning and advice
+startdate: 12/07/2019
+enddate:  14/07/2019
+review: "on time great quality work"
 
+bgcolor: '#444444'
+bgImage:
+image : images/case1-1.jpg
+
+caseStudy : '#'
+filterCategories: agriculture , Research-Planning-Advice
 ---
+
+### Overview
 
 NHS specialist consultant performed population-based case-control study in UK based hospital with aim to identify important risk factor in development of Asthma and to find factors that has excellent discriminative ability between cases and control. The consultant has very limited statistical knowledge, was looking for statistician that not only provide statistical results but also explain the results in non-technical language as he needs to present this finding in international conference.
 
-**Challenges**
+### Challenges
 
 - Sample data has high proportion of missing observations. Missing observation pose significant challenge to validity and reliability of statistical findings
 - The statistical findings should be interpretable to lay-audience
 - The assumption of statistical model needs to be met in order to provide unbiased, valid conclusion
 
 
-
-![image](/images/case-1-map.jpg)
+{{< figure class="" src="/images/case-1-map.jpg" title="this is title of fig" caption="this is caption" alt="roc3">}}
 
 ### Statistical approach
 

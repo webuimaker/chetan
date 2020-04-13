@@ -1,0 +1,52 @@
+---
+title: "Bootstrapping in R: Parametric vs Nonparametric Bootstrap"
+bgImage: images/background/page-title.jpg
+date: 2020-04-12
+author: Chetan Prajapati
+description : "This article explains the bootstrap method using example  using loops and boot function. Bootstrapping is a resampling method which used the Monte Carlo technique to estimate standard error, confidence interval, bias. The methods include parametric and non-parametric bootstrap"
+type: learn-statistics
+image: images/blog/blog-6.jpg
+categories: 
+  - "Statistical models for continuous outcomes"
+tags:
+  - "parametric"
+  - "Non-parametri"
+  - "boot"
+output:
+  blogdown::html_page:
+    highlight: tango
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE)
+```
+
+
+This article explains bootstrap concept as a whole and discern the fundamental difference between parametric and nonparametric bootstrap using R. We will be using both-`for` loops and standard `boot` package
+
+
+We first need to understand following some fundamental concepts. The idea behind bootstrapping is very closely aligned with those concepts.
+
+Here I have created a hypothetical study in which we are interested in finding out the average birth weight of the babies born in the UK at 37 weeks of gestation.
+
++ **Experiment **: To find out the average weight of babies born at 37 weeks in the UK
+
++ **Random sample **: Random sample means each and every single individual or object has an equal probability of being chosen from the population. For example, in our study, the population is all birth happened in the UK at 37 weeks of gestation. For typical "random sample", we will need to make sure that each and every birth happening in any corner of the UK, will be participating in our study, from which will choose some of them randomly i.e random sample.
+
++ **Sample data**: the recorded observation or quantity from the sample of the population. Now we have gone to one local hospital and got data of the birth-weights from 20 babies. Here is the (hypothetical) sample data.
+
+```{r}
+set.seed(1252)
+df <- rnorm(20,3333,430)
+df
+```
+
+```{r}
+require(ggplot2)
+qplot(df)
+```
+
+
+
+

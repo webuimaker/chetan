@@ -33,7 +33,8 @@
             {{ range .Data.Pages }}
             {{ "<!-- project item -->" | safeHTML }}
             <div class="col-lg-3 col-md-4 col-sm-6 pb-4 filtr-item case" data-category="{{ .Params.FilterCategories }}">
-                <div class="position-relative">
+                <a href="{{ .Permalink }}" class="h4"> 
+                    <div class="position-relative">
                     <div class="background-banner" style="background-image: url({{ .Params.Image | absURL }}); min-height: 250px; height: 250px; background-position: center center;">
 
                     </div>
@@ -42,6 +43,7 @@
                         <p><i class="ti-tag"></i>{{ .Params.service | safeHTML }}</p>
                     </div>
                 </div>
+                </a>
             </div>
             {{ end }}
         </div>

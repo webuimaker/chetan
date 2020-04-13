@@ -2074,6 +2074,10 @@ img.arrow-bottom {
   color: #e84444;
 }
 
+.project-content  figure{
+  margin-top: 15px;
+  text-align: center;
+}
 
 /* project single page end */
 /* 21.4.3 pagination */
@@ -2238,6 +2242,10 @@ ul.tag-list li a:hover {
 /* 21.5.7 blog sidebar */
 .sidebar-box-shadow {
   box-shadow: -3px 0px 3px 0px rgba(0, 0, 0, 0.06);
+}
+.sidebar-box-shadow.right-side{
+  box-shadow: 3px 0px 3px 0 rgba(0,0,0,.06);
+
 }
 
 .post-content ol{
@@ -2860,26 +2868,51 @@ min-height: 440px;
   height: 30%;
   bottom: 0px;
   top: auto;
-
+  background: rgba(255, 255, 255, 1);
+  color: #000;
+  position: relative;
+  min-height: 100px;
 }
 .case .project-info a{
   opacity: 1;
     position: relative;
     bottom: 0px;
     display: block;
-    transform: translateY(10px);
+    transform: translateY(0px);
     left: 10px;
+    color: #000;
+}
+.case .project-info a:hover{
+  color: #d60000;
 }
 .case .project-info  p
 {
   transform: translateY(0);
-  opacity: 0.7;
+  opacity: 1;
   left: 5px;
+  color: #000;
+  line-height: normal;
+  position: relative;
+  font-size: 0.9em;
+  margin-top: 15px;
 }
 .btn-contact{
   margin-right: -50px;
 }
 .btn-sm2{padding:7px 14px!important}
+
+.casetitle .right{
+  width: 80%;
+  margin-left: 1%;
+}
+
+.filtr-item.case .position-relative{
+  box-shadow: 0 1.5px 15px rgba(37,35,40,.075), 0 1px 2px rgba(37,35,40,.05);
+}
+
+.filtr-item.case .position-relative:hover{
+  box-shadow: 0 5px 18px rgba(37,35,40,.08), 0 2px 10px rgba(37,35,40,.05);
+}
 
 
 
@@ -2941,4 +2974,26 @@ min-height: 440px;
   color: #fff;
 }
 
+.background-banner {
+  background-repeat:  no-repeat;
+  background-size: cover;
+  background-position: right center;
+  position: relative;
+  overflow: hidden;
+  min-height: 400px;
+}
+.case-right{
+  font-size: .85em;
+}
+.quote-sm{
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+.author-image {
+  max-width: 50px;
+  max-height: 50px;
+}
 /*# sourceMappingURL=maps/style.css.map */

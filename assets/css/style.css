@@ -2243,6 +2243,10 @@ ul.tag-list li a:hover {
 .sidebar-box-shadow {
   box-shadow: -3px 0px 3px 0px rgba(0, 0, 0, 0.06);
 }
+.sidebar-box-shadow.right-side{
+  box-shadow: 3px 0px 3px 0 rgba(0,0,0,.06);
+
+}
 
 .post-content ol{
   padding-left: 20px;

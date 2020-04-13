@@ -4,7 +4,7 @@ bgImage: images/background/page-title.jpg
 date: 2018-09-23T11:35:34+06:00
 description : "This is meta description"
 author: Somrat
-type: post
+type: learn-statistics
 image: images/blog/blog-1.jpg
 categories: 
   - "Multilevel models"

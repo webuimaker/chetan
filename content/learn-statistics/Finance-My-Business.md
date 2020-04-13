@@ -4,7 +4,7 @@ bgImage: images/background/page-title.jpg
 date: 2018-09-24T11:10:07+06:00
 description : "This is meta description"
 author: John Lincon
-type: post
+type: learn-statistics
 image: images/blog/blog-5.jpg
 categories: 
   - "Statistical models for discrete outcomes"

@@ -4,7 +4,7 @@ bgImage: images/background/page-title.jpg
 date: 2018-09-24T11:11:24+06:00
 description : "This is meta description"
 author: John Lincon
-type: post
+type: learn-statistics
 image: images/blog/blog-4.jpg
 categories: 
   - "Clinical trials"

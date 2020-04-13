@@ -4,7 +4,7 @@ bgImage: images/background/page-title.jpg
 date: 2018-09-24T11:10:46+06:00
 author: John Lincon
 description : "This is meta description"
-type: post
+type: learn-statistics
 image: images/blog/blog-6.jpg
 categories: 
   - "Statistical models for continuous outcomes"

@@ -5,7 +5,7 @@ date: 2018-09-24T11:07:10+06:00
 description : "This is meta description"
 author: John Lincon
 authorImage: "/images/chetan-big-white.jpg"
-type: post
+type: learn-statistics
 image: images/blog/blog-2.jpg
 categories: 
   - "Basic statistics"

@@ -1,9 +1,10 @@
 ---
 title: "Basic statistics"
-bgImage: images/background/page-title.jpg
+bgImage: images/background/page-title.png
 date: 2018-09-24T11:07:10+06:00
 description : "This is meta description"
 author: John Lincon
+authorImage: "/images/chetan-big-white.jpg"
 type: post
 image: images/blog/blog-2.jpg
 categories: 

@@ -2992,4 +2992,8 @@ min-height: 440px;
   margin-bottom: 0px;
   font-size: 16px;
 }
+.author-image {
+  max-width: 50px;
+  max-height: 50px;
+}
 /*# sourceMappingURL=maps/style.css.map */

@@ -4,7 +4,8 @@ bgImage: images/background/page-title.jpg
 date: 2018-09-24T11:07:10+06:00
 description : "This is meta description"
 author: John Lincon
-type: post
+authorImage: "/images/chetan-big-white.jpg"
+type: learn-statistics
 image: images/blog/blog-3.jpg
 categories: 
   - "Data management"

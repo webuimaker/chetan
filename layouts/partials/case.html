@@ -34,10 +34,12 @@
             {{ "<!-- project item -->" | safeHTML }}
             <div class="col-lg-3 col-md-4 col-sm-6 pb-4 filtr-item case" data-category="{{ .Params.FilterCategories }}">
                 <div class="position-relative">
-                    <img class="img-fluid w-100" src="{{ .Params.Image | absURL }}" alt="project-image">
+                    <div class="background-banner" style="background-image: url({{ .Params.Image | absURL }}); min-height: 250px; height: 250px; background-position: center center;">
+
+                    </div>
                     <div class="project-info">
                         <a href="{{ .Permalink }}" class="h4">{{ .Title }}</a>
-                        <p><i class="ti-tag"></i>{{ .Params.Tag }}</p>
+                        <p><i class="ti-tag"></i>{{ .Params.service | safeHTML }}</p>
                     </div>
                 </div>
             </div>

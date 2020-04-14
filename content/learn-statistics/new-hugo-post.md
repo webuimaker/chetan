@@ -7,12 +7,10 @@ author: Somrat
 type: learn-statistics
 image: images/blog/blog-1.jpg
 categories: 
-  - "Multilevel models"
   - "Multivariate analysis"
 tags:
-  - "Business"
-  - "Marketing"
-  - "Revenue"
+  - "regression"
+  
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex. Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.

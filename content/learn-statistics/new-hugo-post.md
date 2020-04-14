@@ -1,7 +1,7 @@
 ---
 title: "New Hugo Post"
 bgImage: images/background/page-title.jpg
-date: 2018-09-23T11:35:34+06:00
+date: 2020-04-02
 description : "This is meta description"
 author: Somrat
 type: learn-statistics

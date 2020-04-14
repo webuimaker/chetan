@@ -1,6 +1,6 @@
 ---
 title: "Case Studies"
-date: 2018-07-12T18:19:33+06:00
+date: 2020-03-18
 bgImage: /images/background/page-title.png
 description : "This is meta description"
 ---

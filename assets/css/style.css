@@ -2263,16 +2263,6 @@ ul.tag-list li a:hover {
   margin-bottom: 5px;
 }
 
-.post-content ol li::before{
-  position: absolute;
-  font-family: "themify";
-  content: "\e65d";
-  color: #e84444;
-  height: 15px;
-  width: 15px;
-  left: -20px;
-  top: 0;
-}
 
 .post-content h4{
   margin-bottom: 50px;

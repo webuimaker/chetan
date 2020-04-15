@@ -1,21 +1,15 @@
 {{ define "main" }}
 
 {{ " <!-- page title -->" | safeHTML }}
-<section class="section bg-secondary">
+<div class="page-title" style="background: radial-gradient(circle, rgba(247,247,247,1) 46%, rgba(237,237,237,1) 100%);text-align: center;">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="text-white font-weight-bold">{{ .Title }}</h2>
-        <ol class="breadcrumb">
-          <li>
-            <a href="{{ .Site.BaseURL }}">{{ .Site.Params.home }}</a>
-          </li>
-          <li>{{ .Title }}</li>
-        </ol>
+         <header><h1 class="font-weight-bold">{{ .Title }}</h1></header>
       </div>
     </div>
   </div>
-</section>
+</div>
 {{ " <!-- /page title -->" | safeHTML }}
 
 {{ partial "blog.html" . }}

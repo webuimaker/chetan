@@ -1,18 +1,16 @@
 ---
 title: "New Hugo Post"
 bgImage: images/background/page-title.jpg
-date: 2018-09-23T11:35:34+06:00
+date: 2020-04-02
 description : "This is meta description"
 author: Somrat
 type: learn-statistics
 image: images/blog/blog-1.jpg
 categories: 
-  - "Multilevel models"
   - "Multivariate analysis"
 tags:
-  - "Business"
-  - "Marketing"
-  - "Revenue"
+  - "regression"
+  
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex. Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.

@@ -11,7 +11,7 @@ description : "This is meta description"
 client: NHS Consultant
 country: United Kingdom
 sector: Finanace and Economics
-service: Clinical trial design and analysis
+service: Clinical-trial Design and Analysis
 startdate: 08/07/2019
 enddate:  12/07/2019
 review: "Quality statistical work yet at affordable cost. Explained the difficult statistical concept clearly, quick turnaround time"

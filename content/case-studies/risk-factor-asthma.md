@@ -9,7 +9,7 @@ description : "This is meta description"
 client: NHS Consultant
 country: United Kingdom
 sector: Health and Medical
-service: statistical analysis <br> and modelling
+service: Statistical Analysis & Modelling
 serviceUrl: /statistical-analysis-modelling
 startdate: 08/07/2019
 enddate:  12/07/2019

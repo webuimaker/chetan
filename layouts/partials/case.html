@@ -33,16 +33,16 @@
             {{ range .Data.Pages }}
             {{ "<!-- project item -->" | safeHTML }}
             <div class="col-lg-3 col-md-4 col-sm-6 pb-4 filtr-item case" data-category="{{ .Params.FilterCategories }}">
-                <a href="{{ .Permalink }}" class="h4"> 
+                <a href="{{ .Permalink }}"> 
                     <div class="position-relative">
                     <div class="background-banner" style="background-image: url({{ .Params.Image | absURL }}); min-height: 250px; height: 250px; background-position: center center;">
 
                     </div>
                     <div class="project-info">
                         <a href="{{ .Permalink }}" class="h4">{{ .Title }}</a>
-                        <p><i class="ti-tag"></i>{{ .Params.service | safeHTML }}</p>
+                        <p>{{ .Params.subHeader | safeHTML }}</p>
                     </div>
-                </div>
+                    </div>
                 </a>
             </div>
             {{ end }}

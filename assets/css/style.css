@@ -160,8 +160,8 @@ body {
 
 ol,
 ul {
-  list-style-type: none;
-  margin: 0px;
+  list-style-type: disc;
+  margin: 5px;
 }
 
 img {

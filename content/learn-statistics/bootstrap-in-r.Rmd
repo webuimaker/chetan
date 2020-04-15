@@ -15,24 +15,41 @@ tags:
 output:
   blogdown::html_page:
     highlight: tango
+    css: myr.css
 ---
 
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE)
+source("render_toc.R")
 ```
+
+<strong>Table of Contents </strong>
+
+```{r toc, echo=FALSE} 
+render_toc("bootstrap-in-r.Rmd")
+```
+
 
 
 This article explains bootstrap concept as a whole and discern the fundamental difference between parametric and nonparametric bootstrap using R. We will be using both-`for` loops and standard `boot` package
 
 
+## H2
+
 We first need to understand following some fundamental concepts. The idea behind bootstrapping is very closely aligned with those concepts.
 
+## H2
+
 Here I have created a hypothetical study in which we are interested in finding out the average birth weight of the babies born in the UK at 37 weeks of gestation.
+
+### H3
 
 + **Experiment **: To find out the average weight of babies born at 37 weeks in the UK
 
 + **Random sample **: Random sample means each and every single individual or object has an equal probability of being chosen from the population. For example, in our study, the population is all birth happened in the UK at 37 weeks of gestation. For typical "random sample", we will need to make sure that each and every birth happening in any corner of the UK, will be participating in our study, from which will choose some of them randomly i.e random sample.
+
+### H3
 
 + **Sample data**: the recorded observation or quantity from the sample of the population. Now we have gone to one local hospital and got data of the birth-weights from 20 babies. Here is the (hypothetical) sample data.
 

@@ -15,6 +15,7 @@ tags:
 output:
   blogdown::html_page:
     highlight: tango
+    css: myr.css
 ---
 
 <style type="text/css">
@@ -79,15 +80,37 @@ code span.va { color: #000000; } /* Variable */
 code span.vs { color: #4e9a06; } /* VerbatimString */
 code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
 </style>
+  <link rel="stylesheet" href="myr.css" type="text/css" />
 
 
+<p><strong>Table of Contents </strong></p>
+<ul>
+<li><a href="#h2">H2</a></li>
+<li><a href="#h2">H2</a>
+<ul>
+<li><a href="#h3">H3</a></li>
+<li><a href="#h3">H3</a></li>
+</ul></li>
+</ul>
 <p>This article explains bootstrap concept as a whole and discern the fundamental difference between parametric and nonparametric bootstrap using R. We will be using both-<code>for</code> loops and standard <code>boot</code> package</p>
+<div id="h2" class="section level2">
+<h2>H2</h2>
 <p>We first need to understand following some fundamental concepts. The idea behind bootstrapping is very closely aligned with those concepts.</p>
+</div>
+<div id="h2-1" class="section level2">
+<h2>H2</h2>
 <p>Here I have created a hypothetical study in which we are interested in finding out the average birth weight of the babies born in the UK at 37 weeks of gestation.</p>
+<div id="h3" class="section level3">
+<h3>H3</h3>
 <ul>
 <li><p><strong>Experiment </strong>: To find out the average weight of babies born at 37 weeks in the UK</p></li>
 <li><p><strong>Random sample </strong>: Random sample means each and every single individual or object has an equal probability of being chosen from the population. For example, in our study, the population is all birth happened in the UK at 37 weeks of gestation. For typical “random sample”, we will need to make sure that each and every birth happening in any corner of the UK, will be participating in our study, from which will choose some of them randomly i.e random sample.</p></li>
-<li><p><strong>Sample data</strong>: the recorded observation or quantity from the sample of the population. Now we have gone to one local hospital and got data of the birth-weights from 20 babies. Here is the (hypothetical) sample data.</p></li>
+</ul>
+</div>
+<div id="h3-1" class="section level3">
+<h3>H3</h3>
+<ul>
+<li><strong>Sample data</strong>: the recorded observation or quantity from the sample of the population. Now we have gone to one local hospital and got data of the birth-weights from 20 babies. Here is the (hypothetical) sample data.</li>
 </ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">set.seed</span>(<span class="dv">1252</span>)</a>
 <a class="sourceLine" id="cb1-2" title="2">df &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">20</span>,<span class="dv">3333</span>,<span class="dv">430</span>)</a>
@@ -98,3 +121,5 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">require</span>(ggplot2)</a>
 <a class="sourceLine" id="cb3-2" title="2"><span class="kw">qplot</span>(df)</a></code></pre></div>
 <p><img src="/learn-statistics/bootstrap-in-r_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+</div>
+</div>

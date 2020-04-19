@@ -1,10 +1,10 @@
 ---
-header: "Case Study: How many sample we need for feasibility study"
+title: "Case Study: How many sample we need for feasibility study"
 
 subHeader: "Statistical approach: monte carol simulation power analysis"
 
 date: 2020-04-02
-title: "sample size for feasibility study"
+smallTitle: "sample size for feasibility study"
 slug: "sample-size-now"
 description : "This is meta description"
 

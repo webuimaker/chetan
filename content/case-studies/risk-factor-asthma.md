@@ -1,8 +1,8 @@
 ---
-header: "What are the risk factors for developing asthma? Which of those factors have high predictive ability? UK based case-control study"
+title: "What are the risk factors for developing asthma? Which of those factors have high predictive ability? UK based case-control study"
 subHeader: "Poisson regression model and multiple imputation of missing data"
 date: 2020-04-10
-title: "Risk factor for Asthma"
+smallTitle: "Risk factor for Asthma"
 slug: "asthma-poisson"
 description : "This is meta description"
 

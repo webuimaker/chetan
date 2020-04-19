@@ -1,10 +1,10 @@
 ---
-header: "Case Study: How many reading I need in Ultrasonography"
+title: "Case Study: How many reading I need in Ultrasonography"
 
 subHeader: "Statistical approach: Intra class corelation"
 
 date: 2020-04-02
-title: "Reliability in ultrasonography"
+smallTitle: "Reliability in ultrasonography"
 slug: "ultra-roc"
 description : "This is meta description"
 

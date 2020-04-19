@@ -430,8 +430,11 @@ button {
   background-position: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 160px 0 100px;
+  padding: 100px 0 ;
   text-align: left;
+}
+.page-title .section-title-border::after {
+  box-shadow: 0 0 0 5px transparent;
 }
 
 /* breadcrumb */
@@ -2965,6 +2968,7 @@ min-height: 440px;
 .bg4 .section-title-border::after {
   box-shadow: 0 0 0 5px #f0f0f0;
 }
+
 .section.bg-secondary ol li {
   color: #fff;
 }

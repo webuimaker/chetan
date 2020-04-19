@@ -1,6 +1,6 @@
 baseURL = "https://xenodochial-johnson-2c8705.netlify.app/"
 theme = "biztrox-hugo"
-summaryLength = "10"
+summaryLength = "20"
 DefaultContentLanguage = "en"
 enableRobotsTXT = true
 enableGitInfo = true

@@ -1,13 +1,17 @@
 ---
 title: "Clinical Trials Design & Analysis"
 subHeader: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+
 date: 2020-03-20
 weight: 6
+
 summaryText: We understand that the design of any clinical trial is an essential step in implementing an effective clinical research program. This is why investing in clinical trial design and analysis enables you to make the most of your investment. ISCON Statistics has several years of experience and will help to provide tailored and reliable clinical trial design specific to your specific research goals and needs.
+
 description : "This is meta description"
+
 image: images/service/clinical_trials_design_analysis.png
-bgImage: images/background/page-title.png
 icon: /images/services/clinical_trials.svg
+
 type : service
 sitemap:
   changefreq: monthly

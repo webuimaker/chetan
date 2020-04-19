@@ -66,6 +66,9 @@
                 {{ "<!-- Sidebar -->" | safeHTML }}
                 <div class="col-lg-4">
                     <div class="bg-white px-4 py-100 sidebar-box-shadow ">
+                        
+                        {{partial "search-form.html" . }}
+
                         {{ "<!-- categories -->" | safeHTML }}
                         <div class="mb-50">
                             <h4 class="mb-3">Topics </h4>

@@ -1694,7 +1694,9 @@ header{
 .about-cv .list-inline .social-icon-outline i{
   color: #e84444;
 }
-
+aside.case-right ul li{
+  list-style: none;
+}
 /* 13.8 ceo section start */
 .ceo-image {
   background-position: center center;

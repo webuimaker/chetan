@@ -78,8 +78,12 @@
 	</nav>
 </footer>
 
-{{ "<!-- /footer -->" | safeHTML }}
 
+
+{{ "<!-- /footer -->" | safeHTML }}
+<script>
+    var indexURL = {{ "index.json" | absURL }}
+</script>
 {{ "<!-- jQuery -->" | safeHTML }}
 <script src="{{ "plugins/jQuery/jquery.min.js" | absURL }}"></script>
 
@@ -99,6 +103,14 @@
 <script async src="{{ .Site.Params.MathJaxCDN | default "//cdnjs.cloudflare.com/ajax/libs" }}/mathjax/{{ .Site.Params.MathJaxVersion | default "2.7.5" }}/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 {{ end }}
 
+
+
+{{ "<!-- jQuery -->" | safeHTML }}
+<script src="{{ "search/fuse.min.js" | absURL }}"></script>
+{{ "<!-- jQuery -->" | safeHTML }}
+<script src="{{ "search/mark.js" | absURL }}"></script>
+{{ "<!-- jQuery -->" | safeHTML }}
+<script src="{{ "search/search.js" | absURL }}"></script>
 
 
 {{ "<!-- Google Map -->" | safeHTML }}

@@ -1,11 +1,11 @@
 ---
 title: "Case Study: How many sample we need for feasibility study"
-
+smallTitle: "sample size for feasibility study"
 subHeader: "Statistical approach: monte carol simulation power analysis"
+image : images/case1-1.jpg
+slug: "sample-size-now"
 
 date: 2020-04-02
-smallTitle: "sample size for feasibility study"
-slug: "sample-size-now"
 description : "This is meta description"
 
 client: NHS Consultant
@@ -15,10 +15,6 @@ service: Research Planning and advice
 startdate: 12/07/2019
 enddate:  14/07/2019
 review: "on time great quality work"
-
-bgcolor: '#444444'
-bgImage:
-image : images/case1-1.jpg
 
 caseStudy : '#'
 filterCategories: agriculture , Research-Planning-Advice

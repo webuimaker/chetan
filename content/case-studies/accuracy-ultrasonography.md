@@ -1,9 +1,11 @@
 ---
 title: "Case Study: How many reading I need in Ultrasonography"
-subHeader: "Statistical approach: Intra class corelation"
-date: 2020-04-02
 smallTitle: "Reliability in ultrasonography"
+subHeader: "Statistical approach: Intra class corelation"
+image : images/case1-1.jpg
 slug: "ultra-roc"
+
+date: 2020-04-02
 description : "This is meta description"
 
 client: NHS Consultant
@@ -13,7 +15,6 @@ service: Clinical-trial Design and Analysis
 startdate: 08/07/2019
 enddate:  12/07/2019
 review: "Quality statistical work yet at affordable cost. Explained the difficult statistical concept clearly, quick turnaround time"
-image : images/case1-1.jpg
 
 caseStudy : '#'
 filterCategories: finanace-economics, clinical-trials-design-analysis

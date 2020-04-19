@@ -1,13 +1,18 @@
 ---
 title: "Research Design and Methodology"
+subHeader: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+
 date: 2020-03-06
-weight: 1
-description : "This is meta description SEO with"
+
 summaryText: "The validity of study findings not only depends on its results but also on its design and conduct.  Consult ISCON statistician early to help you to optimize your study design and streamline the statistical analysis plan"
 
-bgImage: images/background/page-title.png
+description : "This is meta description SEO with"
+
+weight: 1
+
 image: images/service/research_planning _methodology.png
 icon: /images/services/research_planning.svg
+
 type : service
 sitemap:
   changefreq: monthly

@@ -1,5 +1,5 @@
 ---
-title: "Search Result"
-date: 2019-05-14T14:46:10+06:00
+title: "Here is your search results"
+date: 2020-04-15
 description: "This is meta description"
 ---

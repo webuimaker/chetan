@@ -3,7 +3,7 @@
     <div class="bg-white px-4 py-100 sidebar-box-shadow  right-side">
         {{ "<!-- categories -->" | safeHTML }}
         <div class="mb-50">
-            
+
             {{partial "search-form.html" . }}
             <h4 class="mb-3">Topics </h4>
             {{- if isset .Site.Taxonomies "categories" }}
@@ -19,7 +19,7 @@
             {{- end }}
         </div>
 
-        
+
         {{ "<!-- tags -->" | safeHTML }}
         <div class="mb-50">
             <h4 class="mb-3">Tags</h4>
@@ -33,6 +33,6 @@
             {{- end }}
             {{- end }}
         </div>
-        
+
     </div>
 </div>

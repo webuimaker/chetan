@@ -38,7 +38,7 @@ HUGO_VERSION = "0.67.1"
 [[headers]]
   for = "/*"
   [headers.values]
-   Content-Type = "text/html; charset=UTF-8; image/vnd.microsoft.icon ; application/json"
+   Content-Type = "text/html; charset=UTF-8"
    X-UA-Compatible = "IE=edge"
    X-Frame-Options = "DENY"
    X-XSS-Protection = "1; mode=block"

@@ -81,18 +81,11 @@
 
 
 {{ "<!-- /footer -->" | safeHTML }}
-<script>
-    var indexURL = {{ "index.json" | absURL }}
-</script>
+<script> var indexURL = {{ "index.json" | absURL }} </script>
 
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "js/main.js" | minify}}
 <script src="{{ $script.Permalink }}"></script>
-
-
-
-
-
 
 
 {{ "<!-- Mathjax-->" | safeHTML }}

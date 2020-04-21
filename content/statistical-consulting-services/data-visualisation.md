@@ -6,9 +6,8 @@ description : "This is meta description"
 
 summaryText: Effective data visualisation also communicates findings clearly and effectively, highlighting important patterns and relationships. Let ISCON statistician help you to create precise and efficient visualisation so that it has the right impact.
 
-image: images/service/data_visualisation.png
-bgImage: images/background/page-title.png
-icon: /images/services/data_visualisation.svg
+image: images/services/data_visualisation.png
+icon: /images/homepage/services/data_visualisation.svg
 type : service
 sitemap:
   changefreq: monthly

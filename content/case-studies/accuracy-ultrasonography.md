@@ -2,7 +2,7 @@
 title: "Case Study: How many reading I need in Ultrasonography"
 smallTitle: "Reliability in ultrasonography"
 subHeader: "Statistical approach: Intra class corelation"
-image : images/case1-1.jpg
+image : images/casestudies/asthma/asthma.jpg
 slug: "ultra-roc"
 
 date: 2020-04-02
@@ -29,9 +29,6 @@ NHS specialist consultant performed population-based case-control study in UK ba
 - Sample data has high proportion of missing observations. Missing observation pose significant challenge to validity and reliability of statistical findings
 - The statistical findings should be interpretable to lay-audience
 - The assumption of statistical model needs to be met in order to provide unbiased, valid conclusion
-
-
-{{< figure class="" src="/images/case-1-map.jpg" title="this is title of fig" caption="this is caption" alt="roc3">}}
 
 ### Statistical approach
 

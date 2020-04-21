@@ -9,8 +9,8 @@ summaryText: We understand that the design of any clinical trial is an essential
 
 description : "This is meta description"
 
-image: images/service/clinical_trials_design_analysis.png
-icon: /images/services/clinical_trials.svg
+image: images/services/clinical_trials_design_analysis.png
+icon: /images/homepage/services/clinical_trials.svg
 
 type : service
 sitemap:

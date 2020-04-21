@@ -2,7 +2,7 @@
 title: "What are the risk factors for developing asthma? Which of those factors have high predictive ability? UK based case-control study"
 smallTitle: "Risk factor for Asthma"
 subHeader: "Poisson regression model and multiple imputation of missing data"
-image : /images/case1-1.jpg
+image : images/casestudies/asthma/asthma.jpg
 slug: "asthma-poisson"
 
 date: 2020-04-10
@@ -33,7 +33,7 @@ NHS specialist consultant performed population-based case-control study in UK ba
 
 
 
-{{< figure class="text-center" src="/images/case-1-map.jpg" title="this is title of fig" caption="this is caption" alt="roc3">}}
+{{< figure class="text-center" src="/images/casestudies/asthma/roc_curve.jpg" title="this is title of fig" caption="this is caption" alt="roc3">}}
 
 ### Statistical approach
 

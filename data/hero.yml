@@ -11,7 +11,7 @@ btn :
     btnURL : "#"
     btnKlass : "btn-secondary"
 images :
-  - "/images/methods/linear_mixed_multilevel_model.svg"
-  - "/images/methods/quantile_regression_non_linear.svg"
-  - "/images/methods/kaplan_Meier_estimator_survival_analysis.svg"
-  - "/images/methods/general_linear_model_ordinary_least_square.svg"
+  - "/images/homepage/methods/linear_mixed_multilevel_model.svg"
+  - "/images/homepage/methods/quantile_regression_non_linear.svg"
+  - "/images/homepage/methods/kaplan_Meier_estimator_survival_analysis.svg"
+  - "/images/homepage/methods/general_linear_model_ordinary_least_square.svg"

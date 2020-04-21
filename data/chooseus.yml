@@ -1,15 +1,15 @@
 enable : enable
 title : "Four reasons to choose us"
 item :
-  - icon : "/images/why_choose_us/qualified_statisticians.svg"
+  - icon : "/images/homepage/reasontochoose/qualified_statisticians.svg"
     content : RSS (UK) registered & experienced statisticians
 
-  - icon : "/images/why_choose_us/systematic_approach.svg"
+  - icon : "/images/homepage/reasontochoose/systematic_approach.svg"
     content : Structured & systematic approach in data analysis
 
-  - icon : "/images/why_choose_us/communication.svg"
+  - icon : "/images/homepage/reasontochoose/communication.svg"
     content : Clear & comprehensible reporting with unlimited 24/7 follow-up
 
-  - icon : "/images/why_choose_us/ontime_delivery.svg"
+  - icon : "/images/homepage/reasontochoose/ontime_delivery.svg"
     content : On-time & on-budget project delivery
 

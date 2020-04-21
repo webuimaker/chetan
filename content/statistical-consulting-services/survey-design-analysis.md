@@ -5,9 +5,8 @@ weight: 5
 description : "This is meta description"
 summaryText: Our statistical consultants will take it all on ourselves to help you identify the question design, sampling method, and survey result analysis. Our professionals will translate your research goals and aim into an analysis plan based upon sound and reliable statistical practices. 
  
-image: images/service/survey_design_analysis.png
-bgImage: images/background/page-title.png
-icon: /images/services/survey_design.svg
+image: images/services/survey_design_analysis.png
+icon: /images/homepage/services/survey_design.svg
 type : service
 sitemap:
   changefreq: monthly

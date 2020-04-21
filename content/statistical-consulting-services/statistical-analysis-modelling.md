@@ -6,9 +6,8 @@ description : "This is meta description"
 
 summaryText: Statistics is not only about collecting data and creating graphs and tables; it is a science of making inferences or predictions from observed data applied to a population. ISCON Statistics has statistical consultants that are well equipped to handle all your statistical needs. We use various software packages, such as STATA, SPSS, and R, as one of the components of our data analysis services.
 
-image: images/service/statistical_analysis_modelling.png
-bgImage: images/background/page-title.png
-icon: /images/services/statistical_analysis.svg
+image: images/services/statistical_analysis_modelling.png
+icon: /images/homepage/services/statistical_analysis.svg
 type : service
 sitemap:
   changefreq: monthly

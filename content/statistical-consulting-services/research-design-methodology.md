@@ -10,8 +10,8 @@ description : "This is meta description SEO with"
 
 weight: 1
 
-image: images/service/research_planning _methodology.png
-icon: /images/services/research_planning.svg
+image: images/services/research_planning _methodology.png
+icon: /images/homepage/services/research_planning.svg
 
 type : service
 sitemap:

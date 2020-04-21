@@ -2,7 +2,7 @@
 title: "Case Study: How many sample we need for feasibility study"
 smallTitle: "sample size for feasibility study"
 subHeader: "Statistical approach: monte carol simulation power analysis"
-image : images/case1-1.jpg
+image : images/casestudies/asthma/asthma.jpg
 slug: "sample-size-now"
 
 date: 2020-04-02
@@ -31,7 +31,7 @@ NHS specialist consultant performed population-based case-control study in UK ba
 - The assumption of statistical model needs to be met in order to provide unbiased, valid conclusion
 
 
-{{< figure class="" src="/images/case-1-map.jpg" title="this is title of fig" caption="this is caption" alt="roc3">}}
+
 
 ### Statistical approach
 

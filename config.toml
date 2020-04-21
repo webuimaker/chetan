@@ -24,11 +24,11 @@ mail = "chetan.prajapati@live.com"
 mobile = "+44 7392 339 862"
 copyright = "© Copyright 2020 ISCON Statistical Services. All Rights Reserved."
 description = "Experienced and professional statistician offers reliable statistical consulting services online to researchers, businesses and PhD students. Hire RSS(UK) accredited freelance statistician for in-depth data analysis and statistical modelling in R, SPSS, STATA. Ask for statistics help in dissertation, medical statistics"
-logo = "images/logo.png"
+logo = "images/homepage/logo/logo.png"
 gmapAPI = ""
 mapLatitude = ""
 mapLongitude = ""
-mapMarker = "images/marker.png"
+mapMarker = "images/contact/marker.png"
 googleAnalitycsID = ""
 mailchimpFormAction = ""
 mailchimpFormName = ""
@@ -141,40 +141,40 @@ search = true
       title = "Proficient in wide array of statistical software and tools"
       titleSM = ""
         [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/statistical-software/R-statistical-software.png"
+        image = "images/homepage/software/R-statistical-software.png"
         URL = "#"
 
         [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/statistical-software/STATA-statistical-software.png"
+        image = "images/homepage/software/STATA-statistical-software.png"
         URL = "#"
 
         [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/statistical-software/IBM-SPSS-statistical-software.png"
+        image = "images/homepage/software/IBM-SPSS-statistical-software.png"
         URL = "#"
 
         [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/statistical-software/WinBugs-MCMC-software.png"
+        image = "images/homepage/software/WinBugs-MCMC-software.png"
         URL = "#"
 
         [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/statistical-software/StatXact-exact-tests.png"
+        image = "images/homepage/software/StatXact-exact-tests.png"
         URL = "#"
 
         [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/statistical-software/MLWin-Multi-level-model.png"
+        image = "images/homepage/software/MLWin-Multi-level-model.png"
         URL = "#"
 
         [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/statistical-software/GGPLOT2-R.png"
+        image = "images/homepage/software/GGPLOT2-R.png"
         URL = "#"
 
         [[Languages.en.params.logoSlider.sliderItem]]
-        image = "images/statistical-software/plotly.png"
+        image = "images/homepage/software/plotly.png"
         URL = "#"
 
       # footer
       [Languages.en.params.footer]
-      logo = "/images/logo-footer.png"
+      logo = "/images/homepage/logo/logo-footer.png"
       content = "62 Maple close, Bristol, BS34 6HH"
       email = "admin@isocon-statistics.com"
 

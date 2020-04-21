@@ -4,9 +4,10 @@ date: 2020-03-22
 weight: 7
 description : "This is meta description"
 summaryText: We are at the forefront of modern epidemiologic methodology as well as practice. Driven by your research objectives, our statisticians bring scientific integrity, rigor to protocol design, research reporting, and data analytics. Their expertise elevates understanding and knowledge of the safety and efficacy of drugs, biologics, devices, and healthcare delivery. 
-image: images/service/epidemiology_genetics.png
-bgImage: images/background/page-title.png
-icon: /images/services/epidemiology_genetics.svg
+
+image: images/services/epidemiology_genetics.png
+icon: /images/homepage/services/epidemiology_genetics.svg
+
 type : service
 sitemap:
   changefreq: monthly

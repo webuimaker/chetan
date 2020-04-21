@@ -15,7 +15,7 @@ section3:
 section4:
   text: "At ISCON Statistics, we ardently follow both these principles to deliver precise and quality results. Our expertise in statistical and scientific methodology enables us to perform comprehensive, in-depth, and accurate statistical analysis of the provided data. In turn, this helps you achieve high-quality and reproducible research results, enabling you to make logical and informed decisions."
 designation: BDS PGDip (Public Health) GradCert(Statistics) MSc (Statistics)
-image : /images/chetan-big.png
+image : /images/about/chetan-big.png
 bgImage: 
 bgcolor: '#444444'
 facebookURL : '#'
@@ -42,9 +42,9 @@ cvContent:
      desc: Dr Chetan is registered and professional member of <strong>Royal Statistical Society</strong>, leading body of professional statistician in UK (Registration number 125676). He is also active member of <strong>Statistics Without Borders (SWB)</strong> and <strong>International Statistical Institute (ISI)</strong>.
      images:
       - title: Royal Statistical Society
-        image: /images/royal-statistical-society.jpg
+        image: /images/about/royal-statistical-society.jpg
       - title: Statistics Without Borders
-        image: /images/statistics-without-borders.jpg
+        image: /images/about/statistics-without-borders.jpg
       - title: International Statistical Institute
-        image: /images/international-statistical-institute.jpg 
+        image: /images/about/international-statistical-institute.jpg 
 ---

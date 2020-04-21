@@ -4,9 +4,9 @@ date: 2020-03-21
 weight: 8
 summaryText: ISCON Statistics provides you with on-site courses in Statistical Methods, Quality, and Reliability so that your team can turn the data you have into a valuable and reliable source of information to enhance and expand your business. 
 description : "This is meta description"
-image: images/service/statistics_training.png
-bgImage: images/background/page-title.png
-icon: /images/services/training.svg
+
+image: images/services/statistics_training.png
+icon: /images/homepage/services/training.svg
 type : service
 sitemap:
   changefreq: monthly

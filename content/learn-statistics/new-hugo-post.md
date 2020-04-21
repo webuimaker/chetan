@@ -5,7 +5,7 @@ date: 2020-04-02
 description : "This is meta description"
 author: Somrat
 type: learn-statistics
-image: images/blog/blog-1.jpg
+image: images/learnstatistics/bootstrap_in_R.png
 categories: 
   - "Multivariate analysis"
 tags:

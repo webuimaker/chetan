@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on ISCON Statistical Consulting Services | Experienced &amp; Accredited UK based Statistician</title>
-    <link>https://xenodochial-johnson-2c8705.netlify.app/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on ISCON Statistical Consulting Services | Experienced &amp; Accredited UK based Statistician</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,24 +11,24 @@
     <copyright>© Copyright 2020 ISCON Statistical Services. All Rights Reserved.</copyright>
     <lastBuildDate>Sun, 12 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://xenodochial-johnson-2c8705.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Statistical models for continuous outcomes</title>
-      <link>https://xenodochial-johnson-2c8705.netlify.app/categories/statistical-models-for-continuous-outcomes/</link>
+      <link>/categories/statistical-models-for-continuous-outcomes/</link>
       <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
       <author>chetan.prajapati@live.com (Chetan Prajapati (Statistician))</author>
-      <guid>https://xenodochial-johnson-2c8705.netlify.app/categories/statistical-models-for-continuous-outcomes/</guid>
+      <guid>/categories/statistical-models-for-continuous-outcomes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Multivariate analysis</title>
-      <link>https://xenodochial-johnson-2c8705.netlify.app/categories/multivariate-analysis/</link>
+      <link>/categories/multivariate-analysis/</link>
       <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
       <author>chetan.prajapati@live.com (Chetan Prajapati (Statistician))</author>
-      <guid>https://xenodochial-johnson-2c8705.netlify.app/categories/multivariate-analysis/</guid>
+      <guid>/categories/multivariate-analysis/</guid>
       <description></description>
     </item>
     

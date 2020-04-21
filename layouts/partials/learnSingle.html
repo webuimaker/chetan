@@ -1,16 +1,16 @@
 {{ "<!-- blog single -->" | safeHTML }}
-<section>
+<div>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 py-100">
                 <div class="border rounded bg-white">
                     <img class="img-fluid w-100 rounded-top" src="{{ .Params.image | absURL }}" alt="blog-image">
                     <div class="p-4">
-                        
+
                         <ul class="list-inline d-block pb-4 border-bottom mb-3">
                             <li class="list-inline-item text-color"><img class="rounded-circle author-image" alt="100x100" src="{{ .Params.authorImage | absURL }}"
                                 data-holder-rendered="true"> </li>
-                            
+
                             <li class="list-inline-item text-color">By: {{ .Params.Author }}</li>
                             <li class="list-inline-item text-color">Date: {{ .PublishDate.Format "02 Jan" }}</li>
                             <!-- <li class="list-inline-item text-color">Tag:
@@ -35,7 +35,7 @@
                                     {{ end }}
                                 </li>
                             </ul>
-                            
+
                 <div class="py-4 border-bottom mb-3">
                     <div class="row">
                         <div class="col-lg-5 mb-4 mb-lg-0">
@@ -61,12 +61,12 @@
                     </div>
                 </div>
                 </div>
-                
-                
+
+
                 {{ "<!-- Sidebar -->" | safeHTML }}
                 <div class="col-lg-4">
                     <div class="bg-white px-4 py-100 sidebar-box-shadow ">
-                        
+
                         {{partial "search-form.html" . }}
 
                         {{ "<!-- categories -->" | safeHTML }}
@@ -84,8 +84,8 @@
                             {{- end }}
                             {{- end }}
                         </div>
-                
-                        
+
+
                         {{ "<!-- tags -->" | safeHTML }}
                         <div class="mb-50">
                             <h4 class="mb-3">Tags</h4>
@@ -99,7 +99,7 @@
                             {{- end }}
                             {{- end }}
                         </div>
-                        
+
                     </div>
                 </div>
 
@@ -107,5 +107,5 @@
             </div>
         </div>
     </div>
-</section>
+</article>
 {{ "<!-- /blog-single -->" | safeHTML }}

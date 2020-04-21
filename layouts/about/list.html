@@ -74,7 +74,7 @@
             <aside class="col-lg-4">
                 {{ "<!-- team member info -->" | safeHTML }}
                 <div class="bg-gray rounded mb-50">
-                    <img class="img-fluid w-100 rounded-top" src="{{ .Params.Image | absURL }}" alt="team member">
+                    <img class="lazyload img-fluid w-100 rounded-top" data-src="{{ .Params.Image | absURL }}" alt="team member">
                     <div class="py-2 px-4 pb-3">
                         <div class="py-2 border-bottom">
                             <h2 class="d-inline-block  m-0">{{.Params.cvContent.name}}</h2>
@@ -132,8 +132,8 @@
                    {{if .images}}
                        <div class="row d-flex align-text-bottom image-about">
                            {{range .images}}
-                               <div class="col text-center ">
-                                   <img src="{{.image | absURL}}" alt="{{.title}}"><br>
+                               <div class="col text-center lazyload ">
+                                   <img data-src="{{.image | absURL}}" alt="{{.title}}"><br>
                                    <em>{{.title}}</em>
                                </div>
                            {{end}}

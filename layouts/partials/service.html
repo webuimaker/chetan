@@ -11,7 +11,7 @@
             {{ "<!-- service item -->" | safeHTML }}
             {{ $ser := lower  .Title }}
             <div class="row mb-5">
-                <div class="col-md-6"><img class="card-img-top rounded-0" src="{{ .Params.image | absURL }}" alt="service-image"></div>
+                <div class="col-md-6"><img class="lazyload card-img-top rounded-0" data-src="{{ .Params.image | absURL }}" alt="service-image"></div>
                  <div class="col-md-6  mb-5" id="{{replace  $ser " " "-"}}">
                 <h2 class="card-title pt-3">{{ .Title }}</h2>
                 <p class="card-text mb-0">{{ .Params.SummaryText }}</p>

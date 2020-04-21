@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-lg-8 py-100">
                 <div class="border rounded bg-white">
-                    <img class="img-fluid w-100 rounded-top" src="{{ .Params.image | absURL }}" alt="blog-image">
+                    <img class="lazyload img-fluid w-100 rounded-top" data-src="{{ .Params.image | absURL }}" alt="blog-image">
                     <div class="p-4">
 
                         <ul class="list-inline d-block pb-4 border-bottom mb-3">

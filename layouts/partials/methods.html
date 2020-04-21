@@ -20,7 +20,7 @@
 								<p class="text-dark mb-50" data-animation-in="fadeInLeft" data-delay-in=".9" data-duration-in=".5">{{ .description | safeHTML }}</p>{{end}} {{ if .btn.enable }} <a class="btn btn-outline text-uppercase" data-animation-in="fadeInDown" data-delay-in="1.3" data-duration-in=".5" href="{{.btn.btnURL|absURL}}">{{ .btn.btnText }}</a> {{ end }}
 							</div>
 						</div>
-						<div class="col-lg-6"><img alt="{{ .heading }}" class="img-fluid" src="{{.rightImage|absURL}}"></div>
+						<div class="col-lg-6"><img alt="{{ .heading }}" class="lazyload img-fluid" data-src="{{.rightImage|absURL}}"></div>
 					</div>
 				</div>
 			</div>{{ end }}

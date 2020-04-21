@@ -2,7 +2,7 @@
 <div class="bg-gray py-5">
 	<div class="container">
 		<div class="client-logo-slider align-self-center">
-			{{ range .Site.Params.logoSlider.sliderItem }} <a class="text-center d-block outline-0 py-3 px-2" href="{{.URL|absURL}}"><img alt="client-logo" class="d-unset" src="{{.image|absURL}}"></a> {{ end }}
+			{{ range .Site.Params.logoSlider.sliderItem }} <a class="text-center d-block outline-0 py-3 px-2" href="{{.URL|absURL}}"><img alt="client-logo" class="lazyload d-unset" data-src="{{.image|absURL}}"></a> {{ end }}
 		</div>
 	</div>
 </div>{{ "<!-- /client logo slider -->" | safeHTML}} {{ end }}

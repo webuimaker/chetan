@@ -14,7 +14,7 @@
 					<li style="list-style: none">{{end}}</li>
 				</ul>
 			</div>{{ "<!-- philosophy image -->" | safeHTML }}
-			<div class="col-lg-5 align-self-center order-1 order-lg-1 mb-md-50"><img alt="philosophy-image" class="img-fluid w-100" src="{{.Site.Data.helpfulServices.image|absURL}}"></div>
+			<div class="col-lg-5 align-self-center order-1 order-lg-1 mb-md-50"><img alt="philosophy-image" class="lazyload img-fluid w-100" data-src="{{.Site.Data.helpfulServices.image|absURL}}"></div>
 		</div>
 	</div>
 </div>{{ "<!-- /philosophy -->" | safeHTML }}

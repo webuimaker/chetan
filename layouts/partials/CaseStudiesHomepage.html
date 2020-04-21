@@ -12,7 +12,7 @@
 		{{ range $index, $element:= where .Site.RegularPages "Type" "case"}} {{ "<!-- project item -->" | safeHTML }}
 		<div class="col-lg-3 col-md-4 col-sm-6 case">
 			<div class="position-relative">
-				<img alt="project-image" class="img-fluid w-100" src="{{.Params.Image|absURL}}">
+				<img alt="project-image" class="img-fluid w-100 lazyload" data-src="{{.Params.Image|absURL}}">
 				<div class="project-info">
 					<a class="h4" href="{{.Permalink}}">{{ .Title }}</a> {{ $ser := lower .Params.Tag }} <a href="service/{{replace  $ser " " "-"}}"><i class="ti-tag"></i>{{ .Params.Tag }}</a>
 				</div>

@@ -132,8 +132,8 @@
                    {{if .images}}
                        <div class="row d-flex align-text-bottom image-about">
                            {{range .images}}
-                               <div class="col text-center lazyload ">
-                                   <img data-src="{{.image | absURL}}" alt="{{.title}}"><br>
+                               <div class="col text-center">
+                                   <img class="lazyload " data-src="{{.image | absURL}}" alt="{{.title}}"><br>
                                    <em>{{.title}}</em>
                                </div>
                            {{end}}

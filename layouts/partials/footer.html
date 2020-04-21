@@ -86,31 +86,24 @@
 </script>
 {{ "<!-- jQuery -->" | safeHTML }}
 <script src="{{ "plugins/jQuery/jquery.min.js" | absURL }}"></script>
-
 {{ "<!-- Bootstrap JS -->" | safeHTML }}
 <script src="{{ "plugins/bootstrap/bootstrap.min.js" | absURL }}"></script>
-
-{{ "<!-- magnific popup -->" | safeHTML }}
-<script src="{{ "plugins/magnific-popup/jquery.magnific.popup.min.js" | absURL }}"></script>
 {{ "<!-- slick slider -->" | safeHTML }}
 <script src="{{ "plugins/slick/slick.min.js" | absURL }}"></script>
 {{ "<!-- filter -->" | safeHTML }}
-<script src="{{ "plugins/filterizr/jquery.filterizr.min.js" | absURL }}"></script>
+<script async src="{{ "plugins/filterizr/jquery.filterizr.min.js" | absURL }}"></script>
 
 {{ "<!-- Mathjax-->" | safeHTML }}
 {{ if and (not .Params.disable_mathjax) (or (in (string .Content) "\\") (in (string .Content) "$")) }}
 <script src="{{ "/js/math-code.js" | relURL }}"></script>
 <script async src="{{ .Site.Params.MathJaxCDN | default "//cdnjs.cloudflare.com/ajax/libs" }}/mathjax/{{ .Site.Params.MathJaxVersion | default "2.7.5" }}/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 {{ end }}
-
-
-
 {{ "<!-- jQuery -->" | safeHTML }}
-<script src="{{ "search/fuse.min.js" | absURL }}"></script>
+<script async src="{{ "search/fuse.min.js" | absURL }}"></script>
 {{ "<!-- jQuery -->" | safeHTML }}
-<script src="{{ "search/mark.js" | absURL }}"></script>
+<script async src="{{ "search/mark.js" | absURL }}"></script>
 {{ "<!-- jQuery -->" | safeHTML }}
-<script src="{{ "search/search.js" | absURL }}"></script>
+<script async src="{{ "search/search.js" | absURL }}"></script>
 
 
 {{ "<!-- Google Map -->" | safeHTML }}

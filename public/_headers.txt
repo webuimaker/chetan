@@ -1,0 +1,42 @@
+/*
+ X-UA-Compatible : IE=edge
+ Content-Type: text/html; charset=UTF-8; image/vnd.microsoft.icon ; application/json
+ X-Frame-Options: DENY
+ X-XSS-Protection: 1; mode=block
+ Referrer-Policy: no-referrer
+ X-Content-Type-Options: nosniff
+ Content-Security-Policy: object-src 'none'; base-uri 'self'
+ Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+
+ /images/*
+Cache-Control: public, max-age=604800, immutable
+
+/*.pdf
+Cache-Control: public, max-age=604800, immutable
+
+/*.ico
+Cache-Control: public, max-age=604800, immutable
+
+/*.flv
+Cache-Control: public, max-age=604800, immutable
+
+/*.jpg
+Cache-Control: public, max-age=604800, immutable
+
+/*.jpeg
+Cache-Control: public, max-age=604800, immutable
+
+/*.png
+Cache-Control: public, max-age=604800, immutable
+
+/*.css
+Cache-Control: public, max-age=604800, immutable
+
+/*.js
+Cache-Control: public, max-age=604800, immutable
+
+/*sw.js
+Cache-Control: public, max-age=604800, immutable
+
+/*.html
+Cache-Control: public, max-age=0, must-revalidate

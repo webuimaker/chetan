@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Bootstrapping in R: Parametric vs Nonparametric Bootstrap | ISCON Statistics </title>
+ <meta name="referrer" content="origin-when-crossorigin">
+<!-- mobile responsive meta -->
+
+<meta name="description" content="This article explains the bootstrap method using example  using loops and boot function. Bootstrapping is a resampling method which used the Monte Carlo technique to estimate standard error, confidence interval, bias. The methods include parametric and non-parametric bootstrap" />
+<meta name="title" content="Bootstrapping in R: Parametric vs Nonparametric Bootstrap | ISCON Statistics" />
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320"/>
+<meta name="author" content="ISCON Statistical Services">
+<!-- Bootstrap --><link rel="stylesheet" href="https://xenodochial-johnson-2c8705.netlify.app/plugins/bootstrap/bootstrap.min.css ">
+<!-- Slick Carousel --> <link rel="stylesheet" href="https://xenodochial-johnson-2c8705.netlify.app/plugins/slick/slick.css "><link rel="stylesheet" href="https://xenodochial-johnson-2c8705.netlify.app/plugins/slick/slick-theme.css ">
+<!-- themify icon --><link rel="stylesheet" href="https://xenodochial-johnson-2c8705.netlify.app/plugins/themify-icons/themify-icons.css ">
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="https://xenodochial-johnson-2c8705.netlify.app/css/style.min.css" integrity="" media="screen">
+
+<link rel="preload" href="plugins/themify-icons/fonts/themify.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="plugins/slick/fonts/slick.woff" as="font" type="font/woff" crossorigin>
+
+
+<!--Favicon-->
+<link rel="shortcut icon" href="https://xenodochial-johnson-2c8705.netlify.app/images/homepage/favicon/favicon.png " type="image/x-icon">
+<link rel="icon" href="https://xenodochial-johnson-2c8705.netlify.app/images/homepage/favicon/favicon.png " type="image/x-icon">
+
+</head><body><!-- navigation -->
+
+    <!-- nav bar -->
+    <nav class="navigation">
+        <div class="container">
+            <div class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="https://xenodochial-johnson-2c8705.netlify.app/">
+
+                    <img src="https://xenodochial-johnson-2c8705.netlify.app/images/homepage/logo/logo.png" alt="Hire statistician online from ISCON Statistical consulting" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+                    aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navigation">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://xenodochial-johnson-2c8705.netlify.app/"> Home </a>
+                        </li>
+                        
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/statistical-consulting-services" role="button"  aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Services
+                                </a>
+                                <div class="dropdown-menu" >
+                                    <div class="container">
+                                            <ul class="nav row">
+                                                
+                                                <li class="nav-item col-md-4">
+                                                  <a class="nav-link" href="/statistical-consulting-services/research-design-methodology/">Research Design &amp; Methodology</a>
+                                                  <p class="px-2 py-0">Get expert statistical advice for your reseach </p>
+                                                </li>
+                                                
+                                                <li class="nav-item col-md-4">
+                                                  <a class="nav-link" href="/statistical-consulting-services/data-visualisation">Data Visualisation</a>
+                                                  <p class="px-2 py-0">Your data tells a story, Let's us help you to create it </p>
+                                                </li>
+                                                
+                                                <li class="nav-item col-md-4">
+                                                  <a class="nav-link" href="/statistical-consulting-services/statistical-analysis-modelling">Statistical Analysis &amp; Modelling</a>
+                                                  <p class="px-2 py-0">Get in-depth analysis and report from expert statistician </p>
+                                                </li>
+                                                
+                                                <li class="nav-item col-md-4">
+                                                  <a class="nav-link" href="/statistical-consulting-services/statistics-help-thesis">Dissertation statistical consulting</a>
+                                                  <p class="px-2 py-0">Let us help you to make your disseration a success with expert statistics help </p>
+                                                </li>
+                                                
+                                                <li class="nav-item col-md-4">
+                                                  <a class="nav-link" href="/statistical-consulting-services/survey-design-analysis">Survey Design &amp; Analysis</a>
+                                                  <p class="px-2 py-0">Let us help you design and analyse your survey </p>
+                                                </li>
+                                                
+                                                <li class="nav-item col-md-4">
+                                                  <a class="nav-link" href="/statistical-consulting-services/clinical-trials-design-analysis">Clinical-trials Design &amp; Analysis</a>
+                                                  <p class="px-2 py-0">Let us help you to design, conduct and analyse your trial data </p>
+                                                </li>
+                                                
+                                                <li class="nav-item col-md-4">
+                                                  <a class="nav-link" href="/statistical-consulting-services/epidemiology-genetics">Epidemiology &amp; Genetics</a>
+                                                  <p class="px-2 py-0">Get help from expert genetic epidemiologist </p>
+                                                </li>
+                                                
+                                                <li class="nav-item col-md-4">
+                                                  <a class="nav-link" href="/statistical-consulting-services/statistics-training">Statistics Training</a>
+                                                  <p class="px-2 py-0">Let us help you to empower your collagues with interctive statistics training </p>
+                                                </li>
+                                                
+                                            </ul>
+
+                                    </div>
+                                </div>
+                            </li>
+                        
+                        
+                            
+                        <li class="nav-item">
+                            <a class="nav-link" href="/case-studies">Case Studies</a>
+                        </li>
+                        
+                        
+                            
+                        <li class="nav-item">
+                            <a class="nav-link" href="/learn-statistics">Learning Centre</a>
+                        </li>
+                        
+                        
+                            
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about">About</a>
+                        </li>
+                        
+                        
+
+
+                    </ul>
+
+                    
+
+                            <a class="nav-link btn btn-primary btn-sm2 btn-contact" href="https://xenodochial-johnson-2c8705.netlify.app/"> Talk to Statistician </a>
+
+                        
+
+                </div>
+            </div>
+        </div>
+    </nav>
+<main id="content">
+
+<!-- page title -->
+<article>
+<div class="page-title" style="background: radial-gradient(circle, rgba(247,247,247,1) 46%, rgba(237,237,237,1) 100%);text-align: center;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+               <header><h1>Bootstrapping in R: Parametric vs Nonparametric Bootstrap</h1>
+                 <h3 style="margin-top:50px;color: #717579;"> This article explains the bootstrap method using example  using loops and boot function. Bootstrapping is a resampling method which used the Monte Carlo technique to estimate standard error, confidence interval, bias. The methods include parametric and non-parametric bootstrap </h3>
+            </header>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /page title -->
+
+<!-- blog single -->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 py-100">
+                <div class="border rounded bg-white">
+                    <img class="img-fluid w-100 rounded-top" src="https://xenodochial-johnson-2c8705.netlify.app/images/learnstatistics/bootstrap_in_R.png" alt="blog-image">
+                    <div class="p-4">
+                        
+                        <ul class="list-inline d-block pb-4 border-bottom mb-3">
+                            <li class="list-inline-item text-color"><img class="rounded-circle author-image" alt="100x100" src="https://xenodochial-johnson-2c8705.netlify.app/"
+                                data-holder-rendered="true"> </li>
+                            
+                            <li class="list-inline-item text-color">By: Chetan Prajapati</li>
+                            <li class="list-inline-item text-color">Date: 12 Apr</li>
+                            
+                        </ul>
+                        <div class="post-content">
+                            <h1>Bootstrapping in R: Parametric vs Nonparametric Bootstrap</h1>
+                            <ul class="list-inline d-block">
+                                <li class="list-inline-item text-color">Category:
+                                    
+                                    <a class="text-color" href="/categories/statistical-models-for-continuous-outcomes">Statistical models for continuous outcomes</a>
+                                    
+                                </li>
+                            </ul>
+                            <ul class="list-inline d-block pb-4 border-bottom mb-3"></ul>
+                                <li class="list-inline-item text-color">Tag:
+                                    
+                                    <a class="text-color" href="https://xenodochial-johnson-2c8705.netlify.app/tags/parametric">parametric</a>
+                                    
+                                    <a class="text-color" href="https://xenodochial-johnson-2c8705.netlify.app/tags/non-parametri">Non-parametri</a>
+                                    
+                                    <a class="text-color" href="https://xenodochial-johnson-2c8705.netlify.app/tags/boot">boot</a>
+                                    
+                                </li>
+                            </ul>
+                            
+                <div class="py-4 border-bottom mb-3">
+                    <div class="row">
+                        <div class="col-lg-5 mb-4 mb-lg-0">
+                            <!-- share-icon -->
+                            <div class="d-flex">
+                                <span class="font-weight-light mt-2 mr-3">Share:</span>
+                                <ul class="list-inline d-inline-block">
+                                    
+                                    <li class="list-inline-item">
+                                        <a class="share-icon bg-secondary" href="https://xenodochial-johnson-2c8705.netlify.app/">
+                                            <i class="ti-facebook"></i>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="list-inline-item">
+                                        <a class="share-icon bg-secondary" href="https://xenodochial-johnson-2c8705.netlify.app/">
+                                            <i class="ti-twitter-alt"></i>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="list-inline-item">
+                                        <a class="share-icon bg-secondary" href="https://xenodochial-johnson-2c8705.netlify.app/">
+                                            <i class="ti-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="list-inline-item">
+                                        <a class="share-icon bg-secondary" href="https://xenodochial-johnson-2c8705.netlify.app/">
+                                            <i class="ti-google"></i>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- tags -->
+                        </div>
+                    </div>
+                            
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { background-color: #f8f8f8; }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<p><strong>Table of Contents </strong></p>
+<ul>
+<li><a href="#h2">H2</a></li>
+<li><a href="#h2">H2</a>
+<ul>
+<li><a href="#h3">H3</a></li>
+<li><a href="#h3">H3</a></li>
+</ul></li>
+</ul>
+<p>This article explains bootstrap concept as a whole and discern the fundamental difference between parametric and nonparametric bootstrap using R. We will be using both-<code>for</code> loops and standard <code>boot</code> package</p>
+<div id="h2" class="section level2">
+<h2>H2</h2>
+<p>We first need to understand following some fundamental concepts. The idea behind bootstrapping is very closely aligned with those concepts.</p>
+</div>
+<div id="h2-1" class="section level2">
+<h2>H2</h2>
+<p>Here I have created a hypothetical study in which we are interested in finding out the average birth weight of the babies born in the UK at 37 weeks of gestation.</p>
+<div id="h3" class="section level3">
+<h3>H3</h3>
+<ul>
+<li><p><strong>Experiment </strong>: To find out the average weight of babies born at 37 weeks in the UK</p></li>
+<li><p><strong>Random sample </strong>: Random sample means each and every single individual or object has an equal probability of being chosen from the population. For example, in our study, the population is all birth happened in the UK at 37 weeks of gestation. For typical “random sample”, we will need to make sure that each and every birth happening in any corner of the UK, will be participating in our study, from which will choose some of them randomly i.e random sample.</p></li>
+</ul>
+</div>
+<div id="h3-1" class="section level3">
+<h3>H3</h3>
+<ul>
+<li><strong>Sample data</strong>: the recorded observation or quantity from the sample of the population. Now we have gone to one local hospital and got data of the birth-weights from 20 babies. Here is the (hypothetical) sample data.</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">set.seed</span>(<span class="dv">1252</span>)</a>
+<a class="sourceLine" id="cb1-2" title="2">df &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">20</span>,<span class="dv">3333</span>,<span class="dv">430</span>)</a>
+<a class="sourceLine" id="cb1-3" title="3">df</a></code></pre></div>
+<pre><code>##  [1] 3331.608 3549.913 2809.252 2671.465 3383.177 3945.721 3672.601 3922.416
+##  [9] 4647.278 4088.246 3718.874 3724.443 3925.457 3112.920 3495.621 3651.779
+## [17] 3240.194 3867.347 3431.015 4163.725</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">require</span>(ggplot2)</a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="kw">qplot</span>(df)</a></code></pre></div>
+<p><img src="/learn-statistics/bootstrap-in-r_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+</div>
+</div>
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+                
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="bg-white px-4 py-100 sidebar-box-shadow ">
+                        
+                        <!-- search -->
+<form class="form-inline position-relative mb-3" action="https://xenodochial-johnson-2c8705.netlify.app//search">
+    <div class="input-group">
+        <input type="search" class="form-control" placeholder="Search " id="search-query" name="s">
+        <div class="input-group-append">
+          <button class="search-icon btn btn-sm btn-secondary" type="submit">
+            <i class="ti-search text-white"></i>
+          </button>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+
+</form>
+
+                        <!-- categories -->
+                        <div class="mb-50">
+                            <h4 class="mb-3">Topics </h4>
+                            <ul class="list-unstyled mb-0">
+                                <li class="border-bottom">
+                                    <a href="/categories/multivariate-analysis" class="d-block text-color py-10">Multivariate analysis</a>
+                                </li>
+                                <li class="border-bottom">
+                                    <a href="/categories/statistical-models-for-continuous-outcomes" class="d-block text-color py-10">Statistical models for continuous outcomes</a>
+                                </li>
+                            </ul>
+                        </div>
+                
+                        
+                        <!-- tags -->
+                        <div class="mb-50">
+                            <h4 class="mb-3">Tags</h4>
+                            <ul class="list-inline tag-list">
+                                <li class="list-inline-item"><a href="/tags/boot">Boot</a></li>
+                                <li class="list-inline-item"><a href="/tags/non-parametri">Non parametri</a></li>
+                                <li class="list-inline-item"><a href="/tags/parametric">Parametric</a></li>
+                                <li class="list-inline-item"><a href="/tags/regression">Regression</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /blog-single -->
+
+
+        </main><!-- footer -->
+<footer class="bg-secondary bg3">
+	<div class="py-100 border-bottom" style="border-color: #454547 !important">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3">
+					<div class="mb-5 mb-md-0 text-center text-md-left">
+						<!-- logo --> <img alt="logo" class="mb-20" src="https://xenodochial-johnson-2c8705.netlify.app/images/homepage/logo/logo-footer.png"> 
+						<p class="text-white mb-0">62 Maple close, Bristol, BS34 6HH</p>  <a class="text-white" href="mailto:admin@isocon-statistics.com">admin@isocon-statistics.com</a>  <!-- social icon -->
+					<ul class="list-inline mt-3">
+                            
+                            <li class="list-inline-item">
+                                <a class="social-icon-outline" href="https://xenodochial-johnson-2c8705.netlify.app/">
+                                    <i class="ti-facebook"></i>
+                                </a>
+                            </li>
+                            
+                            <li class="list-inline-item">
+                                <a class="social-icon-outline" href="https://xenodochial-johnson-2c8705.netlify.app/">
+                                    <i class="ti-twitter-alt"></i>
+                                </a>
+                            </li>
+                            
+                            <li class="list-inline-item">
+                                <a class="social-icon-outline" href="https://xenodochial-johnson-2c8705.netlify.app/">
+                                    <i class="ti-vimeo-alt"></i>
+                                </a>
+                            </li>
+                            
+                            <li class="list-inline-item">
+                                <a class="social-icon-outline" href="https://xenodochial-johnson-2c8705.netlify.app/">
+                                    <i class="ti-linkedin"></i>
+                                </a>
+                            </li>
+                            
+                        </ul>
+					</div>
+				</div><!-- footer links -->
+				<div class="col-lg-3 col-md-3 col-6">
+					
+					<h4 class="text-white mb-4">Services</h4>
+					<ul class="footer-links">
+						<li style="list-style: none"></li>
+						<li>
+							<a href="https://xenodochial-johnson-2c8705.netlify.app/statistical-consulting-services/research-design-methodology/">Research Design and Methodology</a>
+						</li>
+						<li style="list-style: none"></li>
+						<li>
+							<a href="https://xenodochial-johnson-2c8705.netlify.app/statistical-consulting-services/data-visualisation/">Data Visualisation</a>
+						</li>
+						<li style="list-style: none"></li>
+						<li>
+							<a href="https://xenodochial-johnson-2c8705.netlify.app/statistical-consulting-services/statistical-analysis-modelling/">Statistical Analysis &amp; Modelling</a>
+						</li>
+						<li style="list-style: none"></li>
+						<li>
+							<a href="https://xenodochial-johnson-2c8705.netlify.app/statistical-consulting-services/statistics-help-thesis/">Dissertation statistical consulting</a>
+						</li>
+						<li style="list-style: none"></li>
+						<li>
+							<a href="https://xenodochial-johnson-2c8705.netlify.app/statistical-consulting-services/survey-design-analysis/">Survey Design &amp; Analysis</a>
+						</li>
+						<li style="list-style: none"></li>
+						<li>
+							<a href="https://xenodochial-johnson-2c8705.netlify.app/statistical-consulting-services/clinical-trials-design-analysis/">Clinical Trials Design &amp; Analysis</a>
+						</li>
+						<li style="list-style: none"></li>
+						<li>
+							<a href="https://xenodochial-johnson-2c8705.netlify.app/statistical-consulting-services/epidemiology-genetics/">Epidemiology &amp; Genetics</a>
+						</li>
+						<li style="list-style: none"></li>
+						<li>
+							<a href="https://xenodochial-johnson-2c8705.netlify.app/statistical-consulting-services/statistics-training/">Statistics training</a>
+						</li>
+						<li style="list-style: none"></li>
+					</ul>
+				</div><!-- footer links -->
+				<div class="col-lg-3 col-md-3 col-6"></div><!-- subscribe form -->
+				<div class="col-lg-3 col-md-3">
+					<div class="mt-5 mt-lg-0 text-center text-md-left">
+						<h4 class="mb-4 text-white">Featured articles</h4>
+						<ul class="footer-links">
+                            
+                                <li>
+                                    <a href="https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/bootstrap/">Bootstrapping in R: Parametric vs Nonparametric Bootstrap</a>
+                                </li>
+                            
+                                <li>
+                                    <a href="https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/new-hugo-post/">New Hugo Post</a>
+                                </li>
+                            
+						</ul>
+					</div>
+				</div><!-- subscribe form --> 
+			</div>
+		</div>
+	</div><!-- copyright -->
+ <nav class="pt-4 pb-3 position-relative">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-5">
+                    <p class="text-white text-center text-md-left">
+                        © Copyright 2020 ISCON Statistical Services. All Rights Reserved.</p> 
+                </div>
+                <div class="col-lg-6 col-md-7">
+                    <ul class="list-inline text-center text-md-right">
+                        
+                        <li class="list-inline-item mx-lg-3 my-lg-0 mx-2 my-2">
+                            <a class="font-secondary text-white" href="https://xenodochial-johnson-2c8705.netlify.app/">Sitemap</a>
+                        </li>
+                        
+                        <li class="list-inline-item mx-lg-3 my-lg-0 mx-2 my-2">
+                            <a class="font-secondary text-white" href="https://xenodochial-johnson-2c8705.netlify.app/">Terms of Use</a>
+                        </li>
+                        
+                        <li class="list-inline-item mx-lg-3 my-lg-0 mx-2 my-2">
+                            <a class="font-secondary text-white" href="https://xenodochial-johnson-2c8705.netlify.app/">Privacy &amp; Cookies Policy</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div><!-- back to top --> <button class="back-to-top"><i class="ti-angle-up"></i></button>
+	</nav>
+</footer>
+
+
+
+<!-- /footer -->
+<script> var indexURL = "https://xenodochial-johnson-2c8705.netlify.app/index.json" </script>
+
+<!-- Main Script -->
+
+<script src="https://xenodochial-johnson-2c8705.netlify.app/js/main.min.js"></script>
+
+
+<!-- Mathjax-->
+
+
+
+<!-- Google Map -->
+
+
+<!-- google analitycs -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', '', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</body>
+</html>

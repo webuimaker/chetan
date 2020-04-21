@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>boot on ISCON Statistical Consulting Services | Experienced &amp; Accredited UK based Statistician</title>
+    <link>https://xenodochial-johnson-2c8705.netlify.app/tags/boot/</link>
+    <description>Recent content in boot on ISCON Statistical Consulting Services | Experienced &amp; Accredited UK based Statistician</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>chetan.prajapati@live.com (Chetan Prajapati (Statistician))</managingEditor>
+    <webMaster>chetan.prajapati@live.com (Chetan Prajapati (Statistician))</webMaster>
+    <copyright>© Copyright 2020 ISCON Statistical Services. All Rights Reserved.</copyright>
+    <lastBuildDate>Sun, 12 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://xenodochial-johnson-2c8705.netlify.app/tags/boot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bootstrapping in R: Parametric vs Nonparametric Bootstrap</title>
+      <link>https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/bootstrap/</link>
+      <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
+      <author>chetan.prajapati@live.com (Chetan Prajapati (Statistician))</author>
+      <guid>https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/bootstrap/</guid>
+      <description>a.sourceLine { display: inline-block; line-height: 1.25; }a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }a.sourceLine:empty { height: 1.</description>
+    </item>
+    
+  </channel>
+</rss>

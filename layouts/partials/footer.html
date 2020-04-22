@@ -98,9 +98,12 @@
 {{ "<!-- Mathjax-->" | safeHTML }}
 {{ if and (not .Params.disable_mathjax) (or (in (string .Content) "\\") (in (string .Content) "$")) }}
 <script src="{{ "/js/math-code.js" | relURL }}"></script>
-<script async src="{{ .Site.Params.MathJaxCDN | default "//cdnjs.cloudflare.com/ajax/libs" }}/mathjax/{{ .Site.Params.MathJaxVersion | default "2.7.5" }}/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script async src="{{ .Site.Params.MathJaxCDN | default}} "></script>
 {{ end }}
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.0/fuse.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js"></script>
 
 {{ "<!-- Google Map -->" | safeHTML }}
 <!--

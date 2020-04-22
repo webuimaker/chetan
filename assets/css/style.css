@@ -2899,7 +2899,7 @@ min-height: 440px;
 .btn-contact{
   margin-right: -50px;
 }
-.btn-sm2{padding:7px 14px!important}
+.btn-sm2{padding:7px 14px!important; font-weight: 600 !important;}
 
 .casetitle .right{
   width: 80%;

@@ -12,6 +12,7 @@
 {{- else -}}{{ .Title }} | ISCON Statistics {{- end }}" />
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320"/>
+<link rel="canonical" href="{{ .Permalink }}"/>
 {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 {{ range .AlternativeOutputFormats -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}

@@ -29,7 +29,7 @@ function executeSearch(searchQuery){
   $.getJSON( indexURL, function( data ) {
     var pages = data;
     var fuse = new Fuse(pages, fuseOptions);
-    var result = fuse.search(searchQuery);
+    var result = fuzzyComplete.search(searchQuery);
     console.log({"matches":result});
     if(result.length > 0){
       populateResults(result);

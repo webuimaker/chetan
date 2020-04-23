@@ -16,39 +16,76 @@
                            
                         </ul> -->
                         <div class="post-content">
-                            <!-- <h1>{{ .Title }}</h1>
-                            <ul class="list-inline d-block pb-4 border-bottom mb-3"></ul>
-                                <li class="list-inline-item text-color">Tag:
-                                    {{ range .Params.Tags }}
-                                    <a class="text-color" href="{{ "tags/" | absURL }}{{ . | lower }}">{{ . }}</a>
-                                    {{ end }}
-                                </li>
-                            </ul> -->
-
-                <div class="py-4 border-bottom mb-3 d-none">
-                    <div class="row ">
-                        <div class="col-lg-5 mb-4 mb-lg-0">
-                            {{ "<!-- share-icon -->" | safeHTML }}
-                            <div class="d-flex">
-                                <span class="font-weight-light mt-2 mr-3">Share:</span>
-                                <ul class="list-inline d-inline-block">
-                                    {{ range .Site.Params.sharePost }}
-                                    <li class="list-inline-item">
-                                        <a class="share-icon bg-secondary" href="{{ .URL | absURL }}">
-                                            <i class="{{ .icon }}"></i>
-                                        </a>
-                                    </li>
-                                    {{ end }}
-                                </ul>
+                            <div class="col-12 mb-3">
+                                <div class="d-flex flex-sm-row flex-column  text-sm-left">
+                                    <img src="{{.Params.authorImage | absURL}}" alt="{{.Params.author}}" class="round-icon mr-sm-3 mr-0 mb-3 mb-sm-0">
+                                    
+                                    <div class="text-center text-sm-left">
+                                        <h4 class="count mb-0">{{.Params.author}}</h4>
+                                        <p class=" mb-0 font-sm">{{.Params.authorPos}}</p>
+                                        <ul class="list-inline tag-list m-0">
+                                           <strong>Tag:</strong>
+                                                {{ range .Params.Tags }} 
+                                                    <li class="list-inline-item">
+                                                        <a class="text-color" href="{{ "tags/" | absURL }}{{ . | lower }}">{{ . }}</a>
+                                                    </li>
+                                                {{ end }}
+                                            
+                                        </ul> 
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        {{ "<!-- tags -->" | safeHTML }}
-                        </div>
-                    </div>
+
+
+                            <div class="py-4 border-bottom mb-3 d-none">
+                                <div class="row ">
+                                    <div class="col-lg-5 mb-4 mb-lg-0">
+                                        {{ "<!-- share-icon -->" | safeHTML }}
+                                        <div class="d-flex">
+                                            <span class="font-weight-light mt-2 mr-3">Share:</span>
+                                            <ul class="list-inline d-inline-block">
+                                                {{ range .Site.Params.sharePost }}
+                                                <li class="list-inline-item">
+                                                    <a class="share-icon bg-secondary" href="{{ .URL | absURL }}">
+                                                        <i class="{{ .icon }}"></i>
+                                                    </a>
+                                                </li>
+                                                {{ end }}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    {{ "<!-- tags -->" | safeHTML }}
+                                    </div>
+                                </div>
                             {{ .Content }}    
                         </div>
                     </div>
                 </div>
+
+
+
+
+                <div id="disqus_thread"></div>
+                <script>
+
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://iscon-statistics.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
                 </div>
 
 

@@ -1,5 +1,5 @@
 {{ "<!-- blog single -->" | safeHTML }}
-<div>
+
     <div class="container">
         <div class="row">
             <div class="col-lg-8 py-50">
@@ -14,7 +14,7 @@
                                     <img src="{{.Params.authorImage | absURL}}" alt="{{.Params.author}}" class="round-icon mr-sm-3 mr-0 mb-3 mb-sm-0">
 
                                     <div class="text-center text-sm-left">
-                                        <h4 class="count mb-0">{{.Params.author}}</h4>
+                                        <strong>{{.Params.author}}</strong>
                                         <p class=" mb-0 font-sm">{{.Params.authorPos}}</p>
                                         <ul class="list-inline tag-list m-0">
                                                 {{ range .Params.Tags }}
@@ -31,26 +31,7 @@
 
 
 
-                            <div class="py-4 border-bottom mb-3 d-none">
-                                <div class="row ">
-                                    <div class="col-lg-5 mb-4 mb-lg-0">
-                                        {{ "<!-- share-icon -->" | safeHTML }}
-                                        <div class="d-flex">
-                                            <span class="font-weight-light mt-2 mr-3">Share:</span>
-                                            <ul class="list-inline d-inline-block">
-                                                {{ range .Site.Params.sharePost }}
-                                                <li class="list-inline-item">
-                                                    <a class="share-icon bg-secondary" href="{{ .URL | absURL }}">
-                                                        <i class="{{ .icon }}"></i>
-                                                    </a>
-                                                </li>
-                                                {{ end }}
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    {{ "<!-- tags -->" | safeHTML }}
-                                    </div>
-                                </div>
+
                             {{ .Content }}
                         </div>
                     </div>
@@ -58,14 +39,9 @@
 
 {{ partial "comments.html" . }}
 
-
-
-
-                </div>
-
-
+ </div>
                 {{ "<!-- Sidebar -->" | safeHTML }}
-                <div class="col-lg-4">
+                <aside class="col-lg-4">
                     <div class="bg-white px-4 py-50 sidebar-box-shadow ">
 
                         {{partial "search-form.html" . }}
@@ -158,13 +134,13 @@
         </div>
 
                     </div>
-                </div>
+                </aside>
 
 
             </div>
         </div>
-    </div>
 </article>
+
 
 {{ "<!-- share-icon -->" | safeHTML }}
     <div data-spy="affix" class="d-flex socialfixed pull-left hidden-sm hidden-xs"  >

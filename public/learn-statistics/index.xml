@@ -32,5 +32,14 @@
       <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</description>
     </item>
     
+    <item>
+      <title>Reshape data from wide to long or from long to wide in R</title>
+      <link>https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/reshape-wide-long-data-r-how-to/</link>
+      <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
+      <author>chetan.prajapati@live.com (Chetan Prajapati (Statistician))</author>
+      <guid>https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/reshape-wide-long-data-r-how-to/</guid>
+      <description>Reshaping though frequently required in data analysis, so often it remains confusing even if you are frequent user of reshape function.</description>
+    </item>
+    
   </channel>
 </rss>

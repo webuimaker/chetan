@@ -11,7 +11,7 @@
                             <a class="text-white  btn-primary btn-sm2 br-pill small p-1" href="{{ "categories/" | relLangURL }}{{ . | urlize | lower }}">{{ . }}</a>
                         {{ end }}
                     </li>
-                    <li class="list-inline-item text-color">
+                    <li class="list-inline-item text-color small">
                         Published {{ dateFormat "January 2, 2006" (default .Date (.PublishDate)) }}
                     </li>
                 </ul>

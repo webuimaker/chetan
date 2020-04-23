@@ -16,7 +16,7 @@ categories:
 tags:
   - "Parametric Bootstrap"
   - "Non-parametric Bootstrap"
-  - "resampling method"
+ 
 ---
 
 
@@ -24,7 +24,6 @@ tags:
 knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE)
 source("render_toc.R")
 ```
-
 
 
 This article explains bootstrap concept as a whole and discern the fundamental difference between parametric and nonparametric bootstrap using R. We will be using both-`for` loops and standard `boot` package

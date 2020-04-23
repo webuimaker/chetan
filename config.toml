@@ -4,6 +4,7 @@ summaryLength = "20"
 DefaultContentLanguage = "en"
 enableRobotsTXT = true
 enableGitInfo = true
+disableHugoGeneratorInject = true
 disableLanguages = ["Fr"]
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 copyright = "© Copyright 2020 ISCON Statistical Services. All Rights Reserved."
@@ -30,8 +31,8 @@ mapLatitude = ""
 mapLongitude = ""
 mapMarker = "images/contact/marker.png"
 googleAnalitycsID = ""
-mailchimpFormAction = ""
-mailchimpFormName = ""
+mailchimpFormAction = "https://app.us8.list-manage.com/subscribe/post?u=aefda29868b940ec532d7210a&amp;id=ae20884e0f"
+mailchimpFormName = "mc-embedded-subscribe-form"
 MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
 MathJaxVersion = "2.7.5"
 

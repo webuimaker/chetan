@@ -58,7 +58,7 @@ df[3,] <- c(3,"C",96,86,97)
 Our "wide" data look like
 
 ```{r}
-knitr::kable(df,format = "latex", caption = "wide data")
+knitr::kable(df, caption = "wide data")
 ```
 
 We want a data in which each new observation in new row but within same column i.e. long data. To achieve that we need to use standard `reshape` command in `R`. The `reshape` has following argument:

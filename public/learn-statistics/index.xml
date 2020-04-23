@@ -24,12 +24,13 @@
     </item>
     
     <item>
-      <title>New Hugo Post</title>
-      <link>https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/new-hugo-post/</link>
-      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      <title>Poisson regression : Statistical models for counts and rates</title>
+      <link>https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/poisson-regression-overdispersion-how-to/</link>
+      <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
       <author>chetan.prajapati@live.com (Chetan Prajapati (Statistician))</author>
-      <guid>https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/new-hugo-post/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</description>
+      <guid>https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/poisson-regression-overdispersion-how-to/</guid>
+      <description>Table of Contents 
+What is a count ?Probability distribution(s) associated with the countsPoisson distributionNegative binomial distributionPoisson Inverse Gaussian (PIG)Generalized Negative Binomial Model (GNB)Generalised Poissson ModelsHeterogeneous Negative Binomail model (NB-H)Exact poisson regressionWhat is a count ?</description>
     </item>
     
     <item>

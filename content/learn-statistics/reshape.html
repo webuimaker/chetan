@@ -35,8 +35,42 @@ df[1,] &lt;- c(1,&quot;A&quot;,123,120,125)
 df[2,] &lt;- c(2,&quot;B&quot;,140,150,155)
 df[3,] &lt;- c(3,&quot;C&quot;,96,86,97)</code></pre>
 <p>Our “wide” data look like</p>
-<pre class="r"><code>knitr::kable(df,format = &quot;latex&quot;, caption = &quot;wide data&quot;)</code></pre>
-
+<pre class="r"><code>knitr::kable(df, caption = &quot;wide data&quot;)</code></pre>
+<table>
+<caption><span id="tab:unnamed-chunk-3">Table 1: </span>wide data</caption>
+<thead>
+<tr class="header">
+<th align="left">id</th>
+<th align="left">name</th>
+<th align="left">jan</th>
+<th align="left">feb</th>
+<th align="left">march</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">A</td>
+<td align="left">123</td>
+<td align="left">120</td>
+<td align="left">125</td>
+</tr>
+<tr class="even">
+<td align="left">2</td>
+<td align="left">B</td>
+<td align="left">140</td>
+<td align="left">150</td>
+<td align="left">155</td>
+</tr>
+<tr class="odd">
+<td align="left">3</td>
+<td align="left">C</td>
+<td align="left">96</td>
+<td align="left">86</td>
+<td align="left">97</td>
+</tr>
+</tbody>
+</table>
 <p>We want a data in which each new observation in new row but within same column i.e. long data. To achieve that we need to use standard <code>reshape</code> command in <code>R</code>. The <code>reshape</code> has following argument:</p>
 <ul>
 <li><p><code>idvar</code> : unique identifier for person,place or object on which observations(measurements) are made at different time points or repeatedly. Example <code>Case ID</code></p></li>
@@ -69,7 +103,7 @@ direction = &quot;long&quot;)
 
 kable(df_long,format = &quot;pandoc&quot;, caption = &quot;long data&quot;)</code></pre>
 <table>
-<caption><span id="tab:unnamed-chunk-5">Table 1: </span>long data</caption>
+<caption><span id="tab:unnamed-chunk-5">Table 2: </span>long data</caption>
 <thead>
 <tr class="header">
 <th align="left">id</th>
@@ -143,7 +177,7 @@ df[2,] &lt;- c(2,&quot;B&quot;,140,150,155,85,82,86)
 df[3,] &lt;- c(3,&quot;C&quot;,96,86,97,65,52,59)</code></pre>
 <pre class="r"><code>kable(df,format = &quot;pandoc&quot;, caption = &quot;wide data- multiple category&quot;)</code></pre>
 <table>
-<caption><span id="tab:unnamed-chunk-7">Table 2: </span>wide data- multiple category</caption>
+<caption><span id="tab:unnamed-chunk-7">Table 3: </span>wide data- multiple category</caption>
 <thead>
 <tr class="header">
 <th align="left">id</th>
@@ -200,7 +234,7 @@ direction = &quot;long&quot;)   </code></pre>
 <pre class="r"><code>df_long &lt;- arrange(df_long, id)
 kable(df_long,format = &quot;pandoc&quot;, caption = &quot;long data&quot;)</code></pre>
 <table>
-<caption><span id="tab:unnamed-chunk-9">Table 3: </span>long data</caption>
+<caption><span id="tab:unnamed-chunk-9">Table 4: </span>long data</caption>
 <thead>
 <tr class="header">
 <th align="left">id</th>
@@ -305,7 +339,7 @@ kable(df_long,format = &quot;pandoc&quot;, caption = &quot;long data&quot;)</cod
         )</code></pre>
 <p>Here is the wide data</p>
 <table>
-<caption><span id="tab:unnamed-chunk-11">Table 4: </span>wide data</caption>
+<caption><span id="tab:unnamed-chunk-11">Table 5: </span>wide data</caption>
 <thead>
 <tr class="header">
 <th></th>

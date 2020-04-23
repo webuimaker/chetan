@@ -1,24 +1,22 @@
 ---
-title: "Bootstrapping in R: Parametric vs Nonparametric Bootstrap"
-subHeader: "This article explains the bootstrap method using example  using loops and boot function. Bootstrapping is a resampling method which used the Monte Carlo technique to estimate standard error, confidence interval, bias. The methods include parametric and non-parametric bootstrap"
-slug: "bootstrap"
+title: "Bootstrapping in Statistics : Difference between Parametric and Nonparametric Bootstrap method"
+subHeader: "This article explains the bootstrap method using simple examples with help of loops and boot function in R. Bootstrapping is a resampling method which uses the Monte Carlo simulation to estimate standard error, confidence interval, bias. The difference between parametric and non-parametric bootstrap is also outlined"
+slug: bootstrap-resampling-parametric-nonparametric-boot-how-to
 image: images/learnstatistics/bootstrap_in_R.png
 author: Chetan Prajapati
 authorPos: Founder & Statistician at ISCON
 authorImage: images/about/chetan.png
-
-id: "Bootstrapping in R1"
 
 date: 2020-04-12
 description : "This article explains the bootstrap method using example  using loops and boot function. Bootstrapping is a resampling method which used the Monte Carlo technique to estimate standard error, confidence interval, bias. The methods include parametric and non-parametric bootstrap"
 
 type: learn-statistics
 categories: 
-  - "Statistical models for continuous outcomes"
+  - "Basic Statistics"
 tags:
-  - "parametric"
-  - "Non-parametri"
-  - "boot"
+  - "Parametric Bootstrap"
+  - "Non-parametric Bootstrap"
+  - "resampling method"
 output:
   blogdown::html_page:
     highlight: tango
@@ -88,43 +86,213 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
 
+<p>This article explains bootstrap concept as a whole and discern the fundamental difference between parametric and nonparametric bootstrap using R. We will be using both-<code>for</code> loops and standard <code>boot</code> package</p>
 <p><strong>Table of Contents </strong></p>
 <ul>
-<li><a href="#h2">H2</a></li>
-<li><a href="#h2">H2</a>
-<ul>
-<li><a href="#h3">H3</a></li>
-<li><a href="#h3">H3</a></li>
-</ul></li>
+<li><a href="#fundamental-of-statistical-inference">Fundamental of statistical inference</a></li>
+<li><a href="#bootstrapping">Bootstrapping</a></li>
+<li><a href="#nonparametric-bootstrap">Nonparametric bootstrap</a></li>
+<li><a href="#parametric-bootstrap">Parametric Bootstrap</a></li>
 </ul>
-<p>This article explains bootstrap concept as a whole and discern the fundamental difference between parametric and nonparametric bootstrap using R. We will be using both-<code>for</code> loops and standard <code>boot</code> package</p>
-<div id="h2" class="section level2">
-<h2>H2</h2>
+<div id="fundamental-of-statistical-inference" class="section level2">
+<h2>Fundamental of statistical inference</h2>
 <p>We first need to understand following some fundamental concepts. The idea behind bootstrapping is very closely aligned with those concepts.</p>
-</div>
-<div id="h2-1" class="section level2">
-<h2>H2</h2>
 <p>Here I have created a hypothetical study in which we are interested in finding out the average birth weight of the babies born in the UK at 37 weeks of gestation.</p>
-<div id="h3" class="section level3">
-<h3>H3</h3>
 <ul>
 <li><p><strong>Experiment </strong>: To find out the average weight of babies born at 37 weeks in the UK</p></li>
 <li><p><strong>Random sample </strong>: Random sample means each and every single individual or object has an equal probability of being chosen from the population. For example, in our study, the population is all birth happened in the UK at 37 weeks of gestation. For typical “random sample”, we will need to make sure that each and every birth happening in any corner of the UK, will be participating in our study, from which will choose some of them randomly i.e random sample.</p></li>
+<li><p><strong>Sample data</strong>: the recorded observation or quantity from the sample of the population. Now we have gone to one local hospital and got data of the birth-weights from 20 babies. Here is the (hypothetical) sample data.</p></li>
 </ul>
-</div>
-<div id="h3-1" class="section level3">
-<h3>H3</h3>
-<ul>
-<li><strong>Sample data</strong>: the recorded observation or quantity from the sample of the population. Now we have gone to one local hospital and got data of the birth-weights from 20 babies. Here is the (hypothetical) sample data.</li>
-</ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">set.seed</span>(<span class="dv">1252</span>)</a>
-<a class="sourceLine" id="cb1-2" title="2">df &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">20</span>,<span class="dv">3333</span>,<span class="dv">430</span>)</a>
-<a class="sourceLine" id="cb1-3" title="3">df</a></code></pre></div>
 <pre><code>##  [1] 3331.608 3549.913 2809.252 2671.465 3383.177 3945.721 3672.601 3922.416
 ##  [9] 4647.278 4088.246 3718.874 3724.443 3925.457 3112.920 3495.621 3651.779
 ## [17] 3240.194 3867.347 3431.015 4163.725</code></pre>
+<ul>
+<li><strong>Sample statistic </strong>: is the quantity of interest from sample data. The quantity of interest in our study is a mean (average). So mean is our sample statistic. So sample statistic in our sample data is <strong>3618</strong>,</li>
+</ul>
+<pre><code>## [1] 3617.653</code></pre>
+<ul>
+<li><strong>Sampling distribution (of statistic) </strong>: Now we went to take a random sample of 20 babies at numerous hospitals (i.e.multiple times) in the UK. Each time, we calculate the mean birth weight and note down its value. This value will be different in each different hospital (in a statistical sense, the statistic is a random variable, will vary as variation is inherent). Here we went to 100 hospitals and took a sample of 20 babies born at that hospital and calculated the mean birth weight and plotted in the histogram.</li>
+</ul>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">require</span>(ggplot2)</a>
-<a class="sourceLine" id="cb3-2" title="2"><span class="kw">qplot</span>(df)</a></code></pre></div>
-<p><img src="/learn-statistics/bootstrap-in-r_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<a class="sourceLine" id="cb3-2" title="2"><span class="kw">ggplot</span>(<span class="kw">data.frame</span>(statistic), <span class="kw">aes</span>(statistic)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>() <span class="op">+</span><span class="st"> </span><span class="kw">labs</span>(<span class="dt">x=</span> <span class="st">&quot;Mean&quot;</span>, <span class="dt">y=</span> <span class="st">&quot;Freqency&quot;</span>)</a></code></pre></div>
+<div class="figure"><span id="fig:unnamed-chunk-4"></span>
+<img src="/learn-statistics/bootstrap-in-r_files/figure-html/unnamed-chunk-4-1.png" alt="Distribution of sample means" width="50%" />
+<p class="caption">
+Figure 1: Distribution of sample means
+</p>
 </div>
+<p>It is better to plot the histogram with optimum bin width (see <a href="https://link.springer.com/article/10.1007/BF01025868">Article from David Freedman</a>) along with density curve using <code>aes(y=..density..)</code>.So that the area under the density curve will be 1</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1">binw &lt;-<span class="st"> </span><span class="dv">2</span><span class="op">*</span>(<span class="kw">IQR</span>(statistic)<span class="op">/</span><span class="kw">length</span>(statistic)<span class="op">^</span>(<span class="dv">1</span><span class="op">/</span><span class="dv">3</span>))</a>
+<a class="sourceLine" id="cb4-2" title="2"><span class="kw">ggplot</span>(<span class="kw">data.frame</span>(statistic), <span class="kw">aes</span>(statistic)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>(<span class="kw">aes</span>(<span class="dt">y=</span>..density..),<span class="dt">binwidth =</span> binw,<span class="dt">fill=</span><span class="st">&quot;darkred&quot;</span>,<span class="dt">colour=</span><span class="st">&quot;black&quot;</span>,<span class="dt">size=</span><span class="dv">1</span>) <span class="op">+</span><span class="st"> </span><span class="kw">geom_density</span>(<span class="kw">aes</span>(<span class="dt">y=</span>..density..),<span class="dt">size=</span><span class="dv">1</span>) <span class="op">+</span><span class="st"> </span><span class="kw">labs</span>(<span class="dt">x=</span> <span class="st">&quot;Mean&quot;</span>, <span class="dt">y=</span> <span class="st">&quot;Density&quot;</span>)</a></code></pre></div>
+<div class="figure"><span id="fig:unnamed-chunk-5"></span>
+<img src="/learn-statistics/bootstrap-in-r_files/figure-html/unnamed-chunk-5-1.png" alt="Distribution of sample means (proper histogram)" width="50%" />
+<p class="caption">
+Figure 2: Distribution of sample means (proper histogram)
+</p>
+</div>
+<ul>
+<li><p><strong>Population parameter </strong>: What will be the mean birth-weight of babies born in the UK if we had gone on collecting birthright of each and every single baby born in the UK. This will be only one value that what we are basically interested in. This is called the population parameter. The problem is that we want to estimate that from our limited number of observations (i.e sample data). The sample statistic will help to estimate the population parameter. The sample statistic will also be called point estimator.</p></li>
+<li><p><strong>Standard error(of statistic)</strong> is the standard deviation (SD) of statistic from its sampling distribution. Note that SD is a statistic that measures the variability in data relative to its mean.</p></li>
+<li><p><strong>Confidence interval </strong>: Though we are interested in population parameter i.e single value, what if our sample data may not contain it. We need to provide some measure of it. This can be achieved by building a confidence interval. We can say that the true value of the population lies in some interval with some degree of confidence.</p></li>
+</ul>
+<p>So, in essence, we want to estimate a population parameter from the sampling distribution of the sample statistic. This sampling distribution can be generated by infinite time random sampling.</p>
+</div>
+<div id="bootstrapping" class="section level2">
+<h2>Bootstrapping</h2>
+<p>The bootstrap method is one type of re-sampling method, in which sample data (20 birth weights) considered as “population”.From this sample data, we re-sample it with a replacement-large number of time (the 1000’s). The resultant sampling distribution often (not always) approximate the (true) sampling distribution of the statistic.</p>
+<p>Please note, that this sampling will be done with the replacement. So some single observation may be included many times ( or some may be left out completely). So sample statistic will be varied from each random sample of size n.</p>
+<p>From this bootstrapped sampling distribution, which can estimate parameter value, standard errors (standard deviation of sample statistic) and then, calculate the confidence interval.</p>
+<p>Let,</p>
+<ul>
+<li><p><strong><span class="math inline">\(\theta\)</span></strong> is population parameter of interest which belongs to unknown population distribution <strong>F</strong></p></li>
+<li><p><strong><span class="math inline">\(\hat{\theta}\)</span></strong> is statistic that estimate the <span class="math inline">\(\theta\)</span> and we are interests in sampling distribution of <strong><span class="math inline">\(\hat{\theta}\)</span></strong> from fitted distribution function <strong><span class="math inline">\(\hat{F}\)</span></strong></p></li>
+<li><p><span class="math inline">\(\hat{\theta_0^*}\)</span>,<span class="math inline">\(\hat{\theta_1^*}\)</span>,<span class="math inline">\(\hat{\theta_2^*}\)</span>… bootstrap estimate (statistic) to obtain sampling distribution of <strong><span class="math inline">\(\hat{\theta^*}\)</span></strong> is <strong><span class="math inline">\(\hat{F^*}\)</span></strong>. This sampling distribution is good approximation of <strong><span class="math inline">\(\hat{F}\)</span></strong></p></li>
+</ul>
+</div>
+<div id="nonparametric-bootstrap" class="section level2">
+<h2>Nonparametric bootstrap</h2>
+<p>We observed the sample data and we are unable to determine from which probability distribution function may have generated this sample data. In this situation, we use empirical distribution function (which is based on observed sample data) to simulate bootstrap samples (using Monte Carlo techniques).</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1"><span class="co"># loop</span></a>
+<a class="sourceLine" id="cb5-2" title="2">theta_star &lt;-<span class="st"> </span><span class="kw">vector</span>()</a>
+<a class="sourceLine" id="cb5-3" title="3"><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">1000</span>){</a>
+<a class="sourceLine" id="cb5-4" title="4">  theta_star[i] &lt;-<span class="st"> </span><span class="kw">mean</span>(<span class="kw">sample</span>(df,<span class="dt">size=</span><span class="kw">length</span>(df),<span class="dt">replace =</span> T))</a>
+<a class="sourceLine" id="cb5-5" title="5">  <span class="co"># First take sample with replacement from obseerved data of same size &amp; then, calculte sample statistic in each, repeat this 1000 times</span></a>
+<a class="sourceLine" id="cb5-6" title="6">}</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1">theta_boot &lt;-<span class="st"> </span><span class="kw">mean</span>(theta_star) <span class="co"># bootstrap estimate of theta_hat</span></a>
+<a class="sourceLine" id="cb6-2" title="2">theta_boot</a></code></pre></div>
+<pre><code>## [1] 3616.166</code></pre>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" title="1">boot_se &lt;-<span class="st"> </span><span class="kw">sd</span>(theta_star) <span class="co"># standard eorrs of the estimate</span></a>
+<a class="sourceLine" id="cb8-2" title="2">boot_se</a></code></pre></div>
+<pre><code>## [1] 102.6719</code></pre>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" title="1">bias &lt;-<span class="st"> </span>theta_boot <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(df)</a>
+<a class="sourceLine" id="cb10-2" title="2">bias</a></code></pre></div>
+<pre><code>## [1] -1.487018</code></pre>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" title="1">MSE &lt;-<span class="st"> </span><span class="kw">mean</span>((theta_boot<span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(df))<span class="op">^</span><span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb12-2" title="2">MSE</a></code></pre></div>
+<pre><code>## [1] 2.211222</code></pre>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" title="1">CI &lt;-<span class="kw">c</span>(theta_boot<span class="fl">-1.96</span><span class="op">*</span>boot_se,theta_boot <span class="fl">+1.96</span><span class="op">*</span>boot_se)</a>
+<a class="sourceLine" id="cb14-2" title="2">CI</a></code></pre></div>
+<pre><code>## [1] 3414.929 3817.402</code></pre>
+<p>We can use a <code>boot</code> function from the <code>boot</code> package in R.It requires a function to calculate sample statistic ( in its <code>statistic</code> argument). The function must include observed data as the first argument and indices ( or weight) in the second argument.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb16-1" title="1"><span class="kw">require</span>(boot)</a>
+<a class="sourceLine" id="cb16-2" title="2">theta_star_function &lt;-<span class="st"> </span><span class="cf">function</span>(x,i) <span class="kw">mean</span>(x[i])</a>
+<a class="sourceLine" id="cb16-3" title="3"><span class="co">#</span></a>
+<a class="sourceLine" id="cb16-4" title="4">B &lt;-<span class="st"> </span><span class="kw">boot</span>(<span class="dt">data =</span> df, <span class="dt">statistic =</span> theta_star_function, <span class="dt">R=</span><span class="dv">1000</span>, <span class="dt">stype =</span> <span class="st">&quot;i&quot;</span> )</a>
+<a class="sourceLine" id="cb16-5" title="5">B</a></code></pre></div>
+<pre><code>## 
+## ORDINARY NONPARAMETRIC BOOTSTRAP
+## 
+## 
+## Call:
+## boot(data = df, statistic = theta_star_function, R = 1000, stype = &quot;i&quot;)
+## 
+## 
+## Bootstrap Statistics :
+##     original    bias    std. error
+## t1* 3617.653 0.9443187    98.78257</code></pre>
+<p>We can used default plots to see whether bootstrap samples are correctly sampled.</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb18-1" title="1"><span class="kw">plot</span>(B)</a></code></pre></div>
+<div class="figure"><span id="fig:unnamed-chunk-14"></span>
+<img src="/learn-statistics/bootstrap-in-r_files/figure-html/unnamed-chunk-14-1.png" alt="Bootstrap sampling distribution of sample mean" width="50%" />
+<p class="caption">
+Figure 3: Bootstrap sampling distribution of sample mean
+</p>
+</div>
+<p>Or, one can use <code>ggplot</code> to get the same figure</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb19-1" title="1">binw &lt;-<span class="st"> </span><span class="dv">2</span><span class="op">*</span>(<span class="kw">IQR</span>(B<span class="op">$</span>t)<span class="op">/</span><span class="kw">length</span>(B<span class="op">$</span>t)<span class="op">^</span>(<span class="dv">1</span><span class="op">/</span><span class="dv">3</span>))</a>
+<a class="sourceLine" id="cb19-2" title="2"><span class="kw">ggplot</span>(<span class="kw">data.frame</span>(B<span class="op">$</span>t), <span class="kw">aes</span>(B.t)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>(<span class="dt">fill=</span><span class="st">&quot;grey&quot;</span>, <span class="dt">colour=</span><span class="st">&quot;black&quot;</span>, <span class="dt">binwidth =</span> binw) <span class="op">+</span><span class="st"> </span><span class="kw">geom_vline</span>(<span class="dt">xintercept =</span> B<span class="op">$</span>t0, <span class="dt">linetype=</span><span class="st">&quot;dashed&quot;</span>, <span class="dt">size=</span><span class="dv">1</span>) <span class="op">+</span><span class="st"> </span><span class="kw">labs</span>(<span class="dt">x=</span><span class="st">&quot;Bootstrap sample statistic&quot;</span>, <span class="dt">title=</span><span class="st">&quot;Bootstrap sampling distribution of sample mean&quot;</span>)</a></code></pre></div>
+<div class="figure"><span id="fig:unnamed-chunk-15"></span>
+<img src="/learn-statistics/bootstrap-in-r_files/figure-html/unnamed-chunk-15-1.png" alt="Bootstrap sampling distribution of sample mean  (ggplot2)" width="50%" />
+<p class="caption">
+Figure 4: Bootstrap sampling distribution of sample mean (ggplot2)
+</p>
+</div>
+<p>We can get confidence interval by,</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb20-1" title="1"><span class="kw">boot.ci</span>(B)</a></code></pre></div>
+<pre><code>## BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+## Based on 1000 bootstrap replicates
+## 
+## CALL : 
+## boot.ci(boot.out = B)
+## 
+## Intervals : 
+## Level      Normal              Basic         
+## 95%   (3423, 3810 )   (3421, 3819 )  
+## 
+## Level     Percentile            BCa          
+## 95%   (3416, 3814 )   (3407, 3804 )  
+## Calculations and Intervals on Original Scale</code></pre>
+</div>
+<div id="parametric-bootstrap" class="section level2">
+<h2>Parametric Bootstrap</h2>
+<p>Once we have a sample data, we may think that the observed data may have come from some known probability distribution function ( i.e normal, gamma or poisson or any).</p>
+<p>For example in our sample birth weights, we may assume that observed birth-weight comes from normal distribution with parameter <span class="math inline">\(\mu\)</span> = 3617.7 and <span class="math inline">\(\sigma\)</span> = 464.6 ( which is estimated from observed data). See the below figure,</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb22-1" title="1"><span class="kw">ggplot</span>(<span class="kw">data.frame</span>(df), <span class="kw">aes</span>(df)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_density</span>() <span class="op">+</span><span class="st"> </span><span class="kw">labs</span>(<span class="dt">x=</span> <span class="st">&quot;birth weight&quot;</span>)</a></code></pre></div>
+<div class="figure"><span id="fig:unnamed-chunk-17"></span>
+<img src="/learn-statistics/bootstrap-in-r_files/figure-html/unnamed-chunk-17-1.png" alt="Distribution of observed sample birthweights" width="50%" />
+<p class="caption">
+Figure 5: Distribution of observed sample birthweights
+</p>
+</div>
+<p>So, instead of using observed data ( as a non-parametric bootstrap), we can use normal distribution function with probable parameter estimates ( which most likely the maximum likelihood estimates) for bootstrap re-sampling.</p>
+<p>Let, first do it with help of <code>for</code> loops in R.</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb23-1" title="1">theta_star &lt;-<span class="st"> </span><span class="kw">vector</span>()</a>
+<a class="sourceLine" id="cb23-2" title="2"><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">1000</span>){</a>
+<a class="sourceLine" id="cb23-3" title="3">  theta_star[i] &lt;-<span class="st"> </span><span class="kw">mean</span>(<span class="kw">rnorm</span>(<span class="kw">length</span>(df),<span class="dt">mean =</span> <span class="fl">3617.7</span> ,<span class="dt">sd =</span> <span class="fl">464.6</span>))</a>
+<a class="sourceLine" id="cb23-4" title="4">}</a></code></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb24-1" title="1">theta_boot &lt;-<span class="st"> </span><span class="kw">mean</span>(theta_star) <span class="co"># bootstrap estimate of theta_hat</span></a>
+<a class="sourceLine" id="cb24-2" title="2">theta_boot</a></code></pre></div>
+<pre><code>## [1] 3613.883</code></pre>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb26-1" title="1">boot_se &lt;-<span class="st"> </span><span class="kw">sd</span>(theta_star) <span class="co"># standard eorrs of the estimate</span></a>
+<a class="sourceLine" id="cb26-2" title="2">boot_se</a></code></pre></div>
+<pre><code>## [1] 101.4233</code></pre>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb28-1" title="1">bias &lt;-<span class="st"> </span>theta_boot <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(df)</a>
+<a class="sourceLine" id="cb28-2" title="2">bias</a></code></pre></div>
+<pre><code>## [1] -3.769489</code></pre>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb30-1" title="1">MSE &lt;-<span class="st"> </span><span class="kw">mean</span>((theta_boot<span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(df))<span class="op">^</span><span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb30-2" title="2">MSE</a></code></pre></div>
+<pre><code>## [1] 14.20905</code></pre>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb32-1" title="1">CI &lt;-<span class="kw">c</span>(theta_boot<span class="fl">-1.96</span><span class="op">*</span>boot_se,theta_boot <span class="fl">+1.96</span><span class="op">*</span>boot_se)</a>
+<a class="sourceLine" id="cb32-2" title="2">CI</a></code></pre></div>
+<pre><code>## [1] 3415.094 3812.673</code></pre>
+<p>Now, using <code>boot</code> function,</p>
+<p>For parametric bootstrap, one has to specify a function in <code>ran.gen</code> arguments, which tell the boots how random sample will be generated ( I mean, from which distribution, parameters you want to generate re-sample). The first argument will be the observed data and the second argument will be parameter estimates.This function should give random samples according to your assumed distribution function.</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb34-1" title="1">gen_function &lt;-<span class="st"> </span><span class="cf">function</span>(x,mle) {</a>
+<a class="sourceLine" id="cb34-2" title="2">  data &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="kw">length</span>(x),mle[<span class="dv">1</span>],mle[<span class="dv">2</span>])</a>
+<a class="sourceLine" id="cb34-3" title="3">  <span class="kw">return</span>(data)}</a></code></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb35-1" title="1"><span class="co"># function to calculate sample statistic </span></a>
+<a class="sourceLine" id="cb35-2" title="2">theta_star_function &lt;-<span class="st"> </span><span class="cf">function</span>(x,i) <span class="kw">mean</span>(x[i])</a></code></pre></div>
+<p>The <code>mle</code> values ( of parameter estimates ) passed to random generator function.</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb36-1" title="1">B &lt;-<span class="st"> </span><span class="kw">boot</span>(<span class="dt">data =</span> df, <span class="dt">sim =</span> <span class="st">&quot;parametric&quot;</span>, <span class="dt">ran.gen =</span>  gen_function, <span class="dt">mle =</span> <span class="kw">c</span>(<span class="fl">3617.7</span>,<span class="fl">464.6</span>), <span class="dt">statistic =</span> theta_star_function, <span class="dt">R=</span><span class="dv">1000</span>)</a>
+<a class="sourceLine" id="cb36-2" title="2">B</a></code></pre></div>
+<pre><code>## 
+## PARAMETRIC BOOTSTRAP
+## 
+## 
+## Call:
+## boot(data = df, statistic = theta_star_function, R = 1000, sim = &quot;parametric&quot;, 
+##     ran.gen = gen_function, mle = c(3617.7, 464.6))
+## 
+## 
+## Bootstrap Statistics :
+##     original     bias    std. error
+## t1* 3617.653 0.05774845    101.8872</code></pre>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb38-1" title="1"><span class="kw">plot</span>(B)</a></code></pre></div>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-27"></span>
+<img src="/learn-statistics/bootstrap-in-r_files/figure-html/unnamed-chunk-27-1.png" alt="Parametric bootstrap using boot package" width="50%" />
+<p class="caption">
+Figure 6: Parametric bootstrap using boot package
+</p>
+</div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb39-1" title="1"><span class="kw">boot.ci</span>(B,<span class="dt">type =</span> <span class="st">&quot;perc&quot;</span>)</a></code></pre></div>
+<pre><code>## BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+## Based on 1000 bootstrap replicates
+## 
+## CALL : 
+## boot.ci(boot.out = B, type = &quot;perc&quot;)
+## 
+## Intervals : 
+## Level     Percentile     
+## 95%   (3413, 3813 )  
+## Calculations and Intervals on Original Scale</code></pre>
 </div>

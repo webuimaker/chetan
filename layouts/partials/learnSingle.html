@@ -7,28 +7,28 @@
                     <img class="lazyload img-fluid w-100 rounded-top" data-src="{{ .Params.image | absURL }}" alt="blog-image">
                     <div class="p-4">
 
-                        
+
                         <div class="post-content">
                             <div class="col-12 mb-3">
                                 <div class="d-flex flex-sm-row flex-column  text-sm-left">
                                     <img src="{{.Params.authorImage | absURL}}" alt="{{.Params.author}}" class="round-icon mr-sm-3 mr-0 mb-3 mb-sm-0">
-                                    
+
                                     <div class="text-center text-sm-left">
                                         <h4 class="count mb-0">{{.Params.author}}</h4>
                                         <p class=" mb-0 font-sm">{{.Params.authorPos}}</p>
                                         <ul class="list-inline tag-list m-0">
-                                                {{ range .Params.Tags }} 
+                                                {{ range .Params.Tags }}
                                                     <li class="list-inline-item">
                                                         <a class="text-white badge badge-dark" href="{{ "tags/" | absURL }}{{ . | lower }}">{{ . }}</a>
                                                     </li>
                                                 {{ end }}
-                                            
-                                        </ul> 
+
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
 
-                            
+
 
 
                             <div class="py-4 border-bottom mb-3 d-none">
@@ -51,20 +51,12 @@
                                     {{ "<!-- tags -->" | safeHTML }}
                                     </div>
                                 </div>
-                            {{ .Content }}    
+                            {{ .Content }}
                         </div>
                     </div>
                 </div>
 
-                <div id="hyvor-talk-view"></div>
-                <script type="text/javascript">
-                    var HYVOR_TALK_WEBSITE = 506; // DO NOT CHANGE THIS
-                    var HYVOR_TALK_CONFIG = {
-                        url: '{{ .URL | absURL }}',
-                        id: '{{.Params.id}}'
-                    };
-                </script>
-                <script async type="text/javascript" src="https://talk.hyvor.com/web-api/embed"></script>
+{{ partial "comments.html" . }}
 
 
 
@@ -109,7 +101,7 @@
                             {{- end }}
                         </div>
 
-                        
+
                             {{ "<!-- Widget Recent Post -->" | safeHTML }}
                             <div class="mb-50">
                                 <h4 class="mb-3">Recent News</h4>
@@ -131,7 +123,7 @@
                                 {{ end }}
                             </div>
 
-                            
+
         {{ "<!-- Widget Newsletter -->" | safeHTML }}
         <div class="newsletter">
             <h4 class="mb-3">Stay Updated</h4>
@@ -178,7 +170,7 @@
     <div data-spy="affix" class="d-flex socialfixed pull-left hidden-sm hidden-xs"  >
         <span class="font-weight-light mt-2 mr-3 d-none">Share:</span>
         <ul class="list-inline d-inline-block">
-            
+
             <li class="list-item mb-1">
                 <a class="share-icon bg-secondary" href="http://www.facebook.com/sharer.php?u={{ .URL }}">
                     <i class="ti-facebook"></i>

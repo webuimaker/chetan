@@ -3,7 +3,7 @@
 <div class="page-title" style="background: radial-gradient(circle, rgba(247,247,247,1) 46%, rgba(237,237,237,1) 100%);text-align: center;">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <header class="col-lg-12">
                 {{if and (eq .Section "learn-statistics") (eq .Kind "page")}}
                 <ul class="list-inline d-block mb-2">
                     <li class="list-inline-item text-color">
@@ -12,16 +12,16 @@
                         {{ end }}
                     </li>
                     <li class="list-inline-item text-color">
-                        Published {{ dateFormat "2 January, 2006" (default .Date (.PublishDate)) }} 
+                        Published {{ dateFormat "January 2, 2006" (default .Date (.PublishDate)) }}
                     </li>
                 </ul>
                 {{end}}
-               <header><h1>{{ .Title }}</h1>
+               <div><h1>{{ .Title }}</h1>
                 {{if .Params.subHeader }} <p style="margin-top:50px;color: #000000;font-weight: 300;font-size:20px;"> {{ .Params.subHeader }} </p>{{ end }}
-            </header>
-
-
             </div>
+
+
+            </header>
         </div>
     </div>
 </div>

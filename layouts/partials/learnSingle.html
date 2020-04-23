@@ -48,7 +48,7 @@
 
                         {{ "<!-- categories -->" | safeHTML }}
                         <div class="mb-50">
-                            <h4 class="mb-3">Topics </h4>
+                            <h4 class="mb-3">Explore topics </h4>
                             {{- if isset .Site.Taxonomies "categories" }}
                             {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
                             <ul class="list-unstyled mb-0">
@@ -80,7 +80,7 @@
 
                             {{ "<!-- Widget Recent Post -->" | safeHTML }}
                             <div class="mb-50">
-                                <h4 class="mb-3">Recent News</h4>
+                                <h4 class="mb-3">Recent Articles</h4>
                                 {{ range first 3 (where .Site.RegularPages "Type" "learn-statistics") }}
                                 {{ "<!-- post -->" | safeHTML }}
                                 <div class="d-flex py-3 border-bottom">
@@ -93,7 +93,7 @@
                                         <h6 class="mb-3">
                                             <a class="text-dark" href="{{ .Permalink }}">{{ .Title }}</a>
                                         </h6>
-                                        <p class="meta">{{ .PublishDate.Format "02 Jan 2006" }}</p>
+
                                     </div>
                                 </div>
                                 {{ end }}

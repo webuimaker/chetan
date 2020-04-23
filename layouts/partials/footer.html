@@ -101,6 +101,30 @@
 <script async src="{{ .Site.Params.MathJaxCDN | default "//cdnjs.cloudflare.com/ajax/libs" }}/mathjax/{{ .Site.Params.MathJaxVersion | default "2.7.5" }}/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 {{ end }}
 
+{{ if and (not .Params.disable_highlight) (in (string .Content) "</pre>") }}
+{{ $highVer := .Site.Params.highlightjsVersion }}
+{{ $highCDN := (.Site.Params.highlightjsCDN | default "//cdnjs.cloudflare.com/ajax/libs") }}
+{{ if (not (eq $highVer "")) }}
+<script src="{{ $highCDN }}/highlight.js/{{ $highVer }}/highlight.min.js"></script>
+{{ $.Scratch.Set "highLangs" .Site.Params.highlightjsLang }}
+{{ range .Params.highlightjsLang }}{{ $.Scratch.Add "highLangs" . }}{{ end }}
+{{ range ($.Scratch.Get "highLangs") }}
+<script src="{{ $highCDN }}/highlight.js/{{ $highVer }}/languages/{{ . }}.min.js"></script>{{ end }}
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+{{ end }}
+{{ end }}
+
+
+
+
+
+
+
+
+
+
+
+
 {{ "<!-- Google Map -->" | safeHTML }}
 <!--
 <script src="{{ .Site.Params.gmapAPI | absURL }}"></script>

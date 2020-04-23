@@ -17,9 +17,6 @@ tags:
   - "Parametric Bootstrap"
   - "Non-parametric Bootstrap"
   - "resampling method"
-output:
-  blogdown::html_page:
-    highlight: tango
 ---
 
 

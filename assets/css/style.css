@@ -745,12 +745,12 @@ button {
 }
 
 code{
-  padding: 16px;
-  overflow: auto;
-  font-size: 90%;
-  background-color: #f6f8fa;
-  border-radius: 3px;
-  display: block;
+    padding: 4px;
+    overflow: auto;
+    font-size: 16px;
+    color: #d80101;
+    background-color: #f1f4f7cc;
+    border-radius: 6px;
 }
 
 .translateY-25 {

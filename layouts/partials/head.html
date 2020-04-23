@@ -24,6 +24,12 @@
 {{ "<!-- themify icon -->" | safeHTML }}<link rel="stylesheet" href="{{ "plugins/themify-icons/themify-icons.css" | absURL }} ">
 {{ "<!-- Slick Carousel -->" | safeHTML }} <link rel="stylesheet" href="{{ "plugins/slick/slick.css" | absURL }} "><link rel="stylesheet" href="{{ "plugins/slick/slick-theme.css" | absURL }} ">
 
+{{ if and (not .Params.disable_highlight) (in (string .Content) "</pre>") }}
+{{ $highTheme := .Site.Params.highlightjsTheme }}
+{{ with .Site.Params.highlightjsVersion }}
+<link href='{{ $.Site.Params.highlightjsCDN | default "//cdnjs.cloudflare.com/ajax/libs" }}/highlight.js/{{ . }}/styles/{{ $highTheme }}.min.css' rel='stylesheet' type='text/css' />
+{{ end }}
+{{ end }}
 
 <link rel="preload" href="plugins/themify-icons/fonts/themify.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="plugins/slick/fonts/slick.woff" as="font" type="font/woff" crossorigin>

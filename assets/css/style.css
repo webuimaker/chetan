@@ -2094,6 +2094,10 @@ img.arrow-bottom {
   text-align: center;
 }
 
+.figure {
+    display: inline-block;
+    text-align: center!important;
+}
 /* project single page end */
 /* 21.4.3 pagination */
 .pagination .page-item .page-link {

@@ -1,4 +1,4 @@
-Sitemap: https://xenodochial-johnson-2c8705.netlify.app/sitemap.xml
+Sitemap: /sitemap.xml
 User-agent: *
 Disallow: /some-path/
 

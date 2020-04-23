@@ -35,7 +35,7 @@ This article explains bootstrap concept as a whole and discern the fundamental d
 <strong>Table of Contents </strong>
 
 ```{r toc, echo=FALSE} 
-render_toc("bootstrap-in-r.Rmd")
+render_toc("bootstrap.Rmd")
 ```
 
 

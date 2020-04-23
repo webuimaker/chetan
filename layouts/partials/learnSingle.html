@@ -7,14 +7,7 @@
                     <img class="lazyload img-fluid w-100 rounded-top" data-src="{{ .Params.image | absURL }}" alt="blog-image">
                     <div class="p-4">
 
-                        <!-- <ul class="list-inline d-block pb-4 border-bottom mb-3">
-                            <li class="list-inline-item text-color"><img class="rounded-circle author-image" alt="100x100" src="{{ .Params.authorImage | absURL }}"
-                                data-holder-rendered="true"> </li>
-
-                            <li class="list-inline-item text-color">By: {{ .Params.Author }}</li>
-                            <li class="list-inline-item text-color">Date: {{ .PublishDate.Format "02 Jan" }}</li>
-                           
-                        </ul> -->
+                        
                         <div class="post-content">
                             <div class="col-12 mb-3">
                                 <div class="d-flex flex-sm-row flex-column  text-sm-left">
@@ -24,10 +17,9 @@
                                         <h4 class="count mb-0">{{.Params.author}}</h4>
                                         <p class=" mb-0 font-sm">{{.Params.authorPos}}</p>
                                         <ul class="list-inline tag-list m-0">
-                                           <strong>Tag:</strong>
                                                 {{ range .Params.Tags }} 
                                                     <li class="list-inline-item">
-                                                        <a class="text-color" href="{{ "tags/" | absURL }}{{ . | lower }}">{{ . }}</a>
+                                                        <a class="text-white badge badge-dark" href="{{ "tags/" | absURL }}{{ . | lower }}">{{ . }}</a>
                                                     </li>
                                                 {{ end }}
                                             
@@ -35,6 +27,8 @@
                                     </div>
                                 </div>
                             </div>
+
+                            
 
 
                             <div class="py-4 border-bottom mb-3 d-none">
@@ -74,27 +68,6 @@
 
 
 
-
-                <div id="disqus_thread"></div>
-                <script>
-
-                /**
-                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-                /*
-                var disqus_config = function () {
-                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                };
-                */
-                (function() { // DON'T EDIT BELOW THIS LINE
-                var d = document, s = d.createElement('script');
-                s.src = 'https://iscon-statistics.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-                })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
                 </div>
 
@@ -200,4 +173,30 @@
         </div>
     </div>
 </article>
+
+{{ "<!-- share-icon -->" | safeHTML }}
+    <div data-spy="affix" class="d-flex socialfixed pull-left hidden-sm hidden-xs"  >
+        <span class="font-weight-light mt-2 mr-3 d-none">Share:</span>
+        <ul class="list-inline d-inline-block">
+            
+            <li class="list-item mb-1">
+                <a class="share-icon bg-secondary" href="http://www.facebook.com/sharer.php?u={{ .URL }}">
+                    <i class="ti-facebook"></i>
+                </a>
+            </li>
+            <li class="list-item mb-1">
+                <a class="share-icon bg-secondary" href="http://twitter.com/share?url={{ .URL }}&text={{ .Title }}&via={{with .Site.Social.twitter }}{{ . }}{{ end }}">
+                    <i class="ti-twitter"></i>
+                </a>
+            </li><li class="list-item mb-1">
+                <a class="share-icon bg-secondary" href="mailto:?subject=Check%20out%20{{ .Title }}.&body={{ .Content }}">
+                    <i class="ti-email"></i>
+                </a>
+            </li>
+
+
+
+
+        </ul>
+    </div>
 {{ "<!-- /blog-single -->" | safeHTML }}

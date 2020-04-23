@@ -581,6 +581,13 @@ button {
   color: #fff;
 }
 
+
+.socialfixed {
+  position: fixed;
+  left: 0px;
+  top: 20%;
+}
+
 .box-shadow {
   box-shadow: 0px 10px 35px 0px rgba(0, 0, 0, 0.1);
 }
@@ -2900,6 +2907,8 @@ min-height: 440px;
   margin-right: -50px;
 }
 .btn-sm2{padding:7px 14px!important; font-weight: 600 !important;}
+
+.page-title  .btn-sm2{padding:4px 8px!important; font-weight: 500 !important;}
 
 .casetitle .right{
   width: 80%;

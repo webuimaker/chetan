@@ -456,10 +456,6 @@ hr {
   height: auto;
 }
 
-.figure {
-  display: inline-block;
-}
-
 .figure-img {
   margin-bottom: .5rem;
   line-height: 1;

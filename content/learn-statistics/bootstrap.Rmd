@@ -16,7 +16,6 @@ categories:
 tags:
   - "Parametric Bootstrap"
   - "Non-parametric Bootstrap"
- 
 ---
 
 
@@ -33,8 +32,6 @@ This article explains bootstrap concept as a whole and discern the fundamental d
 ```{r toc, echo=FALSE} 
 render_toc("bootstrap.Rmd")
 ```
-
-
 
 
 ## Fundamental of statistical inference
@@ -61,6 +58,11 @@ df
 mean(df)
 ```
 
+```{r fig.cap="Parametric vs nonparametric bootstrap"}
+knitr::include_graphics("/images/learnstatistics/boot.png",error = FALSE)
+
+```
+
 + **Sampling distribution (of statistic) **: Now we went to take a random sample of 20 babies at numerous hospitals (i.e.multiple times) in the UK. Each time, we calculate the mean birth weight and note down its value. This value will be different in each different hospital (in a statistical sense, the statistic is a random variable, will vary as variation is inherent). Here we went to 100 hospitals and took a sample of 20 babies born at that hospital and calculated the mean birth weight and plotted in the histogram.
 
 ```{r echo=FALSE}
@@ -72,7 +74,7 @@ for (i in 1:100) {
   statistic[i] <- mean(df[[i]]) }
 ```
 
-```{r fig.cap="Distribution of sample means",out.width="50%"}
+```{r fig.cap="Distribution", fig.height=3, fig.width=3}
 require(ggplot2)
 ggplot(data.frame(statistic), aes(statistic)) + geom_histogram() + labs(x= "Mean", y= "Freqency")
 ```
@@ -81,7 +83,7 @@ ggplot(data.frame(statistic), aes(statistic)) + geom_histogram() + labs(x= "Mean
 It is better to plot the histogram with optimum bin width (see [Article from David Freedman](https://link.springer.com/article/10.1007/BF01025868)) along with density curve using `aes(y=..density..)`.So that the area under the density curve will be 1
 
 
-```{r fig.cap="Distribution of sample means (proper histogram)", out.width="50%"}
+```{r fig.cap="Distribution of sample means (proper histogram)"}
 binw <- 2*(IQR(statistic)/length(statistic)^(1/3))
 ggplot(data.frame(statistic), aes(statistic)) + geom_histogram(aes(y=..density..),binwidth = binw,fill="darkred",colour="black",size=1) + geom_density(aes(y=..density..),size=1) + labs(x= "Mean", y= "Density")
 ```
@@ -167,13 +169,13 @@ B
 
 We can used default plots to see whether bootstrap samples are correctly sampled. 
 
-```{r fig.cap="Bootstrap sampling distribution of sample mean",out.width="50%"}
+```{r fig.cap="Bootstrap sampling distribution of sample mean"}
 plot(B)
 ```
 
 Or, one can use `ggplot` to get the same figure
 
-```{r fig.cap="Bootstrap sampling distribution of sample mean  (ggplot2)",out.width="50%" }
+```{r fig.cap="Bootstrap sampling distribution of sample mean  (ggplot2)"}
 binw <- 2*(IQR(B$t)/length(B$t)^(1/3))
 ggplot(data.frame(B$t), aes(B.t)) + geom_histogram(fill="grey", colour="black", binwidth = binw) + geom_vline(xintercept = B$t0, linetype="dashed", size=1) + labs(x="Bootstrap sample statistic", title="Bootstrap sampling distribution of sample mean")
 ```
@@ -190,7 +192,7 @@ Once we have a sample data, we may think that the observed data may have come fr
 
 For example in our sample birth weights, we may assume that observed birth-weight comes from normal distribution with parameter $\mu$ = `r round(mean(df),1)` and $\sigma$ = `r round(sd(df),1)` ( which is estimated from observed data). See the below figure,
 
-```{r fig.cap="Distribution of observed sample birthweights",out.width="50%"}
+```{r fig.cap="Distribution of observed sample birthweights"}
 ggplot(data.frame(df), aes(df)) + geom_density() + labs(x= "birth weight")
 ```
 
@@ -253,7 +255,7 @@ B <- boot(data = df, sim = "parametric", ran.gen =  gen_function, mle = c(3617.7
 B
 ```
 
-```{r fig.cap="Parametric bootstrap using boot package",fig.align="center",out.width="50%"}
+```{r fig.cap="Parametric bootstrap using boot package"}
 plot(B)
 ```
 

@@ -167,6 +167,8 @@ ul {
 img {
   vertical-align: middle;
   border: 0;
+  max-width: 100%;
+  height: auto;
 }
 
 a,
@@ -2095,7 +2097,6 @@ img.arrow-bottom {
 }
 
 .figure {
-    display: inline-block;
     text-align: center!important;
 }
 /* project single page end */
@@ -3018,5 +3019,10 @@ min-height: 440px;
 .mark, mark {
     padding: .2em;
     background-color: #eff31a !important}
+
+.caption {
+  font-size: 12px;
+  text-align: center
+}
 
 /*# sourceMappingURL=maps/style.css.map */

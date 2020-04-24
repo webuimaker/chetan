@@ -26,7 +26,7 @@ mobile = "+44 7392 339 862"
 copyright = "© Copyright 2020 ISCON Statistical Services. All Rights Reserved."
 description = "Experienced and professional statistician offers reliable statistical consulting services online to researchers, businesses and PhD students. Hire RSS(UK) accredited freelance statistician for in-depth data analysis and statistical modelling in R, SPSS, STATA. Ask for statistics help in dissertation, medical statistics"
 logo = "images/homepage/logo/logo.png"
-gmapAPI = ""
+#gmapAPI = ""
 mapLatitude = "51.527948"
 mapLongitude = "-2.557515"
 mapMarker = "images/contact/marker.png"
@@ -130,7 +130,7 @@ highlightjsTheme = "tomorrow-night-blue"
       [Languages.en.params.quoteBtn]
       enable = true
       btnText = "Talk to Statistician"
-      btnURL = "#"
+      btnURL = "/contact"
 
       # cta
       [Languages.en.params.cta]
@@ -139,7 +139,7 @@ highlightjsTheme = "tomorrow-night-blue"
       title = "Are You Ready to Unlock the Hidden Potential and Value of Your Data?"
       titleSM = "<em>Connect with ISCON and see what we can do for you.</em>"
       btnText = "Let’s get in touch"
-      btnURL = "#"
+      btnURL = "/contact"
 
       # statistical software
       [Languages.en.params.logoSlider]

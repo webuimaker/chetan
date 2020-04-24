@@ -1,0 +1,12 @@
+unnamed-chunk-1	require
+toc	render_toc
+unnamed-chunk-2	[<-	c	data.frame	list	matrix	paste0
+unnamed-chunk-3	::	df
+unnamed-chunk-4	c	df	reshape
+unnamed-chunk-5	arrange	id	kable
+unnamed-chunk-6	[<-	c	data.frame	list	matrix	paste0
+unnamed-chunk-7	df	kable
+unnamed-chunk-8	c	df	list	reshape
+unnamed-chunk-9	arrange	id	kable
+unnamed-chunk-10	c	df_long	reshape
+unnamed-chunk-11	df_wide	kable

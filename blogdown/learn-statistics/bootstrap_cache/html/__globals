@@ -1,0 +1,30 @@
+toc	render_toc
+unnamed-chunk-1	rnorm	set.seed
+unnamed-chunk-2	df	mean
+unnamed-chunk-3	::
+unnamed-chunk-4	[[	[[<-	[<-	for	list	mean	rnorm	set.seed	vector
+unnamed-chunk-5	aes	data.frame	geom_histogram	ggplot	labs	require	statistic
+unnamed-chunk-6	..density..	^	aes	data.frame	geom_density	geom_histogram	ggplot	IQR	labs	length	statistic
+unnamed-chunk-7	rnorm	set.seed
+unnamed-chunk-8	[<-	df	for	length	mean	sample	T	vector
+unnamed-chunk-9	mean	theta_star
+unnamed-chunk-10	sd	theta_star
+unnamed-chunk-11	df	mean	theta_boot
+unnamed-chunk-12	^	df	mean	theta_boot
+unnamed-chunk-13	boot_se	c	theta_boot
+unnamed-chunk-14	boot	df	mean	require
+unnamed-chunk-15	B	plot
+unnamed-chunk-16	$	^	aes	B	B.t	data.frame	geom_histogram	geom_vline	ggplot	IQR	labs	length
+unnamed-chunk-17	B	boot.ci
+unnamed-chunk-18	aes	data.frame	df	geom_density	ggplot	labs
+unnamed-chunk-19	[<-	df	for	length	mean	rnorm	vector
+unnamed-chunk-20	mean	theta_star
+unnamed-chunk-21	sd	theta_star
+unnamed-chunk-22	df	mean	theta_boot
+unnamed-chunk-23	^	df	mean	theta_boot
+unnamed-chunk-24	boot_se	c	theta_boot
+unnamed-chunk-25	length	return	rnorm
+unnamed-chunk-26	mean
+unnamed-chunk-27	boot	c	df	gen_function	theta_star_function
+unnamed-chunk-28	B	plot
+unnamed-chunk-29	B	boot.ci

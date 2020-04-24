@@ -2332,6 +2332,13 @@ blockquote{
   color: #666;
 }
 
+.contactList li {
+  list-style: none;
+}
+.contactList li i{
+  line-height: 70px;
+}
+
 /* mailchimp form */
 
 .mc-field-group input{

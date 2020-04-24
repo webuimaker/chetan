@@ -191,8 +191,8 @@ highlightjsTheme = "tomorrow-night-blue"
       quickLink = "Quick Link"
 
       # subscribe
-      subscribe = "Subscribe Us"
-      subscribeContent = "Lorem ipsum dolor sit amet, consect etur adipisicing. elit sed do eiusmod."
+      subscribe = "Notify me"
+      subscribeContent = "Get notified when we publish new article"
 
       # copyright
       copyright = "© Copyright 2020 ISCON Statistical Services. All Rights Reserved."
@@ -215,52 +215,51 @@ highlightjsTheme = "tomorrow-night-blue"
         URL = "#"
 
         # service links
-        [[Languages.en.params.footer.service]]
-        serviceItem = "Company History"
-        URL = "#"
+        #[[Languages.en.params.footer.service]]
+        #serviceItem = "Company History"
+       # URL = "#"
 
-        [[Languages.en.params.footer.service]]
-        serviceItem = "About Us"
-        URL = "#"
+        #[[Languages.en.params.footer.service]]
+        #serviceItem = "About Us"
+        #URL = "#"
 
-        [[Languages.en.params.footer.service]]
-        serviceItem = "Contact Us"
-        URL = "#"
-
-        [[Languages.en.params.footer.service]]
-        serviceItem = "Service"
-        URL = "#"
-
-        [[Languages.en.params.footer.service]]
-        serviceItem = "Privacy Policy"
-        URL = "#"
-
-        # quick links
-        [[Languages.en.params.footer.quickLinks]]
-        quickLinkItem = "Pricing"
-        URL = "#"
-
-        [[Languages.en.params.footer.quickLinks]]
-        quickLinkItem = "FAQs"
-        URL = "#"
-
-        [[Languages.en.params.footer.quickLinks]]
-        quickLinkItem = "Contact Us"
-        URL = "#"
-
-        [[Languages.en.params.footer.quickLinks]]
-        quickLinkItem = "Service"
-        URL = "#"
-
-        [[Languages.en.params.footer.quickLinks]]
-        quickLinkItem = "Privacy Policy"
-        URL = "#"
-
+#        [[Languages.en.params.footer.service]]
+ #       serviceItem = "Contact Us"
+  #      URL = "#"
+#
+ #       [[Languages.en.params.footer.service]]
+  #      serviceItem = "Service"
+   #     URL = "#"
+#
+ #       [[Languages.en.params.footer.service]]
+  #      serviceItem = "Privacy Policy"
+   #     URL = "#"
+#
+ #       # quick links
+  #      [[Languages.en.params.footer.quickLinks]]
+   #     quickLinkItem = "Pricing"
+    #    URL = "#"
+#
+ #       [[Languages.en.params.footer.quickLinks]]
+  #      quickLinkItem = "FAQs"
+   #     URL = "#"
+#
+ #       [[Languages.en.params.footer.quickLinks]]
+  #      quickLinkItem = "Contact Us"
+   #     URL = "#"
+#
+ #       [[Languages.en.params.footer.quickLinks]]
+  #      quickLinkItem = "Service"
+   #     URL = "#"
+#
+ #       [[Languages.en.params.footer.quickLinks]]
+  #      quickLinkItem = "Privacy Policy"
+   #     URL = "#"
+    #
         # bottom links
-        [[Languages.en.params.footer.links]]
-          name = "Sitemap"
-          URL = "#"
-
+       [[Languages.en.params.footer.links]]
+        name = "Sitemap"
+        URL = "#"
         [[Languages.en.params.footer.links]]
           name = "Terms of Use"
           URL = "#"

@@ -5,47 +5,33 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 ">
+                <!-- {{ with $data.contact.title }} <h2 class="section-title">{{ . }}</h2> {{ end }} -->
                 <div class="row  row-eq-height contat-lists">
-                    <div class="col-6 mb-3">
-                        <div class="contact-info align-middle">
-                            <i class="round-icon mr-3 ti-skype"></i>
-
-                            <div class="align-self-center font-primary d-block">
-                                <p>dd</p>
-                                <p>dd</p>
-                            </div>
-
-                        </div>                        
-                    </div>
-                    <div class="col-6 mb-3">
-                        <div class="contact-info">
-                            111
-                        </div>     
-                    </div>
-                    <div class="col-6 ">
-                        <div class="contact-info">
-                            111
-                        </div>     
-                    </div>
-                    <div class="col-6 ">
-                        <div class="contact-info">
-                            111
-                        </div>     
-                    </div>
-                </div>
-               {{ with $data.contact.title }} <h2 class="section-title">{{ . }}</h2> {{ end }}
-                <ul class="pl-0 contactList">
                     {{ range $data.contact.contactList }}
                     {{ "" | safeHTML }}
-                    <li class="mb-30 text-center">
-                        <i class="round-icon mr-3 {{ .icon }}"></i>
-                        <div class="align-self-center font-primary d-block">
-                            <p>{{ .listItem1 }}</p>
-                            <p>{{ .listItem2 }}</p>
-                        </div>
-                    </li>
-                    {{ end }}
-                </ul> 
+                    <div class="col-6 mb-3">
+                        <div class="contact-info align-middle">                           
+                            <div class="icon">
+                                {{if eq .type "whatsapp"}}
+                                 <a href="https://wa.me/{{ .action }}"><img src="{{ .icon }}"  alt="whatsapp"></a> 
+                                 
+                                 {{ else if eq .type "skype"  }}
+                                 <a href="skype:{{ .action }}?chat"><img src="{{ .icon }}"  alt="skype"></a>
+                                 
+                                 {{ else if eq .type "call"  }}
+                                 <a href="tell:{{ .action }}"><img src="{{ .icon }}"  alt="call"></a>
+                                 {{else }}
+                                 <a href="{{ .action }}"><img src="{{ .icon }}"  alt="map"></a> 
+                                {{end}}
+                            </div>
+                            <div class="align-self-center font-primary d-block info">
+                                <p>{{ .listItem1 }}</p>
+                                <p>{{ .listItem2 }}</p>
+                            </div>
+                        </div>                        
+                    </div>
+                    {{end}}
+                </div>
 
             </div>
             {{ "<!-- form -->" | safeHTML }}

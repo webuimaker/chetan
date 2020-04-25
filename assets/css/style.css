@@ -2340,7 +2340,26 @@ blockquote{
   background: #f4f4f4;
   height: 100%;
 }
-
+.contact-info .icon{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto !important;
+  width: 36px;
+  height: 36px;
+}
+.contact-info .info{
+  position: absolute;
+  bottom: 0;
+  font-size: 0.8em;
+  text-align: center;
+  width: 90%;
+}
+.contact-info .info p {
+  line-height: 5px;
+}
 /* mailchimp form */
 
 .mc-field-group input{

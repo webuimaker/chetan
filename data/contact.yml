@@ -4,18 +4,26 @@ formTitle : Contact Form
 btnText : Submit Now
 contactList : 
 
-  - icon : ti-themify-favicon
+  - icon : /images/contact/whatsapp.png
     listItem1 : Contact us directly on what’s app
     listItem2 : desktop or on mobile +447392339862
+    action: 47392339862
+    type: whatsapp
 
-  - icon : ti-skype
+  - icon : /images/contact/skype.png
     listItem1 : Connect with Skype for face-to-face
     listItem2 : meeting. Our Skype ID is ISCON_skype  
+    action: drchetan2
+    type: skype
 
-  - icon : ti-mobile
+  - icon : /images/contact/vibrate.png
     listItem1 : Call us on 01179999999 or text on
     listItem2 : +44 7392339862 for informal inquiry
+    action: 01179999999
+    type: call
     
-  - icon : ti-map-alt
+  - icon : /images/contact/map.png
     listItem1 : Meet us at our office 11 big
     listItem2 : street Bristol BS32 8HH
+    action: https://goo.gl/maps/YMJp9Cnk9zQNsZok7
+    type: map

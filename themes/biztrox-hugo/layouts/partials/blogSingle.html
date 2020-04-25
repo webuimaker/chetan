@@ -12,7 +12,7 @@
                             <li class="list-inline-item text-color">On {{ .PublishDate.Format "02 Jan" }}</li>
                             <li class="list-inline-item text-color">Tag:
                                 {{ range .Params.Tags }}
-                                <a class="text-color" href="{{ "tags/" | absURL }}{{ . | lower }}">{{ . }}</a>
+                                <a class="text-color" href="{{ "tags/" | absURL }}{{ . | lower }}/">{{ . }}</a>
                                 {{ end }}
                             </li>
                         </ul>

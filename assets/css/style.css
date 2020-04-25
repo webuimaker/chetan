@@ -2343,12 +2343,15 @@ blockquote{
 .contact-info .icon{
   position: absolute;
   left: 0px;
-  top: 0px;
+  top: -20%;
   right: 0px;
   bottom: 0px;
   margin: auto !important;
-  width: 36px;
-  height: 36px;
+  max-width: 90px;
+  height: 90px;
+  line-height:normal;
+  border: 2px solid #333;
+  padding: 20px;
 }
 .contact-info .info{
   position: absolute;

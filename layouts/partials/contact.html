@@ -11,21 +11,22 @@
                     {{ "" | safeHTML }}
                     <div class="col-6 mb-3">
                         <div class="contact-info align-middle">                           
-                            <div class="icon">
+                            <div class="icon round-icon">
                                 {{if eq .type "whatsapp"}}
-                                 <a href="https://wa.me/{{ .action }}"><img src="{{ .icon }}"  alt="whatsapp"></a> 
+                                 <a href="https://wa.me/{{ .action }}" target="_blank"><img src="{{ .icon }}"  alt="whatsapp"></a> 
                                  
                                  {{ else if eq .type "skype"  }}
-                                 <a href="skype:{{ .action }}?chat"><img src="{{ .icon }}"  alt="skype"></a>
+                                 <a href="skype:{{ .action }}?chat" target="_blank"><img src="{{ .icon }}"  alt="skype"></a>
                                  
                                  {{ else if eq .type "call"  }}
-                                 <a href="tell:{{ .action }}"><img src="{{ .icon }}"  alt="call"></a>
+                                 <a href="tell:{{ .action }}" target="_blank"><img src="{{ .icon }}"  alt="call"></a>
                                  {{else }}
-                                 <a href="{{ .action }}"><img src="{{ .icon }}"  alt="map"></a> 
+                                 <a href="{{ .action }}" target="_blank"><img src="{{ .icon }}"  alt="map"></a> 
                                 {{end}}
                             </div>
                             <div class="align-self-center font-primary d-block info">
-                                <p>{{ .listItem1 }}</p>
+                                <strong>{{ .heading }}</strong>
+                                <p class="mt-1">{{ .listItem1 }}</p>
                                 <p>{{ .listItem2 }}</p>
                             </div>
                         </div>                        

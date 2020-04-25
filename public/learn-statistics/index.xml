@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Learn Statistics on ISCON Statistical Consulting Services | Experienced &amp; Accredited UK based Statistician</title>
-    <link>/learn-statistics/</link>
+    <link>https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/</link>
     <description>Recent content in Learn Statistics on ISCON Statistical Consulting Services | Experienced &amp; Accredited UK based Statistician</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,34 +11,34 @@
     <copyright>© Copyright 2020 ISCON Statistical Services. All Rights Reserved.</copyright>
     <lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/learn-statistics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bootstrapping in Statistics : Difference between Parametric and Nonparametric Bootstrap method</title>
-      <link>/learn-statistics/bootstrap-resampling-parametric-nonparametric-boot-how-to/</link>
+      <link>https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/bootstrap-resampling-parametric-nonparametric-boot-how-to/</link>
       <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
       <author>chetan.prajapati@live.com (Chetan Prajapati (Statistician))</author>
-      <guid>/learn-statistics/bootstrap-resampling-parametric-nonparametric-boot-how-to/</guid>
+      <guid>https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/bootstrap-resampling-parametric-nonparametric-boot-how-to/</guid>
       <description>This article explains bootstrap concept as a whole and discern the fundamental difference between parametric and nonparametric bootstrap using R.</description>
     </item>
     
     <item>
       <title>Poisson regression : Statistical models for counts and rates</title>
-      <link>/learn-statistics/poisson-regression-overdispersion-how-to/</link>
+      <link>https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/poisson-regression-overdispersion-how-to/</link>
       <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
       <author>chetan.prajapati@live.com (Chetan Prajapati (Statistician))</author>
-      <guid>/learn-statistics/poisson-regression-overdispersion-how-to/</guid>
+      <guid>https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/poisson-regression-overdispersion-how-to/</guid>
       <description>Table of Contents 
 What is a count ?Probability distribution(s) associated with the countsPoisson distributionNegative binomial distributionPoisson Inverse Gaussian (PIG)Generalized Negative Binomial Model (GNB)Generalised Poissson ModelsHeterogeneous Negative Binomail model (NB-H)Exact poisson regressionWhat is a count ?</description>
     </item>
     
     <item>
       <title>Reshape data from wide to long or from long to wide in R</title>
-      <link>/learn-statistics/reshape-wide-long-data-r-how-to/</link>
+      <link>https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/reshape-wide-long-data-r-how-to/</link>
       <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
       <author>chetan.prajapati@live.com (Chetan Prajapati (Statistician))</author>
-      <guid>/learn-statistics/reshape-wide-long-data-r-how-to/</guid>
+      <guid>https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/reshape-wide-long-data-r-how-to/</guid>
       <description>Reshaping though frequently required in data analysis, so often it remains confusing even if you are frequent user of reshape function.</description>
     </item>
     

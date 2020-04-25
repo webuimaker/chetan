@@ -1260,9 +1260,9 @@ pre code {
   }
 
   .col-lg-3 {
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%;
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%;
+    max-width: 30%;
   }
 
   .col-lg-4 {
@@ -1296,9 +1296,9 @@ pre code {
   }
 
   .col-lg-9 {
-    -ms-flex: 0 0 75%;
-    flex: 0 0 75%;
-    max-width: 75%;
+    -ms-flex: 0 0 70%;
+    flex: 0 0 70%;
+    max-width: 70%;
   }
 
   .col-lg-10 {
@@ -7628,10 +7628,6 @@ a.bg-dark:focus,a.bg-dark:hover,button.bg-dark:focus,button.bg-dark:hover {
 
 .pl-1,.px-1 {
   padding-left: .25rem!important;
-}
-
-.p-2 {
-  padding: .5rem!important;
 }
 
 .pt-2,.py-2 {

@@ -15,7 +15,7 @@ HUGO_VERSION = "0.67.1"
 
 # Branch specific settings
 [context.branch-name.processing]
-  skip_processing = true
+  skip_processing = false
 
 [context.branch-name.processing.css]
   bundle = true

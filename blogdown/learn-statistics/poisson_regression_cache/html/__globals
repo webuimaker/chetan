@@ -1,0 +1,5 @@
+toc	render_toc
+unnamed-chunk-1	rpois	set.seed
+unnamed-chunk-2	aes	data.frame	dpois	geom_bar	ggplot	require	rpois	scale_x_continuous	seq	set.seed	theme_classic
+unnamed-chunk-3	~	c	cbind	data.frame	dummy	exp	glm	poisson	require	sample	summary
+unnamed-chunk-4	::

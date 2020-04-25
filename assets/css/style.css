@@ -169,6 +169,8 @@ img {
   border: 0;
   max-width: 100%;
   height: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 a,
@@ -1392,16 +1394,9 @@ header{
 }
 
 .testimonial-icon {
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  background: #f5f5f5;
-  color: #e84444;
-  font-size: 25px;
-  line-height: 80px;
-  display: inline-block;
-  text-align: center;
-  margin-bottom: 25px;
+  color: #d30808;
+  font-size: 14px;
+
 }
 
  .img-box {
@@ -3014,7 +3009,7 @@ min-height: 440px;
   min-height: 400px;
 }
 .case-right{
-  font-size: .85em;
+  font-size: .82em;
 }
 .quote-sm{
   height: 30px;
@@ -3027,7 +3022,7 @@ min-height: 440px;
   max-width: 50px;
   max-height: 50px;
 }
-.review-case {font-size: 1.1em;}
+.review-case {font-size: 1.3em;}
 
 
 .mark, mark {

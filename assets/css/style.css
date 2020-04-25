@@ -2341,17 +2341,16 @@ blockquote{
   height: 100%;
 }
 .contact-info .icon{
-  position: absolute;
-  left: 0px;
-  top: -20%;
-  right: 0px;
-  bottom: 0px;
-  margin: auto !important;
-  max-width: 90px;
-  height: 90px;
-  line-height:normal;
-  border: 2px solid #333;
-  padding: 20px;
+ position: absolute;
+    left: 0;
+    top: -20%;
+    right: 0;
+    bottom: 0;
+    margin: auto!important;
+    max-width: 90px;
+    height: 90px;
+    line-height: normal;
+    padding: 20px;
 }
 .contact-info .info{
   position: absolute;
@@ -2361,7 +2360,7 @@ blockquote{
   width: 90%;
 }
 .contact-info .info p {
-  line-height: 5px;
+  line-height: 19px;
 }
 /* mailchimp form */
 

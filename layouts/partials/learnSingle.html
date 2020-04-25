@@ -19,7 +19,7 @@
                                         <ul class="list-inline tag-list m-0">
                                                 {{ range .Params.Tags }}
                                                     <li class="list-inline-item">
-                                                        <a class="text-white badge badge-dark" href="{{ "tags/" | absURL }}{{ . | lower }}">{{ . }}</a>
+                                                        <a class="text-white badge badge-dark" href="{{ "tags/" | absURL }}{{ . | lower }}/">{{ . }}</a>
                                                     </li>
                                                 {{ end }}
 

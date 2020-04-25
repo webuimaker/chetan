@@ -54,7 +54,7 @@
                             <ul class="list-unstyled mb-0">
                                 {{- range $name, $items := .Site.Taxonomies.categories }}
                                 <li class="border-bottom">
-                                    <a href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}" class="d-block text-color py-10">{{ $name | title | humanize }}</a>
+                                    <a href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}/" class="d-block text-color py-10">{{ $name | title | humanize }}</a>
                                 </li>
                                 {{- end }}
                             </ul>
@@ -70,7 +70,7 @@
                             {{- if not (eq (len .Site.Taxonomies.tags) 0) }}
                             <ul class="list-inline tag-list">
                                 {{- range $name, $items := .Site.Taxonomies.tags }}
-                                <li class="list-inline-item"><a href="{{ "tags/" | relLangURL }}{{ $name | urlize | lower }}">{{ $name | humanize }}</a></li>
+                                <li class="list-inline-item"><a href="{{ "tags/" | relLangURL }}{{ $name | urlize | lower }}/">{{ $name | humanize }}</a></li>
                                 {{- end }}
                             </ul>
                             {{- end }}

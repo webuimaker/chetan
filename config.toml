@@ -51,17 +51,18 @@ highlightjsTheme = "tomorrow-night-blue"
   weight = 1
   title = "ISCON Statistical Consulting Services | Experienced & Accredited UK based Statistician"
   home = "Home"
+  URL = "/"
 
   [Languages.en.menu]
 
     [[Languages.en.menu.nav]]
     name = "About"
-    URL = "/about"
+    URL = "/about/"
     weight = 5
 
     [[Languages.en.menu.nav]]
     name = "Services"
-    URL = "/statistical-consulting-services"
+    URL = "/statistical-consulting-services/"
     hasChildren = true
     weight = 2
 
@@ -81,48 +82,48 @@ highlightjsTheme = "tomorrow-night-blue"
       [[Languages.en.menu.nav]]
       parent = "Services"
       name = "Statistical Analysis & Modelling"
-      URL = "/statistical-consulting-services/statistical-analysis-modelling"
+      URL = "/statistical-consulting-services/statistical-analysis-modelling/"
       pre = "Get in-depth analysis and report from expert statistician"
       weight = "23"
       [[Languages.en.menu.nav]]
       parent = "Services"
       name = "Dissertation statistical consulting"
-      URL = "/statistical-consulting-services/statistics-help-thesis"
+      URL = "/statistical-consulting-services/statistics-help-thesis/"
       pre = "Let us help you to make your disseration a success with expert statistics help"
       weight = "24"
       [[Languages.en.menu.nav]]
       parent = "Services"
       name = "Survey Design & Analysis"
-      URL = "/statistical-consulting-services/survey-design-analysis"
+      URL = "/statistical-consulting-services/survey-design-analysis/"
       pre = "Let us help you design and analyse your survey"
       weight = "25"
       [[Languages.en.menu.nav]]
       parent = "Services"
       name = "Clinical-trials Design & Analysis"
-      URL = "/statistical-consulting-services/clinical-trials-design-analysis"
+      URL = "/statistical-consulting-services/clinical-trials-design-analysis/"
       pre = "Let us help you to design, conduct and analyse your trial data"
       weight = "27"
       [[Languages.en.menu.nav]]
       parent = "Services"
       name = "Epidemiology & Genetics"
-      URL = "/statistical-consulting-services/epidemiology-genetics"
+      URL = "/statistical-consulting-services/epidemiology-genetics/"
       pre = "Get help from expert genetic epidemiologist"
       weight = "28"
       [[Languages.en.menu.nav]]
       parent = "Services"
       name = "Statistics Training"
-      URL = "/statistical-consulting-services/statistics-training"
+      URL = "/statistical-consulting-services/statistics-training/"
       pre = "Let us help you to empower your collagues with interctive statistics training"
       weight = "29"
 
     [[Languages.en.menu.nav]]
     name = "Case Studies"
-    URL = "/case-studies"
+    URL = "/case-studies/"
     weight = 3
 
     [[Languages.en.menu.nav]]
     name = "Learning Centre"
-    URL = "/learn-statistics"
+    URL = "/learn-statistics/"
     weight = 4
 
 
@@ -130,7 +131,7 @@ highlightjsTheme = "tomorrow-night-blue"
       [Languages.en.params.quoteBtn]
       enable = true
       btnText = "Talk to Statistician"
-      btnURL = "/contact"
+      btnURL = "/contact/"
 
       # cta
       [Languages.en.params.cta]
@@ -139,7 +140,7 @@ highlightjsTheme = "tomorrow-night-blue"
       title = "Are You Ready to Unlock the Hidden Potential and Value of Your Data?"
       titleSM = "<em>Connect with ISCON and see what we can do for you.</em>"
       btnText = "Let’s get in touch"
-      btnURL = "/contact"
+      btnURL = "/contact/"
 
       # statistical software
       [Languages.en.params.logoSlider]

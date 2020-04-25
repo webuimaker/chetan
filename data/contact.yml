@@ -1,6 +1,6 @@
 enable : true
 title : Contact Us
-formTitle : Contact Form
+formTitle : Send Us a Message
 btnText : Submit Now
 contactList :
 
@@ -11,14 +11,14 @@ contactList :
     heading : Talk to us via WhatsApp
 
   - icon : /images/contact/skype.png
-    listItem : Connect with us via Skype, click on button above start chat or arrange a meeting
+    listItem : Click on button above to send us a message or make a call on Skype
     action : drchetan2
     type : skype
-    heading : Skype
+    heading : Connect with us on Skype
 
   - icon : /images/contact/vibrate.png
-    listItem : Call us on 01179999999 or text us on +44 7392 3398 62
-    action : 01179999999
+    listItem : Call us on +441179999999 or text us on +44 7392 3398 62
+    action : 441179999999
     type : call
     heading : Call or Text us
 

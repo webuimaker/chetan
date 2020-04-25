@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on ISCON Statistical Consulting Services | Experienced &amp; Accredited UK based Statistician</title>
-    <link>https://xenodochial-johnson-2c8705.netlify.app/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on ISCON Statistical Consulting Services | Experienced &amp; Accredited UK based Statistician</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,33 +11,33 @@
     <copyright>© Copyright 2020 ISCON Statistical Services. All Rights Reserved.</copyright>
     <lastBuildDate>Sun, 12 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://xenodochial-johnson-2c8705.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Basic Statistics</title>
-      <link>https://xenodochial-johnson-2c8705.netlify.app/categories/basic-statistics/</link>
+      <link>/categories/basic-statistics/</link>
       <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
       <author>chetan.prajapati@live.com (Chetan Prajapati (Statistician))</author>
-      <guid>https://xenodochial-johnson-2c8705.netlify.app/categories/basic-statistics/</guid>
+      <guid>/categories/basic-statistics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Statistical Models</title>
-      <link>https://xenodochial-johnson-2c8705.netlify.app/categories/statistical-models/</link>
+      <link>/categories/statistical-models/</link>
       <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
       <author>chetan.prajapati@live.com (Chetan Prajapati (Statistician))</author>
-      <guid>https://xenodochial-johnson-2c8705.netlify.app/categories/statistical-models/</guid>
+      <guid>/categories/statistical-models/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data Management</title>
-      <link>https://xenodochial-johnson-2c8705.netlify.app/categories/data-management/</link>
+      <link>/categories/data-management/</link>
       <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
       <author>chetan.prajapati@live.com (Chetan Prajapati (Statistician))</author>
-      <guid>https://xenodochial-johnson-2c8705.netlify.app/categories/data-management/</guid>
+      <guid>/categories/data-management/</guid>
       <description></description>
     </item>
     

@@ -18,7 +18,7 @@ contactList :
 
   - icon : /images/contact/vibrate.png
     listItem : Call us on +441179999999 or text us on +44 7392 3398 62
-    action : 441179999999
+    action : 00441179999999
     type : call
     heading : Call or Text us
 

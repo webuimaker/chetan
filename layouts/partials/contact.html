@@ -19,7 +19,7 @@
                                  <a href="skype:{{ .action }}?chat" target="_blank"><img src="{{ .icon }}"  alt="skype"></a>
 
                                  {{ else if eq .type "call"  }}
-                                 <a href="tell:{{ .action }}" target="_blank"><img src="{{ .icon }}"  alt="call"></a>
+                                 <a href="tel:{{ .action }}" target="_blank"><img src="{{ .icon }}"  alt="call"></a>
                                  {{else }}
                                  <a href="{{ .action }}" target="_blank"><img src="{{ .icon }}"  alt="map"></a>
                                 {{end}}

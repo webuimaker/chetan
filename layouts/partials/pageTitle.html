@@ -8,7 +8,7 @@
                 <ul class="list-inline d-block mb-2">
                     <li class="list-inline-item text-color">
                         {{ range .Params.categories }}
-                            <a class="text-white  btn-primary btn-sm2 br-pill small p-1" href="{{ "categories/" | relLangURL }}{{ . | urlize | lower }}">{{ . }}</a>
+                            <a class="text-white  btn-primary btn-sm2 br-pill small p-1" href="{{ "categories/" | relLangURL }}{{ . | urlize | lower }}/">{{ . }}</a>
                         {{ end }}
                     </li>
                     <li class="list-inline-item text-color small">

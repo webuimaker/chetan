@@ -12,7 +12,7 @@ client: NHS Consultant
 country: United Kingdom
 sector: Health and Medical
 service: Statistical Analysis & Modelling
-serviceUrl: /statistical-analysis-modelling/
+serviceUrl: statistical-analysis-modelling/
 startdate: 08/07/2019
 enddate:  12/07/2019
 review: "Quality statistical work yet at affordable cost. Explained the difficult statistical concept clearly, quick turnaround time"

@@ -186,14 +186,14 @@ highlightjsTheme = "tomorrow-night-blue"
       email = "admin@isocon-statistics.com"
 
       # service links
-     # services = "Services"
+     services = "Services"
 
       # quickLinks
      # quickLink = "Quick Link"
 
       # subscribe
-      #subscribe = "Notify me"
-      #subscribeContent = "Get notified when we publish new article"
+      subscribe = "Notify me"
+      subscribeContent = "Get notified when we publish new article"
 
       # copyright
       copyright = "© Copyright 2020 ISCON Statistical Services. All Rights Reserved."

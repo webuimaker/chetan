@@ -76,7 +76,7 @@ highlightjsTheme = "tomorrow-night-blue"
       [[Languages.en.menu.nav]]
       parent = "Services"
       name = "Data Visualisation"
-      URL = "/statistical-consulting-services/data-visualisation"
+      URL = "/statistical-consulting-services/data-visualisation/"
       pre = "Your data tells a story, Let's us help you to create it"
       weight = "22"
       [[Languages.en.menu.nav]]

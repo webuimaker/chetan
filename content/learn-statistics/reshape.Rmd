@@ -19,7 +19,7 @@ tags:
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE,cache = FALSE, autodep = FALSE)
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE,cache = TRUE, autodep = TRUE)
 source("render_toc.R")
 ```
 

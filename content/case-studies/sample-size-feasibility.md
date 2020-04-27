@@ -11,7 +11,7 @@ description : "This is meta description"
 client: NHS Consultant
 country: United Kingdom
 sector: Agriculture
-service: Research-Design & Methodology/
+service: Research Design & Methodology
 serviceUrl: research-design-methodology/
 startdate: 12/07/2019
 enddate:  14/07/2019

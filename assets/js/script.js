@@ -101,13 +101,14 @@
 
     // slick slider
     $('.service').slick({
-        dots: true,
+        dots: false,
         infinite: true,
-        speed: 300,
+        speed: 10000,
         slidesToShow: 3,
         slidesToScroll: 1,
+        rows: 0,
         arrows: true,
-        autoplay: true,
+        autoplay: false,
         prevArrow: '<button type=\'button\' class=\'prevArrow\'><i class=\'ti-arrow-left\'></i></button>',
         nextArrow: '<button type=\'button\' class=\'nextArrow\'><i class=\'ti-arrow-right\'></i></button>',
         responsive: [{
@@ -145,7 +146,7 @@
     });
     // about post slider
     $('.post-slider').slick({
-        arrows: true,
+        arrows: false,
         autoplay: true,
         dots: true,
         prevArrow: '<button type=\'button\' class=\'prevArrow\'><i class=\'ti-arrow-left\'></i></button>',

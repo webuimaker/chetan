@@ -3005,6 +3005,18 @@ min-height: 440px;
   color: #e5e5e5;
 }
 
+
+/* 
+.service .slick-track
+{
+    display: flex !important;
+} */
+
+.service .slick-list .slick-slide
+{
+    height: 600px;
+}
+
 .image-about{
   min-height: 140px;
   margin-bottom: 20px;

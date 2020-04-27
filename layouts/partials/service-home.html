@@ -3,20 +3,23 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-12 text-center">
-				<h2 class="section-title section-title-border">We offer a wide range of statistical consulting services</h2>
+				<h2 class="section-title section-title-border">In-depth knowledge and experience of wide range of statistical software and tools</h2>
 			</div>
 			<div class="col-lg-8 text-center">
 				<p class="mb-5">At ISCON Statistical Services, we are dedicated to providing you with expert, accessible, and reliable customized statistical and data analysis services that fit your needs and budget. See our wide range of services</p>
 			</div>
 		</div>
-		<div class="row service">
+		<div class="row service equal">
 			{{ $specialize := where .Site.RegularPages "Type" "service" }} {{ range sort $specialize ".Params.weight" }}
 			<div class="col-lg-4 col-md-4 col-sm-6 mb-1 d-flex">
-				<div class="card text-center mb-5 flex-fill">
+				<div class="card text-center mb-5 ">
 					<div class="card-body">
-						 <i class="square-icon rounded btn-primary"><img alt="{{ .Title }}" class="img-fluid lazyload" data-src="{{.Params.Icon|absURL}}"></i> <a class="card-link" href="{{.Permalink}}">
+						<i class="square-icon rounded btn-primary">
+							 <img alt="{{ .Title }}" class="img-fluid lazyload" data-src="{{.Params.Icon|absURL}}">
+						</i> 
+						<a class="card-link" href="{{.Permalink}}">
 						<h3 class="card-title pt-3">{{ .Title }}</h3></a>
-						<p class="card-text mx-2 my-3 mb-0">{{ .Summary }}</p><a class="btn btn-secondary btn-sm2" href="{{.Permalink}}">Find out more</a>
+						<p class="card-text mx-2 my-3 mb-0">{{ .Params.summaryText }}</p><a class="btn btn-secondary btn-sm2" href="{{.Permalink}}">Find out more</a>
 					</div>
 				</div>
 			</div>{{ end }}

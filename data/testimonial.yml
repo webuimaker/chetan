@@ -4,25 +4,31 @@ image : images/client.png
 sliderItem :
 
   - content : Chetan is very friendly and very knowledgeable. I needed a quick consult for a statistical modeling question and he understood right away and helped me to understand the process. He explained abstract concepts in ways I could easily understand. Thanks!!
-    name : Galya hellwarth
+    firstName : Galya 
+    lastName :  Hellwarth
     designation : PhD researcher
 
   - content : Chetan is very friendly and very knowledgeable. I needed a quick consult for a statistical modeling question and he understood right away and helped me to understand the process. He explained abstract concepts in ways I could easily understand. Thanks!!
-    name : Galya hellwarth
+    firstName : Galya 
+    lastName :  Hellwarth
     designation : PhD researcher
 
   - content : Chetan is very friendly and very knowledgeable. I needed a quick consult for a statistical modeling question and he understood right away and helped me to understand the process. He explained abstract concepts in ways I could easily understand. Thanks!!
-    name : Galya hellwarth
+    firstName : Galya 
+    lastName :  Hellwarth
     designation : PhD researcher
 
   - content : Chetan is very friendly and very knowledgeable. I needed a quick consult for a statistical modeling question and he understood right away and helped me to understand the process. He explained abstract concepts in ways I could easily understand. Thanks!!
-    name : Galya hellwarth
+    firstName : Galya 
+    lastName :  Hellwarth
     designation : PhD researcher
 
   - content : Chetan is very friendly and very knowledgeable. I needed a quick consult for a statistical modeling question and he understood right away and helped me to understand the process. He explained abstract concepts in ways I could easily understand. Thanks!!
-    name : Galya hellwarth
+    firstName : Galya 
+    lastName :  Hellwarth
     designation : PhD researcher
 
   - content : Chetan is very friendly and very knowledgeable. I needed a quick consult for a statistical modeling question and he understood right away and helped me to understand the process. He explained abstract concepts in ways I could easily understand. Thanks!!
-    name : Galya hellwarth
+    firstName : Galya 
+    lastName :  Hellwarth
     designation : PhD researcher

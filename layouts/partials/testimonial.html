@@ -11,10 +11,13 @@
 		<div class="row testimonial-slider">
 			{{ "<!-- slider item -->" | safeHTML }} {{ range $data.testimonial.sliderItem }}
 			<div class="col-lg-4 col-md-4 text-center m-3 p-3 testimonial">
+				
 				{{if .image }}
-				<div class="img-box mb-3"><img alt="{{ .name }}" class="img-fluid border-round" src="{{.image}}"></div>{{else}} <i class="testimonial-icon ti-quote-left"></i> {{end}}
+				<div class="img-box mb-3"><img alt="{{ .name }}" class="img-fluid border-round" src="{{.image}}"></div>{{else}} 
+				<span class="testimonial-icon icon round-icon font-weight-bold font-lg">  {{ $firstChar := substr .firstName 0 1 | upper }} {{ $lastChar := substr .lastName 0 1 | upper }} {{$firstChar}} {{$lastChar}}</span> {{end}}
+
 				<p class="text-dark">{{ .content }}</p>
-				<h3 class="font-weight-normal">{{ .name }}</h3>
+				<h3 class="font-weight-normal">{{ .firstName }} {{ .lastName }}</h3>
 				<h4 class="font-secondary text-color">{{ .designation }}</h4>
 				<div class="star-rating">
 					<ul class="list-inline">

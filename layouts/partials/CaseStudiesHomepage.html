@@ -9,12 +9,14 @@
 		</div>
 	</div>{{ "<!-- work slider -->" | safeHTML }}
 	<div class="row work-slider mt-4">
-		{{ range $index, $element:= where .Site.RegularPages "Type" "case"}} {{ "<!-- project item -->" | safeHTML }}
-		<div class="col-lg-3 col-md-4 col-sm-6 case">
+		{{ range $index, $element:= where .Site.RegularPages "Type" "case-studies"}} {{ "<!-- project item -->" | safeHTML }}
+		<div class="col-lg-4 col-md-4 col-sm-6 case">
 			<div class="position-relative">
 				<img alt="project-image" class="img-fluid w-100 lazyload" data-src="{{.Params.Image|absURL}}">
 				<div class="project-info">
-					<a class="h4" href="{{.Permalink}}">{{ .Title }}</a> {{ $ser := lower .Params.Tag }} <a href="service/{{replace  $ser " " "-"}}"><i class="ti-tag"></i>{{ .Params.Tag }}</a>
+					<a class="h4" href="{{.Permalink}}">{{ .Title }}</a> 
+					{{ $ser := lower .Params.service }} <a href="statistical-consulting-services/{{.Params.serviceUrl}}">
+						<i class="ti-tag"></i>{{ .Params.service }}</a>
 				</div>
 			</div>
 		</div>{{ end }}

@@ -12,7 +12,7 @@ client: NHS Consultant
 country: United Kingdom
 sector: Agriculture
 service: Research Planning and advice
-serviceUrl: Research Planning and advice
+serviceUrl: research-design-methodology/
 startdate: 12/07/2019
 enddate:  14/07/2019
 review: "on time great quality work"

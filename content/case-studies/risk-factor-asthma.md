@@ -18,7 +18,7 @@ enddate:  12/07/2019
 review: "Quality statistical work yet at affordable cost. Explained the difficult statistical concept clearly, quick turnaround time"
 
 caseStudy : '#'
-filterCategories: health-medical, Research-Planning-Advice
+filterCategories: health-medical, statistical-analysis-modelling
 ---
 
 ## Overview

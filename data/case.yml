@@ -6,8 +6,8 @@ images :
   - "/images/hero-images/2.png"
   - "/images/hero-images/3.png"
 filterList :
-  - filterTitle : Research Planning & Advice
-    dataFilter : Research-Planning-Advice
+  - filterTitle : Research Design & Methodology
+    dataFilter : research-design-methodology
     caseType : service
 
   - filterTitle : Data Visualisation

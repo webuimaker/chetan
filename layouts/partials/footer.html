@@ -22,14 +22,13 @@
 					{{ with .Site.Params.footer.services}}
 					<h4 class="text-white mb-4">{{ . }}</h4>{{ end }}
 					<ul class="footer-links">
-						<li style="list-style: none">{{ range where .Site.RegularPages "Type" "service" }}</li>
-						<li>
-							<a href="{{.URL|absURL}}">{{ .Title }}</a>
-						</li>
-						<li style="list-style: none">{{ end }}</li>
+                        {{ range where .Site.RegularPages "Type" "service" }}
+                            <li>
+                                <a href="{{.URL|absURL}}">{{ .Title }}</a>
+                            </li>
+                        {{end}}
 					</ul>
 				</div>{{ "<!-- footer links -->" | safeHTML }}
-                <!-- <div class="col-lg-3 col-md-3 col-6"></div> -->
                 {{ "<!-- subscribe form -->" | safeHTML }}
 				<div class="col-lg-3 col-md-3">
 					<div class="mt-5 mt-lg-0 text-center text-md-left">
@@ -42,7 +41,8 @@
                             {{end}}
 						</ul>
 					</div>
-				</div>{{ "<!-- subscribe form -->" | safeHTML }} <!-- <div class="col-lg-3 col-md-3 offset-lg-1">
+                </div>{{ "<!-- subscribe form -->" | safeHTML }} 
+                <div class="col-lg-3 col-md-3">
                     <div class="mt-5 mt-lg-0 text-center text-md-left">
                             {{ with .Site.Params.footer.subscribe}} <h4 class="mb-4 text-white">{{ . }}</h4> {{ end }}
                             {{ with .Site.Params.footer.subscribeContent}} <p class="text-white mb-4">{{ . }}</p> {{ end }}
@@ -54,7 +54,7 @@
                             </button>
                         </form>
                     </div>
-                </div> -->
+                </div>
 			</div>
 		</div>
 	</div>{{ "<!-- copyright -->" | safeHTML }}
@@ -98,5 +98,27 @@
     ga('create', '{{ .Site.Params.googleAnalitycsID }}', 'auto');
     ga('send', 'pageview');
 </script>
+
+<!-- cookies consent -->
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "{{ .Site.Data.variables.cookiesconsent.background }}",
+      "text": "{{ .Site.Data.variables.cookiesconsent.text }}"
+    },
+    "button": {
+      "background": "{{ .Site.Data.variables.cookiesconsent.btntbackground }}",
+      "text": "#ffffff"
+    }
+  },
+  
+  "showLink": false,
+  "type": "opt-out"
+});
+</script>
+
+
 
 </body>

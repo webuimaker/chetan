@@ -8,6 +8,8 @@ disableHugoGeneratorInject = true
 disableLanguages = ["Fr"]
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 copyright = "© Copyright 2020 ISCON Statistical Services. All Rights Reserved."
+googleAnalytics = "UA-135116594-1"
+
 
 [outputs]
 
@@ -30,7 +32,6 @@ logo = "images/homepage/logo/logo.png"
 mapLatitude = "51.527948"
 mapLongitude = "-2.557515"
 mapMarker = "images/contact/marker.png"
-googleAnalitycsID = ""
 mailchimpFormAction = "https://app.us8.list-manage.com/subscribe/post?u=aefda29868b940ec532d7210a&amp;id=ae20884e0f"
 mailchimpFormName = "mc-embedded-subscribe-form"
 MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"

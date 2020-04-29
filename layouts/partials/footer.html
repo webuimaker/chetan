@@ -78,9 +78,6 @@
         </div>{{ "<!-- back to top -->" | safeHTML }} <button class="back-to-top"><i class="ti-angle-up"></i></button>
 	</nav>
 </footer>
-
-
-
 {{ "<!-- /footer -->" | safeHTML }}
 <script> var indexURL = {{ "index.json" | absURL }} </script>
 {{ "<!-- Main Script -->" | safeHTML }}
@@ -89,9 +86,8 @@
 {{ "<!-- lazy Script -->" | safeHTML }}
 {{ $script := resources.Get "js/lazysizes.min.js" | minify}}
 <script src="{{ $script.Permalink }}" async ></script>
-
-
-
+<!-- google ana-->
+{{- partial "ga.html" . -}}
 <!-- cookies consent -->
 <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
 <script>
@@ -156,4 +152,5 @@
    });
 
 </script>
+
 </body>

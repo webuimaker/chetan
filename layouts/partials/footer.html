@@ -87,14 +87,14 @@
 {{ $script := resources.Get "js/lazysizes.min.js" | minify}}
 <script src="{{ $script.Permalink }}" async ></script>
 <!-- google ana-->
-{{- partial "ga.html" . -}}
+	{{- partial "ga.html" . -}}
 <!-- cookies consent -->
 <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
 
 <script defer="">
 function trackingScripts() {
-				// tracking codes//
 
+// tracking code
  }
 window.addEventListener("load", function(){
 window.cookieconsent.initialise({

@@ -90,10 +90,15 @@
 {{- partial "ga.html" . -}}
 <!-- cookies consent -->
 <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-<script>
-  window.cookieconsent.initialise({
-    container: document.getElementById("cookieconsent"),
-    palette:{
+
+<script defer="">
+function trackingScripts() {
+				// tracking codes//
+
+ }
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+     palette:{
      popup: {background: "black"},
      button: {background: "red"},
     },
@@ -102,35 +107,36 @@
      regionalLaw: true,
     },
     location: true,
-    onInitialise: function (status) {
-  var type = this.options.type;
-  var didConsent = this.hasConsented();
-  if (type == 'opt-in' && didConsent) {
-    // enable cookies
-  }
-  if (type == 'opt-out' && !didConsent) {
-    // disable cookies
-  }
+  onInitialise: function (status) {
+		 var type = this.options.type;
+		 var didConsent = this.hasConsented();
+		 if (type == 'opt-in' && didConsent) {
+			trackingScripts()
+
+		  }
+		  if (type == 'opt-out' && !didConsent) {
+		    // disable cookies
+		  }
+	},
+
+  onStatusChange: function(status, chosenBefore) {
+	  	  var type = this.options.type;
+		  var didConsent = this.hasConsented();
+		  if (type == 'opt-in' && didConsent) {
+		    trackingScripts()
+		  }
+		  if (type == 'opt-out' && !didConsent) {
+		    // disable cookies
+		  }
 },
-    onStatusChange: function(status, chosenBefore) {
-  var type = this.options.type;
-  var didConsent = this.hasConsented();
-  if (type == 'opt-in' && didConsent) {
-    // enable cookies
+onRevokeChoice: function() {
+    var type = this.options.type;
+    if (type == 'opt-in') {
+     trackingScripts()
+    }
+    if (type == 'opt-out') {
+    }
   }
-  if (type == 'opt-out' && !didConsent) {
-    // disable cookies
-  }
-},
-    onRevokeChoice: function() {
-  var type = this.options.type;
-  if (type == 'opt-in') {
-    // disable cookies
-  }
-  if (type == 'opt-out') {
-    // enable cookies
-  }
-},
     position: "bottom",
     theme: "classic",
     type: "opt-out",
@@ -149,8 +155,7 @@
       "policy": 'Set cookies preference',
       "target": 'https://xenodochial-johnson-2c8705.netlify.app/',
       }
-   });
-
+})
+});
 </script>
-
 </body>

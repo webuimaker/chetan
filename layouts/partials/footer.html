@@ -102,6 +102,10 @@
      button: {background: "red"},
     },
     revokable: false,
+    law: {
+     regionalLaw: true,
+    },
+    location: true,
     onInitialise: function (status) {
   var type = this.options.type;
   var didConsent = this.hasConsented();
@@ -133,8 +137,9 @@
 },
     "position": "bottom",
     "theme": "classic",
-    "type": "opt-out",
+    "type": "opt-in",
     "domain": "/",
+    "dismissOnScroll": true,
     "secure": true,
     "content": {
       "header": 'Cookies used on the website!',

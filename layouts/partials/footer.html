@@ -118,7 +118,6 @@ window.cookieconsent.initialise({
 		    // disable cookies
 		  }
 	},
-
   onStatusChange: function(status, chosenBefore) {
 	  	  var type = this.options.type;
 		  var didConsent = this.hasConsented();
@@ -129,14 +128,14 @@ window.cookieconsent.initialise({
 		    // disable cookies
 		  }
 },
-onRevokeChoice: function() {
+  onRevokeChoice: function() {
     var type = this.options.type;
     if (type == 'opt-in') {
      trackingScripts()
     }
     if (type == 'opt-out') {
     }
-  }
+  },
     position: "bottom",
     theme: "classic",
     type: "opt-out",

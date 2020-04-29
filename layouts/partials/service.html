@@ -1,12 +1,6 @@
 {{ "<!-- service -->" | safeHTML }}
 <div class="section py-50">
     <div class="container">
-        <!-- <div class="row justify-content-center">
-            <div class="col-lg-12 text-center">
-                <div class="section-title-sm">Best Service</div>
-                <div class="section-title section-title-border">Service We Provide</div>
-            </div>
-        </div> -->
             {{ range .Data.Pages }}
             {{ "<!-- service item -->" | safeHTML }}
             {{ $ser := lower  .Title }}

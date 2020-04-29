@@ -93,22 +93,62 @@
 
 
 <!-- cookies consent -->
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
 <script>
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "{{ .Site.Data.variables.cookiesconsent.background }}",
-      "text": "{{ .Site.Data.variables.cookiesconsent.text }}"
+  window.cookieconsent.initialise({
+    container: document.getElementById("cookieconsent"),
+    palette:{
+     popup: {background: "black"},
+     button: {background: "red"},
     },
-    "button": {
-      "background": "{{ .Site.Data.variables.cookiesconsent.btntbackground }}",
-      "text": "#ffffff"
-    }
-  },
+    revokable: false,
+    onInitialise: function (status) {
+  var type = this.options.type;
+  var didConsent = this.hasConsented();
+  if (type == 'opt-in' && didConsent) {
+    // enable cookies
+  }
+  if (type == 'opt-out' && !didConsent) {
+    // disable cookies
+  }
+},
+    onStatusChange: function(status, chosenBefore) {
+  var type = this.options.type;
+  var didConsent = this.hasConsented();
+  if (type == 'opt-in' && didConsent) {
+    // enable cookies
+  }
+  if (type == 'opt-out' && !didConsent) {
+    // disable cookies
+  }
+},
+    onRevokeChoice: function() {
+  var type = this.options.type;
+  if (type == 'opt-in') {
+    // disable cookies
+  }
+  if (type == 'opt-out') {
+    // enable cookies
+  }
+},
+    "position": "bottom",
+    "theme": "classic",
+    "type": "opt-out",
+    "domain": "/",
+    "secure": true,
+    "content": {
+      "header": 'Cookies used on the website!',
+      "message": 'We use cookies to provide website functionality, to analyze traffic on our website, personalize content and to enable social media functionality. Our Privacy & Cookie provides more information',
+      "dismiss": 'Got it!',
+      "allow": 'Allow cookies',
+      "deny": 'Decline',
+      "link": 'Learn more',
+      "href": 'https://xenodochial-johnson-2c8705.netlify.app/',
+      "close": '&#x274c;',
+      "policy": 'Privacy and Cookie Policy',
+      "target": 'https://xenodochial-johnson-2c8705.netlify.app/',
+      }
+   });
 
-  "showLink": true,
-  "type": "opt-out"
-});
 </script>
 </body>

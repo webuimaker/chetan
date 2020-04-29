@@ -3,11 +3,11 @@
     <div class="container">
         <div class="row">
             {{ partial "sidebar.html" . }}
-            <div class="col-lg-8 py-100">
+            <div class="col-lg-8 col-sm-7 py-100">
                 <div class="row">
                     {{ range .Paginator.Pages }}
                     {{ "<!-- blog-item -->" | safeHTML }}
-                    <div class="col-sm-6 mb-4">
+                    <div class="col-sm-12 col-lg-6  mb-4">
                         <article class="card">
                             <div class="card-img-wrapper overlay-rounded-top">
                                 <img class="lazyload card-img-top" data-src="{{ .Params.image | absURL }}" alt="blog-thumbnail">

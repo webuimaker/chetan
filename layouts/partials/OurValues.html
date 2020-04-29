@@ -2,7 +2,7 @@
 <div class=" py-50">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-7 order-2 order-lg-2">
+			<div class="col-lg-7 col-sm-8 order-2 order-lg-2">
 				<h2 class="section-title section-title-border-half">{{ .Site.Data.helpfulServices.title }}</h2>
 				<ul class="d-inline-block pl-0 float-sm-left mr-sm-5">
 					<li style="list-style: none">{{ range .Site.Data.helpfulServices.item }}</li>
@@ -14,7 +14,7 @@
 					<li style="list-style: none">{{end}}</li>
 				</ul>
 			</div>{{ "<!-- philosophy image -->" | safeHTML }}
-			<div class="col-lg-5 align-self-center order-1 order-lg-1 mb-md-50"><img alt="philosophy-image" class="lazyload img-fluid w-100" data-src="{{.Site.Data.helpfulServices.image|absURL}}"></div>
+			<div class="col-lg-5 col-sm-4 align-self-center order-1 order-lg-1 mb-md-50"><img alt="philosophy-image" class="lazyload img-fluid w-100" data-src="{{.Site.Data.helpfulServices.image|absURL}}"></div>
 		</div>
 	</div>
 </div>{{ "<!-- /philosophy -->" | safeHTML }}

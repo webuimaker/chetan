@@ -107,6 +107,7 @@
         slidesToShow: 3,
         slidesToScroll: 1,
         rows: 0,
+        mobileFirst:true,
         arrows: true,
         autoplay: false,
         prevArrow: '<button type=\'button\' class=\'prevArrow\'><i class=\'ti-arrow-left\'></i></button>',
@@ -115,20 +116,20 @@
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToScroll: 1,
                     infinite: true,
                     dots: true
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 1
                 }
             },
             {
-                breakpoint: 401,
+                breakpoint: 767,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1

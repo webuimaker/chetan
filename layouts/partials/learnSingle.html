@@ -3,6 +3,33 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 py-50">
+                
+
+{{ "<!-- share-icon -->" | safeHTML }}
+<div data-spy="affix" class="d-flex socialfixed pull-left hidden-sm hidden-xs"  >
+    <span class="font-weight-light mt-2 mr-3 d-none">Share:</span>
+    <ul class="list-inline d-inline-block">
+
+        <li class="list-item mb-1">
+            <a class="share-icon bg-secondary" href="http://www.facebook.com/sharer.php?u={{ .URL }}">
+                <i class="ti-facebook"></i>
+            </a>
+        </li>
+        <li class="list-item mb-1">
+            <a class="share-icon bg-secondary" href="http://twitter.com/share?url={{ .URL }}&text={{ .Title }}&via={{with .Site.Social.twitter }}{{ . }}{{ end }}">
+                <i class="ti-twitter"></i>
+            </a>
+        </li><li class="list-item mb-1">
+            <a class="share-icon bg-secondary" href="mailto:?subject=Check%20out%20{{ .Title }}.&body={{ .Content }}">
+                <i class="ti-email"></i>
+            </a>
+        </li>
+
+
+
+
+    </ul>
+</div>
                 <div class="border rounded bg-white">
                     <img class="lazyload img-fluid w-100 rounded-top" data-src="{{ .Params.image | absURL }}" alt="blog-image">
                     <div class="p-4">
@@ -141,30 +168,4 @@
         </div>
 </article>
 
-
-{{ "<!-- share-icon -->" | safeHTML }}
-    <div data-spy="affix" class="d-flex socialfixed pull-left hidden-sm hidden-xs"  >
-        <span class="font-weight-light mt-2 mr-3 d-none">Share:</span>
-        <ul class="list-inline d-inline-block">
-
-            <li class="list-item mb-1">
-                <a class="share-icon bg-secondary" href="http://www.facebook.com/sharer.php?u={{ .URL }}">
-                    <i class="ti-facebook"></i>
-                </a>
-            </li>
-            <li class="list-item mb-1">
-                <a class="share-icon bg-secondary" href="http://twitter.com/share?url={{ .URL }}&text={{ .Title }}&via={{with .Site.Social.twitter }}{{ . }}{{ end }}">
-                    <i class="ti-twitter"></i>
-                </a>
-            </li><li class="list-item mb-1">
-                <a class="share-icon bg-secondary" href="mailto:?subject=Check%20out%20{{ .Title }}.&body={{ .Content }}">
-                    <i class="ti-email"></i>
-                </a>
-            </li>
-
-
-
-
-        </ul>
-    </div>
 {{ "<!-- /blog-single -->" | safeHTML }}

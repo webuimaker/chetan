@@ -843,12 +843,15 @@ header{
     height: unset;
     width: unset;
     box-shadow: none;
-    top: 24px;
+    top: 10px;
     background: none;
   }
   .navigation .navbar-brand img {
     height: 50px;
     width: auto;
+  }
+  .service.equal  .d-flex{
+    display: block !important;
   }
 }
 
@@ -1189,8 +1192,14 @@ header{
 }
 
 @media (max-width: 991px) {
-  .hero-slider .slick-dots li {
-    width: 180px;
+  
+  .hero-slider.methods  .slick-dots li{
+    width: auto;
+    padding: 2px;
+  }
+  .hero-slider.methods .slick-dots li a span{
+    padding: 5px;
+    font-size: 13px;
   }
 }
 
@@ -1265,12 +1274,24 @@ header{
     font-family: "Nunito Sans",Roboto,sans-serif;
     font-size: 15px;
   }
+  
 }
 
 @media (max-width: 767px) {
-  .hero-slider .slick-dots li a span {
-    display: none;
+  .hero-slider.methods .slick-dots li a span {
+    display: block;
+    padding: 1px;
+    font-size: 11px;
   }
+  .hero-slider.methods .slick-dots li{
+    padding: 1px;
+    margin: 0 2px 1px;
+    width: auto;
+  }
+  .hero-slider.methods .slick-dots {
+    margin-top: -2em;
+  }
+
 }
 
 .hero-slider .slick-dots li.slick-active {
@@ -3070,6 +3091,70 @@ min-height: 440px;
   font-size: 12px;
   text-align: center
 }
+
+/* 
+// Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) { 
+  .project-menu ul li{
+    width: auto;
+    padding: 5px;
+    margin: 2px;
+    font-size: 12px;
+  }
+  .socialfixed{
+    position: relative;
+    top: 0px;
+  }
+  .socialfixed ul li {
+    display: inline-block;
+    margin: 3px;
+  }
+  
+  .contact-info{
+    text-align: center;
+    margin-bottom: 15px !important;
+    padding: 20px;
+  }
+  .contact-info .icon, .contact-info .info {
+    position: static;
+    margin-bottom: 15px;
+  }
+ }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) { 
+  
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) { 
+  .project-menu ul li{
+    width: auto;
+    padding: 5px;
+    font-size: 14px;
+    margin: 0 4px 5px;
+  }
+  .contact-info{
+    text-align: center;
+    margin-bottom: 15px !important;
+    padding: 20px;
+  }
+  .contact-info .icon, .contact-info .info {
+    position: static;
+  }
+  
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) { 
+  
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  
+ }
+
 
 
 /*# sourceMappingURL=maps/style.css.map */

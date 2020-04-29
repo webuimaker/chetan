@@ -11,7 +11,7 @@
 		</div>
 		<div class="row service equal">
 			{{ $specialize := where .Site.RegularPages "Type" "service" }} {{ range sort $specialize ".Params.weight" }}
-			<div class="col-lg-4 col-md-4 col-sm-6 mb-1 d-flex">
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-1 d-flex">
 				<div class="card text-center mb-5 ">
 					<div class="card-body">
 						<i class="square-icon rounded btn-primary">

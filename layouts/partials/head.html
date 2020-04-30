@@ -18,22 +18,43 @@
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
 
-{{ "<!-- Bootstrap -->" | safeHTML }}<link rel="stylesheet" href="{{ "plugins/bootstrap/bootstrap.min.css" | absURL }} ">
+{{ "<!-- Bootstrap -->" | safeHTML }}
+
+<!-- <link rel="stylesheet" href="{{ "plugins/bootstrap/bootstrap.min.css" | absURL }} "> -->
 {{ "<!-- Main Stylesheet -->" | safeHTML }}
 <!-- {{ $styles := resources.Get "/css/style.css" | minify}} -->
 <!-- <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen"> -->
 
-{{ with resources.Get "/css/style.css" | minify }}
+<!-- {{ with resources.Get "/css/style.css" | minify }}
     <style>{{ .Content | safeCSS }}</style>
-{{ end }}
+{{ end }} -->
+
+
+{{ $plugins := resources.Get "/plugins/bootstrap/bootstrap.min.css" }}
+{{ $themifyi := resources.Get "plugins/themify-icons/themify-icons.css"  }}
+{{ $slick := resources.Get "/plugins/slick/slick.css" }}
+{{ $slickth := resources.Get "/plugins/slick/slick-theme.css" }}
+{{ $style := resources.Get "css/style.css" }}
+{{ $js := slice $plugins $slick $themifyi $slickth $style | resources.Concat "css/main.css" | minify }}
+
+<link rel="stylesheet" href="{{ $js.RelPermalink }}" media="all">
 
 
 
-{{ "<!-- themify icon -->" | safeHTML }}<link rel="stylesheet" href="{{ "plugins/themify-icons/themify-icons.css" | absURL }} ">
-{{ "<!-- Slick Carousel -->" | safeHTML }} <link rel="stylesheet" href="{{ "plugins/slick/slick.css" | absURL }} "><link rel="stylesheet" href="{{ "plugins/slick/slick-theme.css" | absURL }} ">
+{{ "<!-- themify icon -->" | safeHTML }}
+<!-- <link rel="stylesheet" href="{{ "plugins/themify-icons/themify-icons.css" | absURL }} "> -->
+{{ "<!-- Slick Carousel -->" | safeHTML }} 
+<!-- <link rel="stylesheet" href="{{ "plugins/slick/slick.css" | absURL }} ">
+<link rel="stylesheet" href="{{ "plugins/slick/slick-theme.css" | absURL }} "> -->
+
+
 
 <link rel="preload" href="plugins/themify-icons/fonts/themify.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="plugins/slick/fonts/slick.woff" as="font" type="font/woff" crossorigin>
+
+
+
+
 
 {{ "<!--Favicon-->" | safeHTML }}
 <link rel="icon" href="{{ "images/homepage/favicon/favicon.png" | absURL }} " type="image/x-icon">

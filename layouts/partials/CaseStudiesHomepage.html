@@ -14,7 +14,7 @@
 			<div class="position-relative">
 				<img alt="project-image" class="img-fluid w-100 lazyload" data-src="{{.Params.Image|absURL}}">
 				<div class="project-info">
-					<a class="h4" href="{{.Permalink}}">{{ .Title }}</a> 
+					<a class="h4" style="color: #cf0300;" href="{{.Permalink}}">{{ .Title }}</a>
 					{{ $ser := lower .Params.service }} <a href="statistical-consulting-services/{{.Params.serviceUrl}}">
 						<i class="ti-tag"></i>{{ .Params.service }}</a>
 				</div>

@@ -2885,14 +2885,14 @@ min-height: 440px;
 
 .case .project-info{
   opacity: 1;
-  height: 30%;
-  bottom: 0px;
-  top: auto;
-  background: rgba(255, 255, 255, 1);
-  color: #000;
-  position: relative;
-  min-height: 100px;
-  padding: 10px;
+    height: 48px;
+    bottom: 2px;
+    top: auto;
+    background: #fff;
+    color: #000;
+    position: relative;
+    min-height: 100px;
+    padding: 10px
 }
 .case .project-info a{
   opacity: 1;
@@ -2909,13 +2909,14 @@ min-height: 440px;
 .case .project-info  p
 {
   transform: translateY(0);
-  opacity: 1;
-  left: 0px;
-  color: #000;
-  line-height: normal;
-  position: relative;
-  font-size: 0.9em;
-  margin-top: 15px;
+    opacity: 1;
+    left: 0;
+    color: #000;
+    line-height: normal;
+    position: relative;
+    font-size: .9em;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 .btn-contact{
   margin-right: -50px;

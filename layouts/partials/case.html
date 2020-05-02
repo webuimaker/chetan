@@ -11,14 +11,14 @@
                         <li class="list-inline-item control active" data-filter="all">All</li>
                         {{ range .Site.Data.case.filterList   }}
                             {{if eq .caseType "service" }}
-                                <li class="list-inline-item control" data-filter="{{ .dataFilter }}">{{ .filterTitle }}</li> 
+                                <li class="list-inline-item control" data-filter="{{ .dataFilter }}">{{ .filterTitle }}</li>
                             {{end}}
                         {{ end }}
                     <p class="text-center"><strong>Or filter by sector</strong></p>
                         {{ "<!-- filter item list -->" | safeHTML }}
                         {{ range .Site.Data.case.filterList   }}
                             {{if eq .caseType "sector" }}
-                                <li class="list-inline-item control" data-filter="{{ .dataFilter }}">{{ .filterTitle }}</li> 
+                                <li class="list-inline-item control" data-filter="{{ .dataFilter }}">{{ .filterTitle }}</li>
                             {{end}}
                         {{ end }}
                     </ul>
@@ -29,13 +29,13 @@
             {{ range .Data.Pages }}
             {{ "<!-- project item -->" | safeHTML }}
             <div class="col-lg-3 col-md-4 col-sm-6 pb-4 filtr-item case" data-category="{{ .Params.FilterCategories }}">
-                <a href="{{ .Permalink }}"> 
+                <a href="{{ .Permalink }}">
                     <div class="position-relative">
                     <div class="background-banner" style="background-image: url({{ .Params.Image | absURL }}); min-height: 250px; height: 250px; background-position: center center;">
 
                     </div>
                     <div class="project-info text-center">
-                        <a href="{{ .Permalink }}" class="h4 section-title-border mb-4">{{ .Params.smallTitle }}</a>
+                        <a href="{{ .Permalink }}" class="h4" style=" color: #cf0300;">{{ .Params.smallTitle }}</a>
                         <p>{{ .Params.subHeader | safeHTML }}</p>
                     </div>
                     </div>

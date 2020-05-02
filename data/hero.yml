@@ -5,10 +5,10 @@ desc: "Explore how we helped our valued clients to obtain deeper understanding o
 
 btn :
   - btnText : View our work
-    btnURL : "#"
+    btnURL : "/case-studies/"
     btnKlass : "btn-outline"
   - btnText : book a meeting now
-    btnURL : "#"
+    btnURL : "/contact/"
     btnKlass : "btn-secondary"
 images :
   - "/images/homepage/methods/linear_mixed_multilevel_model.svg"

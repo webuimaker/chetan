@@ -1,13 +1,24 @@
 <!-- hero -->
 	<div class="position-relative hero-section bg6">
 		{{ "<!-- slider item -->" | safeHTML }}
-		<div class="py-50">
+		<div class="py-50" style="padding-top: 80px; padding-bottom: 108px;">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-7 mb-5 align-self-end">
-						<div class=""><h1 class="font-weight-bold mb-3">{{ .Site.Data.hero.title }} </h1></div>
+						<div class=""><p style ="font-weight: 900;font-size: 34px;line-height: 34px"
+>{{ .Site.Data.hero.title }} </p></div>
+
+						<ol style="font-size: 15px;padding: 0px;padding-top: 70px;letter-spacing: 0.025em;font-weight: 500;">
+  <li>Advanced & Robust Statistcal Approach to Data</li>
+  <li>Accurate & Transparent Reporting in line with International Guidelines</li>
+  <li>100% Reproducible Results with Programming in R, SPSS, STATA & WinBugs </li>
+</ol>
+
 						{{ if .Site.Data.hero.titleSM }}
-						<div class="section-title-sm">{{ .Site.Data.hero.titleSM }}</div>{{end }} {{ .Site.Data.hero.desc | safeHTML }} {{range .Site.Data.hero.btn}} <a class="btn btn-sm2 text-uppercase {{.btnKlass}}" href="{{.btnURL}}">{{.btnText}}</a> {{end}}
+						<div class="section-title-sm">{{ .Site.Data.hero.titleSM }}</div>{{end }} {{if .Site.Data.hero.desc }} <p style="font-weight: 400; font-size: 14px; margin-top: 12px;margin-bottom: 9px;">{{.Site.Data.hero.desc }}</p>{{end }}
+
+
+						{{range .Site.Data.hero.btn}} <a class="btn btn-sm2 text-uppercase {{.btnKlass}}" href="{{.btnURL}}">{{.btnText}}</a> {{end}}
 					</div>
 					<div class="col-md-5">
 						<div class="hero-img-slider post-slider">

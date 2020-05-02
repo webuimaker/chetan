@@ -101,7 +101,7 @@ h6, .h6 {
 }
 
 .btn-secondary {
-  background: #303032;
+  background: #cf0300;
   color: #fff;
 }
 
@@ -710,6 +710,7 @@ button {
 
 .py-50 {
   padding: 50px 0;
+  background: #f8f9fa;
 }
 
 .py-100 {
@@ -1098,53 +1099,6 @@ header{
   outline: 0;
 }
 
-.hero-slider .prevArrow,
-.hero-slider .nextArrow {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  z-index: 9;
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
-  background: rgba(48, 48, 50, 0.5);
-  color: #fff;
-  border: 0;
-  font-size: 25px;
-  line-height: 70px;
-  opacity: 0;
-  transition: all linear .2s;
-}
-
-@media (max-width: 575px) {
-  .hero-slider .prevArrow,
-  .hero-slider .nextArrow {
-    display: none;
-  }
-}
-
-.hero-slider .prevArrow:focus,
-.hero-slider .nextArrow:focus {
-  outline: 0;
-}
-
-.hero-slider .prevArrow:hover,
-.hero-slider .nextArrow:hover {
-  background: rgba(232, 68, 68, 0.5);
-}
-
-.hero-slider .prevArrow {
-  left: 20px;
-}
-
-.hero-slider .nextArrow {
-  right: 20px;
-}
-
-.hero-slider:hover .prevArrow, .hero-slider:hover .nextArrow {
-  opacity: 1;
-}
 
 .hero-slider .slick-dots {
   bottom: 0px;
@@ -1192,7 +1146,7 @@ header{
 }
 
 @media (max-width: 991px) {
-  
+
   .hero-slider.methods  .slick-dots li{
     width: auto;
     padding: 2px;
@@ -1274,7 +1228,7 @@ header{
     font-family: "Nunito Sans",Roboto,sans-serif;
     font-size: 15px;
   }
-  
+
 }
 
 @media (max-width: 767px) {
@@ -2904,7 +2858,7 @@ min-height: 440px;
 }
 
 .bg1{
-  background: #fff !important;
+  background: #f8f9fa!important;
 }
 
 .bg2{
@@ -2916,7 +2870,7 @@ min-height: 440px;
 }
 
 .bg4{
-  background: radial-gradient(circle, rgba(247,247,247,1) 46%, rgba(204,204,204,1) 100%);!important;
+  background: radial-gradient(circle, #f8f9fa 67%, #dfe4ea 94%);!important;
 }
 
 .bg5{
@@ -3027,7 +2981,7 @@ min-height: 440px;
 }
 
 
-/* 
+/*
 .service .slick-track
 {
     display: flex !important;
@@ -3035,7 +2989,7 @@ min-height: 440px;
 
 .service .slick-list .slick-slide
 {
-    height: 600px;
+    height: 400px;
 }
 
 .image-about{
@@ -3092,9 +3046,9 @@ min-height: 440px;
   text-align: center
 }
 
-/* 
+/*
 // Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575px) { 
+@media (max-width: 575px) {
   .project-menu ul li{
     width: auto;
     padding: 5px;
@@ -3109,7 +3063,7 @@ min-height: 440px;
     display: inline-block;
     margin: 3px;
   }
-  
+
   .contact-info{
     text-align: center;
     margin-bottom: 15px !important;
@@ -3122,12 +3076,12 @@ min-height: 440px;
  }
 
 /* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767px) { 
-  
+@media (min-width: 576px) and (max-width: 767px) {
+
  }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) { 
+@media (min-width: 768px) and (max-width: 991px) {
   .project-menu ul li{
     width: auto;
     padding: 5px;
@@ -3142,17 +3096,17 @@ min-height: 440px;
   .contact-info .icon, .contact-info .info {
     position: static;
   }
-  
+
  }
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199px) { 
-  
+@media (min-width: 992px) and (max-width: 1199px) {
+
  }
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-  
+@media (min-width: 1200px) {
+
  }
 
 

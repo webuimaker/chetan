@@ -18,15 +18,15 @@ HUGO_VERSION = "0.67.1"
   skip_processing = false
 
 [context.branch-name.processing.css]
-  bundle = false
+  bundle = true
   minify = false
 
 [build.processing.js]
-  bundle = false
-  minify = false
+  bundle = true
+  minify = true
 
 [build.processing.html]
-  pretty_urls =  false
+  pretty_urls = true
 
 [build.processing.images]
-  compress = false
+  compress = true

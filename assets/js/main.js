@@ -8251,8 +8251,8 @@ searchQuery && ($("#search-query").val(searchQuery), executeSearch(searchQuery))
             infinite: !0,
             autoplaySpeed: 1e4,
             arrows: !0,
-            prevArrow: "<button type='button' class='prevArrow'><i class='ti-arrow-left'></i></button>",
-            nextArrow: "<button type='button' class='nextArrow'><i class='ti-arrow-right'></i></button>",
+            prevArrow: "<button type='button' class='prevArrow'><i class='ti-angle-left'></i></button>",
+            nextArrow: "<button type='button' class='nextArrow'><i class='ti-angle-right'></i></button>",
             dots: !0,
             customPaging: function(e, t) {
                 return "<a><span>" + n(e.$slides[t]).data("text") + "</span></a>"

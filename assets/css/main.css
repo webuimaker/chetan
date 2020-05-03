@@ -5577,6 +5577,56 @@ code {
 .search-form .input-wrapper button i {
 	color:#fff;
 }
+
+.prevArrow,
+.nextArrow {
+  content: "<";
+  color: red;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 9;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: rgba(48, 48, 50, 0.5);
+  border: 0;
+  font-size: 25px;
+  line-height: 70px;
+  opacity: 0.5;
+  transition: all linear .2s;
+}
+
+@media (max-width: 575px) {
+  .prevArrow,
+  .nextArrow {
+    display: none;
+  }
+}
+
+.prevArrow:focus,
+.nextArrow:focus {
+  outline: 0;
+}
+
+.prevArrow:hover,
+.nextArrow:hover {
+  background: rgba(232, 68, 68, 0.5);
+}
+
+.prevArrow {
+  left: 20px;
+}
+
+ .nextArrow {
+  right: 20px;
+}
+
+.hero-slider:hover .prevArrow, .hero-slider:hover .nextArrow {
+  opacity: 1;
+}
+
 .hero-slider.slick-slider {
 	margin-bottom:0;
 }

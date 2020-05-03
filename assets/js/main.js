@@ -8427,5 +8427,12 @@ searchQuery && ($("#search-query").val(searchQuery), executeSearch(searchQuery))
             }), n(".navbar .dropdown-menu").mouseleave(function() {
                 n(this).removeClass("show")
             }))
-        })
+        }),
+         // Accordions
+    $('.collapse').on('shown.bs.collapse', function () {
+        $(this).parent().find('.ti-plus').removeClass('ti-plus').addClass('ti-minus');
+    }).on('hidden.bs.collapse', function () {
+        $(this).parent().find('.ti-minus').removeClass('ti-minus').addClass('ti-plus');
+    });
+
     }(jQuery);

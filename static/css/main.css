@@ -4645,8 +4645,8 @@ a.text-dark:focus,a.text-dark:hover {
 }
 .slick-dots li button:before {
 	font-family:slick;
-	font-size:6px;
-	line-height:20px;
+	font-size:29px;
+	line-height:30px;
 	position:absolute;
 	top:0;
 	left:0;
@@ -4660,8 +4660,8 @@ a.text-dark:focus,a.text-dark:hover {
 	-moz-osx-font-smoothing:grayscale;
 }
 .slick-dots li.slick-active button:before {
-	opacity:.75;
-	color:#000;
+	opacity:1;
+	color:#cf0300;
 }
 
 [class*=" ti-"],[class^=ti-] {
@@ -5496,8 +5496,7 @@ a,button {
 	padding:10px 0;
 }
 .py-50 {
-	padding:50px 0;
-	background:#f8f9fa;
+	padding:28px 0;
 }
 .py-100 {
 	padding-top:100px;
@@ -6851,10 +6850,10 @@ ul.tag-list li a:hover {
 	}
 }
 .bg1 {
-	background:#f8f9fa!important;
+	background:#f8f9fa;
 }
 .bg2 {
-	background:#fff!important;
+	background: radial-gradient(circle, #f8f9fa 59%, #babac5 177%);
 }
 .bg3 {
 	background:#000!important;

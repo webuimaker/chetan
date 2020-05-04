@@ -1,5 +1,4 @@
 baseURL = "https://xenodochial-johnson-2c8705.netlify.app/"
-theme = "biztrox-hugo"
 summaryLength = "20"
 DefaultContentLanguage = "en"
 enableRobotsTXT = true
@@ -8,8 +7,6 @@ disableHugoGeneratorInject = true
 disableLanguages = ["Fr"]
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 copyright = "© Copyright 2020 ISCON Statistical Services. All Rights Reserved."
-#googleAnalytics = "UA-135116594-1"
-
 
 [outputs]
 

@@ -17,7 +17,7 @@
 {{ range .AlternativeOutputFormats -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
-<link rel="stylesheet" type="text/css" href="/css/main.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
 <link rel="preload" href="fonts/themify.woff" as="font" type="font/woff" crossorigin>
 <link rel="preload" href="fonts/slick.woff" as="font" type="font/woff" crossorigin>
 {{ "<!--Favicon-->" | safeHTML }}

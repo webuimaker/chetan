@@ -10,16 +10,20 @@
 	</div>{{ "<!-- work slider -->" | safeHTML }}
 	<div class="row work-slider mt-4">
 		{{ range $index, $element:= where .Site.RegularPages "Type" "case-studies"}} {{ "<!-- project item -->" | safeHTML }}
-		<div class="col-lg-4 col-md-4 col-sm-6 case">
-			<div class="position-relative">
-				<img alt="project-image" class="img-fluid w-100 lazyload" data-src="{{.Params.Image|absURL}}">
-				<div class="project-info">
-					<a class="h4" style="color: #cf0300;" href="{{.Permalink}}">{{ .Title }}</a>
-					{{ $ser := lower .Params.service }} <a href="statistical-consulting-services/{{.Params.serviceUrl}}">
-						<i class="ti-tag"></i>{{ .Params.service }}</a>
-				</div>
-			</div>
-		</div>{{ end }}
+		 <div class="col-lg-3 col-md-4 col-sm-6 pb-4 filtr-item case" data-category="{{ .Params.FilterCategories }}">
+                <a href="{{ .Permalink }}">
+                    <div class="position-relative">
+                    <div class="background-banner" style="background-image: url({{ .Params.Image | absURL }}); min-height: 250px; height: 250px; background-position: center center;">
+
+                    </div>
+                    <div class="project-info text-center">
+                        <a href="{{ .Permalink }}" class="h4" style=" color: #cf0300;">{{ .Params.smallTitle }}</a>
+                        <p>{{ .Params.subHeader | safeHTML }}</p>
+                    </div>
+                    </div>
+                </a>
+            </div>
+            {{ end }}
 	</div>
 </div>
 {{ "<!-- /case studies -->" | safeHTML }}

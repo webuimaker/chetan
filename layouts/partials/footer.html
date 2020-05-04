@@ -83,13 +83,6 @@
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "js/main.js" | minify}}
 <script src="{{ $script.Permalink }}"></script>
-{{ "<!-- lazy Script -->" | safeHTML }}
-{{ $script := resources.Get "js/lazysizes.min.js" | minify}}
-<script src="{{ $script.Permalink }}" async ></script>
-<!-- google ana-->
-
-<!-- cookies consent -->
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
 
 <script defer="">
 function trackingScripts() {

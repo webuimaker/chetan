@@ -35,7 +35,7 @@
     box-sizing:border-box;
     font-family:Helvetica,Calibri,Arial,sans-serif;
     font-size:16px;
-    line-height:1.5em;
+    line-height:18px;
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
@@ -112,7 +112,7 @@
 }
 
 .cc-bottom{
-    bottom:1em
+    bottom:0
 }
 
 .cc-floating .cc-message{

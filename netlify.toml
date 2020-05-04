@@ -11,7 +11,7 @@ HUGO_VERSION = "0.67.1"
 
 # Default site wide settings
 [build.processing]
-  skip_processing = true
+  skip_processing = false
 
 [context.branch-name.processing.css]
   bundle = true

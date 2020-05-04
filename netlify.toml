@@ -12,17 +12,13 @@ HUGO_VERSION = "0.67.1"
 # Default site wide settings
 [build.processing]
   skip_processing = false
-
-[context.branch-name.processing.css]
+[build.processing.css]
   bundle = true
   minify = true
-
 [build.processing.js]
   bundle = true
   minify = true
-
 [build.processing.html]
-  pretty_urls = false
-
+  pretty_urls = true
 [build.processing.images]
   compress = true

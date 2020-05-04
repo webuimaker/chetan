@@ -8,3 +8,21 @@ HUGO_ENABLEGITINFO = "true"
 
 [context.deploy-preview.environment]
 HUGO_VERSION = "0.67.1"
+
+# Default site wide settings
+[build.processing]
+  skip_processing = false
+
+[context.branch-name.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = false
+
+[build.processing.images]
+  compress = true

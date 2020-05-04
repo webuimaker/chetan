@@ -5702,7 +5702,7 @@ function(n) {
     }), n(".service").slick({
         dots: true,
         infinite: true,
-        speed: 300,
+        speed: 1000,
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,

@@ -80,9 +80,7 @@
 </footer>
 {{ "<!-- /footer -->" | safeHTML }}
 <script> var indexURL = {{ "index.json" | absURL }} </script>
-{{ "<!-- Main Script -->" | safeHTML }}
-{{ $script := resources.Get "js/main.js" | minify}}
-<script src="{{ $script.Permalink }}"></script>
+<script src="/js/main.js"></script>
 
 <script defer="">
 function trackingScripts() {

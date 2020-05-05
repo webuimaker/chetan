@@ -18,7 +18,7 @@
 					{{ range $index, $element := $data.faq.accordion }}
 					<div class="card border-0 mb-4">
 						<div class="card-header bg1 border p-0">
-							<h3 class="card-link d-block tex-dark mb-0 py-10 px-4" data-toggle="collapse" href="#{{.ID}}"><i class="ti-plus text-primary mr-2"></i> {{ .title }}</h3>
+							<a class="card-link h3 d-block tex-dark mb-0 py-10 px-4" data-toggle="collapse" href="#{{.ID}}"><i class="ti-plus text-primary mr-2"></i> {{ .title }}</a>
 						</div>
 						<div class="collapse" data-parent="#accordion" id="{{ .ID }}">
 							<p class="bg1" style="padding-top: 16px; padding-bottom: px;margin-bottom: 0;">

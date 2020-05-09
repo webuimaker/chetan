@@ -5,7 +5,7 @@
         data-longitude="{{ with .Site.Params.mapLongitude }} {{ . }} {{ end }}" data-marker="{{ with .Site.Params.mapMarker }} {{ . | absURL }} {{ end }} "></div>
     {{else}}
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.2002049977923!2d-2.559703884229284!3d51.527887679638425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487191aa41c44b77%3A0x442ce2bf98f9d701!2s62%20Maple%20Cl%2C%20Little%20Stoke%2C%20Bristol%20BS34%206HH%2C%20UK!5e0!3m2!1sen!2sin!4v1587717618818!5m2!1sen!2sin"
-    width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    width="100%" height="400" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 {{end}}
 
 

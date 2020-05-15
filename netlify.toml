@@ -1,13 +1,13 @@
 [context.production.environment]
-HUGO_VERSION = "0.67.1"
-HUGO_ENV = "production"
-HUGO_ENABLEGITINFO = "true"
+ HUGO_VERSION = "0.67.1"
+ HUGO_ENV = "production"
+ HUGO_ENABLEGITINFO = "true"
 
 [context.branch-deploy.environment]
-  HUGO_VERSION = "0.67.1"
+ HUGO_VERSION = "0.67.1"
 
 [context.deploy-preview.environment]
-HUGO_VERSION = "0.67.1"
+ HUGO_VERSION = "0.67.1"
 
 # Default site wide settings
 [build.processing]
@@ -22,3 +22,13 @@ HUGO_VERSION = "0.67.1"
   pretty_urls = false
 [build.processing.images]
   compress = true
+
+ # /*
+ #X-UA-Compatible : IE=edge
+# Content-Type: text/html; charset=UTF-8; image/vnd.microsoft.icon ; application/json
+# X-Frame-Options: DENY
+# X-XSS-Protection: 1; mode=block
+# Referrer-Policy: no-referrer
+# X-Content-Type-Options: nosniff
+# Content-Security-Policy: object-src 'none'; base-uri 'self'
+# Strict-Transport-Security: max-age=63072000; includeSubDomains; preload

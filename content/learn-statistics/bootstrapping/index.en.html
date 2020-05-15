@@ -48,7 +48,7 @@ type: learn-statistics
 </ul>
 <pre><code>[1] 3617.653</code></pre>
 <pre class="r"><code>knitr::include_graphics(&quot;boot.png&quot;,error = FALSE)</code></pre>
-<div class="figure"><span id="fig:unnamed-chunk-3"></span>
+<div class="figure"><span id="fig:unnamed-chunk-4"></span>
 <img src="boot.png" alt="Parametric vs nonparametric bootstrap"  />
 <p class="caption">
 Figure 1: Parametric vs nonparametric bootstrap
@@ -61,8 +61,8 @@ Figure 1: Parametric vs nonparametric bootstrap
 
 binw &lt;- 2*(IQR(statistic)/length(statistic)^(1/3))
 ggplot(data.frame(statistic), aes(statistic)) + geom_histogram(aes(y=..density..),binwidth = binw,fill=&quot;#cf0300&quot;,colour=&quot;white&quot;) + geom_density(aes(y=..density..),size=0.5) + labs(x= &quot;Mean&quot;, y= &quot;Density&quot;)  + theme_ISCON()</code></pre>
-<div class="figure"><span id="fig:unnamed-chunk-5"></span>
-<img src="/learn-statistics/bootstrapping/index.en_files/figure-html/unnamed-chunk-5-1.svg" alt="Default histogram (left) and histogram with proper binwidth(right)" width="50%" /><img src="/learn-statistics/bootstrapping/index.en_files/figure-html/unnamed-chunk-5-2.svg" alt="Default histogram (left) and histogram with proper binwidth(right)" width="50%" />
+<div class="figure"><span id="fig:unnamed-chunk-6"></span>
+<img src="/learn-statistics/bootstrapping/index.en_files/figure-html/unnamed-chunk-6-1.svg" alt="Default histogram (left) and histogram with proper binwidth(right)" width="50%" /><img src="/learn-statistics/bootstrapping/index.en_files/figure-html/unnamed-chunk-6-2.svg" alt="Default histogram (left) and histogram with proper binwidth(right)" width="50%" />
 <p class="caption">
 Figure 2: Default histogram (left) and histogram with proper binwidth(right)
 </p>
@@ -130,8 +130,8 @@ Bootstrap Statistics :
 t1* 3617.653 0.9443187    98.78257</code></pre>
 <p>We can used default plots to see whether bootstrap samples are correctly sampled.</p>
 <pre class="r"><code>plot(B)</code></pre>
-<div class="figure"><span id="fig:unnamed-chunk-14"></span>
-<img src="/learn-statistics/bootstrapping/index.en_files/figure-html/unnamed-chunk-14-1.svg" alt="Bootstrap sampling distribution of sample mean" width="672" />
+<div class="figure"><span id="fig:unnamed-chunk-15"></span>
+<img src="/learn-statistics/bootstrapping/index.en_files/figure-html/unnamed-chunk-15-1.svg" alt="Bootstrap sampling distribution of sample mean" width="672" />
 <p class="caption">
 Figure 3: Bootstrap sampling distribution of sample mean
 </p>
@@ -139,8 +139,8 @@ Figure 3: Bootstrap sampling distribution of sample mean
 <p>Or, one can use <code>ggplot</code> to get the same figure</p>
 <pre class="r"><code>binw &lt;- 2*(IQR(B$t)/length(B$t)^(1/3))
 ggplot(data.frame(B$t), aes(B.t)) + geom_histogram(fill=&quot;grey&quot;, colour=&quot;black&quot;, binwidth = binw) + geom_vline(xintercept = B$t0, linetype=&quot;dashed&quot;, size=1) + labs(x=&quot;Bootstrap sample statistic&quot;, title=&quot;Bootstrap sampling distribution of sample mean&quot;)  + theme_ISCON()</code></pre>
-<div class="figure"><span id="fig:unnamed-chunk-15"></span>
-<img src="/learn-statistics/bootstrapping/index.en_files/figure-html/unnamed-chunk-15-1.svg" alt="Bootstrap sampling distribution of sample mean  (ggplot2)" width="672" />
+<div class="figure"><span id="fig:unnamed-chunk-16"></span>
+<img src="/learn-statistics/bootstrapping/index.en_files/figure-html/unnamed-chunk-16-1.svg" alt="Bootstrap sampling distribution of sample mean  (ggplot2)" width="672" />
 <p class="caption">
 Figure 4: Bootstrap sampling distribution of sample mean (ggplot2)
 </p>
@@ -166,8 +166,8 @@ Calculations and Intervals on Original Scale</code></pre>
 <p>Once we have a sample data, we may think that the observed data may have come from some known probability distribution function ( i.e normal, gamma or poisson or any).</p>
 <p>For example in our sample birth weights, we may assume that observed birth-weight comes from normal distribution with parameter <span class="math inline">\(\mu\)</span> = 3617.7 and <span class="math inline">\(\sigma\)</span> = 464.6 ( which is estimated from observed data). See the below figure,</p>
 <pre class="r"><code>ggplot(data.frame(df), aes(df)) + geom_density() + labs(x= &quot;birth weight&quot;)  + theme_ISCON()</code></pre>
-<div class="figure"><span id="fig:unnamed-chunk-17"></span>
-<img src="/learn-statistics/bootstrapping/index.en_files/figure-html/unnamed-chunk-17-1.svg" alt="Distribution of observed sample birthweights" width="672" />
+<div class="figure"><span id="fig:unnamed-chunk-18"></span>
+<img src="/learn-statistics/bootstrapping/index.en_files/figure-html/unnamed-chunk-18-1.svg" alt="Distribution of observed sample birthweights" width="672" alt = "my alt" />
 <p class="caption">
 Figure 5: Distribution of observed sample birthweights
 </p>
@@ -216,8 +216,8 @@ Bootstrap Statistics :
     original     bias    std. error
 t1* 3617.653 0.05774845    101.8872</code></pre>
 <pre class="r"><code>plot(B)</code></pre>
-<div class="figure"><span id="fig:unnamed-chunk-27"></span>
-<img src="/learn-statistics/bootstrapping/index.en_files/figure-html/unnamed-chunk-27-1.svg" alt="Parametric bootstrap using boot package" width="672" />
+<div class="figure"><span id="fig:unnamed-chunk-28"></span>
+<img src="/learn-statistics/bootstrapping/index.en_files/figure-html/unnamed-chunk-28-1.svg" alt="Parametric bootstrap using boot package" width="672" />
 <p class="caption">
 Figure 6: Parametric bootstrap using boot package
 </p>

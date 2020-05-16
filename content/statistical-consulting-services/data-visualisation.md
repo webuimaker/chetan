@@ -1,18 +1,23 @@
 ---
+#--------- general---------- ##
 title: "Data Visualisation"
 date: 2020-03-29
 weight: 2
-description : "This is meta description"
-
-summaryText: Effective data visualisation also communicates findings clearly and effectively, highlighting important patterns and relationships. Let ISCON statistician help you to create precise and efficient visualisation so that it has the right impact.
-
-image: images/services/data_visualisation.png
-icon: /images/homepage/services/data_visualisation.svg
 type : service
+description : "Data visualisation for researchers, buisnesses and organization with variety of tools such as R, Shiny, Plotly"
 sitemap:
   changefreq: monthly
   filename: sitemap.xml
   priority: 0.5
+
+#--------- homepage ---------- ##
+icon: /images/homepage/services/data_visualisation.svg
+alt: "my data visualiation xxx"
+summaryText: Effective data visualisation also communicates findings clearly and effectively, highlighting important patterns and relationships. Let ISCON statistician help you to create precise and efficient visualisation so that it has the right impact.
+
+#--------- service page ---------- ##
+subHeader: "The validity of study findings not only depends on its results but also on its design and conduct.  Consult ISCON statistician early to help you to optimize your study design and streamline the statistical analysis plan"
+image: images/services/data_visualisation.png
 ---
 
 

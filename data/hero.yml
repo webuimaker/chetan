@@ -8,10 +8,17 @@ btn :
     btnURL : "/case-studies/"
     btnKlass : "btn-outline"
   - btnText : book a meeting now
-    btnURL : "/contact/"
+    btnURL: "/contact/"
     btnKlass : "btn-secondary"
 images :
-  - "/images/homepage/methods/linear_mixed_multilevel_model.svg"
-  - "/images/homepage/methods/quantile_regression_non_linear.svg"
-  - "/images/homepage/methods/kaplan_Meier_estimator_survival_analysis.svg"
-  - "/images/homepage/methods/general_linear_model_ordinary_least_square.svg"
+ - imagepath : "/images/homepage/methods/linear_mixed_multilevel_model.svg"
+   imagealt : "mixed model or mixed error-component model containing random & fixed effects"
+ - imagepath : "/images/homepage/methods/quantile_regression_non_linear.svg"
+   imagealt : "Quantile regression analysis for conditional median"
+ - imagepath : "/images/homepage/methods/kaplan_Meier_estimator_survival_analysis.svg"
+   imagealt : "Kaplan Meier estimator is a product limit estimator which is a non-parametric statistic used to estimate the survival function from time-to-event data"
+ - imagepath : "/images/homepage/methods/general_linear_model_ordinary_least_square.svg"
+   imagealt : "ordinary least squares (OLS) is a type of linear least squares method for estimating the unknown parameters in a linear regression model"
+
+
+

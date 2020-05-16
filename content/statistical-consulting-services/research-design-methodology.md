@@ -1,23 +1,27 @@
 ---
+#--------- general---------- ##
+
 title: "Research Design and Methodology"
-subHeader: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
-
 date: 2020-03-06
-
-summaryText: "The validity of study findings not only depends on its results but also on its design and conduct.  Consult ISCON statistician early to help you to optimize your study design and streamline the statistical analysis plan"
-
-description : "This is meta description SEO with"
-
 weight: 1
-
-image: images/services/research_planning _methodology.png
-icon: /images/homepage/services/research_planning.svg
-
 type : service
+description : "Our research design methodology services includes  formulating research questions, creating statistical analysis plan, sample size determination, power analysis, randomisation, allocation plan"
 sitemap:
   changefreq: monthly
   filename: sitemap.xml
   priority: 0.5
+  
+#--------- homepage ---------- ##
+
+icon: /images/homepage/services/research_planning.svg
+alt: "research design services includes sample size calculation and power analysis"
+summaryText: "The validity of study findings not only depends on its results but also on its design and conduct.  Consult ISCON statistician early to help you to optimize your study design and streamline the statistical analysis plan"
+
+#--------- service page ---------- ##
+
+subHeader: "The validity of study findings not only depends on its results but also on its design and conduct.  Consult ISCON statistician early to help you to optimize your study design and streamline the statistical analysis plan"
+image: images/services/research_planning _methodology.png
+
 ---
 
 > Designing of research study should be given more attention than on data collection and analysis. It is difficult to re-do the poorly designed study but you can always re-analyse data with different method. Therefore, it cannot be stressed enough that best time to contact ISCON statistician is before designing your research study.

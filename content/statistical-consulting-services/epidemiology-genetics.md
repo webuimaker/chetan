@@ -1,18 +1,23 @@
 ---
+#--------- general---------- ##
 title: "Epidemiology & Genetics"
 date: 2020-03-22
 weight: 7
-description : "This is meta description"
-summaryText: We are at the forefront of modern epidemiologic methodology as well as practice. Driven by your research objectives, our statisticians bring scientific integrity, rigor to protocol design, research reporting, and data analytics. Their expertise elevates understanding and knowledge of the safety and efficacy of drugs, biologics, devices, and healthcare delivery. 
-
-image: images/services/epidemiology_genetics.png
-icon: /images/homepage/services/epidemiology_genetics.svg
-
+description : "Driven by your research objectives, our statisticians bring scientific integrity, rigor to protocol design, research reporting, and data analytics"
 type : service
 sitemap:
   changefreq: monthly
   filename: sitemap.xml
   priority: 0.5
+
+#--------- homepage ---------- ##
+icon: /images/homepage/services/epidemiology_genetics.svg
+alt: "GWAS"
+summaryText: We are at the forefront of modern epidemiologic methodology as well as practice. Driven by your research objectives, our statisticians bring scientific integrity, rigor to protocol design, research reporting, and data analytics. Their expertise elevates understanding and knowledge of the safety and efficacy of drugs, biologics, devices, and healthcare delivery. 
+
+#--------- service page ---------- ##
+subHeader: "Leveraging the latest technology and resources, experts at ISCON Statistics have the capability and experience to undertake a wide array of research projects"
+image: images/services/epidemiology_genetics.png
 ---
 
 With our epidemiology and genetic research services, we help you understand patient populations. Our clients trust our results, and this is where ISCON Statistics excels.

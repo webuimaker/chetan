@@ -1,23 +1,25 @@
 ---
+#--------- general---------- ##
 title: "Clinical Trials Design & Analysis"
-subHeader: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
-
 date: 2020-03-20
 weight: 6
-
-summaryText: We understand that the design of any clinical trial is an essential step in implementing an effective clinical research program. This is why investing in clinical trial design and analysis enables you to make the most of your investment. ISCON Statistics has several years of experience and will help to provide tailored and reliable clinical trial design specific to your specific research goals and needs.
-
-description : "This is meta description"
-
-image: images/services/clinical_trials_design_analysis.png
-icon: /images/homepage/services/clinical_trials.svg
-
 type : service
+description : "Our statistician will improve your study design, combining expertise and speed to deliver the best results"
 sitemap:
   changefreq: monthly
   filename: sitemap.xml
   priority: 0.5
+  
+#--------- homepage ---------- ##
+icon: /images/homepage/services/clinical_trials.svg
+alt: "clinical trials design and analysis of trials data"
+summaryText: We understand that the design of any clinical trial is an essential step in implementing an effective clinical research program. This is why investing in clinical trial design and analysis enables you to make the most of your investment. ISCON Statistics has several years of experience and will help to provide tailored and reliable clinical trial design specific to your specific research goals and needs.
+
+#--------- service page ---------- #
+subHeader: "Our statistician will improve your study design, combining expertise and speed to deliver the best results"
+image: images/services/clinical_trials_design_analysis.png
 ---
+
 ISCON Statistics provides you with a wide range of high quality and reliable clinical research services. Our team of statisticians and data scientists offers development, consulting, and analysis services to organizations in pharmaceuticals, nutraceuticals, biotechnology, medical devices, and food and beverage industry.
 
 We understand that the design of any clinical trial is an essential step in implementing an effective clinical research program. This is why investing in clinical trial design and analysis enables you to make the most of your investment. ISCON Statistics has several years of experience and will help to provide tailored and reliable clinical trial design specific to your specific research goals and needs.

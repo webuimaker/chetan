@@ -1,17 +1,25 @@
 ---
+#--------- general---------- ##
 title: "Statistics training"
 date: 2020-03-21
 weight: 8
-summaryText: ISCON Statistics provides you with on-site courses in Statistical Methods, Quality, and Reliability so that your team can turn the data you have into a valuable and reliable source of information to enhance and expand your business. 
-description : "This is meta description"
-
-image: images/services/statistics_training.png
-icon: /images/homepage/services/training.svg
 type : service
+description : "ISCON Statistics provides you with on-site courses in Statistical Methods, Quality, and Reliability so that your team can turn the data you have into a valuable and reliable source of information to enhance and expand your business"
 sitemap:
   changefreq: monthly
   filename: sitemap.xml
   priority: 0.5
+
+#--------- homepage ---------- ##
+icon: /images/homepage/services/training.svg
+alt : "statistical training in R SPSS and STATA"
+summaryText: ISCON Statistics provides you with on-site courses in Statistical Methods, Quality, and Reliability so that your team can turn the data you have into a valuable and reliable source of information to enhance and expand your business. 
+
+#--------- service page ---------- ##
+
+subHeader: "ISCON Statistics provides you with on-site courses in Statistical Methods, Quality, and Reliability so that your team can turn the data you have into a valuable and reliable source of information to enhance and expand your business"
+image: images/services/statistics_training.png
+
 ---
 
 **Get advice, training, and help from specialists and experts with in-depth knowledge and expertise of statistical analysis**

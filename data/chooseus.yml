@@ -1,15 +1,18 @@
 enable : enable
 title : "Four reasons to choose us"
 item :
-  - icon : "/images/homepage/reasontochoose/qualified_statisticians.svg"
+  - icon : "/images/homepage/reasontochoose/RSS-UK-accredited-statistical-consultant.svg"
     content : RSS (UK) registered & experienced statisticians
+    alt : "Royal Statistical society UK accredited statistician & statistical consultant"
 
-  - icon : "/images/homepage/reasontochoose/systematic_approach.svg"
+  - icon : "/images/homepage/reasontochoose/methological-statistical-approach.svg"
     content : Structured & systematic approach in data analysis
+    alt : "Methodological statistical approach in data analysis"
 
-  - icon : "/images/homepage/reasontochoose/communication.svg"
+  - icon : "/images/homepage/reasontochoose/clear-statistical-reporting.svg"
     content : Clear & comprehensible reporting with unlimited 24/7 follow-up
+    alt : "clear, complete and accurate statistical reporting"
 
-  - icon : "/images/homepage/reasontochoose/ontime_delivery.svg"
+  - icon : "/images/homepage/reasontochoose/ontime-project-completion.svg"
     content : On-time & on-budget project delivery
-
+    alt : "on-time project completion"

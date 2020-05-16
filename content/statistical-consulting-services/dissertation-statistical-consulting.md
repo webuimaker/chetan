@@ -1,21 +1,23 @@
 ---
+#--------- general---------- ##
 title: "Dissertation statistical consulting"
-slug: "statistics-help-thesis"
-date: 2018-09-29T11:51:17+06:00
+date: 2020-04-25
 weight: 4
-
-description : "This is meta description"
-
-summaryText: Whether you need bivariate, univariate, cluster, factor or multivariate statistical analysis, we have you covered for all type of dissertation statistical analysis needs. Using the latest statistical tools and techniques such as SPSS, Matlab, STATA, R, SAS and others, we give you accurate and reliable results.
-
-image: images/services/dissertation_statistical_consulting.png
-icon: /images/homepage/services/disseration_statistics.svg
-
 type : service
+description : "Professional Dissertation Statistical Consulting For Your Success in Academia"
 sitemap:
   changefreq: monthly
   filename: sitemap.xml
   priority: 0.5
+#--------- homepage ---------- ##
+icon: /images/homepage/services/disseration_statistics.svg
+alt: "dissertation statistical analysis needs using the latest statistical tools and techniques"
+summaryText: Whether you need bivariate, univariate, cluster, factor or multivariate statistical analysis, we have you covered for all type of dissertation statistical analysis needs. Using the latest statistical tools and techniques such as SPSS, Matlab, STATA, R, SAS and others, we give you accurate and reliable results.
+
+#--------- service page ---------- ##
+
+subHeader: "Get in touch with us now to have quick, accurate and reliable dissertation statistical analysis"
+image: images/services/dissertation_statistical_consulting.png
 ---
 
 ## Why You Need Professional Dissertation Statistical Consulting Services

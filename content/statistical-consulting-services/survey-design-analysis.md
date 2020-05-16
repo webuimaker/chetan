@@ -1,17 +1,21 @@
 ---
+#--------- general---------- #
 title: "Survey Design & Analysis"
 date: 2020-03-25
 weight: 5
-description : "This is meta description"
-summaryText: Our statistical consultants will take it all on ourselves to help you identify the question design, sampling method, and survey result analysis. Our professionals will translate your research goals and aim into an analysis plan based upon sound and reliable statistical practices. 
- 
-image: images/services/survey_design_analysis.png
-icon: /images/homepage/services/survey_design.svg
+description : "Let ISCON Statistical’s statisticians design the questionnaire to get you the crucial data that you need to make critical decisions"
 type : service
 sitemap:
   changefreq: monthly
   filename: sitemap.xml
   priority: 0.5
+#--------- homepage ---------- ##
+icon: /images/homepage/services/survey_design.svg
+alt: "survey design and analysis using latest tech"
+summaryText: Our statistical consultants will take it all on ourselves to help you identify the question design, sampling method, and survey result analysis. Our professionals will translate your research goals and aim into an analysis plan based upon sound and reliable statistical practices. 
+#--------- service page ---------- ##
+subHeader: "Survey design and analysis is a science. Let ISCON Statistical’s statisticians design the questionnaire to get you the crucial data that you need to make critical decisions"
+image: images/services/survey_design_analysis.png
 ---
 
 Survey design and analysis is a science. Let ISCON Statistical’s statisticians design the questionnaire to get you the crucial data that you need to make critical decisions.

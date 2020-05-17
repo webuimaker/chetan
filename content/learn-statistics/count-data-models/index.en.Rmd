@@ -3,6 +3,7 @@ title: "Poisson regression : Statistical models for counts and rates"
 subHeader: Learn about Poisson regression through simulation in R. We will explore the assumptions of Poisson model. If the data do not met the assumption, we will learn about other alternative models
 slug: poisson-regression-overdispersion-how-to
 image: images/learnstatistics/poissoncover.png
+alt: "my poisson"
 author: Chetan Prajapati
 authorPos: Founder & Statistician at ISCON
 authorImage: images/about/chetan.png

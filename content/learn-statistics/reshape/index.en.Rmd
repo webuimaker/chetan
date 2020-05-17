@@ -4,6 +4,7 @@ subHeader: Learn reshaping your data from wide to long and from long to wide for
 
 slug: reshape-wide-long-data-r-how-to
 image: images/learnstatistics/reshape_r.png
+alt: "reshape data r"
 author: Chetan Prajapati
 authorPos: Founder & Statistician at ISCON
 authorImage: images/about/chetan.png

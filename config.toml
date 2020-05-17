@@ -87,7 +87,7 @@ highlightjsTheme = "tomorrow-night-blue"
       [[Languages.en.menu.nav]]
       parent = "Services"
       name = "Dissertation statistical consulting"
-      URL = "/statistical-consulting-services/statistics-help-thesis/"
+      URL = "/statistical-consulting-services/dissertation-statistical-consulting/"
       pre = "Let us help you to make your disseration a success with expert statistics help"
       weight = "24"
       [[Languages.en.menu.nav]]

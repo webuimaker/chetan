@@ -6336,7 +6336,7 @@ img.arrow-bottom {
 .work-slider .slick-dots {
 	padding-left:0;
 	position:absolute;
-	bottom:-60px;
+	bottom:-18px;
 	left:50%;
 	-webkit-transform:translateX(-50%);
 	transform:translateX(-50%);

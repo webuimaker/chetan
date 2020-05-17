@@ -5828,6 +5828,8 @@ code {
 }
 .hero-slider .slick-dots {
 	border:0;
+	padding-right: 100px;
+  padding-left: 100px
 }
 .hero-slider .slick-dots li {
 	width:auto;
@@ -5940,6 +5942,8 @@ code {
 	}
 	.hero-slider.methods .slick-dots {
 			margin-top:-2em;
+			padding-right: 0;
+      padding-left: 0;
 	}
 }
 .hero-slider .slick-dots li.slick-active {
@@ -9547,5 +9551,13 @@ ul.tag-list li a:hover {
 			visibility:hidden;
 			-webkit-transform:translate3d(0,-100%,0);
 			transform:translate3d(0,-100%,0);
+	}
+}
+
+
+
+@media (max-width:1199px) {
+	.pt-160 {
+			padding-top: 304px
 	}
 }

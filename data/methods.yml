@@ -5,76 +5,89 @@ desc: "Our statisticians have in-depth knowedge and experience in applying in wi
 
 sliderItem:
 
-  - subHeading :
+  - subHeading : my subheading
     heading : Sample Size and Power Calculation
     description : "Sample size determination is the act of choosing the number of observations or replicates to include in a statistical sample. The sample size is an important feature of any empirical study in which the goal is to make inferences about a population from a sample. In practice, the sample size used in a study is usually determined based on the cost, time, or convenience of collecting the data, and the need for it to offer sufficient statistical power. In complicated studies there may be several different sample sizes: for example, in a stratified survey there would be different sizes for each stratum. In a census, data is sought for an entire population, hence the intended sample size is equal to the population. In experimental design, where a study may be divided into different treatment groups, there may be different sample sizes for each group."
     rightImage : images/homepage/methods/quantile_regression_non_linear.svg
     dataText : Sample size and power
+    alt: my alt
 
   - subHeading :
     heading : Linear Model
-    description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
-    bgImage : The General Linear Model (GLM) underlies most of the statistical analyses that are used in applied and social research. It is the foundation for the t-test, Analysis of Variance (ANOVA), Analysis of Covariance (ANCOVA), regression analysis, and many of the multivariate methods including factor analysis, cluster analysis, multidimensional scaling, discriminant function analysis, canonical correlation, and others. Because of its generality, the model is important for students of social research. Although a deep understanding of the GLM requires some advanced statistics training, I will attempt here to introduce the concept and provide a non-statistical description.
+    description : The General Linear Model (GLM) underlies most of the statistical analyses that are used in applied and social research. It is the foundation for the t-test, Analysis of Variance (ANOVA), Analysis of Covariance (ANCOVA), regression analysis, and many of the multivariate methods including factor analysis, cluster analysis, multidimensional scaling, discriminant function analysis, canonical correlation, and others. Because of its generality, the model is important for students of social research. Although a deep understanding of the GLM requires some advanced statistics training, I will attempt here to introduce the concept and provide a non-statistical description.
     rightImage : images/homepage/methods/general_linear_model_ordinary_least_square.svg
     dataText : General linear model
+    alt: my alt
 
   - subHeading :
     heading : Linear Mixed model (Multilevel Model)
     description : Linear mixed models are an extension of simple linear models to allow both fixed and random effects, and are particularly used when there is non independence in the data, such as arises from a hierarchical structure. For example, students could be sampled from within classrooms, or patients from within doctors. When there are multiple levels, such as patients seen by the same doctor, the variability in the outcome can be thought of as being either within group or between group. Patient level observations are not independent, as within a given doctor patients are more similar. Units sampled at the highest level (in our example, doctors) are independent. The figure below shows a sample where the dots are patients within doctors, the larger circles.
     rightImage : images/homepage/methods/linear_mixed_multilevel_model.svg
     dataText : Liner mixed model
+    alt: my alt
 
   - subHeading :
     heading : Quantile Regression
     description : Standard linear regression techniques summarize the average relationship between a set of regressors and the outcome variable based on the conditional mean function E(y|x). This provides only a partial view of the relationship, as we might be interested in describing the relationship at different points in the conditional distribution of y. Quantile regression provides that capability
     rightImage : images/homepage/methods/quantile_regression_non_linear.svg
     dataText : Quantile regression
+    alt: my alt
+
   - subHeading :
     heading : Polynomial Regression
     description : If your data points clearly will not fit a linear regression (a straight line through all data points), it might be ideal for polynomial regression.Polynomial regression, like linear regression, uses the relationship between the variables x and y to find the best way to draw a line through the data points.
     rightImage : images/homepage/methods/quantile_regression_non_linear.svg
     dataText : Polynomial regression
+    alt: my alt
 
   - subHeading :
     heading : Segmented Regression
     description : Segmented regression, also known as piecewise regression or broken-stick regression, is a method in regression analysis in which the independent variable is partitioned into intervals and a separate line segment is fit to each interval. Segmented regression analysis can also be performed on multivariate data by partitioning the various independent variables. Segmented regression is useful when the independent variables, clustered into different groups, exhibit different relationships between the variables in these regions. The boundaries between the segments are breakpoints.
     rightImage : images/homepage/methods/segmented_peicewise_brokenstick_regression.svg
     dataText : Segmented regression
+    alt: my alt
 
   - subHeading :
     heading : Exponential Smoothing State Space Model (ISSM)
     description : Exponential smoothing is a time series forecasting method for univariate data that can be extended to support data with a systematic trend or seasonal component.It is a powerful forecasting method that may be used as an alternative to the popular Box-Jenkins ARIMA family of methods.
     rightImage : images/homepage/methods/exponential_smoothing_time_series.svg
     dataText : Exponential smoothing
+    alt: my alt
 
   - subHeading :
     heading : ANOVA and ANCOVA
     description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
     rightImage : images/homepage/methods/quantile_regression_non_linear.svg
     dataText : ANOVA & ANCOVA
+    alt: my alt
 
   - subHeading :
     heading : Generalised Least Square Model
     description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
     rightImage : images/homepage/methods/linear_mixed_multilevel_model.svg
     dataText : Generalised least square model
+    alt: my alt
+
   - subHeading :
     heading : Generalised Linear Model (GLM)
     description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
     rightImage : images/homepage/methods/linear_mixed_multilevel_model.svg
     dataText : Generalised linear Model
+    alt: my alt
 
   - subHeading :
     heading : Evidence Synthesis - Meta analysis
     description : Lore ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
     rightImage : images/homepage/methods/linear_mixed_multilevel_model.svg
     dataText : Evidence synthesis
+    alt: my alt
 
   - subHeading :
     heading : Missing Data Imputation
     description : Lore ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
     rightImage : images/homepage/methods/linear_mixed_multilevel_model.svg
     dataText : Missing data imputation
+    alt: my alt
 
 
   - subHeading :
@@ -82,36 +95,42 @@ sliderItem:
     description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
     rightImage : images/homepage/methods/linear_mixed_multilevel_model.svg
     dataText : Proportional hazard model
+    alt: my alt
 
   - subHeading :
     heading : Parametric survival model
     description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
     rightImage : images/homepage/methods/linear_mixed_multilevel_model.svg
     dataText : Parametric survival model
+    alt: my alt
 
   - subHeading :
     heading : ARIMA time series model
     description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
     rightImage : images/homepage/methods/linear_mixed_multilevel_model.svg
     dataText : ARIMA time series model
+    alt: my alt
 
   - subHeading :
     heading : Cluster analysis
     description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
     rightImage : images/homepage/methods/linear_mixed_multilevel_model.svg
     dataText : Cluster analysis
+    alt: my alt
 
   - subHeading :
     heading : Factor analysis
     description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
     rightImage : images/homepage/methods/linear_mixed_multilevel_model.svg
     dataText : Factor analysis
+    alt: my alt
 
   - subHeading :
     heading : Principal component analysis
     description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
     rightImage : images/homepage/methods/linear_mixed_multilevel_model.svg
     dataText : Principal component analysis
+    alt: my alt
 
 
   - subHeading :
@@ -119,12 +138,14 @@ sliderItem:
     description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
     rightImage : images/homepage/methods/linear_mixed_multilevel_model.svg
     dataText : Vector auto-regression
+    alt: my alt
 
   - subHeading :
     heading : Quality Control
     description : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.
     rightImage : images/homepage/methods/linear_mixed_multilevel_model.svg
     dataText : Quality control (QC)
+    alt: my alt
 
 
 

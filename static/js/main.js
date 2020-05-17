@@ -5652,7 +5652,7 @@ function(n) {
         autoplay: !0,
         infinite: !0,
         autoplaySpeed: 1e4,
-        arrows: !0,
+        arrows: false,
         prevArrow: "<button type='button' class='prevArrow'><i class='ti-arrow-left'></i></button>",
         nextArrow: "<button type='button' class='nextArrow'><i class='ti-arrow-right'></i></button>",
         dots: !0,
@@ -5662,13 +5662,13 @@ function(n) {
         responsive: [{
             breakpoint: 576,
             settings: {
-                arrows: !1
+                arrows: false
             }
         }]
     }), n(".hero-slider").slickAnimation(), n(".hero-slider-2").slick({
         autoplay: !0,
         infinite: !0,
-        arrows: !1,
+        arrows: false,
         dots: !1
     }), n(".hero-slider-2").slickAnimation(), n(".work-slider").slick({
         dots: !0,
@@ -5676,7 +5676,7 @@ function(n) {
         speed: 300,
         slidesToShow: 4,
         slidesToScroll: 4,
-        arrows: !1,
+        arrows: false,
         autoplay: !0,
         responsive: [{
             breakpoint: 1024,

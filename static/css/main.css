@@ -1,15 +1,15 @@
-@charset 'UTF-8';
+@charset "UTF-8"";
 @font-face {
 	font-family:slick;
 	src: url(/fonts/slick.woff) format('woff'),
-	     url(/fonts/slick.ttf') format('truetype');
+	     url(/fonts/slick.ttf') format('truetype')
 
 }
 
 @font-face {
 	font-family:themify;
 	src: url(/fonts/themify.woff) format('woff'),
-	     url(/fonts/themify.ttf) format('truetype');
+	     url(/fonts/themify.ttf) format('truetype')
 
 }
 /* cookie consent */
@@ -89,7 +89,7 @@
     border-width:2px;
     border-style:solid;
     text-align:center;
-    white-space:nowrap
+    white-space:nowrap;
     padding: .3em .6em;
     font-size: 14px;
     font-weight: 600

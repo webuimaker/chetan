@@ -5,7 +5,7 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
 					<div class="mb-5 mb-md-0 text-center text-md-left">
-						{{ "<!-- logo -->" | safeHTML }} <img alt="logo" class="lazyload mb-20" data-src="{{.Site.Params.footer.logo|absURL}}"> {{ with .Site.Params.footer.content }}
+						{{ "<!-- logo -->" | safeHTML }} <img alt="ISCON Statistical Consulting" class="lazyload mb-20" data-src="{{.Site.Params.footer.logo|absURL}}"> {{ with .Site.Params.footer.content }}
 						<p class="text-white mb-0">{{ . }}</p>{{ end }} {{ with .Site.Params.footer.email }} <a class="text-white" href="mailto:{{.}}">{{ . }}</a> {{ end }} {{ "<!-- social icon -->" | safeHTML }}
 					<ul class="list-inline mt-3">
                             {{ range .Site.Params.footer.socialIcon }}

@@ -10,7 +10,7 @@
       <div class="col-lg-3 col-sm-6 mt-2 d-flex">
         <div class="card text-center border-0 bg-transparent flex-fill">
           <div class="card-body p-0">
-            <span><img data-src="{{ .icon |absURL }}" alt="{{ .alt | safeHTML}}" class="lazyload img-fluid" ></span>
+            <span><img src="{{ .icon |absURL }}" alt="{{ .alt | safeHTML}}" class="img-fluid" ></span>
 
             <h3 class="card-text mx-2 mb-0 pb-0" style="font-weight: 500;font-size: 17px;line-height: 1.5;">{{ .content | safeHTML}}</h3>
           </div>

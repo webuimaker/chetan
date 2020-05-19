@@ -18,7 +18,7 @@ filterList :
     dataFilter : statistical-analysis-modelling
     caseType : service
 
-  - filterTitle : Dissertation statistical consulting
+  - filterTitle : Dissertation Statistical Consulting
     dataFilter : dissertation-statistical-consulting
     caseType : service
 
@@ -38,15 +38,15 @@ filterList :
     dataFilter : statistics-training
     caseType : service
 
-  - filterTitle :  Health and Medical
+  - filterTitle :  Health & Medical
     dataFilter : health-medical
     caseType : sector
 
-  - filterTitle :  Buissness and public sector
+  - filterTitle :  Buissness & Public Sector
     dataFilter : buissness-public-sector
     caseType : sector
 
-  - filterTitle :  Finanace and economics
+  - filterTitle :  Finanace & Economics
     dataFilter : finanace-economics
     caseType : sector
 

@@ -6878,7 +6878,7 @@ ul.tag-list li a:hover {
 	color:#000;
 	position:relative;
 	min-height:100px;
-	padding:10px;
+	padding:5px;
 }
 .case .project-info a {
 	opacity:1;
@@ -6896,10 +6896,10 @@ ul.tag-list li a:hover {
 	transform:translateY(0);
 	opacity:1;
 	left:0;
-	color:#000;
+	color:#6b6565;
 	line-height:normal;
 	position:relative;
-	font-size:.9em;
+	font-size: 14px;
 	margin-top:4px;
 	margin-bottom:4px;
 }

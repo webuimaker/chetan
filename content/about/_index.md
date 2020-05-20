@@ -15,7 +15,7 @@ section3:
 section4:
   text: "At ISCON Statistics, we ardently follow both these principles to deliver precise and quality results. Our expertise in statistical and scientific methodology enables us to perform comprehensive, in-depth, and accurate statistical analysis of the provided data. In turn, this helps you achieve high-quality and reproducible research results, enabling you to make logical and informed decisions."
 designation: BDS PGDip (Public Health) GradCert(Statistics) MSc (Statistics)
-image : /images/about/chetan-big.png
+image : /images/about/chetan-statistician-UK-big.svg
 bgImage: 
 bgcolor: '#444444'
 facebookURL : '#'

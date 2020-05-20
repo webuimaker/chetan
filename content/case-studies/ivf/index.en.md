@@ -1,6 +1,6 @@
 ---
 #----------casestudy page----------#
-title: "In vitro fertilisation (IVF) or Intra-cytoplasmic sperm injection (ICSI)? Which is better option"
+title: "In vitro fertilisation (IVF) or Intra-cytoplasmic sperm injection (ICSI) : Which is better?"
 smallTitle: "IVF or ICSI : Which is better?"
 subHeader: "Modified Poisson regression (Poisson regression with a robust standard errors)"
 image : images/casestudies/ivf-icsi.svg

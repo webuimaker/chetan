@@ -7,7 +7,7 @@ image: images/learnstatistics/reshape_r.png
 alt: "reshape data r"
 author: Chetan Prajapati
 authorPos: Founder & Statistician at ISCON
-authorImage: images/about/chetan.png
+authorImage: images/about/chetan_statistician_UK.svg
 
 date: 2020-01-16
 description : R tutorial about reshaping data from wide to long and from long to wide format using base r reshape function. Learn to transform dataframe, matrix or array using example of longitudinal or panel data. Observations recorded in multiple columns but in single row for unique id (wide data) or each new observations are new rows but in single column (long data)

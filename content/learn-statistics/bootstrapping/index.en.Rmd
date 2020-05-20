@@ -17,7 +17,7 @@ tags:
 - Parametric Bootstrap
 - Non-parametric Bootstrap
 
-authorImage: images/about/chetan.png
+authorImage: images/about/chetan_statistician_UK.svg
 type: learn-statistics
 ---
 

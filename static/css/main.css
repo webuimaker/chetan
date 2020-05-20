@@ -5394,6 +5394,19 @@ a,button {
 	border:1px solid #656566;
 	padding:.2em;
 }
+
+.author-icon {
+	height: 80px;
+    min-width: 80px;
+    max-width: 80px;
+    border-radius: 12%;
+    border: 1px solid #e6e6e6;
+    background: #fff;
+    font-size: 30px;
+    display: inline-block;
+}
+
+
 .square-icon img {
 	vertical-align:top;
 }

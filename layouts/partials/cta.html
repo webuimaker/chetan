@@ -1,15 +1,1 @@
-{{ if .Site.Params.cta.enable }} {{ "<!-- cta -->" | safeHTML }}
-<div class="cta py-50 text-center text-lg-left bg-5" style="background:#000;">
-	<div class="container">
-		<div class="row justify-content-between">
-			<div class="col-lg-6">
-				{{ with .Site.Params.cta.title | safeHTML }}
-				<h3 class="text-white">{{ . }}</h3>{{ end }} {{ with .Site.Params.cta.titleSM | safeHTML }}
-				<p class="text-white">{{ . }}</p>{{ end }}
-			</div>
-			<div class="col-lg-6 text-lg-right align-self-center">
-				<a class="btn btn-primary text-uppercase" href="{{.Site.Params.cta.btnURL|absURL}}">{{ with .Site.Params.cta.btnText }}{{ . }}{{ end }}</a>
-			</div>
-		</div>
-	</div>
-</div>{{ "<!-- /cta -->" | safeHTML }} {{ end }}
+{{ if .Site.Params.cta.enable }} {{ "" | safeHTML }}<div class="cta py-50 text-center text-lg-left bg-5" style=background:#000><div class=container><div class="row justify-content-between"><div class=col-lg-6> {{ with .Site.Params.cta.title | safeHTML }}<h3 class=text-white>{{ . }}</h3>{{ end }} {{ with .Site.Params.cta.titleSM | safeHTML }}<p class=text-white>{{ . }}</p>{{ end }}</div><div class="col-lg-6 text-lg-right align-self-center"> <a class="btn btn-primary text-uppercase" href={{.Site.Params.cta.btnURL|absURL}}>{{ with .Site.Params.cta.btnText }}{{ . }}{{ end }}</a></div></div></div></div>{{ "" | safeHTML }} {{ end }}

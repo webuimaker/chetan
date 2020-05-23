@@ -54,7 +54,7 @@ df
 mean(df)
 ```
 
-```{r, fig.cap="Parametric vs nonparametric bootstrap"}
+```{r echo=FALSE,fig.cap="Parametric"}
 knitr::include_graphics("boot.png",error = FALSE)
 
 ```

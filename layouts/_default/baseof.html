@@ -1,12 +1,1 @@
-<!DOCTYPE html>
-<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-
-        <main id="content">
-        {{- block "main" . }}{{- end }}
-        </main>
-        {{- partial "footer.html" . -}}
-
-</html>
+<!DOCTYPE html><html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}"> {{- partial "head.html" . -}}<body> {{- partial "header.html" . -}} <main id=content> {{- block "main" . }}{{- end }} </main> {{- partial "footer.html" . -}}</html>

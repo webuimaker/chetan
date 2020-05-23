@@ -275,16 +275,6 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 a:not([href]):not([tabindex]):focus {
   outline: 0;
 }
-code, pre {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 1em;
-}
-pre {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  overflow: auto;
-  -ms-overflow-style: scrollbar;
-}
 figure {
   margin: 0 0 1rem;
 }
@@ -489,25 +479,13 @@ hr {
   font-size: 90%;
   color: #6c757d;
 }
-code {
-  font-size: 87.5%;
-  color: #e83e8c;
-  word-break: break-word;
-}
 a>code {
   color: inherit;
 }
 pre {
-  display: block;
-  font-size: 83.5%;
-  color: #212529;
   white-space: pre-wrap;
 }
-pre code {
-  font-size: inherit;
-  color: inherit;
-  word-break: normal;
-}
+
 .container {
   width: 100%;
   padding-right: 15px;
@@ -5499,9 +5477,9 @@ a, button {
   padding-top: 160px;
 }
 code {
-  padding: 4px;
+  padding: 2px;
   overflow: auto;
-  font-size: 16px;
+  font-size: 14px;
   color: #d80101;
   background-color: #f1f4f7cc;
   border-radius: 6px;

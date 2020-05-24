@@ -23,6 +23,9 @@
 [build.processing.images]
   compress = true
 
+
+
+
  # /*
  #X-UA-Compatible : IE=edge
 # Content-Type: text/html; charset=UTF-8; image/vnd.microsoft.icon ; application/json

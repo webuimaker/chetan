@@ -13,10 +13,10 @@
 									<a href="skype:{{ .action }}?chat" target=_blank>
 										<img src="{{ .icon }}" alt="Speak to Statistician on Skype">
 										</a> {{ else if eq .type "call" }}
-										<a href="tel:{{ .action }}" target=_blank>
+										<a href="sms:{{ .action }}" target=_blank>
 											<img src="{{ .icon }}" alt="Talk to Statistician on Phone">
 											</a> {{else }}
-											<a href="{{ .action }}" target=_blank>
+											<a href="mailto:{{ .action }}" target=_blank>
 												<img src="{{ .icon }}" alt="Write to Statistician by Email ">
 												</a> {{end}}
 											</div>

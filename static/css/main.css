@@ -6540,21 +6540,20 @@ ul.tag-list li a:hover {
   height: 100%;
 }
 .contact-info {
-  background: radial-gradient(circle, rgba(247, 247, 247, 1) 46%, rgba(237, 237, 237, 1) 100%);
+  background: #fcfcfc;
   height: 94%;
   border-radius: 7px;
 }
 .contact-info .icon {
   position: absolute;
-  left: 0;
-  top: -47%;
-  right: 0;
-  bottom: 0;
-  margin: auto!important;
-  max-width: 90px;
-  height: 90px;
-  line-height: normal;
-  padding: 20px;
+    left: 0;
+    top: -47%;
+    right: 0;
+    bottom: 0;
+    margin: auto!important;
+    max-width: 112px;
+    height: 105px;
+    line-height: normal;
 }
 .contact-info .info {
   position: absolute;
@@ -6933,7 +6932,6 @@ ul.tag-list li a:hover {
   .contact-info {
     text-align: center;
     margin-bottom: 15px!important;
-    padding: 20px;
   }
   .contact-info .icon, .contact-info .info {
     position: static;

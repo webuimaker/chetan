@@ -4,25 +4,25 @@ formTitle : Send Us a Message
 btnText : Submit Now
 contactList :
 
-  - icon : /images/contact/whatsapp.png
-    listItem : Click on the button above or add our number +44 7392 3398 62 to your mobile phone contacts
+  - icon : /images/contact/whatsapp.svg
+    listItem : Click on the button above or add our number +44 7392 3398 62 to your contact to talk to us
     action : 447392339862
     type : whatsapp
     heading : Talk to us via WhatsApp
 
-  - icon : /images/contact/skype.png
+  - icon : /images/contact/Skype.svg
     listItem : Click on button above to send us a message or make a call on Skype
     action : drchetan2
     type : skype
     heading : Connect with us on Skype
 
-  - icon : /images/contact/vibrate.png
+  - icon : /images/contact/calltext.svg
     listItem : Call us on +441179999999 or text us on +44 7392 3398 62
     action : 00441179999999
     type : call
     heading : Call or Text us
 
-  - icon : /images/contact/map.png
+  - icon : /images/contact/email.svg
     listItem : Meet us at our office 11 big street Bristol BS32 8HH or email admin@iscon-statistics.com
     action : https://goo.gl/maps/YMJp9Cnk9zQNsZok7
     type: map

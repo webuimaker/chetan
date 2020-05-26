@@ -3653,6 +3653,10 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 .pl-2, .px-2 {
   padding-left: .5rem!important;
 }
+.p-2 {
+  padding: 0.5rem!important;
+}
+
 .p-3 {
   padding: 1rem!important;
 }
@@ -5457,8 +5461,8 @@ a, button {
   padding: 28px 0;
 }
 .py-100 {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .py-160 {
   padding: 160px 0;

@@ -3657,6 +3657,10 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
   padding: 0.5rem!important;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .p-3 {
   padding: 1rem!important;
 }

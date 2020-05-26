@@ -1,0 +1,16 @@
+/images/*
+Cache-Control: public, max-age=604800, immutable
+
+/css/*
+Cache-Control: public, max-age=604800, immutable
+
+/js/*
+Cache-Control: public, max-age=604800, immutable
+
+/scripts/*
+Cache-Control: public, max-age=604800, immutable
+
+/fonts/*
+Cache-Control: public, max-age=604800, immutable
+
+

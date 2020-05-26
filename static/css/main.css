@@ -6543,7 +6543,8 @@ ul.tag-list li a:hover {
 .contact-info {
   background: #fcfcfc;
   height: 94%;
-  border-radius: 7px;
+  border-radius: 13px;
+  box-shadow: 0px 0px 13px 0px #d4d5d6;
 }
 .contact-info .icon {
   position: absolute;

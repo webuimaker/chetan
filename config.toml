@@ -1,13 +1,14 @@
+defaultcontentlanguage = "en"
+defaultContentLanguageInSubdir = true
+disableLanguages = ["fr"]
 baseURL = "https://xenodochial-johnson-2c8705.netlify.app/"
-summaryLength = "20"
-DefaultContentLanguage = "en"
 enableRobotsTXT = true
 enableGitInfo = true
 disableHugoGeneratorInject = true
-disableLanguages = ["Fr"]
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 copyright = "© Copyright 2020 ISCON Statistical Services. All Rights Reserved."
 assetDir = "static"
+summaryLength = "20"
 [outputs]
 
 home = ["HTML", "RSS", "JSON"]

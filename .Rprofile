@@ -21,7 +21,7 @@ setHook(packageEvent("ggplot2", "onLoad"),
 library(ggplot2)
 library(blogdown)
 
-# permenent knitr options
+# permanent knitr options
 setHook(packageEvent("knitr", "onLoad"),
         function(...) knitr::opts_chunk$set(echo = TRUE, message= FALSE, warning=FALSE,cache = FALSE, autodep = FALSE,comment = NA,dev = "svg" ))
 library(knitr)

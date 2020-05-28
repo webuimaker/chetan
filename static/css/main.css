@@ -1220,6 +1220,7 @@ pre {
   max-width: 100%;
   margin-bottom: 1rem;
   background-color: transparent;
+  display: inline-table;
 }
 .table td, .table th {
   padding: .75rem;
@@ -6903,6 +6904,10 @@ ul.tag-list li a:hover {
   overflow: hidden;
   min-height: 400px;
 }
+.background-banner img{
+  min-height: 100%;
+  object-fit: cover;
+}
 .case-right {
   font-size: .82em;
 }
@@ -6946,6 +6951,11 @@ ul.tag-list li a:hover {
   .contact-info .icon, .contact-info .info {
     position: static;
     margin-bottom: 15px;
+  }
+}
+@media (max-width:767px) {
+  .flex-sm-row{
+    flex-direction: row !important;
   }
 }
 @media (min-width:768px) and (max-width:991px) {

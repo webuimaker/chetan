@@ -5,7 +5,7 @@
 <script>function trackingScripts(){
 
 window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-135116594-1', 'auto');
+ga('create', 'UA-135116594-2', 'auto');
 ga('send', 'pageview');
 
 } window.addEventListener("load",function(){window.cookieconsent.initialise({palette:{popup:{background:"black"},button:{background:"red"},},revokable:false,law:{regionalLaw:false,},location:false,onInitialise:function(status){var type=this.options.type;var didConsent=this.hasConsented();if(type=='opt-in'&&didConsent){trackingScripts()} if(type=='opt-out'&&!didConsent){}},onStatusChange:function(status,chosenBefore){var type=this.options.type;var didConsent=this.hasConsented();if(type=='opt-in'&&didConsent){trackingScripts()} if(type=='opt-out'&&!didConsent){}},onRevokeChoice:function(){var type=this.options.type;if(type=='opt-in'){trackingScripts()} if(type=='opt-out'){}},position:"bottom",theme:"classic",type:"opt-out",domain:"https://xenodochial-johnson-2c8705.netlify.app/",dismissOnScroll:true,secure:true,content:{"header":'Cookies used on the website!',"message":'We use cookies to provide website functionality, to analyze traffic on our website, to personalize content and to enable social media functionality. To read our privacy and cookie policy, please',"dismiss":'Got it!',"allow":'Allow cookies',"deny":'Decline',"link":'click here',"href":'https://xenodochial-johnson-2c8705.netlify.app/',"close":'&#x274c;',"policy":'Set cookies preference',"target":'https://xenodochial-johnson-2c8705.netlify.app/',}})});</script>

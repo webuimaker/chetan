@@ -38,9 +38,7 @@ df[2,] &lt;- c(2,&quot;B&quot;,140,150,155)
 df[3,] &lt;- c(3,&quot;C&quot;,96,86,97)</code></pre>
 <p>Our “wide” data look like</p>
 <pre class="r"><code>knitr::kable(df, caption = &quot;wide data&quot;)</code></pre>
-
-<div class="table-responsive">
-<table class="table">
+<table>
 <caption><span id="tab:unnamed-chunk-3">Table 1: </span>wide data</caption>
 <thead>
 <tr class="header">
@@ -75,7 +73,6 @@ df[3,] &lt;- c(3,&quot;C&quot;,96,86,97)</code></pre>
 </tr>
 </tbody>
 </table>
-</div>
 <p>We want a data in which each new observation in new row but within same column i.e. long data. To achieve that we need to use standard <code>reshape</code> command in <code>R</code>. The <code>reshape</code> has following argument:</p>
 <ul>
 <li><p><code>idvar</code> : unique identifier for person,place or object on which observations(measurements) are made at different time points or repeatedly. Example <code>Case ID</code></p></li>
@@ -107,9 +104,7 @@ direction = &quot;long&quot;)
 <pre class="r"><code>df_long &lt;- arrange(df_long, id)
 
 kable(df_long,format = &quot;pandoc&quot;, caption = &quot;long data&quot;)</code></pre>
-
-<div class="table-responsive">
-<table class="table">
+<table>
 <caption><span id="tab:unnamed-chunk-5">Table 2: </span>long data</caption>
 <thead>
 <tr class="header">
@@ -176,7 +171,6 @@ kable(df_long,format = &quot;pandoc&quot;, caption = &quot;long data&quot;)</cod
 </tr>
 </tbody>
 </table>
-</div>
 <p>Sometime, not only one type of measurement (BP) but also other types (such as heart rate-HR) are measured and recorded row wise. For example,</p>
 <pre class="r"><code># wide data
 df &lt;- data.frame(matrix(data = NA, nrow = 3, ncol = 8, dimnames = list(NULL, paste0(c(&quot;id&quot;,&quot;name&quot;,&quot;BP_jan&quot;,&quot;BP_feb&quot;,&quot;BP_march&quot;,&quot;HR_jan&quot;,&quot;HR_feb&quot;,&quot;HR_march&quot;)))))
@@ -184,9 +178,7 @@ df[1,] &lt;- c(1,&quot;A&quot;,123,120,125,72,70,71)
 df[2,] &lt;- c(2,&quot;B&quot;,140,150,155,85,82,86)
 df[3,] &lt;- c(3,&quot;C&quot;,96,86,97,65,52,59)</code></pre>
 <pre class="r"><code>kable(df,format = &quot;pandoc&quot;, caption = &quot;wide data- multiple category&quot;)</code></pre>
-
-<div class="table-responsive">
-<table class="table">
+<table>
 <caption><span id="tab:unnamed-chunk-7">Table 3: </span>wide data- multiple category</caption>
 <thead>
 <tr class="header">
@@ -233,7 +225,6 @@ df[3,] &lt;- c(3,&quot;C&quot;,96,86,97,65,52,59)</code></pre>
 </tr>
 </tbody>
 </table>
-</div>
 <p>This data can be converted into “long” by using <code>list</code> for group of time-varying columns for <code>varying</code></p>
 <pre class="r"><code>df_long &lt;- reshape(df,
 idvar = &quot;id&quot;,  
@@ -244,9 +235,7 @@ v.names = c(&quot;BP&quot;,&quot;HR&quot;),
 direction = &quot;long&quot;)   </code></pre>
 <pre class="r"><code>df_long &lt;- arrange(df_long, id)
 kable(df_long,format = &quot;pandoc&quot;, caption = &quot;long data&quot;)</code></pre>
-
-<div class="table-responsive">
-<table class="table">
+<table>
 <caption><span id="tab:unnamed-chunk-9">Table 4: </span>long data</caption>
 <thead>
 <tr class="header">
@@ -324,7 +313,6 @@ kable(df_long,format = &quot;pandoc&quot;, caption = &quot;long data&quot;)</cod
 </tbody>
 </table>
 </div>
-</div>
 <div id="reshape-data-from-long-to-wide" class="section level2">
 <h2>Reshape data from long to wide</h2>
 <p>To make data “wide” from long, the <code>reshape</code> function will need only two main arguments</p>
@@ -352,8 +340,7 @@ kable(df_long,format = &quot;pandoc&quot;, caption = &quot;long data&quot;)</cod
        sep = &quot;_&quot;
         )</code></pre>
 <p>Here is the wide data</p>
-<div class="table-responsive">
-<table class="table">
+<table>
 <caption><span id="tab:unnamed-chunk-11">Table 5: </span>wide data</caption>
 <thead>
 <tr class="header">
@@ -404,5 +391,4 @@ kable(df_long,format = &quot;pandoc&quot;, caption = &quot;long data&quot;)</cod
 </tr>
 </tbody>
 </table>
-</div>
 </div>

@@ -1,38 +1,3 @@
-<script>
-function deleteSpecificCookies() {
-
-var cookies = document.cookie.split(";");
-var all_cookies = '';
-
-    for (var i = 0; i < cookies.length; i++) {
-
-        var cookie_name  = cookies[i].split("=")[0];
-        var cookie_value = cookies[i].split("=")[1];
-
-        if( cookie_name.trim() != '__utmb' ) { all_cookies = all_cookies + cookies[i] + ";"; }
-
-
-    }
-
-if(!document.__defineGetter__) {
-
-    Object.defineProperty(document, 'cookie', {
-        get: function(){return all_cookies; },
-        set: function(){return true},
-    });
-
-} else {
-
-    document.__defineGetter__("cookie", function() { return all_cookies; } );
-    document.__defineSetter__("cookie", function() { return true; } );
-
-}
-
-}
-</script>
-
-
-
 <div id=hyvor-talk-view></div> <script type="text/plain" data-cookiescript="accepted" >var HYVOR_TALK_WEBSITE=506;var HYVOR_TALK_CONFIG={url:"{{ .URL | absURL }}",id:false,loadMode: "scroll"};</script>
 {{ $js := resources.Get "js/comment.js" }}
 {{ $secureJS := $js | resources.Fingerprint "sha512" }}

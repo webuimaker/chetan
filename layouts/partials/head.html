@@ -138,12 +138,16 @@ services: {
   // Hyvor talk
   functioning : {
     category: 'Functioning',
-    type: 'dynamic-script',
+    type: 'wrapped',
     search: 'hyvor',
     cookies: [
       {
         name: '_anonymous_id_',
         domain: `talk.hyvor.com`
+      },
+      {
+        name: /^_anonymous/,
+        domain: `.netlify.app`
       },
       {
         name: '_anonymous_token_',

@@ -11,7 +11,7 @@ if ( Get_Cookie( '_anonymous_id_' ) )
 {
     document.write( 'cookies are currently enabled.' );
     cookie_set = true;
-    Delete_Cookie('_anonymous_id_', '/', '');
+    Delete_Cookie('_anonymous_id_', 'none', '', '/', 'talk.hyvor.com', '');
 }
 else
 {

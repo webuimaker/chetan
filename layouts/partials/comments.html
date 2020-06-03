@@ -2,20 +2,3 @@
 {{ $js := resources.Get "js/comment.js" }}
 {{ $secureJS := $js | resources.Fingerprint "sha512" }}
 <script async type="text/plain" data-cookiescript="accepted"  src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
-
-<script type="text/javascript">
-// remember, these are the possible parameters for Set_Cookie:
-// name, value, expires, path, domain, secure
-Set_Cookie( '_anonymous_id_', 'none', '', '/', 'talk.hyvor.com', '' );
-if ( Get_Cookie( '_anonymous_id_' ) )
-{
-    document.write( 'cookies are currently enabled.' );
-    cookie_set = true;
-    Delete_Cookie('_anonymous_id_', 'none', '', '/', 'talk.hyvor.com', '');
-}
-else
-{
-    document.write( 'cookies are not currently enabled.' );
-    cookie_set = false;
-}
-</script>

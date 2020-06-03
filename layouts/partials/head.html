@@ -118,7 +118,11 @@ services: {
       {
         name: /^_ga/,
         domain: `.netlify.app`
-      }
+      },
+      {
+        name: '_gat_gtag_UA_135116594_2',
+        domain: `.netlify.app`
+      },
     ],
     language: {
       locale: {
@@ -131,16 +135,21 @@ services: {
   functioning : {
     category: 'Functioning',
     type: 'dynamic-script',
-    search: 'analytics',
+    search: 'HYVOR_TALK_WEBSITE',
     cookies: [
       {
-        name: '_gid',
-        domain: `.${window.location.hostname}`
+        name: '_anonymous_id_',
+        domain: `talk.hyvor.com`
       },
       {
-        name: /^_ga/,
-        domain: `.${window.location.hostname}`
+        name: '_anonymous_token_',
+        domain: `talk.hyvor.com`
+      },
+      {
+        name: '_ga',
+        domain: `.gstatic.com`
       }
+
     ],
     language: {
       locale: {

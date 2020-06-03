@@ -123,6 +123,10 @@ services: {
         name: '_gat_gtag_UA_135116594_2',
         domain: `.netlify.app`
       },
+      {
+        name: '_ga',
+        domain: `.gstatic.com`
+      }
     ],
     language: {
       locale: {
@@ -134,8 +138,8 @@ services: {
   // Hyvor talk
   functioning : {
     category: 'Functioning',
-    type: 'dynamic-script',
-    search: 'HYVOR_TALK_WEBSITE',
+    type: 'script-tag',
+    search: 'hyvor',
     cookies: [
       {
         name: '_anonymous_id_',
@@ -146,8 +150,12 @@ services: {
         domain: `talk.hyvor.com`
       },
       {
+        name: '__cfduid',
+        domain: `.hyvor.com`
+      },
+      {
         name: '_ga',
-        domain: `.gstatic.com`
+        domain: `.hyvor.com`
       }
 
     ],

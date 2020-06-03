@@ -2,3 +2,12 @@
 {{ $js := resources.Get "js/comment.js" }}
 {{ $secureJS := $js | resources.Fingerprint "sha512" }}
 <script async type="text/plain" data-cookiescript="accepted"  src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
+
+<script>
+var cookies = document.cookie.split(";");
+for(var i=0; i < cookies.length; i++) {
+    var equals = cookies[i].indexOf("=");
+    var name = equals > -1 ? cookies[i].substr(0, equals) : cookies[i];
+    document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+}
+</script>

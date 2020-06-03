@@ -1,1 +1,8 @@
-<div id=hyvor-talk-view></div> <script type=text/javascript>var HYVOR_TALK_WEBSITE=506;var HYVOR_TALK_CONFIG={url:"{{ .URL | absURL }}",id:false};</script> <script async type=text/javascript src=https://talk.hyvor.com/web-api/embed></script>
+<div id=hyvor-talk-view></div> <script type=text/javascript>var HYVOR_TALK_WEBSITE=506;var HYVOR_TALK_CONFIG={url:"{{ .URL | absURL }}",id:false};</script>
+
+<!--
+<script async type=text/javascript src=https://talk.hyvor.com/web-api/embed></script> -->
+
+{{ $js := resources.Get "js/comment.js" }}
+{{ $secureJS := $js | resources.Fingerprint "sha512" }}
+<script async type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>

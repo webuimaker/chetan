@@ -1,4 +1,4 @@
-<div id=hyvor-talk-view></div> <script type=text/javascript>var HYVOR_TALK_WEBSITE=506;var HYVOR_TALK_CONFIG={url:"{{ .URL | absURL }}",id:false};</script>
+<div id=hyvor-talk-view></div> <script type="text/plain" data-cookiescript="accepted" >var HYVOR_TALK_WEBSITE=506;var HYVOR_TALK_CONFIG={url:"{{ .URL | absURL }}",id:false};</script>
 {{ $js := resources.Get "js/comment.js" }}
 {{ $secureJS := $js | resources.Fingerprint "sha512" }}
-<script async type="text/javascript" src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
+<script async type="text/plain" data-cookiescript="accepted"  src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>

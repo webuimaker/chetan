@@ -10,6 +10,7 @@ copyright = "© Copyright 2020 ISCON Statistical Services. All Rights Reserved."
 assetDir = "static"
 summaryLength = "20"
 
+
 [outputs]
 
 home = ["HTML", "RSS", "JSON"]
@@ -23,6 +24,7 @@ home = ["HTML", "RSS", "JSON"]
 
 author = "ISCON Statistical Services"
 mail = "chetan.prajapati@live.com"
+header = "Chetan Prajapati (Statistician)"
 mobile = "+44 7392 339 862"
 copyright = "© Copyright 2020 ISCON Statistical Services. All Rights Reserved."
 description = "Experienced and professional statistician offers reliable statistical consulting services online to researchers, businesses and PhD students. Hire RSS(UK) accredited freelance statistician for in-depth data analysis and statistical modelling in R, SPSS, STATA. Ask for statistics help in dissertation, medical statistics"

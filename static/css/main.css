@@ -35,8 +35,8 @@
 	--breakpoint-md: 768px;
 	--breakpoint-lg: 992px;
 	--breakpoint-xl: 1200px;
-	--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+	--font-family-sans-serif: "Nunito Sans", Roboto, sans-serif;
+	--font-family-monospace: "Nunito Sans", Roboto, sans-serif;
 }
 
 *,
@@ -46,7 +46,7 @@
 }
 
 html {
-	font-family: sans-serif;
+	font-family: "Nunito Sans", Roboto, sans-serif;
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
 	-webkit-tap-highlight-color: transparent
@@ -67,7 +67,7 @@ section {
 
 body {
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-family: "Nunito Sans", Roboto, sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
@@ -195,7 +195,7 @@ code,
 kbd,
 pre,
 samp {
-	font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-family: "Nunito Sans", Roboto, sans-serif;
 	font-size: 1em
 }
 
@@ -6439,7 +6439,7 @@ a.close.disabled {
 	z-index: 1070;
 	display: block;
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-family: "Nunito Sans", Roboto, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 1.5;
@@ -6564,7 +6564,7 @@ a.close.disabled {
 	z-index: 1060;
 	display: block;
 	max-width: 276px;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-family: "Nunito Sans", Roboto, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 1.5;
@@ -10261,7 +10261,7 @@ button.bg-dark:hover {
 }
 
 .text-monospace {
-	font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace!important
+	font-family: "Nunito Sans", Roboto, sans-serif;
 }
 
 .text-justify {
@@ -11038,10 +11038,10 @@ a.text-dark:hover {
   content: "\e75f";
 }
 li, ol, ol li {
-  font-family: "Nunito Sans", Roboto, sans-serif!important;
+  font-family: inherit;
 }
 p {
-  font-family: "Nunito Sans", Roboto, sans-serif;
+  font-family: inherit;
   font-weight: 400;
   color: #000;
   line-height: 25px;
@@ -11050,7 +11050,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
   color: #495057;
   font-weight: 700;
-  font-family: "Nunito Sans", Roboto, sans-serif;
+  font-family: inherit;
 }
 .h1, h1 {
   font-size: 37px;
@@ -11080,7 +11080,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn {
   font-size: 13px;
-  font-family: "Nunito Sans", Roboto, sans-serif;
+  font-family: inherit;
   text-transform: uppercase;
   padding: 16px 44px;
   border-radius: 5px;
@@ -11203,7 +11203,7 @@ a, button {
 }
 .section-title-sm {
   margin-bottom: 10px;
-  font-family: "Nunito Sans", Roboto, sans-serif;
+  font-family: inherit;
   font-weight: 600;
   color: #666;
 }
@@ -11514,14 +11514,14 @@ a, button {
   font-weight: 500;
 }
 .text-dark {
-  font-family: "Nunito Sans", Roboto, sans-serif;
+  font-family: inherit;
   color: #000!important;
 }
 .font-primary {
-  font-family: "Nunito Sans", Roboto, sans-serif;
+  font-family: inherit;
 }
 .font-secondary {
-  font-family: "Nunito Sans", Roboto, sans-serif;
+  font-family: inherit;
 }
 .mb-10 {
   margin-bottom: 10px;
@@ -11661,7 +11661,7 @@ code {
   }
 }
 .navigation .navbar .nav-item .nav-link {
-  font-family: "Nunito Sans", Roboto, sans-serif;
+  font-family: inherit;
   font-weight: 600;
   color: #000;
   text-transform: uppercase;
@@ -11942,7 +11942,7 @@ code {
   opacity: 0;
 }
 .hero-slider .slick-dots li a {
-  font-family: "Nunito Sans", Roboto, sans-serif;
+  font-family: inherit;
   display: block;
   position: relative;
   text-align: center;
@@ -11950,7 +11950,7 @@ code {
   color: #303032;
 }
 .hero-slider .slick-dots li a i {
-  font-family: "Nunito Sans", Roboto, sans-serif;
+  font-family: inherit;
   display: inline-block;
   font-size: 30px;
   line-height: 80px;
@@ -11959,19 +11959,19 @@ code {
 }
 @media (max-width:991px) {
   .hero-slider .slick-dots li a i {
-    font-family: "Nunito Sans", Roboto, sans-serif;
+    font-family: inherit;
     font-size: 20px;
     margin-right: 5px;
   }
 }
 @media (max-width:767px) {
   .hero-slider .slick-dots li a i {
-    font-family: "Nunito Sans", Roboto, sans-serif;
+    font-family: inherit;
     margin: 0;
   }
 }
 .hero-slider .slick-dots li a span {
-  font-family: "Nunito Sans", Roboto, sans-serif;
+  font-family: inherit;
   padding: 16px;
   font-size: 15px;
   font-weight: 500;
@@ -11979,7 +11979,7 @@ code {
 }
 @media (max-width:991px) {
   .hero-slider .slick-dots li a span {
-    font-family: "Nunito Sans", Roboto, sans-serif;
+    font-family: inherit;
     font-size: 15px;
   }
 }
@@ -12023,7 +12023,7 @@ code {
   position: relative;
 }
 .progress-bar-value {
-  font-family: "Nunito Sans", Roboto, sans-serif;
+  font-family: inherit;
   font-weight: 600;
   color: #fff;
   background: #303032;
@@ -12251,7 +12251,7 @@ aside.case-right ul li {
   text-align: center;
   background: #fff;
   box-shadow: -5px 0 40px 0 rgba(0, 0, 0, .1);
-  font-family: "Nunito Sans", Roboto, sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 32px;
   color: #222;
@@ -12511,7 +12511,7 @@ img.arrow-bottom {
   height: auto;
 }
 .project-content h6 {
-  font-family: "Nunito Sans", Roboto, sans-serif;
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   color: #222;
@@ -12608,7 +12608,7 @@ ul.tag-list li a:hover {
   margin-bottom: 50px;
 }
 .post-content ol li {
-  font-family: "Nunito Sans", Roboto, sans-serif;
+  font-family: inherit;
   position: relative;
   margin-bottom: 5px;
 }
@@ -12624,7 +12624,7 @@ ul.tag-list li a:hover {
     height: 40px;
     margin-bottom: 15px;
     border: 1px solid #dcdcdc;
-    font-family: nunito sans,Roboto,sans-serif;
+    font-family: inherit;
     font-weight: 500;
     font-size: 13px;
   color: #666;

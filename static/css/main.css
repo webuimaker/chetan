@@ -5014,7 +5014,6 @@ input[type=submit].btn-block {
 	flex-direction: column;
 	min-width: 0;
 	word-wrap: break-word;
-	background-color: #fff;
 	background-clip: border-box;
 	border: 1px solid rgba(0, 0, 0, .125);
 	border-radius: .25rem
@@ -11168,7 +11167,7 @@ img {
 }
 a, a:focus, a:hover {
   text-decoration: none;
-  color: #da0000;
+  color: #cf0300;
   font-weight: 500;
 }
 a {
@@ -12049,9 +12048,7 @@ code {
 .card-header:first-child {
   border-radius: 35px;
 }
-#accordion .card-header {
-  border: 1px solid #000!important;
-}
+
 .testimonial-slider {
   position: relative;
 }

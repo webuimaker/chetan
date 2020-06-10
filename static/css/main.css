@@ -10704,7 +10704,7 @@ a.text-dark:hover {
 }
 .slick-dots li button:before {
   font-family: slick;
-  font-size: 29px;
+  font-size: 8px;
   line-height: 30px;
   position: absolute;
   top: 0;

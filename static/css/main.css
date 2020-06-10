@@ -4581,11 +4581,7 @@ input[type=submit].btn-block {
 .navbar-brand {
 	display: inline-block;
 	padding-top: .3125rem;
-	padding-bottom: .3125rem;
-	margin-right: 1rem;
-	font-size: 1.25rem;
-	line-height: inherit;
-	white-space: nowrap
+	padding-bottom: .3125rem
 }
 
 .navbar-brand:focus,
@@ -4902,10 +4898,6 @@ input[type=submit].btn-block {
 
 .navbar-expand .navbar-toggler {
 	display: none
-}
-
-.navbar-light .navbar-brand {
-	color: rgba(0, 0, 0, .9)
 }
 
 .navbar-light .navbar-brand:focus,
@@ -11628,21 +11620,10 @@ code {
   background: #fff!important;
   position: relative;
 }
-.navigation .navbar-brand {
-  text-align: center;
-  z-index: 9;
-}
+
 @media (max-width:991px) {
-  .navigation .navbar-brand {
-    position: relative;
-    height: unset;
-    width: unset;
-    box-shadow: none;
-    top: 10px;
-    background: 0 0;
-  }
   .navigation .navbar-brand img {
-    height: 50px;
+    height: 72px;
     width: auto;
   }
   .service.equal .d-flex {

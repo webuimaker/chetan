@@ -660,8 +660,8 @@ pre code {
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	margin-right: -15px;
-	margin-left: -15px
+	margin-right: 4px;
+	margin-left: 4px
 }
 
 .no-gutters {
@@ -11616,7 +11616,6 @@ code {
   border-right: 0;
 }
 .navigation .navbar {
-  padding: 0;
   background: #fff!important;
   position: relative;
 }

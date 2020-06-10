@@ -1,11 +1,9 @@
 @charset 'UTF-8';
-
- @font-face {
+@font-face {
   font-family: slick;
   src: url('/fonts/slick.woff') format('woff'),
        url('/fonts/slick.ttf') format('truetype');
 }
-
 @font-face {
   font-family: themify;
   src: url('/fonts/themify.woff') format('woff'),

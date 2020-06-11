@@ -25,7 +25,7 @@ command = "hugo --gc --minify"
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy-Report-Only: "default-src 'self' xenodochial-johnson-2c8705.netlify.app d33wubrfki0l68.cloudfront.net hyvor.com talk.hyvor.com cdnjs.cloudflare.com getsimpleform.com s3.amazonaws.com; script-src 'self' 'unsafe-inline' xenodochial-johnson-2c8705.netlify.app d33wubrfki0l68.cloudfront.net hyvor.com talk.hyvor.com cdnjs.cloudflare.com s3.amazonaws.com google-analytics.com google.com; style-src 'self' 'unsafe-inline' xenodochial-johnson-2c8705.netlify.app d33wubrfki0l68.cloudfront.net hyvor.com talk.hyvor.com cdnjs.cloudflare.com s3.amazonaws.com google-analytics.com google.com getsimpleform.com; form-action 'self' getsimpleform.com; upgrade-insecure-requests; block-all-mixed-content"
+    Content-Security-Policy-Report-Only: "default-src 'self' 'unsafe-inline' xenodochial-johnson-2c8705.netlify.app d33wubrfki0l68.cloudfront.net hyvor.com talk.hyvor.com cdnjs.cloudflare.com getsimpleform.com s3.amazonaws.com google-analytics.com google.com ; form-action 'self' getsimpleform.com/; upgrade-insecure-requests; block-all-mixed-content"
     Referrer-Policy = "strict-origin-when-cross-origin"
     X-Content-Type-Options = "nosniff"
     Feature-Policy = '''

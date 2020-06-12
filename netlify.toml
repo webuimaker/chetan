@@ -55,13 +55,12 @@ command = "hugo --gc --minify"
 [[headers]]
   for = "/static/fonts/*"
   [headers.values]
-    Content-Type = "text/javascript; charset=utf-8"
+    Content-Type = "font/woff; charset=utf-8"
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
   for = "/static/learn-statistics/*"
   [headers.values]
-    Content-Type = "text/javascript; charset=utf-8"
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]

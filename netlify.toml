@@ -41,32 +41,34 @@ command = "hugo --gc --minify"
     '''
 
 [[headers]]
-  for = "/static/css/*.css"
+  for = "/css/*"
   [headers.values]
-    Content-Type = "text/css; charset=utf-8"
+    Cache-Control = "public, max-age=604800, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, immutable"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, immutable"
+
+[[headers]]
+  for = "/scripts/*"
+  [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
-  for = "/static/js/*"
-  [headers.values]
-    Content-Type = "text/javascript; charset=utf-8"
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "/static/fonts/*"
-  [headers.values]
-    Content-Type = "font/woff; charset=utf-8"
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "/static/learn-statistics/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "/static/images/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+for = "/*.json"
+[headers.values]
+Cache-Control = "public, max-age=604800,immutable"
 
 [[plugins]]
   package = "netlify-plugin-inline-source"

@@ -25,7 +25,7 @@ command = "hugo --gc --minify"
   [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
-    Access-Control-Allow-Origin =  "https://d33wubrfki0l68.cloudfront.net"
+    Access-Control-Allow-Origin =  "*"
     Content-Security-Policy = "default-src 'self' xenodochial-johnson-2c8705.netlify.app d33wubrfki0l68.cloudfront.net; script-src 'self' 'unsafe-inline' https://www.google-analytics.com xenodochial-johnson-2c8705.netlify.app d33wubrfki0l68.cloudfront.net hyvor.com talk.hyvor.com  getsimpleform.com s3.amazonaws.com getsimpleform.com; style-src 'self' 'unsafe-inline' xenodochial-johnson-2c8705.netlify.app d33wubrfki0l68.cloudfront.net hyvor.com talk.hyvor.com  getsimpleform.com s3.amazonaws.com google-analytics.com; img-src 'self' xenodochial-johnson-2c8705.netlify.app d33wubrfki0l68.cloudfront.net https://www.google-analytics.com; font-src 'self' d33wubrfki0l68.cloudfront.net ; frame-src https://www.google.com https://talk.hyvor.com; upgrade-insecure-requests"
     Referrer-Policy = "strict-origin-when-cross-origin"
     X-Content-Type-Options = "nosniff"

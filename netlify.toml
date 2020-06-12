@@ -40,6 +40,12 @@ command = "hugo --gc --minify"
     unoptimised-images 'none'
     '''
 
+[[headers]]
+   for = "*/static/*"
+ [headers.values]
+        cache-control = '''
+        public,
+        max-age=3600'''
 
 [[headers]]
   for = "*.ico"

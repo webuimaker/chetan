@@ -460,8 +460,9 @@ small {
 
 .mark,
 mark {
-	padding: .2em;
-	background-color: #fcf8e3
+ padding: 2px 6px 2px 6px;
+ border-radius: 5px;
+ background-color: #ffc1077d
 }
 
 .list-unstyled {

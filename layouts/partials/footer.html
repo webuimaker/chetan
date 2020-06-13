@@ -184,7 +184,7 @@ services: {
 {{if and (eq .Section "learn-statistics") (eq .Kind "page")}}
 
 <script src="{{ "/js/hl.js" | relURL }}" ></script>
-<script>hljs.initHighlightingOnLoad();</script>
+<script> hljs.initHighlightingOnLoad();</script>
 <script src="{{ "/js/math-code.js" | relURL }}"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
 {{ end }}

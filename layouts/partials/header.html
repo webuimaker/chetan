@@ -1,49 +1,46 @@
 {{ "" | safeHTML }}
 {{ "" | safeHTML }}
 <nav class="navigation fixed-top" >
-<div class=container>
-<div class="navbar navbar-expand-lg navbar-light bg-light">
-<a class=navbar-brand href="{{ .Site.Params.BaseURL | absURL }}">
-<img src="{{ .Site.Params.logo | absURL }}" alt="Hire statistician online from ISCON Statistical consulting" class=img-fluid>
-</a>
-<button class=navbar-toggler type=button data-toggle=collapse data-target=#navigation aria-controls=navigation aria-expanded=false aria-label="Toggle navigation">
-<span style="font-size: 25px"><i class=ti-menu></i> </span>
-</button>
-<div class="collapse navbar-collapse" id=navigation>
-<ul class="navbar-nav ml-auto">
-<li class=nav-item>
-<a class=nav-link href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
-</li>
-{{ range .Site.Menus.nav }}
-{{ if .HasChildren }}
-<li class="nav-item dropdown">
-<a class="nav-link dropdown-toggle" href="{{ .URL }}" role=button aria-haspopup=true aria-expanded=false>
-{{ .Name }}
-</a>
-<div class=dropdown-menu>
-<div class=container>
-<ul class="nav row">
-{{ range .Children }}
-<li class="nav-item col-md-4">
-<a class=nav-link href="{{ .URL }}">{{ .Name }}</a>
-<p class="px-2 py-0">{{ .Pre }} </p>
-</li>
-{{end}}
-</ul>
-</div>
-</div>
-</li>
-{{ else }}
-<li class=nav-item>
-<a class=nav-link href="{{ .URL }}">{{ .Name }}</a>
-</li>
-{{ end }}
-{{ end }}
-</ul>
-{{ if .Site.Params.quoteBtn.enable }}
-<a class="btn btn-sm2 text-uppercase btn-secondary" href="{{ .Site.Params.quoteBtn.btnURL | absURL }}">{{ with .Site.Params.quoteBtn.btnText }} {{ . }} {{ end }}</a>
-{{ end }}
-</div>
-</div>
-</div>
-</nav>
+  <div class=container>
+    <div class="navbar navbar-expand-lg navbar-light bg-light">
+      <a href="{{ .Site.Params.BaseURL | absURL }}">
+        <img src="{{ .Site.Params.logo | absURL }}" alt="Hire statistician online from ISCON Statistical consulting" class=img-fluid>
+          </a>
+          <button class=navbar-toggler type=button data-toggle=collapse data-target=#navigation aria-controls=navigation aria-expanded=false aria-label="Toggle navigation">
+            <span style="font-size: 25px"><i class=ti-menu></i> </span>
+              </button>
+              <div class="collapse navbar-collapse" id=navigation>
+                <ul class="navbar-nav ml-auto">
+                  <li class=nav-item>
+                    <a class=nav-link href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
+                      </li>
+                       {{ range .Site.Menus.nav }}
+                        {{ if .HasChildren }}
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                {{ .Name }}
+                            </a>
+                            <div class="dropdown-menu" >
+                                {{ range .Children }}
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a>
+
+                                {{ end }}
+                            </div>
+                        </li>
+                        {{ else }}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+                        </li>
+                        {{ end }}
+                        {{ end }}
+
+
+                                    {{ if .Site.Params.quoteBtn.enable }}
+                                  <a class="btn btn-sm2 text-uppercase btn-secondary" href="{{ .Site.Params.quoteBtn.btnURL | absURL }}">{{ with .Site.Params.quoteBtn.btnText }} {{ . }} {{ end }}</a>
+                                    {{ end }}
+                                  </div>
+                                    </div>
+                                    </div>
+                                    </nav>

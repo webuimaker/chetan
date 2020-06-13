@@ -3589,7 +3589,7 @@ input[type=submit].btn-block {
 	padding: .25rem 1.5rem;
 	clear: both;
 	font-weight: 500;
-	color: #212529;
+	color: #55595d;
 	text-align: inherit;
 	white-space: nowrap;
 	background-color: transparent;
@@ -11651,7 +11651,7 @@ code {
 
 .navigation .navbar .nav-item .nav-link {
   padding: 15px 10px;
-  font-family: "Poppins", sans-serif;
+  font-family: inherit;
   font-weight: 600;
   color: #222;
   text-transform: uppercase;
@@ -11679,7 +11679,7 @@ code {
 }
 
 .navigation .navbar .nav-item:last-child {
-  padding: 28px 0 28px 30px;
+  padding: 28px 28px 0 0px;
 }
 
 @media (max-width: 991px) {
@@ -11687,10 +11687,6 @@ code {
     padding: 0;
     margin-bottom: 20px;
   }
-}
-
-.navigation .navbar .nav-item:last-child .nav-link {
-  color: #fff;
 }
 
 .navigation .navbar .nav-item .nav-link.pgactive {
@@ -11748,7 +11744,6 @@ code {
 
 .navigation .navbar .dropdown-item {
   position: relative;
-  color: #000000;
   transition: .2s ease;
 }
 

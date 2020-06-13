@@ -3578,9 +3578,9 @@ input[type=submit].btn-block {
 
 .dropdown-divider {
 	height: 0;
-	margin: .5rem 0;
-	overflow: hidden;
-	border-top: 1px solid #e9ecef
+    margin: .1rem 19px;
+    overflow: hidden;
+    border-top: 1px solid #e9ecef;
 }
 
 .dropdown-item {
@@ -11753,7 +11753,8 @@ code {
 }
 
 .navigation .navbar .dropdown-item:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 .navigation .navbar .dropdown-item:hover {

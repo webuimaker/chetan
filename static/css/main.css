@@ -12975,6 +12975,17 @@ ul.tag-list li a:hover {
   font-size: 12px;
   text-align: center;
 }
+
+.thanks-title h1{
+	font-size: 62px;
+	text-transform: uppercase;
+}
+.thanks .check i{
+	font-weight: bold;
+	font-size: 4rem;
+	color: #1aba58;
+	
+}
 @media (max-width:575px) {
   .project-menu ul li {
     width: auto;

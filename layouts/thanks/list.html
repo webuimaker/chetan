@@ -1,0 +1,30 @@
+{{ define "main" }}
+<!-- <div class="bg-title">
+    {{ partial "pageTitle.html" . }}
+</div> -->
+{{ "<!-- blog -->" | safeHTML }}
+<section class="thanks py-5">
+    <div class="container">
+        <div class="thanks-title pageTitle">
+            <div class="row"> <header class="col-lg-12 text-center"> <div><h1>{{.Title}}</h1> </div> </header></div>
+        </div>        
+        <div class="row">
+            <div class="col-12 py-100 text-center">
+               
+
+                <h1 class="check text-center"><i class="ti-check"></i></h1>
+               
+                    {{ "<!-- blog-item -->" | safeHTML }}
+                    
+                       {{ .Content }}
+
+                    <a href="/">Get back to our homepage</a>
+                   
+               
+            </div>
+        </div>
+    </div>
+</section>
+{{ "<!-- /blog -->" | safeHTML }}
+
+{{ end }}

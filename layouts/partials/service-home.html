@@ -1,1 +1,16 @@
-{{ "" | safeHTML }}<div class="bg2 py-50"><div class=container><div class="row justify-content-center"><div class="col-lg-12 text-center"><h2 class="section-title section-title-border">In-depth knowledge and experience of wide range of statistical software and tools</h2></div><div class="col-lg-8 text-center"><p class=mb-5>At ISCON Statistical Services, we are dedicated to providing you with expert, accessible, and reliable customized statistical and data analysis services that fit your needs and budget. See our wide range of services</p></div></div><div class="row service equal" style=height:436px> {{ $specialize := where .Site.RegularPages "Type" "service" }} {{ range sort $specialize ".Params.weight" }}<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-1 d-flex"><div class="card text-center mb-5"><div class=card-body> <i class="square-icon rounded btn-primary"> <img alt="{{ .Params.Alt}}" class="img-fluid lazyload" data-src={{.Params.Icon|absURL}}> </i> <a class=card-link href={{.Permalink}}><h3 class="card-title pt-3">{{ .Title }}</h3></a><p style=color:#524a4a;font-weight:400;font-size:15px;line-height:20px>{{ .Params.summaryText }}</p><a class="btn btn-sm2 text-uppercase btn-outline" href={{.Permalink}}>Find out more</a></div></div></div>{{ end }}</div><div class="col text-center mt-4" style=padding-top:16px> <a class="btn btn-sm2 text-uppercase btn-secondary" href=/statistical-consulting-services/>View All Our Services</a></div></div></div>{{ "" | safeHTML }}
+{{ "" | safeHTML }}<div class="bg2 py-50"><div class=container><div class="row justify-content-center"><div class="col-lg-12 text-center"><h2 class="section-title section-title-border">In-depth knowledge and experience of wide range of statistical software and tools</h2></div><div class="col-lg-8 text-center"><p class=mb-5>At ISCON Statistical Services, we are dedicated to providing you with expert, accessible, and reliable customized statistical and data analysis services that fit your needs and budget. See our wide range of services</p></div></div>
+<div class="row service equal service-hg" > 
+    {{ $specialize := where .Site.RegularPages "Type" "service" }} 
+    {{ range sort $specialize ".Params.weight" }}
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 mb-1 d-flex">
+            <div class="card text-center mb-5">
+                <div class=card-body> 
+                    <i class="square-icon rounded btn-primary"> <img alt="{{ .Params.Alt}}" class="img-fluid lazyload" data-src={{.Params.Icon|absURL}}> </i> 
+                    <a class=card-link href={{.Permalink}}><h3 class="card-title pt-3">{{ .Title }}</h3></a>
+                    <p style=color:#524a4a;font-weight:400;font-size:15px;line-height:20px>{{ .Params.summaryText }}</p>
+                    <a class="btn btn-sm2 text-uppercase btn-outline" href={{.Permalink}}>Find out more</a>
+                </div>
+            </div>
+        </div>
+    {{ end }}
+</div><div class="col text-center mt-4" style=padding-top:16px> <a class="btn btn-sm2 text-uppercase btn-secondary" href=/statistical-consulting-services/>View All Our Services</a></div></div></div>{{ "" | safeHTML }}

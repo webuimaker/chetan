@@ -13037,3 +13037,18 @@ ul.tag-list li a:hover {
   }
 }
 
+.service-hg{
+	height: 436px;
+}
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+	.service-hg{
+		height: auto;
+		height: 1100px;
+		
+	}
+	.case .project-info{
+		min-height: 150px;
+	}
+}
+

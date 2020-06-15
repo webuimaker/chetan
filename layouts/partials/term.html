@@ -1,0 +1,79 @@
+{{ "" | safeHTML }} 
+<section>
+    <div class=container>
+        <div class=row> 
+
+            {{ "" | safeHTML }}
+                <div class="col-8 offset-2">
+                    <div class="bg-white px-4 py-100 "> 
+                        {{ "" | safeHTML }}
+                            <div class=mb-50> 
+                                {{partial "search-form.html" . }}                              
+                            </div> 
+
+                            {{if eq .Type "tags"}}
+                            <div class=mb-50>
+                                <h4 class=mb-3>Tags</h4> 
+                                {{- if isset .Site.Taxonomies "tags" }} {{- if not (eq (len .Site.Taxonomies.tags) 0) }}
+                                    <ul class="list-inline tag-list"> 
+                                        {{- range $name, $items := .Site.Taxonomies.tags }}
+                                            <li class=list-inline-item>
+                                                <a href="{{ "tags/" | relLangURL }}{{ $name | urlize | lower }}/">{{ $name | humanize }}</a>
+                                            </li> 
+                                        {{- end }}
+                                    </ul> 
+                                {{- end }} 
+                            {{- end }}
+                        </div>
+                        {{end}}
+
+                        {{if eq .Type "categories"}}
+
+                        <div class=mb-50> 
+                            
+                            <h4 class=mb-3>Topics</h4> 
+                            {{- if isset .Site.Taxonomies "categories" }} 
+                                {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
+                                    <ul class="list-unstyled mb-0"> 
+                                        {{- range $name, $items := .Site.Taxonomies.categories }}
+                                            <li class=border-bottom> <a href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}/" class="d-block text-color py-10">{{ $name | title | humanize }}</a></li>
+                                        {{- end }}
+                                    </ul> 
+                                {{- end }} 
+                            {{- end }}
+                        </div>
+
+                        {{ "" | safeHTML }}
+
+                        {{end}}
+                       
+                </div>
+                                            
+            </div>
+
+            <!-- <div class="col-lg-8 col-sm-7 py-100">
+                <div class=row> 
+                    {{ range .Paginator.Pages }} {{ "" | safeHTML }}
+                    <div class="col-sm-12 col-lg-6 mb-4"> 
+                        <article class=card>
+                            <div class="card-img-wrapper overlay-rounded-top"> 
+                                <img class="lazyload card-img-top" data-src="{{ .Params.image | absURL }}" alt="{{ .Params.Alt}}">
+                            </div>
+                            <div class="card-body p-0">
+                                <div class=d-flex>
+                                    <div class="py-3 px-4 border-right text-center">
+                                        <h3 class="text-primary mb-0">{{ .PublishDate.Format "02" }}</h3>
+                                        <p class=mb-0>{{ .PublishDate.Format "Jan" }}</p>
+                                    </div>
+                                    <div class=p-2> 
+                                        <a href="{{ .Permalink }}" class="h4 font-primary text-dark">{{ .Title }}</a>
+                                    </div>
+                                </div>
+                            </div> 
+                        </article>
+                    </div> {{ end }}
+                </div>
+            </div> -->
+        </div>
+    </div> 
+</section> {{ "" | safeHTML }}

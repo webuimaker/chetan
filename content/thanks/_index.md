@@ -5,6 +5,7 @@ description : "This is meta description"
 header: Know more about ISCON
 ---
 
-Thank you very much for filling out our form.
+Thank you for getting in touch with us. 
 
-Your eBook is waiting for you in your inbox, with one secret adnd special bonus :)
+Just confirming that we have received your message. We aim to respond to your query within 6 hours. If it is urgent, please get in touch via call or whats-app on +44 7392339862.
+

@@ -10,6 +10,7 @@
 {{- else if .IsPage -}}
     <meta property="og:locale" content="en_GB" />
     <meta property="og:type" content="article" />
+    <meta property="article:section" content="{{ .Section }}" />
     <meta property="og:title" content="{{ .Title }} | ISCON Statistics"/>
     <meta property="og:description" content="{{ .Description }}" />
     <meta property="og:url" content="{{ .Permalink }}" />

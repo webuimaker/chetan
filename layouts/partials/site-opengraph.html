@@ -4,16 +4,16 @@
     <meta property="og:title" content="{{ .Site.Title }}"/>
     <meta property="og:description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
-    <meta property="og:site_name" content="ISCON Statistical Service" />
+    <meta property="og:site_name" content="ISCON Statistical Services" />
 
 
 {{- else if .IsPage -}}
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content="en_GB" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="{{ .Title }} | Statistician Online"/>
+    <meta property="og:title" content="{{ .Title }} | ISCON Statistics"/>
     <meta property="og:description" content="{{ .Description }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
-    <meta property="og:site_name" content="Statistician Online" />
+    <meta property="og:site_name" content="ISCON Statistical Services" />
     <meta property="article:publisher" content="https://www.facebook.com/statisticianonline" />
     <meta property="article:author" content="https://www.facebook.com/MadhavMedStats">
 

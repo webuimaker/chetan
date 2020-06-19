@@ -533,12 +533,12 @@
   "primaryImageOfPage":
   {"@id":"{{ .Permalink }}#primaryimage"},
   {{ if not .PublishDate.IsZero -}}
-  "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
+  "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTMLAttr }}",
   {{- else if not .Date.IsZero -}}
-  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTMLAttr }}",
   {{- end }}
   {{ with .Lastmod -}}
-  "dateModified": "{{ .Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
+  "dateModified": "{{ .Format "2006-01-02T15:04:05-07:00" | safeHTMLAttr  }}",
   {{- end }}
   "description": "{{ .Description }}",
   "breadcrumb":
@@ -578,12 +578,12 @@
 {"@id":"https://www.statistician-online.com/#organization"},
 "headline":"{{ .Title }}",
 {{ if not .PublishDate.IsZero -}}
-  "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
+  "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTMLAttr }}",
   {{- else if not .Date.IsZero -}}
-  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTMLAttr }}",
   {{- end }}
   {{ with .Lastmod -}}
-  "dateModified": "{{ .Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
+  "dateModified": "{{ .Format "2006-01-02T15:04:05-07:00" | safeHTMLAttr }}",
   {{- end }}
 "mainEntityOfPage":"{{ .Permalink }}#webpage",
 "image":

@@ -52,7 +52,7 @@ highlightjsLang = ["r"]
 highlightjsTheme = "tomorrow-night-blue"
 
 ## twitter
-site_handle = "Stat_online"
+site_handle = "@Stat_online"
 creator_handle = "@chetan_oxforduk"
 
 [Language]

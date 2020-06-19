@@ -52,18 +52,8 @@ highlightjsLang = ["r"]
 highlightjsTheme = "tomorrow-night-blue"
 
 ## twitter
-card = "player"
-title = "The Bit Title"
-twitterName = "@twittername"
-twitterDescription = "Special Description for the card max. 200 characters"
-player = "https://urltoiframeplayer.tld/awl3kj3lk234"
-player_width = 1280
-player_height = 960
-twitterImage = "https://example.tld/wonderful-thumbnail.jpg"
-image_alt = "This is an amazing Thumbnail"
-player_stream = "https://example.tld/stream.mp4"
-player_stream_content_type = "video/mp4"
-
+site_handle = "Stat_online"
+creator_handle = "@chetan_oxforduk"
 
 [Language]
 

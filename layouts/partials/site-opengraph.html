@@ -34,10 +34,10 @@
 {{ end }}
 
 
-<meta property="og:image" content="{{ if .Params.ogImage }} {{.Params.ogImage | absURL}} {{ else }} {{  .Site.Params.ogimage | absURL }} {{end}}">
-<meta property="og:image:secure_url" content="{{ if .Params.ogImage }} {{ .Params.ogImage | absURL }} {{ else }} {{  .Site.Params.ogimage | absURL }} {{end}}"/>
-<meta property="og:image:width" content="{{ if .Params.ogWidth }} {{.Params.ogWidth}} {{ else }} {{  .Site.Params.ogWidth }} {{end}}">
-<meta property="og:image:height" content="{{ if .Params.ogHeight }} {{.Params.ogHeight}} {{ else }} {{  .Site.Params.ogHeight }} {{end}}">
-<meta property="og:image:alt" content="{{ if .Params.ogAlt }} {{.Params.ogAlt}} {{ else }} {{  .Site.Params.ogAlt }} {{end}}">
+<meta property="og:image" content="{{ if .Params.image }} {{.Params.image | absURL}} {{ else }} {{  .Site.Params.ogimage | absURL }} {{end}}">
+<meta property="og:image:secure_url" content="{{ if .Params.image }} {{ .Params.image | absURL }} {{ else }} {{  .Site.Params.ogimage | absURL }} {{end}}"/>
+<meta property="og:image:width" content="{{ if .Params.Width }} {{.Params.Width}} {{ else }} {{  .Site.Params.ogWidth }} {{end}}">
+<meta property="og:image:height" content="{{ if .Params.Height }} {{.Params.Height}} {{ else }} {{  .Site.Params.ogHeight }} {{end}}">
+<meta property="og:image:alt" content="{{ if .Params.alt }} {{.Params.alt}} {{ else }} {{  .Site.Params.ogAlt }} {{end}}">
 
 {{ with .Site.Params.facebookAppid }}<meta property="fb:app_id" content="{{ . }}" />{{ end }}

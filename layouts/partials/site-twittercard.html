@@ -1,17 +1,23 @@
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="{{.Site.Params.site_handle}}">
+<meta name="twitter:creator" content="{{.Site.Params.creator_handle}}">
+
+<!--
+
 <meta name="twitter:title" content="{{ if .IsHome -}}
   {{ .Site.Title }} {{- else -}}   {{ .Title }} | Statistician Online {{- end }}"/>
 
 <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}"/>
 
-<meta name="twitter:site" content="{{.Site.Params.twitterName}}">
-<meta name="twitter:creator" content="{{.Site.Params.twitterName}}">
+<meta name="twitter:site" content="{{.Site.Params.site_handle}}">
+<meta name="twitter:creator" content="{{.Site.Params.creator_handle}}">
 {{ if .IsPage }}
 <meta name="twitter:title" content="{{ .Title }}" />
-<meta name="twitter:card" content="summary_large_image" />
+
 <meta name="twitter:image" content="{{ .Params.image }}" />
 {{ else }}
 <meta name="twitter:title" content="{{ .Site.Title }}" />
 <meta name="twitter:description" content="{{ .Params.description }}" />
 {{ end }}
-
-
+-->

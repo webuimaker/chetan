@@ -34,7 +34,7 @@
 {{ end }}
 
 
-<meta property="og:image" content="{{ if .Params.ogImage }} {{.Params.ogImage}} {{ else }} {{  .Site.Params.ogimage }} {{end}}">
+<meta property="og:image" content="{{ if .Params.ogImage }} {{.Params.ogImage | absURL}} {{ else }} {{  .Site.Params.ogimage | absURL }} {{end}}">
 <meta property="og:image:secure_url" content="{{ if .Params.ogImage }} {{ .Params.ogImage | absURL }} {{ else }} {{  .Site.Params.ogimage | absURL }} {{end}}"/>
 <meta property="og:image:width" content="{{ if .Params.ogWidth }} {{.Params.ogWidth}} {{ else }} {{  .Site.Params.ogWidth }} {{end}}">
 <meta property="og:image:height" content="{{ if .Params.ogHeight }} {{.Params.ogHeight}} {{ else }} {{  .Site.Params.ogHeight }} {{end}}">

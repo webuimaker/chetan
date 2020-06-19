@@ -29,6 +29,13 @@ mobile = "+44 7392 339 862"
 copyright = "© Copyright 2020 ISCON Statistical Services. All Rights Reserved."
 description = "Experienced and professional statistician offers reliable statistical consulting services online to researchers, businesses and PhD students. Hire RSS(UK) accredited freelance statistician for in-depth data analysis and statistical modelling in R, SPSS, STATA. Ask for statistics help in dissertation, medical statistics"
 logo = "images/homepage/logo/logo.png"
+image = "pathof image"
+#open graph 
+ogImage = "images/homepage/logo/logo.png"
+ogWidth = "100px"
+ogHeight = "100px"
+ogAlt = "ogAlt"
+facebookAppid = "dfff"
 #gmapAPI = ""
 mapLatitude = "51.527948"
 mapLongitude = "-2.557515"
@@ -43,6 +50,19 @@ highlightjsVersion = "9.12.0"
 highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
 highlightjsLang = ["r"]
 highlightjsTheme = "tomorrow-night-blue"
+
+## twitter
+card = "player"
+title = "The Bit Title"
+twitterName = "@twittername"
+twitterDescription = "Special Description for the card max. 200 characters"
+player = "https://urltoiframeplayer.tld/awl3kj3lk234"
+player_width = 1280
+player_height = 960
+twitterImage = "https://example.tld/wonderful-thumbnail.jpg"
+image_alt = "This is an amazing Thumbnail"
+player_stream = "https://example.tld/stream.mp4"
+player_stream_content_type = "video/mp4"
 
 
 [Language]

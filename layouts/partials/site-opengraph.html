@@ -1,0 +1,43 @@
+{{ if .IsHome -}}
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Statistician Online | {{ .Site.Title }}"/>
+    <meta property="og:description" content="{{ with .Site.Params.description }}{{ . }}{{ end }}" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:site_name" content="Statistician Online" />
+
+
+{{- else if .IsPage -}}
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{ .Title }} | Statistician Online"/>
+    <meta property="og:description" content="{{ .Description }}" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:site_name" content="Statistician Online" />
+    <meta property="article:publisher" content="https://www.facebook.com/statisticianonline" />
+    <meta property="article:author" content="https://www.facebook.com/MadhavMedStats">
+
+    {{- if not .PublishDate.IsZero }}<meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTMLAttr }}"/>
+        {{ else if not .Date.IsZero }}<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTMLAttr }}"/>
+    {{ end }}
+    {{- if not .Lastmod.IsZero }}<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" | safeHTMLAttr }}"/>{{ end }}
+        {{- else }}
+            {{- if not .Date.IsZero }}
+                <meta property="og:updated_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTMLAttr }}"/>
+            {{- end }}
+    {{- end }}
+
+    {{- with .Params.tags }}
+        {{ range first 6 . }}
+            <meta property="article:tag" content="{{ . }}" />
+        {{ end }}
+{{ end }}
+
+
+<meta property="og:image" content="{{ if .Params.ogImage }} {{.Params.ogImage}} {{ else }} {{  .Site.Params.ogimage }} {{end}}"> 
+<meta property="og:image:secure_url" content="{{ if .Params.ogImage }} {{ .Params.ogImage | absURL }} {{ else }} {{  .Site.Params.ogimage | absURL }} {{end}}"/> 
+<meta property="og:image:width" content="{{ if .Params.ogWidth }} {{.Params.ogWidth}} {{ else }} {{  .Site.Params.ogWidth }} {{end}}"> 
+<meta property="og:image:height" content="{{ if .Params.ogHeight }} {{.Params.ogHeight}} {{ else }} {{  .Site.Params.ogHeight }} {{end}}"> 
+<meta property="og:image:alt" content="{{ if .Params.ogHeight }} {{.Params.ogHeight}} {{ else }} {{  .Site.Params.ogHeight }} {{end}}"> 
+
+{{ with .Site.Params.facebookAppid }}<meta property="fb:app_id" content="{{ . }}" />{{ end }}

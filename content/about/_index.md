@@ -4,25 +4,9 @@ date: 2020-04-10
 description : "This is meta description"
 header: Know more about ISCON
 type: about
-
-ogImage: "/imagepath"
-ogWidth: "100px"
-ogHeight: "100px"
-ogAlt: "ogAlt"
-
-card: "player"
-title: "The Bit Title"
-site: "@twittername"
-description: "Special Description for the card max. 200 characters"
-player: "https://urltoiframeplayer.tld/awl3kj3lk234"
-player_width: 1280
-player_height: 960
-image: "https://example.tld/wonderful-thumbnail.jpg"
-image_alt: "This is an amazing Thumbnail"
-player_stream: "https://example.tld/stream.mp4"
-player_stream_content_type: "video/mp4"
-
 ---
+<html>
+
 <div class="section bg4">
     <div class="container">
         <div class="row">
@@ -41,7 +25,7 @@ player_stream_content_type: "video/mp4"
             </div>
         </div>
     </div>
-</div> 
+</div>
 <div class="section bg-secondary">
     <div class="container">
         <div class="row">
@@ -52,7 +36,7 @@ player_stream_content_type: "video/mp4"
             </div>
         </div>
     </div>
-</div> 
+</div>
 <div class="section bg4">
     <div class="container">
         <div class="row">
@@ -61,7 +45,7 @@ player_stream_content_type: "video/mp4"
             </div>
         </div>
     </div>
-</div> 
+</div>
 
 
 
@@ -70,9 +54,9 @@ player_stream_content_type: "video/mp4"
         <div class="row">
             <div class="col-12 text-center mb-2">
                 <h2 class="section-title section-title-border mb-4">Meet the Founder</h2>
-            </div> 
-            <aside class="col-lg-4"> 
-                <div> 
+            </div>
+            <aside class="col-lg-4">
+                <div>
                     <img class="lazyload img-fluid w-100 rounded-top" data-src="/images/about/chetan-statistician-UK-big.svg" alt="Chetan Prajapati UK Statistician">
                     <div class="py-2 px-4 pb-3">
                         <div class="py-2 border-bottom">
@@ -83,71 +67,72 @@ player_stream_content_type: "video/mp4"
                         </div>
                         <div class="py-3 border-bottom">
                             <ul class="list-inline">
-                                <li class="list-inline-item mr-2"> 
+                                <li class="list-inline-item mr-2">
                                     <a class="social-icon-lg bg-facebook" href="#"> <i class="ti-facebook"></i> </a>
                                 </li>
-                                <li class="list-inline-item mx-2"> 
+                                <li class="list-inline-item mx-2">
                                     <a class="social-icon-lg bg-twitter" href="#"> <i class="ti-twitter-alt"></i> </a>
                                 </li>
-                                <li class="list-inline-item mx-2"> 
+                                <li class="list-inline-item mx-2">
                                     <a class="social-icon-lg bg-linkedin" href="#"> <i class="ti-linkedin"></i> </a>
                                 </li>
                             </ul>
                         </div>
                         <div class="py-2 border-bottom">
                             <p class="font-weight-bold text-dark m-0"> Education</p>
-                        </div> 
-                        <div class="py-1 font-sm"> 
-                            <span class="font-weight-bold text-dark">2018</span> 
+                        </div>
+                        <div class="py-1 font-sm">
+                            <span class="font-weight-bold text-dark">2018</span>
                             <span class="font-primary">MSC Statistics with specialisation in Genetic Epidemiology, University of Leicester UK</span>
-                        </div> 
-                        <div class="py-1 font-sm"> 
-                            <span class="font-weight-bold text-dark">2014</span> 
+                        </div>
+                        <div class="py-1 font-sm">
+                            <span class="font-weight-bold text-dark">2014</span>
                             <span class="font-primary">Grad Cert Statistics, University of Sheffield UK</span>
-                        </div> 
-                        <div class="py-1 font-sm"> 
-                            <span class="font-weight-bold text-dark">2012</span> 
+                        </div>
+                        <div class="py-1 font-sm">
+                            <span class="font-weight-bold text-dark">2012</span>
                             <span class="font-primary">PG Dip in Public Health, Oxford Brookes University UK</span>
-                        </div> 
-                        <div class="py-1 font-sm"> 
-                            <span class="font-weight-bold text-dark">2008</span> 
+                        </div>
+                        <div class="py-1 font-sm">
+                            <span class="font-weight-bold text-dark">2008</span>
                             <span class="font-primary">Bachelor of Dental Surgery, Gujarat University India</span>
-                        </div> 
+                        </div>
                     </div>
-                </div> 
-                <div class="rounded border py-3 px-4 mb-50"> 
+                </div>
+                <div class="rounded border py-3 px-4 mb-50">
                     <i class="d-inline-block mr-1 ti-files" style="font-size:20px"></i>
-                    <h4 class="mb-1 d-inline-block">Professional CV</h4> 
+                    <h4 class="mb-1 d-inline-block">Professional CV</h4>
                     <a class="font-secondary text-color d-block ml-4" href="#">Download pdf</a>
-                </div> 
-            </aside> 
-            
+                </div>
+            </aside>
+
             <div class="col-lg-8">
-                <div> 
+                <div>
                     <p class="mb-1"><strong>Dr Chetan Prajapati</strong></p>
-                    <p>Dr Chetan Prajapati is professional statistician and epidemiologist, founder of ISCON Statistics. He holds master of statistics (with specialisation in Genetic Epidemiology) from the renowned <strong> University of Leicester</strong>. He is also John Brookes Scholar of the <strong>Oxford Brookes University</strong>. During his time with <strong>Bristol Medical School, University of Bristol</strong>, he designed and analysed multiple hospital-based research studies including design, conduct and analyses of randomised control trial. Prior to University of Bristol, he worked as Medical Statistician at <strong>the Centre for the Prevention of Stroke and Dementia at the University of Oxford</strong>, where he worked with Prof Rothwell on all statistical aspects of Oxford Vascular (OXVASC) study, includes the management and analyses of clinical trials data. He is also was visiting researcher at <strong>Karolinska Institute, Department of Clinical Epidemiology, Sweden</strong> where he leading the analysis of clinical and litigation data to understanding link between adverse pregnancy outcomes and litigation cost. During his career, he gained hands-on experience in the application of all three methods statistical inferences – Bayesian, frequentist and likelihood in real-world settings. He founded <strong>ISCON Statistics</strong> with vision to provide responsive, ethical, and accessible statistical services to businesses, organisations and individuals.<br><br>As a passionate statistician, Dr Chetan aspires to explore innovative statistical methodologies for different types of data to provide more precise and reproducible results. As a mix of both, theoretical and applied Statistician, Dr Chetan thrive to explore and apply novel statistical methods to data of various types. Recently, he implemented multi-variate Vector Auto-regression (VAR) economic models in clinical data in to find a relationship between two time series. His research interest are clinical trials design, survival analysis, mixed models, monte-carlo simulation and analysis of data-set with statistical complexities (i.e. with missing data, sparse or unbalanced).<br><br> With his years of experience in statistical analysis and research, Chetan Prajapati enjoys strong command over a variety of statistical tools and software. He is proficient in <strong>R statistical software</strong> and also has experience in using other software – <strong>STATA, SPSS, WinBugs, StatXact, MLWin</strong>. His in-depth knowledge of statistical methods also enables him to explain and present research analysis in a simple and comprehensible way.</p> 
-                    
+                    <p>Dr Chetan Prajapati is professional statistician and epidemiologist, founder of ISCON Statistics. He holds master of statistics (with specialisation in Genetic Epidemiology) from the renowned <strong> University of Leicester</strong>. He is also John Brookes Scholar of the <strong>Oxford Brookes University</strong>. During his time with <strong>Bristol Medical School, University of Bristol</strong>, he designed and analysed multiple hospital-based research studies including design, conduct and analyses of randomised control trial. Prior to University of Bristol, he worked as Medical Statistician at <strong>the Centre for the Prevention of Stroke and Dementia at the University of Oxford</strong>, where he worked with Prof Rothwell on all statistical aspects of Oxford Vascular (OXVASC) study, includes the management and analyses of clinical trials data. He is also was visiting researcher at <strong>Karolinska Institute, Department of Clinical Epidemiology, Sweden</strong> where he leading the analysis of clinical and litigation data to understanding link between adverse pregnancy outcomes and litigation cost. During his career, he gained hands-on experience in the application of all three methods statistical inferences – Bayesian, frequentist and likelihood in real-world settings. He founded <strong>ISCON Statistics</strong> with vision to provide responsive, ethical, and accessible statistical services to businesses, organisations and individuals.<br><br>As a passionate statistician, Dr Chetan aspires to explore innovative statistical methodologies for different types of data to provide more precise and reproducible results. As a mix of both, theoretical and applied Statistician, Dr Chetan thrive to explore and apply novel statistical methods to data of various types. Recently, he implemented multi-variate Vector Auto-regression (VAR) economic models in clinical data in to find a relationship between two time series. His research interest are clinical trials design, survival analysis, mixed models, monte-carlo simulation and analysis of data-set with statistical complexities (i.e. with missing data, sparse or unbalanced).<br><br> With his years of experience in statistical analysis and research, Chetan Prajapati enjoys strong command over a variety of statistical tools and software. He is proficient in <strong>R statistical software</strong> and also has experience in using other software – <strong>STATA, SPSS, WinBugs, StatXact, MLWin</strong>. His in-depth knowledge of statistical methods also enables him to explain and present research analysis in a simple and comprehensible way.</p>
+
                     <p class="mb-1"><strong>His Accreditations</strong></p>
                     <p>Dr Chetan is registered and professional member of <strong>Royal Statistical Society</strong>, leading body of professional statistician in UK (Registration number 125676). He is also active member of <strong>Statistics Without Borders (SWB)</strong> and <strong>International Statistical Institute (ISI)</strong>.
 
-                        <div class="row d-flex align-text-bottom image-about"> 
-                                <div class="col text-center"> 
-                                    <img class="lazyload" data-src="/images/about/royal-statistical-society.jpg" alt="Royal Statistical Society"><br> 
+                        <div class="row d-flex align-text-bottom image-about">
+                                <div class="col text-center">
+                                    <img class="lazyload" data-src="/images/about/royal-statistical-society.jpg" alt="Royal Statistical Society"><br>
                                     <em>Royal Statistical Society</em>
-                                </div> 
-                                
-                                <div class="col text-center"> 
-                                    <img class="lazyload" data-src="/images/about/statistics-without-borders.jpg" alt="Royal Statistical Society"><br> 
+                                </div>
+
+                                <div class="col text-center">
+                                    <img class="lazyload" data-src="/images/about/statistics-without-borders.jpg" alt="Royal Statistical Society"><br>
                                     <em>Statistics Without Borders</em>
-                                </div> 
-                                <div class="col text-center"> 
-                                    <img class="lazyload" data-src="/images/about/international-statistical-institute.jpg " alt="Royal Statistical Society"><br> 
+                                </div>
+                                <div class="col text-center">
+                                    <img class="lazyload" data-src="/images/about/international-statistical-institute.jpg " alt="Royal Statistical Society"><br>
                                     <em>International Statistical Institute</em>
-                                </div> 
-                        </div> 
-                   
+                                </div>
+                        </div>
+
                 </div>
             </div>
         </div>
     </div>
-</div> 
+</div>
+</html>

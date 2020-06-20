@@ -526,31 +526,37 @@
 
       },
 /* Webpage */
-       {
-         "@type":"WebPage",
-         "@id":"https://www.isconstatistics.com/#webpage",
-         "url":"https://www.isconstatistics.com/",
-         "inLanguage":"en-US",
-         "name":"ISCON Statistical Services",
-         "isPartOf":{
-            "@id":"https://www.isconstatistics.com/#website"
-         },
-         "about":{
-            "@id":"https://www.isconstatistics.com/#local"
-         },
-         "description": {{ with .Site.Params.description }}{{ . }}{{ end }} ,
-{{ if not .PublishDate.IsZero -}}
-         "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }},
+      {
+  "@type":"WebPage",
+  "@id":"{{ .Permalink }}#webpage",
+  "url":"{{ .Permalink }}",
+  "inLanguage":"en-US",
+  "name": {{ .Title }},
+  "isPartOf":
+  {"@id": "https://www.isconstatistics.com/#website"},
+  "image":
+  {"@type":"ImageObject",
+  "@id":"{{ .Permalink }}#primaryimage",
+  "url": {{ if .Params.image }} {{.Params.image | absURL}} {{ else }} {{  .Site.Params.ogimage | absURL }} {{end}},
+  "width": {{ if .Params.Width }} {{.Params.Width}} {{ else }} {{  .Site.Params.ogWidth }} {{end}},
+  "height": {{ if .Params.Height }} {{.Params.Height}} {{ else }} {{  .Site.Params.ogHeight }} {{end}},
+  "caption": {{ if .Params.alt }} {{.Params.alt}} {{ else }} {{  .Site.Params.ogAlt }} {{end}}
 
-{{- else if not .Date.IsZero -}}
-         "datePublished": {{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }},
+  },
 
+  "primaryImageOfPage":
+  {"@id":"{{ .Permalink }}#primaryimage"},
+  {{ if not .PublishDate.IsZero -}}
+  "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }},
+  {{- else if not .Date.IsZero -}}
+  "datePublished": {{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }},
   {{- end }}
-
   {{ with .Lastmod -}}
-         "dateModified": {{ .Format "2006-01-02T15:04:05-07:00" | safeHTML }}
+  "dateModified": {{ .Format "2006-01-02T15:04:05-07:00" | safeHTML }},
   {{- end }}
-      },
+  "description": {{ .Description }}
+},
+
 /* article */
       {
 "@type":"Article",
@@ -562,7 +568,7 @@
 "name":"Chetan Prajapati"},
 "publisher":
 {"@id":"https://www.isconstatistics.com/#organization"},
-"headline":"{{ .Title }}",
+"headline": {{ .Title }},
 {{ if not .PublishDate.IsZero -}}
   "datePublished": {{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }},
   {{- else if not .Date.IsZero -}}

@@ -252,6 +252,13 @@
          "url":"https://www.isconstatistics.com/",
          "inLanguage":"en-US",
          "name":"ISCON Statistical Services",
+         "speakable": {
+      "@type": "SpeakableSpecification",
+      "xpath": [
+        "/html/head/title",
+        "/html/head/meta[@name='description']/@content"
+        ]
+      },
          "isPartOf":{
             "@id":"https://www.isconstatistics.com/#website"
          },
@@ -532,6 +539,13 @@
   "url":"{{ .Permalink }}",
   "inLanguage":"en-US",
   "name": {{ .Title }},
+  "speakable": {
+      "@type": "SpeakableSpecification",
+      "xpath": [
+        "/html/head/title",
+        "/html/head/meta[@name='description']/@content"
+        ]
+      },
   "isPartOf":
   {"@id": "https://www.isconstatistics.com/#website"},
   "image":

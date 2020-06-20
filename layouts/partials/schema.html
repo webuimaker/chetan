@@ -228,7 +228,7 @@
   }
       },
 /* WebSite */
-      {
+       {
          "@type":"WebSite",
          "@id":"https://www.isconstatistics.com/#website",
          "url":"https://www.isconstatistics.com/",
@@ -349,7 +349,7 @@
   ]
             },
 /* Webpage */
-      {
+       {
          "@type":"WebPage",
          "@id":"https://www.isconstatistics.com/#webpage",
          "url":"https://www.isconstatistics.com/",
@@ -380,7 +380,28 @@
   {{ with .Lastmod -}}
          "dateModified": {{ .Format "2006-01-02T15:04:05-07:00" | safeHTML }}
   {{- end }}
-      }
+      },
+/* carousal */
+       {"@type":"ItemList",
+       "isPartOf":
+            {"@id": "https://www.isconstatistics.com/#website"},
+        "itemListElement":[
+        {
+          "@type":"ListItem",
+          "position":1,
+          "url":"https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/bootstrap-resampling-parametric-nonparametric-boot-how-to/"
+        },
+        {
+          "@type":"ListItem",
+          "position":2,
+          "url":"https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/poisson-regression-overdispersion-how-to/"
+        },
+        {
+          "@type":"ListItem",
+          "position":3,
+          "url":"https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/reshape-wide-long-data-r-how-to/"
+        }
+      ]}
 ]
 }
 </script>
@@ -825,7 +846,28 @@
       }
     }
   ]
-            }
+            },
+/* carousal */
+       {"@type":"ItemList",
+       "isPartOf":
+            {"@id": "https://www.isconstatistics.com/#website"},
+        "itemListElement":[
+        {
+          "@type":"ListItem",
+          "position":1,
+          "url":"https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/bootstrap-resampling-parametric-nonparametric-boot-how-to/"
+        },
+        {
+          "@type":"ListItem",
+          "position":2,
+          "url":"https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/poisson-regression-overdispersion-how-to/"
+        },
+        {
+          "@type":"ListItem",
+          "position":3,
+          "url":"https://xenodochial-johnson-2c8705.netlify.app/learn-statistics/reshape-wide-long-data-r-how-to/"
+        }
+      ]}
 
 ]
 

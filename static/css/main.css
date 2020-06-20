@@ -82,7 +82,7 @@ body {
 	outline: 0!important
 }
 #content{
-	padding-top: 120px;
+	padding-top: 78px;
 }
 hr {
 	box-sizing: content-box;
@@ -4599,7 +4599,8 @@ input[type=submit].btn-block {
 	-ms-flex-positive: 1;
 	flex-grow: 1;
 	-ms-flex-align: center;
-	align-items: center
+	align-items: center;
+	text-align: center
 }
 
 .navbar-toggler {
@@ -11607,14 +11608,8 @@ code {
 
 .navigation .navbar-brand {
   position: absolute;
-  left: 0;
-  top: -52px;
-  height: 170px;
-  width: 220px;
-  background: #fff;
-  text-align: center;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-  z-index: 9;
+    left: 0;
+    height: 1px
 }
 
 @media (max-width: 991px) {
@@ -11623,11 +11618,11 @@ code {
     height: unset;
     width: unset;
     box-shadow: none;
-    top: 24px;
+    top: 37px;
     background: none;
   }
   .navigation .navbar-brand img {
-    height: 50px;
+    height: 73px;
     width: auto;
   }
 }
@@ -11640,7 +11635,7 @@ code {
 }
 
 .navigation .navbar .nav-item {
-  padding: 28px 0;
+  padding: 29px 4px 29px 4px;
 }
 
 @media (max-width: 991px) {
@@ -11650,7 +11645,6 @@ code {
 }
 
 .navigation .navbar .nav-item .nav-link {
-  padding: 15px 10px;
   font-family: inherit;
   font-weight: 600;
   color: #222;
@@ -11668,7 +11662,7 @@ code {
 
 @media (max-width: 991px) {
   .navigation .navbar .nav-item .nav-link {
-    padding: 15px 0;
+    padding: 13px 0px 8px 0px;
     font-size: 14px;
     text-align: center;
   }
@@ -11678,16 +11672,6 @@ code {
   color: #e84444;
 }
 
-.navigation .navbar .nav-item:last-child {
-  padding: 28px 28px 0 0px;
-}
-
-@media (max-width: 991px) {
-  .navigation .navbar .nav-item:last-child {
-    padding: 0;
-    margin-bottom: 20px;
-  }
-}
 
 .navigation .navbar .nav-item .nav-link.pgactive {
   color: #e84444;
@@ -12984,7 +12968,7 @@ ul.tag-list li a:hover {
 	font-weight: bold;
 	font-size: 4rem;
 	color: #1aba58;
-	
+
 }
 @media (max-width:575px) {
   .project-menu ul li {
@@ -13045,7 +13029,7 @@ ul.tag-list li a:hover {
 	.service-hg{
 		height: auto;
 		height: 1100px;
-		
+
 	}
 	.case .project-info{
 		min-height: 150px;

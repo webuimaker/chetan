@@ -1,0 +1,7 @@
+{{ define "main" }} 
+{{ partial "pageTitle3.html" . }} {{ "" | safeHTML }}
+    {{ .Content  | safeHTML }}
+
+{{ "" | safeHTML }} 
+{{ partial "testimonial.html" . }} 
+{{ end }}

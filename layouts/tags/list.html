@@ -1,11 +1,28 @@
-{{ define "main" }} {{ " " | safeHTML }}
-<div class="page-title" style="background:radial-gradient(circle,rgba(247,247,247,1) 46%,rgba(237,237,237,1) 100%);text-align:center">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center"> 
-                <header><h1 class="font-weight-bold">{{ .Title }}</h1></header>
-            </div>
-        </div>
+{{ define "main" }}
+
+{{ " <!-- page title -->" | safeHTML }}
+<section class="section bg-secondary">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 py-5 text-center">
+        <h2 class="text-white font-weight-bold mr-2">{{ .Title }}</h2>
+        <!-- <ol class="breadcrumb">
+          <li>
+            <a href="{{ .Site.BaseURL }}">{{ .Site.Params.home }}</a>
+          </li>
+          <li>{{ .Title }}</li>
+        </ol> -->
+      </div>
     </div>
-</div> 
-{{ " " | safeHTML }} {{ partial "term.html" . }} {{ end }}
+  </div>
+</section>
+{{ " <!-- /page title -->" | safeHTML }}
+{{ if eq  .URL "/tags/" }}
+    {{ partial "term.html" . }}
+{{else }}
+{{ partial "blog.html" . }}
+{{end}}
+
+
+
+{{ end }}
